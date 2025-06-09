@@ -22,6 +22,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [oat](https://github.com/sail-sg/oat) | 2024-11 | NUS/Sea AI | [paper](https://arxiv.org/pdf/2411.01493) | Custom | PPO/GRPO | Single | Outcome | Multi | Math/Alignment | External | No |
 | [ROLL](https://github.com/alibaba/ROLL) | 2025-06 | Alibaba | [paper](https://arxiv.org/pdf/2506.06122) | Custom | PPO/GRPO/Reinforce++/TOPR/RAFT++ | Multi | Both | Multi | Math/QA/Code/Alignment | All | Yes |
 | [MARTI](https://github.com/TsinghuaC3I/MARTI) | 2025-05 | Tsinghua | -- | Custom | PPO | Multi | Both | Multi | Math | All | Yes |
+| [AReaL](https://github.com/inclusionAI/AReaL) | 2025-06 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 
 ## Search/Research/Web
 | Github Repo | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
@@ -86,7 +87,6 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [ML-Agent](https://github.com/MASWorks/ML-Agent) | 2025-05 | MASWorks | [paper](https://arxiv.org/pdf/2505.23723) | Custom | Custom | Single | Process | Multi | Code | All | Yes |
 | [CURE](https://github.com/Gen-Verse/CURE) | 2025-06 | University of Chicago/Princeton/ByteDance | [paper](https://arxiv.org/pdf/2506.03136) | Huggingface | PPO | Single | Outcome | Single | Code | External | No |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | 2025-06 | Emory/Georgia Tech | [paper](https://arxiv.org/pdf/2506.04405) | Hugginface | SFT/DPO/PPO/GRPO | Single | Outcome | Multi | Medical/Code | External | Yes |
-| [AReaL](https://github.com/inclusionAI/AReaL) | 2025-06-09 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 | [open-r1](https://github.com/huggingface/open-r1) | 2025-01 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
 | [EasyR1](https://github.com/hiyouga/EasyR1) | 2024-09 | Individual | [repo1](https://github.com/hiyouga/EasyR1)/[paper2](https://arxiv.org/pdf/2409.19256) | veRL | GRPO | Single | Process | Multi | Vision-Language | Model | Yes |
 | [MASLab](https://github.com/MASWorks/MASLab) | 2025-05 | MASWorks | [paper](https://arxiv.org/pdf/2505.16988) | Custom | NO RL | Multi | Outcome | Multi | Code/Math/Reasoning | External | Yes |
