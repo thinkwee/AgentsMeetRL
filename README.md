@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="logo.png" alt="NOVER Logo" width="600">
+</div>
+
 # When LLM Agents Meet Reinforcement Learning
 
 This is an awesome list that summarizes open-source repositories for training LLM Agents using reinforcement learning:
@@ -64,7 +68,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [verl-agent](https://github.com/langfengQ/verl-agent) | 2025-05 | NTU/Skywork | [paper](https://arxiv.org/pdf/2505.10978) | veRL | PPO/GRPO/GiGPO/DAPO/RLOO/REINFORCE++ | Multi | Both | Multi | Phone Use/Math/Code/Web/TextGame | All | Yes |
 | [SPA-RL-Agent](https://github.com/WangHanLinHenry/SPA-RL-Agent) | 2025-05 | PolyU | [paper](https://arxiv.org/pdf/2505.20732) | TRL | PPO | Single | Process | Multi | Navigation/Web/TextGame | Model | No |
 | [Trinity-RFT](https://github.com/modelscope/Trinity-RFT) | 2025-05 | Alibaba | [paper](https://arxiv.org/pdf/2505.17826) | veRL | PPO/GRPO | Single | Outcome | Both | Math/TextGame/Web | All | Yes |
-| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | 2025-01 | RAGEN-AI | [paper](https://arxiv.org/pdf/2504.20073) | veRL |PPO/GRPO | Single Agent | Both | Multi | TextGame | All | Yes |
+| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | 2025-01 | RAGEN-AI | [paper](https://arxiv.org/pdf/2504.20073) | veRL |PPO/GRPO | Single | Both | Multi | TextGame | All | Yes |
 | [VAGEN](https://github.com/RAGEN-AI/VAGEN) | 2025-03 | RAGEN-AI | [paper](https://www.notion.so/VAGEN-Training-VLM-Agents-with-Multi-Turn-Reinforcement-Learning-1bfde13afb6e80b792f6d80c7c2fcad0) | veRL | PPO/GRPO | Single | Both | Multi | TextGame/Navigation | All | Yes |
 | [OpenManus-RL](https://github.com/OpenManus/OpenManus-RL) | 2025-03 | UIUC/MetaGPT | -- | Custom | PPO/DPO/GRPO | Multi | Outcome | Multi | TextGame | All | Yes |
 
