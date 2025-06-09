@@ -21,7 +21,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [verifiers](https://github.com/willccbb/verifiers) | 2025-03 | Individual | -- | HuggingFace | GRPO | Multi | Outcome | Both | Reasoning/Math/Code | All | Code |
 | [oat](https://github.com/sail-sg/oat) | 2024-11 | NUS/Sea AI | [paper](https://arxiv.org/pdf/2411.01493) | Custom | PPO/GRPO | Single | Outcome | Multi | Math/Alignment | External | No |
 | [ROLL](https://github.com/alibaba/ROLL) | 2025-06 | Alibaba | [paper](https://arxiv.org/pdf/2506.06122) | Custom | PPO/GRPO/Reinforce++/TOPR/RAFT++ | Multi | Both | Multi | Math/QA/Code/Alignment | All | Yes |
-| [MARTI](https://github.com/TsinghuaC3I/MARTI) | 2025-05 | Tsinghua | -- | Custom | PPO | Multi | Both | Multi | Math | All | Yes |
+| [MARTI](https://github.com/TsinghuaC3I/MARTI) | 2025-05 | Tsinghua | -- | Custom | PPO/GRPO/REINFORCE++/TTRL | Multi | Both | Multi | Math | All | Yes |
 | [AReaL](https://github.com/inclusionAI/AReaL) | 2025-06 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 
 ## Search/Research/Web
