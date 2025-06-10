@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="NOVER Logo" width="600">
+  <img src="logo.png" alt="NOVER Logo" width="500">
 </div>
 
 # When LLM Agents Meet Reinforcement Learning
