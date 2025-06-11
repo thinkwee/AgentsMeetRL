@@ -36,7 +36,8 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [ZeroSearch](https://github.com/Alibaba-NLP/ZeroSearch) | 2025-05 | Alibaba |[paper](https://arxiv.org/pdf/2505.04588) | veRL | PPO/GRPO/REINFORCE | Single | Outcome | Multi | QA/Search | Rule | Yes |
 | [R1-Searcher](https://github.com/RUCAIBox/R1-Searcher) | 2025-03 | RUC | [paper](https://arxiv.org/pdf/2503.05592) | OpenRLHF | PPO/DPO | Single | Both | Multi | Search | All | Yes |
 | [WebAgent](https://github.com/Alibaba-NLP/WebAgent) | 2025-01 | Alibaba | [paper1](https://arxiv.org/pdf/2501.07572), [paper2](https://arxiv.org/pdf/2505.22648) | LLaMA-Factory | DAPO | Multi | Process | Multi | Web | Model | Yes |
-| [R-Search](https://github.com/QingFei1/R-Search) | 2024-06 | Individual | -- | veRL | PPO/GRPO | Single | Both | Multi | QA/Search | All | Yes |
+| [R-Search](https://github.com/QingFei1/R-Search) | 2025-06 | Individual | -- | veRL | PPO/GRPO | Single | Both | Multi | QA/Search | All | Yes |
+| [TTI](https://github.com/test-time-interaction/TTI) | 2025-06 | CMU | [paper](https://arxiv.org/abs/2506.07976) | Custom | REINFORCE/BC | Single | Outcome | Multi | Web | External | Web Browsing |
 
 
 ## GUI
@@ -88,7 +89,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [CURE](https://github.com/Gen-Verse/CURE) | 2025-06 | University of Chicago/Princeton/ByteDance | [paper](https://arxiv.org/pdf/2506.03136) | Huggingface | PPO | Single | Outcome | Single | Code | External | No |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | 2025-06 | Emory/Georgia Tech | [paper](https://arxiv.org/pdf/2506.04405) | Hugginface | SFT/DPO/PPO/GRPO | Single | Outcome | Multi | Medical/Code | External | Yes |
 | [open-r1](https://github.com/huggingface/open-r1) | 2025-01 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
-| [EasyR1](https://github.com/hiyouga/EasyR1) | 2024-09 | Individual | [repo1](https://github.com/hiyouga/EasyR1)/[paper2](https://arxiv.org/pdf/2409.19256) | veRL | GRPO | Single | Process | Multi | Vision-Language | Model | Yes |
+| [EasyR1](https://github.com/hiyouga/EasyR1) | 2025-04 | Individual | [repo1](https://github.com/hiyouga/EasyR1)/[paper2](https://arxiv.org/pdf/2409.19256) | veRL | GRPO | Single | Process | Multi | Vision-Language | Model | Yes |
 | [MASLab](https://github.com/MASWorks/MASLab) | 2025-05 | MASWorks | [paper](https://arxiv.org/pdf/2505.16988) | Custom | NO RL | Multi | Outcome | Multi | Code/Math/Reasoning | External | Yes |
 | [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | 2025-03 | BJTU | [paper](https://arxiv.org/pdf/2503.06580) | veRL | GRPO | Multi | Outcome | Multi | Reasoning/Math/QA | All | Yes |
 | [ToRL](https://github.com/GAIR-NLP/ToRL) | 2025-03 | SJTU | [paper](https://arxiv.org/pdf/2503.23383) | veRL | GRPO | Single | Outcome | Single | Math | Rule/External | Yes |
