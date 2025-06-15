@@ -15,7 +15,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## Base Framework
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [verl](https://github.com/volcengine/verl) | ![](https://img.shields.io/github/stars/volcengine/verl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024-10 | ByteDance | [paper](https://arxiv.org/pdf/2409.19256) | veRL | PPO/GRPO | Single | Outcome | Both | Math/QA/Reasoning/Search | All | Yes |
 | [trl](https://github.com/huggingface/trl) | ![](https://img.shields.io/github/stars/huggingface/trl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2019-11 | HuggingFace | -- | TRL | PPO/GRPO/DPO | Single | Both | Single | QA | Custom | No |
 | [verifiers](https://github.com/willccbb/verifiers) | ![](https://img.shields.io/github/stars/willccbb/verifiers.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-03 | Individual | -- | HuggingFace | GRPO | Multi | Outcome | Both | Reasoning/Math/Code | All | Code |
@@ -26,7 +26,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## Search/Research/Web
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [WebThinker](https://github.com/RUC-NLPIR/WebThinker) | ![](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | RUC | [paper](https://arxiv.org/pdf/2504.21776) | Custom | DPO | Single | Outcome | Multi | Reasoning/QA/Research | Model/External | Web Browsing |
 | [DeepResearcher](https://github.com/GAIR-NLP/DeepResearcher) | ![](https://img.shields.io/github/stars/GAIR-NLP/DeepResearcher.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | SJTU | [paper](https://arxiv.org/pdf/2504.03160) | veRL | PPO/GRPO | Multi | Outcome | Multi | Research | All | Yes |
 | [Search-R1](https://github.com/PeterGriffinJin/Search-R1) | ![](https://img.shields.io/github/stars/PeterGriffinJin/Search-R1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-03 | UIUC/Google | [paper1](https://arxiv.org/pdf/2503.09516), [paper2](https://arxiv.org/pdf/2505.15117) | veRL | PPO/GRPO | Single | Outcome | Multi | Search | All | Search |
@@ -42,7 +42,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## GUI
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [GUI-R1](https://github.com/ritzz-ai/GUI-R1) | ![](https://img.shields.io/github/stars/ritzz-ai/GUI-R1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | CAS/NUS | [paper](https://arxiv.org/pdf/2504.10458) | veRL | GRPO | Single | Outcome | Multi | GUI | Rule | No |
 | [UI-R1](https://github.com/lll6gg/UI-R1) | ![](https://img.shields.io/github/stars/lll6gg/UI-R1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-03 | vivo/CUHK | [paper](https://arxiv.org/pdf/2503.21620) | TRL | GRPO | Single | Process | Both | GUI | Rule | Computer/Phone Use |
 | [AgentCPM-GUI](https://github.com/OpenBMB/AgentCPM-GUI) | ![](https://img.shields.io/github/stars/OpenBMB/AgentCPM-GUI.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-06 | OpenBMB/Tsinghua/RUC | [paper](https://arxiv.org/pdf/2506.01391) | Huggingface | GRPO | Single | Outcome | Multi | Mobile GUI | Model | Yes |
@@ -52,7 +52,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## Tool
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [ReTool](https://github.com/ReTool-RL/ReTool) | ![](https://img.shields.io/github/stars/ReTool-RL/ReTool.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | ByteDance | [paper](https://arxiv.org/pdf/2504.11536) | veRL | PPO | Single | Outcome | Multi | Math | External | Code |
 | [Tool-N1](https://github.com/NVlabs/Tool-N1) | ![](https://img.shields.io/github/stars/NVlabs/Tool-N1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-05 | NVIDIA | [paper](https://arxiv.org/pdf/2505.00024) | veRL | PPO | Single | Outcome | Multi | Math/Dialogue | All | Yes |
 | [Tool-Star](https://github.com/dongguanting/Tool-Star) | ![](https://img.shields.io/github/stars/dongguanting/Tool-Star.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-05 | RUC | [paper](https://arxiv.org/pdf/2505.16410) | LLaMA-Factory | PPO/DPO/ORPO/SimPO/KTO | Single | Outcome | Multi | Multi-modal/Tool Use/Dialogue | Model/External | Yes |
@@ -65,7 +65,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## TextGame
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [ART](https://github.com/OpenPipe/ART) | ![](https://img.shields.io/github/stars/OpenPipe/ART.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-03 | OpenPipe | [paper](https://github.com/OpenPipe/ART#-citation) | TRL | GRPO | Multi | Both | Multi | TextGame | All | Yes |
 | [verl-agent](https://github.com/langfengQ/verl-agent) | ![](https://img.shields.io/github/stars/langfengQ/verl-agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-05 | NTU/Skywork | [paper](https://arxiv.org/pdf/2505.10978) | veRL | PPO/GRPO/GiGPO/DAPO/RLOO/REINFORCE++ | Multi | Both | Multi | Phone Use/Math/Code/Web/TextGame | All | Yes |
 | [SPA-RL-Agent](https://github.com/WangHanLinHenry/SPA-RL-Agent) | ![](https://img.shields.io/github/stars/WangHanLinHenry/SPA-RL-Agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-05 | PolyU | [paper](https://arxiv.org/pdf/2505.20732) | TRL | PPO | Single | Process | Multi | Navigation/Web/TextGame | Model | No |
@@ -77,7 +77,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## QA(Reasoning/Math/Code)
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [sweet_rl](https://github.com/facebookresearch/sweet_rl) | ![](https://img.shields.io/github/stars/facebookresearch/sweet_rl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-03 | Meta/UCB | [paper](https://arxiv.org/pdf/2503.15478) | OpenRLHF | DPO | Multi | Process | Multi | Design/Code | Model | Web Browsing |
 | [Agentic-Reasoning](https://github.com/theworldofagents/Agentic-Reasoning) | ![](https://img.shields.io/github/stars/theworldofagents/Agentic-Reasoning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-02 | Oxford | [paper](https://arxiv.org/pdf/2502.04644) | Custom | Custom | Single | Process | Multi | QA/Math | External | Web Browsing |
 | [SkyRL](https://github.com/NovaSky-AI/SkyRL) | ![](https://img.shields.io/github/stars/NovaSky-AI/SkyRL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | NovaSky | -- | veRL | PPO/GRPO | Single | Outcome | Multi | Math/Code | All | Code |
@@ -98,6 +98,6 @@ This is an awesome list that summarizes open-source repositories for training LL
 
 ## Environment
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| --------- | --------- | --------- |  --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025-04 | InternBootcamp | -- | Environment | -- | -- | -- | -- | Reasoning/Code/Puzzle/Algorithm/TextGame | Rule/External | yes |
 
