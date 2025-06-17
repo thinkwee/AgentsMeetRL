@@ -92,7 +92,7 @@ This is an awesome list that summarizes open-source repositories for training LL
 | [ToRL](https://github.com/GAIR-NLP/ToRL) | ![](https://img.shields.io/github/stars/GAIR-NLP/ToRL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.3 | SJTU | [paper](https://arxiv.org/pdf/2503.23383) | veRL | GRPO | Single | Outcome | Single | Math | Rule/External | Yes |
 | [Agentic-Reasoning](https://github.com/theworldofagents/Agentic-Reasoning) | ![](https://img.shields.io/github/stars/theworldofagents/Agentic-Reasoning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | Oxford | [paper](https://arxiv.org/pdf/2502.04644) | Custom | Custom | Single | Process | Multi | QA/Math | External | Web Browsing |
 | [open-r1](https://github.com/huggingface/open-r1) | ![](https://img.shields.io/github/stars/huggingface/open-r1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
-| [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024-05 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
+| [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
 
 
 
