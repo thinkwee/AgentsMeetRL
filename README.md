@@ -101,3 +101,6 @@ This is an awesome list that summarizes open-source repositories for training LL
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | -- | Environment | -- | -- | -- | -- | Reasoning/Code/Puzzle/Algorithm/TextGame | Rule/External | yes |
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=thinkwee/agentsMeetRL&type=Date)](https://www.star-history.com/#thinkwee/agentsMeetRL&Date)
