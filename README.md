@@ -5,11 +5,12 @@
 # When LLM Agents Meet Reinforcement Learning
 
 This is an awesome list that summarizes open-source repositories for training LLM Agents using reinforcement learning:
- - The criteria for identifying an agent project is that it must have at least one of the following: multi-turn interactions or tool use.
- - This project is based on code analysis from open-source repositories using GitHub Copilot Agent, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
- - We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices.
+ - 🤖 The criteria for identifying an agent project is that it must have at least one of the following: multi-turn interactions or tool use.
+ - ⚠️ This project is based on code analysis from open-source repositories using GitHub Copilot Agent, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
+ - 🤗 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. Feel free to submit your own projects anytime - we welcome contributions!
+
+Some Enumeration:
  - Enumeration for Reward Type: External Verifier/Simple Rule/Model Based/Custom.
- - Feel free to submit your own projects anytime - we welcome contributions!
 
 ---
 
