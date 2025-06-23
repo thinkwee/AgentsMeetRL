@@ -69,6 +69,7 @@ Some Enumeration:
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [ARIA](https://github.com/rhyang2021/ARIA) | ![](https://img.shields.io/github/stars/rhyang2021/ARIA.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Fudan University | [paper](https://arxiv.org/abs/2506.00539) | Custom | REINFORCE | Both | Process | Multi | Negotiation/Bargaining | Other | No |
+| [AMPO](https://github.com/MozerWang/AMPO) | ![](https://img.shields.io/github/stars/MozerWang/AMPO.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Tongyi Lab, Alibaba  | [Paper](https://arxiv.org/abs/2505.02156) | veRL | BC/AMPO(GRPO improvement) | Multi | Outcome | Multi | Social Interaction | Model-based | No |
 | [verl-agent](https://github.com/langfengQ/verl-agent) | ![](https://img.shields.io/github/stars/langfengQ/verl-agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | NTU/Skywork | [paper](https://arxiv.org/pdf/2505.10978) | veRL | PPO/GRPO/GiGPO/DAPO/RLOO/REINFORCE++ | Multi | Both | Multi | Phone Use/Math/Code/Web/TextGame | All | Yes |
 | [SPA-RL-Agent](https://github.com/WangHanLinHenry/SPA-RL-Agent) | ![](https://img.shields.io/github/stars/WangHanLinHenry/SPA-RL-Agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | PolyU | [paper](https://arxiv.org/pdf/2505.20732) | TRL | PPO | Single | Process | Multi | Navigation/Web/TextGame | Model | No |
 | [Trinity-RFT](https://github.com/modelscope/Trinity-RFT) | ![](https://img.shields.io/github/stars/modelscope/Trinity-RFT.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Alibaba | [paper](https://arxiv.org/pdf/2505.17826) | veRL | PPO/GRPO | Single | Outcome | Both | Math/TextGame/Web | All | Yes |
@@ -95,13 +96,6 @@ Some Enumeration:
 | [Agentic-Reasoning](https://github.com/theworldofagents/Agentic-Reasoning) | ![](https://img.shields.io/github/stars/theworldofagents/Agentic-Reasoning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | Oxford | [paper](https://arxiv.org/pdf/2502.04644) | Custom | Custom | Single | Process | Multi | QA/Math | External | Web Browsing |
 | [open-r1](https://github.com/huggingface/open-r1) | ![](https://img.shields.io/github/stars/huggingface/open-r1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
 | [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
-
-## Social Simulation
-| Github Repo      | Stars | Date | Org | Paper Link | RL Framework   | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Rule/Other Reward | Tool usage |
-| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [AMPO](https://github.com/MozerWang/AMPO) | ![](https://img.shields.io/github/stars/MozerWang/AMPO.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Institute of Automation,CAS/UCAS  | [Paper](https://arxiv.org/abs/2505.02156) | verl | BC/AMPO(GRPO improvement) | Multi | Outcome | Multi | Social Reasoning | Model-based | No |
-
-
 
 ## Environment
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
