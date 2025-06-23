@@ -96,12 +96,17 @@ Some Enumeration:
 | [open-r1](https://github.com/huggingface/open-r1) | ![](https://img.shields.io/github/stars/huggingface/open-r1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
 | [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
 
+## Social Simulation
+| Github Repo      | Stars | Date | Org | Paper Link | RL Framework   | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Rule/Other Reward | Tool usage |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [AMPO](https://github.com/MozerWang/AMPO) | ![](https://img.shields.io/github/stars/MozerWang/AMPO.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Institute of Automation,CAS/UCAS  | [Paper](https://arxiv.org/abs/2505.02156) | verl | BC/AMPO(GRPO improvement) | Multi | Outcome | Multi | Social Reasoning | Model-based | No |
+
 
 
 ## Environment
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | -- | Environment | -- | -- | -- | -- | Reasoning/Code/Puzzle/Algorithm/TextGame | Rule/External | yes |
+| [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | -- | Environment | -- | -- | -- | -- | Reasoning/Code/Puzzle/Algorithm/TextGame | Rule/External | No |
 
 ## Star History
 
