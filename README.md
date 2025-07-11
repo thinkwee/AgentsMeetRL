@@ -5,7 +5,7 @@
 <div align="center">
   
 ![Base Framework](https://img.shields.io/badge/Base_Framework-7-BFA2DB?style=for-the-badge)
-![Web](https://img.shields.io/badge/Web-32-845C40?style=for-the-badge)
+![Web](https://img.shields.io/badge/Web-13-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
