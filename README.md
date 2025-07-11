@@ -10,7 +10,7 @@
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-18-FF69B4?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-1-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-24-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -114,9 +114,32 @@ Some Enumeration:
 | [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
 
 ## Environment
-| Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
-| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | -- | Environment | -- | -- | -- | -- | Reasoning/Code/Puzzle/Algorithm/TextGame | Rule/External | No |
+| Github Repo | Stars | Date | Org | Task | 
+| :----: | :----: | :----: |  :----: | :----: |
+| [Mind2Web-2](https://github.com/OSU-NLP-Group/Mind2Web-2) | ![](https://img.shields.io/github/stars/OSU-NLP-Group/Mind2Web-2.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Ohio State University | Web |
+| [MLE-Dojo](https://github.com/MLE-Dojo/MLE-Dojo) | ![](https://img.shields.io/github/stars/MLE-Dojo/MLE-Dojo.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | GIT, Stanford | MLE |
+| [atropos](https://github.com/NousResearch/atropos) | ![](https://img.shields.io/github/stars/NousResearch/atropos.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | Nous Research | Game/Code/Tool |
+| [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | Coding/QA/Game |
+| [llmgym](https://github.com/tensorzero/llmgym) | ![](https://img.shields.io/github/stars/tensorzero/llmgym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | tensorzero | TextGame/Tool |
+| [debug-gym](https://github.com/microsoft/debug-gym) | ![](https://img.shields.io/github/stars/microsoft/debug-gym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.11 | Microsoft Research | Debugging/Game/Code |
+| [gym-llm](https://github.com/rsanchezmo/gym-llm) | ![](https://img.shields.io/github/stars/rsanchezmo/gym-llm.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.8 | Rodrigo Sánchez Molina | Control/Game |
+| [AgentGym](https://github.com/WooooDyy/AgentGym) | ![](https://img.shields.io/github/stars/WooooDyy/AgentGym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.6 | Fudan | Web/Game |
+| [tau-bench](https://github.com/sierra-research/tau-bench) | ![](https://img.shields.io/github/stars/sierra-research/tau-bench.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.6 | Sierra | Tool |
+| [appworld](https://github.com/StonyBrookNLP/appworld) | ![](https://img.shields.io/github/stars/StonyBrookNLP/appworld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.6 | Stony Brook University | Phone Use |
+| [android_world](https://github.com/google-research/android_world) | ![](https://img.shields.io/github/stars/google-research/android_world.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | Google Research | Phone Use |
+| [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) | ![](https://img.shields.io/github/stars/TheAgentCompany/TheAgentCompany.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.3 | CMU, Duke | Coding |
+| [LlamaGym](https://github.com/KhoomeiK/LlamaGym) | ![](https://img.shields.io/github/stars/KhoomeiK/LlamaGym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.3 | Rohan Pandey | Game|
+| [visualwebarena](https://github.com/web-arena-x/visualwebarena)   | ![](https://img.shields.io/github/stars/web-arena-x/visualwebarena.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.1 | CMU | Web |
+| [LMRL-Gym](https://github.com/abdulhaim/LMRL-Gym) | ![](https://img.shields.io/github/stars/abdulhaim/LMRL-Gym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2023.12 | UC Berkeley | Game |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | ![](https://img.shields.io/github/stars/xlang-ai/OSWorld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2023.10 | HKU, CMU, Salesforce, Waterloo | Computer Use |
+| [webarena](https://github.com/web-arena-x/webarena) | ![](https://img.shields.io/github/stars/web-arena-x/webarena.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2023.7 | CMU | Web |
+| [AgentBench](https://github.com/THUDM/AgentBench) | ![](https://img.shields.io/github/stars/THUDM/AgentBench.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2023.7 | Tsinghua University | Game/Web/QA/Tool |
+| [WebShop](https://github.com/princeton-nlp/WebShop) | ![](https://img.shields.io/github/stars/princeton-nlp/WebShop.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2022.7 | Princeton-NLP | Web |
+| [ScienceWorld](https://github.com/allenai/ScienceWorld) | ![](https://img.shields.io/github/stars/allenai/ScienceWorld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2022.3 | AllenAI | TextGame/ScienceQA |
+| [alfworld](https://github.com/alfworld/alfworld) | ![](https://img.shields.io/github/stars/alfworld/alfworld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2020.10 | Microsoft, CMU, UW | Embodied |
+| [factorio-learning-environment](https://github.com/JackHopkins/factorio-learning-environment) | ![](https://img.shields.io/github/stars/JackHopkins/factorio-learning-environment.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2021.6 | JackHopkins | Game |
+| [jericho](https://github.com/microsoft/jericho) | ![](https://img.shields.io/github/stars/microsoft/jericho.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2018.10 | Microsoft, GIT | TextGame |
+| [TextWorld](https://github.com/microsoft/TextWorld) | ![](https://img.shields.io/github/stars/microsoft/TextWorld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2018.6 | Microsoft Research | TextGame |
 
 ## Star History
 
