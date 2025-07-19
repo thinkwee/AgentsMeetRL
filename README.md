@@ -22,7 +22,11 @@ This is an awesome list that summarizes open-source repositories for training LL
  - 🤗 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. Feel free to submit your own projects anytime - we welcome contributions!
 
 Some Enumeration:
- - Enumeration for Reward Type: External Verifier/Simple Rule/Model Based/Custom.
+ - Enumeration for Reward Type:
+   - External Verifier: e.g., a compiler or math solver
+   - Simple Rule: e.g., a LaTeX parser with exact match scoring
+   - Model Based: e.g., a trained verifier LLM or reward LLM
+   - Custom
 
 ---
 
@@ -112,6 +116,7 @@ Some Enumeration:
 | [ReMA](https://github.com/ziyuwan/ReMA-public) | ![](https://img.shields.io/github/stars/ziyuwan/ReMA-public.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.3 | SJTU, UCL | [paper](https://arxiv.org/pdf/2503.09501) | veRL | PPO | Multi | Outcome | Multi | Math | Rule | No |
 | [Agentic-Reasoning](https://github.com/theworldofagents/Agentic-Reasoning) | ![](https://img.shields.io/github/stars/theworldofagents/Agentic-Reasoning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | Oxford | [paper](https://arxiv.org/pdf/2502.04644) | Custom | Custom | Single | Process | Multi | QA/Math | External | Web Browsing |
 | [SimpleTIR](https://github.com/ltzheng/SimpleTIR) | ![](https://img.shields.io/github/stars/ltzheng/SimpleTIR.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | NTU, Bytedance | [Notion Blog](https://simpletir.notion.site/report) | veRL | PPO/GRPO (with extensions) | Single | Outcome | Multi | Math, Coding | All | Yes |
+| [rllm](https://github.com/agentica-project/rllm) | ![](https://img.shields.io/github/stars/agentica-project/rllm.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | Berkeley Sky Computing Lab / BAIR / Together AI | [Notion Blog](https://pretty-radio-b75.notion.site/rLLM-A-Framework-for-Post-Training-Language-Agents-21b81902c146819db63cd98a54ba5f31) | veRL | PPO/GRPO | Single | Outcome | Multi | Code Edit | External | Yes |
 | [open-r1](https://github.com/huggingface/open-r1) | ![](https://img.shields.io/github/stars/huggingface/open-r1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | HuggingFace | -- | TRL | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
 | [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
 
