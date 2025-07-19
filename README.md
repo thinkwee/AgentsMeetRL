@@ -4,7 +4,7 @@
 
 <div align="center">
   
-![Base Framework](https://img.shields.io/badge/Base_Framework-7-BFA2DB?style=for-the-badge)
+![Base Framework](https://img.shields.io/badge/Base_Framework-8-BFA2DB?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-13-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
@@ -32,6 +32,7 @@ Some Enumeration:
 | [AReaL](https://github.com/inclusionAI/AReaL) | ![](https://img.shields.io/github/stars/inclusionAI/AReaL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 | [ROLL](https://github.com/alibaba/ROLL) | ![](https://img.shields.io/github/stars/alibaba/ROLL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Alibaba | [paper](https://arxiv.org/pdf/2506.06122) | Custom | PPO/GRPO/Reinforce++/TOPR/RAFT++ | Multi | Both | Multi | Math/QA/Code/Alignment | All | Yes |
 | [MARTI](https://github.com/TsinghuaC3I/MARTI) | ![](https://img.shields.io/github/stars/TsinghuaC3I/MARTI.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Tsinghua | -- | Custom | PPO/GRPO/REINFORCE++/TTRL | Multi | Both | Multi | Math | All | Yes |
+| [RL2](https://github.com/ChenmienTan/RL2) | ![](https://img.shields.io/github/stars/ChenmienTan/RL2.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | Accio | – | Custom | Dr. GRPO/PPO/DPO | Single | Both | Both | QA/Dialogue | Rule/Model/External | Yes |
 | [verifiers](https://github.com/willccbb/verifiers) | ![](https://img.shields.io/github/stars/willccbb/verifiers.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.3 | Individual | -- | HuggingFace | GRPO | Multi | Outcome | Both | Reasoning/Math/Code | All | Code |
 | [oat](https://github.com/sail-sg/oat) | ![](https://img.shields.io/github/stars/sail-sg/oat.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.11 | NUS/Sea AI | [paper](https://arxiv.org/pdf/2411.01493) | Custom | PPO/GRPO | Single | Outcome | Multi | Math/Alignment | External | No |
 | [verl](https://github.com/volcengine/verl) | ![](https://img.shields.io/github/stars/volcengine/verl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.10 | ByteDance | [paper](https://arxiv.org/pdf/2409.19256) | veRL | PPO/GRPO | Single | Outcome | Both | Math/QA/Reasoning/Search | All | Yes |
