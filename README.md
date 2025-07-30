@@ -148,6 +148,11 @@ Some Enumeration:
 | [jericho](https://github.com/microsoft/jericho) | ![](https://img.shields.io/github/stars/microsoft/jericho.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2018.10 | Microsoft, GIT | TextGame |
 | [TextWorld](https://github.com/microsoft/TextWorld) | ![](https://img.shields.io/github/stars/microsoft/TextWorld.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2018.6 | Microsoft Research | TextGame |
 
+
+## Under Review/Waiting for Open Source
+- [JoyAgents-R1: Joint Evolution Dynamics for Versatile Multi-LLM Agents with Reinforcement Learning](https://arxiv.org/abs/2506.19846)
+- [Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning](https://arxiv.org/abs/2507.17842)
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinkwee/agentsMeetRL&type=Date)](https://www.star-history.com/#thinkwee/agentsMeetRL&Date)
