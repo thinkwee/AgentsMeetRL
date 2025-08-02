@@ -97,6 +97,8 @@ Some Enumeration:
 | [RAGEN](https://github.com/RAGEN-AI/RAGEN) | ![](https://img.shields.io/github/stars/RAGEN-AI/RAGEN.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | RAGEN-AI | [paper](https://arxiv.org/pdf/2504.20073) | veRL |PPO/GRPO | Single | Both | Multi | TextGame | All | Yes |
 
 ## Code
+| Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | ![](https://img.shields.io/github/stars/wshi83/MedAgentGym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Emory/Georgia Tech | [paper](https://arxiv.org/pdf/2506.04405) | Hugginface | SFT/DPO/PPO/GRPO | Single | Outcome | Multi | Medical/Code | External | Yes |
 | [CURE](https://github.com/Gen-Verse/CURE) | ![](https://img.shields.io/github/stars/Gen-Verse/CURE.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | University of Chicago/Princeton/ByteDance | [paper](https://arxiv.org/pdf/2506.03136) | Huggingface | PPO | Single | Outcome | Single | Code | External | No |
 | [verl-agent](https://github.com/langfengQ/verl-agent) | ![](https://img.shields.io/github/stars/langfengQ/verl-agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | NTU/Skywork | [paper](https://arxiv.org/pdf/2505.10978) | veRL | PPO/GRPO/GiGPO/DAPO/RLOO/REINFORCE++ | Multi | Both | Multi | Phone Use/Math/Code/Web/TextGame | All | Yes |
