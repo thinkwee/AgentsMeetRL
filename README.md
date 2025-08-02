@@ -34,6 +34,7 @@ Some Enumeration:
 ## Base Framework
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [siiRL](https://github.com/sii-research/siiRL) | ![](https://img.shields.io/github/stars/sii-research/siiRL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | Shanghai Innovation Institute | [Paper](https://arxiv.org/abs/2507.13833) | Custom | PPO/GRPO/CPGD/MARFT | Multi | Both | Multi | LLM/VLM/LLM-MAS PostTraining | Model/Rule | Planned |
 | [AReaL](https://github.com/inclusionAI/AReaL) | ![](https://img.shields.io/github/stars/inclusionAI/AReaL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 | [ROLL](https://github.com/alibaba/ROLL) | ![](https://img.shields.io/github/stars/alibaba/ROLL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Alibaba | [paper](https://arxiv.org/pdf/2506.06122) | Custom | PPO/GRPO/Reinforce++/TOPR/RAFT++ | Multi | Both | Multi | Math/QA/Code/Alignment | All | Yes |
 | [MARTI](https://github.com/TsinghuaC3I/MARTI) | ![](https://img.shields.io/github/stars/TsinghuaC3I/MARTI.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Tsinghua | -- | Custom | PPO/GRPO/REINFORCE++/TTRL | Multi | Both | Multi | Math | All | Yes |
