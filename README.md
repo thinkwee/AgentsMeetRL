@@ -10,7 +10,7 @@
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
-![QA](https://img.shields.io/badge/QA-13-FF69B4?style=for-the-badge)
+![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-25-FA5A4C?style=for-the-badge)
 
 </div>
@@ -117,6 +117,7 @@ Some Enumeration:
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [ARPO](https://github.com/dongguanting/ARPO) | ![](https://img.shields.io/github/stars/dongguanting/ARPO.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | RUC, Kuaishou | [paper](https://arxiv.org/abs/2507.19849) | veRL | GRPO | Single | Outcome | Multi | Math/Coding | Model/Rule | Yes |
 | [terminal-bench-rl](https://github.com/Danau5tin/terminal-bench-rl) | ![](https://img.shields.io/github/stars/Danau5tin/terminal-bench-rl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | Individual (Danau5tin) | N/A | rLLM | GRPO | Single | Outcome | Multi | Coding/Terminal | Model+External Verifier | Yes |
+| [MOTIF](https://github.com/purbeshmitra/MOTIF) | ![](https://img.shields.io/github/stars/purbeshmitra/MOTIF.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | University of Maryland | [paper](https://arxiv.org/abs/2507.02851) | trl | GRPO | Single | Outcome | Multi | QA | Rule | No |
 | [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | ![](https://img.shields.io/github/stars/BytedTsinghua-SIA/MemAgent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Bytedance, Tsinghua-SIA | [paper](https://arxiv.org/abs/2507.02259) | veRL | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
 | [cmriat/l0](https://github.com/cmriat/l0) | ![](https://img.shields.io/github/stars/cmriat/l0.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | China Merchants Research Institute of Advanced Technology | [paper](https://arxiv.org/abs/2506.23667) | veRL | PPO | Multi | Process | Multi | QA | All | Yes |
 | [agent-distillation](https://github.com/Nardien/agent-distillation) | ![](https://img.shields.io/github/stars/Nardien/agent-distillation.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | KAIST | [paper](https://arxiv.org/pdf/2505.17612) | Custom | PPO | Single | Process | Multi | QA/Math | External | Yes |
