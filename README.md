@@ -11,7 +11,7 @@
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-25-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-26-FA5A4C?style=for-the-badge)
 
 </div>
 
