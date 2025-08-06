@@ -11,7 +11,7 @@
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-12-FF69B4?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-24-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-25-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -132,6 +132,7 @@ Some Enumeration:
 | Github Repo | Stars | Date | Org | Task | 
 | :----: | :----: | :----: |  :----: | :----: |
 | [Mind2Web-2](https://github.com/OSU-NLP-Group/Mind2Web-2) | ![](https://img.shields.io/github/stars/OSU-NLP-Group/Mind2Web-2.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Ohio State University | Web |
+| [gem](https://github.com/axon-rl/gem) | ![](https://img.shields.io/github/stars/axon-rl/gem.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Sea AI Lab | Math/Code/Game/QA |
 | [MLE-Dojo](https://github.com/MLE-Dojo/MLE-Dojo) | ![](https://img.shields.io/github/stars/MLE-Dojo/MLE-Dojo.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | GIT, Stanford | MLE |
 | [atropos](https://github.com/NousResearch/atropos) | ![](https://img.shields.io/github/stars/NousResearch/atropos.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | Nous Research | Game/Code/Tool |
 | [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | Coding/QA/Game |
