@@ -4,10 +4,11 @@
 
 <div align="center">
   
-![Base Framework](https://img.shields.io/badge/Base_Framework-9-BFA2DB?style=for-the-badge)
+![Base Framework](https://img.shields.io/badge/Base_Framework-10-BFA2DB?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-13-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
+<br>
 ![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
@@ -41,8 +42,9 @@ Some Enumeration:
 | [RL2](https://github.com/ChenmienTan/RL2) | ![](https://img.shields.io/github/stars/ChenmienTan/RL2.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | Accio | – | Custom | Dr. GRPO/PPO/DPO | Single | Both | Both | QA/Dialogue | Rule/Model/External | Yes |
 | [verifiers](https://github.com/willccbb/verifiers) | ![](https://img.shields.io/github/stars/willccbb/verifiers.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.3 | Individual | -- | HuggingFace | GRPO | Multi | Outcome | Both | Reasoning/Math/Code | All | Code |
 | [oat](https://github.com/sail-sg/oat) | ![](https://img.shields.io/github/stars/sail-sg/oat.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.11 | NUS/Sea AI | [paper](https://arxiv.org/pdf/2411.01493) | Custom | PPO/GRPO | Single | Outcome | Multi | Math/Alignment | External | No |
-| [verl](https://github.com/volcengine/verl) | ![](https://img.shields.io/github/stars/volcengine/verl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.10 | ByteDance | [paper](https://arxiv.org/pdf/2409.19256) | veRL | PPO/GRPO | Single | Outcome | Both | Math/QA/Reasoning/Search | All | Yes |
-| [trl](https://github.com/huggingface/trl) | ![](https://img.shields.io/github/stars/huggingface/trl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2019.11 | HuggingFace | -- | TRL | PPO/GRPO/DPO | Single | Both | Single | QA | Custom | No |
+| [veRL](https://github.com/volcengine/verl) | ![](https://img.shields.io/github/stars/volcengine/verl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.10 | ByteDance | [paper](https://arxiv.org/pdf/2409.19256) | veRL | PPO/GRPO | Single | Outcome | Both | Math/QA/Reasoning/Search | All | Yes |
+| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | ![](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2023.7 | OpenRLHF | [paper](https://arxiv.org/abs/2405.11143) | OpenRLHF | PPO/REINFORCE++/GRPO/DPO/IPO/KTO/RLOO | Multi | Both | Both | Dialogue/Chat/Completion | Rule/Model/External | Yes |
+| [trl](https://github.com/huggingface/trl) | ![](https://img.shields.io/github/stars/huggingface/trl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2019.11 | HuggingFace | -- | trl | PPO/GRPO/DPO | Single | Both | Single | QA | Custom | No |
 
 ## Search/Research/Web
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
