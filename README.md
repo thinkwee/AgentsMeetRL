@@ -4,7 +4,7 @@
 
 <div align="center">
   
-![Base Framework](https://img.shields.io/badge/Base_Framework-10-BFA2DB?style=for-the-badge)
+![Base Framework](https://img.shields.io/badge/Base_Framework-11-BFA2DB?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-13-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
@@ -36,6 +36,7 @@ Some Enumeration:
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [siiRL](https://github.com/sii-research/siiRL) | ![](https://img.shields.io/github/stars/sii-research/siiRL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | Shanghai Innovation Institute | [Paper](https://arxiv.org/abs/2507.13833) | Custom | PPO/GRPO/CPGD/MARFT | Multi | Both | Multi | LLM/VLM/LLM-MAS PostTraining | Model/Rule | Planned |
+| [agent-lightning](https://github.com/microsoft/agent-lightning) | ![](https://img.shields.io/github/stars/microsoft/agent-lightning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Microsoft Research | [paper](https://arxiv.org/abs/2508.03680) | veRL | PPO/Custom/Automatic Prompt Optimization | Multi | Outcome | Multi | Calculator/SQL | Model/External/Rule | Yes |
 | [AReaL](https://github.com/inclusionAI/AReaL) | ![](https://img.shields.io/github/stars/inclusionAI/AReaL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | AntGroup/Tsinghua | [paper](https://arxiv.org/pdf/2505.24298) | Custom | PPO | Both | Outcome | Both | Math/Code | External | Yes |
 | [ROLL](https://github.com/alibaba/ROLL) | ![](https://img.shields.io/github/stars/alibaba/ROLL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Alibaba | [paper](https://arxiv.org/pdf/2506.06122) | Custom | PPO/GRPO/Reinforce++/TOPR/RAFT++ | Multi | Both | Multi | Math/QA/Code/Alignment | All | Yes |
 | [MARTI](https://github.com/TsinghuaC3I/MARTI) | ![](https://img.shields.io/github/stars/TsinghuaC3I/MARTI.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Tsinghua | -- | Custom | PPO/GRPO/REINFORCE++/TTRL | Multi | Both | Multi | Math | All | Yes |
