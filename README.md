@@ -5,7 +5,7 @@
 <div align="center">
   
 ![Base Framework](https://img.shields.io/badge/Base_Framework-11-BFA2DB?style=for-the-badge)
-![Web](https://img.shields.io/badge/Web-13-845C40?style=for-the-badge)
+![Web](https://img.shields.io/badge/Web-14-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
 <br>
@@ -50,6 +50,7 @@ Some Enumeration:
 ## Search/Research/Web
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [ASearcher](https://github.com/inclusionAI/ASearcher) | ![](https://img.shields.io/github/stars/inclusionAI/ASearcher.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.8 | Ant Research RL Lab & Tsinghua University & UW | [paper](https://arxiv.org/abs/2508.07976) | RealHF/AReaL | PPO/GRPO + Decoupled PPO | Single | Outcome | Multi | Math/Code/SearchQA | External/Rule | Yes |
 | [Kimi-Researcher](https://github.com/moonshotai/Kimi-Researcher) | ![](https://img.shields.io/github/stars/moonshotai/Kimi-Researcher.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Moonshot AI | [blog](https://moonshotai.github.io/Kimi-Researcher/) | Custom | REINFORCE | Single | Outcome | Multi | Research | Outcome  | Search, Browse, Coding |
 | [TTI](https://github.com/test-time-interaction/TTI) | ![](https://img.shields.io/github/stars/test-time-interaction/TTI.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | CMU | [paper](https://arxiv.org/abs/2506.07976) | Custom | REINFORCE/BC | Single | Outcome | Multi | Web | External | Web Browsing |
 | [R-Search](https://github.com/QingFei1/R-Search) | ![](https://img.shields.io/github/stars/QingFei1/R-Search.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Individual | -- | veRL | PPO/GRPO | Single | Both | Multi | QA/Search | All | Yes |
