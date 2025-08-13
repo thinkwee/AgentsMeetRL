@@ -9,7 +9,7 @@
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
 <br>
-![Game](https://img.shields.io/badge/Game-9-1F4CAD?style=for-the-badge)
+![Game](https://img.shields.io/badge/Game-8-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-26-FA5A4C?style=for-the-badge)
