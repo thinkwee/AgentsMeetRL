@@ -7,7 +7,7 @@
 ![Base Framework](https://img.shields.io/badge/Base_Framework-11-BFA2DB?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-14-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
-![Tool](https://img.shields.io/badge/Tool-8-D89F7B?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-9-D89F7B?style=for-the-badge)
 <br>
 ![Game](https://img.shields.io/badge/Game-8-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
@@ -79,6 +79,7 @@ Some Enumeration:
 ## Tool
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [MiroRL](https://github.com/MiroMindAI/MiroRL) | ![](https://img.shields.io/github/stars/MiroMindAI/MiroRL.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.8 | MiroMindAI | [HF Repo](https://huggingface.co/miromind-ai) | veRL | GRPO | Single | Both | Multi | Reasoning/Planning/ToolUse | Rule-based | MCP |
 | [verl-tool](https://github.com/TIGER-AI-Lab/verl-tool) | ![](https://img.shields.io/github/stars/TIGER-AI-Lab/verl-tool.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | TIGER-Lab | [X](https://x.com/DongfuJiang/status/1929198238017720379) | veRL | PPO/GRPO | Single | Both | Both | Math/Code | Rule/External | Yes |
 | [Multi-Turn-RL-Agent](https://github.com/SiliangZeng/Multi-Turn-RL-Agent) | ![](https://img.shields.io/github/stars/SiliangZeng/Multi-Turn-RL-Agent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | University of Minnesota | [paper](https://arxiv.org/pdf/2505.11821) | Custom | GRPO | Single | Both | Multi | Tool-use/Math | Rule/External | Yes |
 | [Tool-N1](https://github.com/NVlabs/Tool-N1) | ![](https://img.shields.io/github/stars/NVlabs/Tool-N1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | NVIDIA | [paper](https://arxiv.org/pdf/2505.00024) | veRL | PPO | Single | Outcome | Multi | Math/Dialogue | All | Yes |
