@@ -12,6 +12,7 @@
 ![Game](https://img.shields.io/badge/Game-8-1F4CAD?style=for-the-badge)
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
+![Memory](https://img.shields.io/badge/Memory-2-007a88?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-26-FA5A4C?style=for-the-badge)
 
 </div>
@@ -124,7 +125,6 @@ Some Enumeration:
 | [ARPO](https://github.com/dongguanting/ARPO) | ![](https://img.shields.io/github/stars/dongguanting/ARPO.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | RUC, Kuaishou | [paper](https://arxiv.org/abs/2507.19849) | veRL | GRPO | Single | Outcome | Multi | Math/Coding | Model/Rule | Yes |
 | [terminal-bench-rl](https://github.com/Danau5tin/terminal-bench-rl) | ![](https://img.shields.io/github/stars/Danau5tin/terminal-bench-rl.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | Individual (Danau5tin) | N/A | rLLM | GRPO | Single | Outcome | Multi | Coding/Terminal | Model+External Verifier | Yes |
 | [MOTIF](https://github.com/purbeshmitra/MOTIF) | ![](https://img.shields.io/github/stars/purbeshmitra/MOTIF.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | University of Maryland | [paper](https://arxiv.org/abs/2507.02851) | trl | GRPO | Single | Outcome | Multi | QA | Rule | No |
-| [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | ![](https://img.shields.io/github/stars/BytedTsinghua-SIA/MemAgent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Bytedance, Tsinghua-SIA | [paper](https://arxiv.org/abs/2507.02259) | veRL | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
 | [cmriat/l0](https://github.com/cmriat/l0) | ![](https://img.shields.io/github/stars/cmriat/l0.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | China Merchants Research Institute of Advanced Technology | [paper](https://arxiv.org/abs/2506.23667) | veRL | PPO | Multi | Process | Multi | QA | All | Yes |
 | [agent-distillation](https://github.com/Nardien/agent-distillation) | ![](https://img.shields.io/github/stars/Nardien/agent-distillation.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | KAIST | [paper](https://arxiv.org/pdf/2505.17612) | Custom | PPO | Single | Process | Multi | QA/Math | External | Yes |
 | [VDeepEyes](https://github.com/Visual-Agent/DeepEyes) | ![](https://img.shields.io/github/stars/Visual-Agent/DeepEyes.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | Xiaohongshu/XJTU | [paper](https://arxiv.org/pdf/2505.14362) | veRL | PPO/GRPO | Multi | Process | Multi | VQA | All | Yes |
@@ -135,6 +135,13 @@ Some Enumeration:
 | [Agentic-Reasoning](https://github.com/theworldofagents/Agentic-Reasoning) | ![](https://img.shields.io/github/stars/theworldofagents/Agentic-Reasoning.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | Oxford | [paper](https://arxiv.org/pdf/2502.04644) | Custom | Custom | Single | Process | Multi | QA/Math | External | Web Browsing |
 | [SimpleTIR](https://github.com/ltzheng/SimpleTIR) | ![](https://img.shields.io/github/stars/ltzheng/SimpleTIR.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.2 | NTU, Bytedance | [Notion Blog](https://simpletir.notion.site/report) | veRL | PPO/GRPO (with extensions) | Single | Outcome | Multi | Math, Coding | All | Yes |
 | [openrlhf_async_pipline](https://github.com/yyht/openrlhf_async_pipline) | ![](https://img.shields.io/github/stars/yyht/openrlhf_async_pipline.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.5 | OpenRLHF | [paper](https://arxiv.org/pdf/2405.11143) | OpenRLHF | PPO/REINFORCE++/DPO/RLOO | Single | Outcome | Multi | Dialogue/Reasoning/QA | All | No |
+
+## Memory
+| Github Repo | Stars | Date | Org | Paper Link | RL Framework |  RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: |  :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [MEM1](https://github.com/MIT-MI/MEM1) | ![](https://img.shields.io/github/stars/MIT-MI/MEM1.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.7 | MIT | [paper](https://arxiv.org/abs/2506.15841) | veRL (based on Search-R1) | PPO/GRPO | Single | Outcome | Multi | WebShop/GSM8K/QA | Rule/Model | Yes |
+| [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | ![](https://img.shields.io/github/stars/BytedTsinghua-SIA/MemAgent.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.6 | Bytedance, Tsinghua-SIA | [paper](https://arxiv.org/abs/2507.02259) | veRL | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
+
 
 ## Environment
 | Github Repo | Stars | Date | Org | Task | 
@@ -177,6 +184,7 @@ Some Enumeration:
 - [Atom-Searcher: Enhancing Agentic Deep Research via Fine-Grained Atomic Thought Reward](https://github.com/antgroup/Research-Venus)
 - [MUA-RL: MULTI-TURN USER-INTERACTING AGENTREINFORCEMENT LEARNING FOR AGENTIC TOOL USE](https://github.com/zzwkk/MUA-RL)
 - [Understanding Tool-Integrated Reasoning](https://zhongwenxu.notion.site/Understanding-Tool-Integrated-Reasoning-2551c4e140e3805489fadcc802a1ea83)
+- [Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning](https://arxiv.org/abs/2508.19828)
 
 ## Star History
 
