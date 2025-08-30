@@ -151,6 +151,7 @@ Some Enumeration:
 | [MLE-Dojo](https://github.com/MLE-Dojo/MLE-Dojo) | ![](https://img.shields.io/github/stars/MLE-Dojo/MLE-Dojo.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.5 | GIT, Stanford | MLE |
 | [atropos](https://github.com/NousResearch/atropos) | ![](https://img.shields.io/github/stars/NousResearch/atropos.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | Nous Research | Game/Code/Tool |
 | [InternBootcamp](https://github.com/InternLM/InternBootcamp) | ![](https://img.shields.io/github/stars/InternLM/InternBootcamp.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.4 | InternBootcamp | Coding/QA/Game |
+| [loong](https://github.com/camel-ai/loong) | ![](https://img.shields.io/github/stars/camel-ai/loong.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.3 | CAMEL-AI.org | QAGeneration/Verification/Finetuning/RL |
 | [reasoning-gym](https://github.com/open-thought/reasoning-gym) | ![](https://img.shields.io/github/stars/open-thought/reasoning-gym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | open-thought | Algebra/Arithmetic/Computation/Cognition/Geometry/Graph/Logic/Game |
 | [llmgym](https://github.com/tensorzero/llmgym) | ![](https://img.shields.io/github/stars/tensorzero/llmgym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2025.1 | tensorzero | TextGame/Tool |
 | [debug-gym](https://github.com/microsoft/debug-gym) | ![](https://img.shields.io/github/stars/microsoft/debug-gym.svg?color=F4B0A5&logo=Undertale&logoColor=FB6571) | 2024.11 | Microsoft Research | Debugging/Game/Code |
