@@ -34,7 +34,7 @@ Some Enumeration:
 
 ---
 
-## Base Framework
+## 🔧 Base Framework
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -70,7 +70,7 @@ Some Enumeration:
 
 </details>
 
-## Search/Research/Web
+## 🔍 Search/Research/Web
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -112,7 +112,7 @@ Some Enumeration:
 
 </details>
 
-## GUI
+## 📱 GUI
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -138,7 +138,7 @@ Some Enumeration:
 
 </details>
 
-## Tool
+## 🔨 Tool
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -172,7 +172,7 @@ Some Enumeration:
 
 </details>
 
-## TextGame
+## 🎮 TextGame
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -202,7 +202,7 @@ Some Enumeration:
 
 </details>
 
-## Code
+## 💻 Code
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -238,7 +238,7 @@ Some Enumeration:
 
 </details>
 
-## QA(Reasoning/Math)
+## 🤔 QA(Reasoning/Math)
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -278,7 +278,7 @@ Some Enumeration:
 
 </details>
 
-## Memory
+## 🧠 Memory
 
 ### Project Overview
 | Github Repo | Stars | Date | Org | Paper Link | RL Framework |
@@ -296,7 +296,7 @@ Some Enumeration:
 
 </details>
 
-## Environment
+## ⛰️ Environment
 
 | Github Repo | Stars | Date | Org | Task | 
 | :----: | :----: | :----: |  :----: | :----: |
