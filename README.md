@@ -8,11 +8,12 @@
 ![Web](https://img.shields.io/badge/Web-14-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-11-D89F7B?style=for-the-badge)
-<br>
 ![Game](https://img.shields.io/badge/Game-8-1F4CAD?style=for-the-badge)
+<br>
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-2-007a88?style=for-the-badge)
+![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-26-FA5A4C?style=for-the-badge)
 
 </div>
@@ -297,6 +298,29 @@ Some Enumeration:
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [MEM1](https://github.com/MIT-MI/MEM1) | PPO/GRPO | Single | Outcome | Multi | WebShop/GSM8K/QA | Rule/Model | Yes |
 | [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
+
+</details>
+
+## 🏥 Biomedical
+
+
+| Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
+| :----: | :----: | :----: |  :----: | :----: | :----: |
+| [MMedAgent-RL](https://github.com/JanerhYang/MMedAgent-RL) | <img src="https://img.shields.io/github/stars/JanerhYang/MMedAgent-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Unknown | [paper](https://arxiv.org/abs/2506.00555) | Unknown |
+| [DoctorAgent-RL](https://github.com/JarvisUSTC/DoctorAgent-RL) | <img src="https://img.shields.io/github/stars/JarvisUSTC/DoctorAgent-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | UCAS/CAS/USTC | [Paper](https://arxiv.org/pdf/2505.19630) | RAGEN |
+| [Biomni](https://github.com/snap-stanford/Biomni) | <img src="https://img.shields.io/github/stars/snap-stanford/Biomni?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | Stanford University (SNAP) | [Paper](https://www.biorxiv.org/content/10.1101/2025.05.30.656746v1) | Custom |
+
+
+<details>
+<summary>📋 Click to view technical details</summary>
+
+| Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [MMedAgent-RL](https://github.com/JanerhYang/MMedAgent-RL) | Unknown | Multi | Unknown | Unknown | Unknown | Unknown | Unknown |
+| [DoctorAgent-RL](https://github.com/JarvisUSTC/DoctorAgent-RL) | GRPO | Multi | Both | Multi | Consultation/Diagnosis | Model/Rule | No |
+| [Biomni](https://github.com/snap-stanford/Biomni) | TBD | Single | TBD | Single | scRNAseq/CRISPR/ADMET/Knowledge | TBD | Yes |
+
+
 
 </details>
 
