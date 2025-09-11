@@ -8,14 +8,14 @@
 ![General](https://img.shields.io/badge/General-4-4E6813?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-14-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-6-A259FF?style=for-the-badge)
-![Tool](https://img.shields.io/badge/Tool-11-D89F7B?style=for-the-badge)
-![Game](https://img.shields.io/badge/Game-8-1F4CAD?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-10-D89F7B?style=for-the-badge)
+![Game](https://img.shields.io/badge/Game-7-1F4CAD?style=for-the-badge)
 <br>
-![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
-![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
+![Code](https://img.shields.io/badge/Code-10-A47B67?style=for-the-badge)
+![QA](https://img.shields.io/badge/QA-13-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-2-007a88?style=for-the-badge)
 ![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-26-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-27-FA5A4C?style=for-the-badge)
 
 </div>
 
