@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentsMeetRL Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Google Sans', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #202124;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding: 48px 32px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.75rem;
+            font-weight: 400;
+            color: #202124;
+            margin-bottom: 16px;
+            letter-spacing: -0.025em;
+        }
+
+        .header p {
+            font-size: 1.125rem;
+            color: #5f6368;
+            margin-bottom: 24px;
+        }
+
+        .project-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            border-radius: 32px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(26, 115, 232, 0.3);
+        }
+
+        .project-info:hover {
+            background: linear-gradient(135deg, #1557b0, #1a73e8);
+            box-shadow: 0 8px 24px rgba(26, 115, 232, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .project-info svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1a73e8, #4285f4);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:nth-child(1)::before { background: linear-gradient(90deg, #1a73e8, #4285f4); }
+        .stat-card:nth-child(2)::before { background: linear-gradient(90deg, #34a853, #4caf50); }
+        .stat-card:nth-child(3)::before { background: linear-gradient(90deg, #ea4335, #f44336); }
+        .stat-card:nth-child(4)::before { background: linear-gradient(90deg, #fbbc04, #ff9800); }
+
+        .stat-card:hover {
+            box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+            transform: translateY(-6px) scale(1.02);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .stat-card:hover::before {
+            height: 6px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:nth-child(1) .stat-number { color: #1a73e8; }
+        .stat-card:nth-child(2) .stat-number { color: #34a853; }
+        .stat-card:nth-child(3) .stat-number { color: #ea4335; }
+        .stat-card:nth-child(4) .stat-number { color: #fbbc04; }
+
+        .stat-card:hover .stat-number {
+            transform: scale(1.1);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #5f6368;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            font-weight: 500;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .chart-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #8e24aa, #9c27b0);
+            transition: all 0.3s ease;
+        }
+
+        .chart-card:nth-child(1)::before { background: linear-gradient(90deg, #8e24aa, #9c27b0); }
+        .chart-card:nth-child(2)::before { background: linear-gradient(90deg, #00acc1, #26c6da); }
+
+        .chart-card:hover {
+            box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+            transform: translateY(-4px) scale(1.01);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .chart-card:hover::before {
+            height: 5px;
+        }
+
+        .chart-title {
+            font-size: 1.25rem;
+            color: #202124;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: -0.025em;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #1a73e8;
+            transition: all 0.3s ease;
+        }
+
+        /* Different colors for different category cards */
+        .category-card:nth-child(1)::before { background: linear-gradient(90deg, #ff6b6b, #ee5a52); }
+        .category-card:nth-child(2)::before { background: linear-gradient(90deg, #4ecdc4, #44a08d); }
+        .category-card:nth-child(3)::before { background: linear-gradient(90deg, #45b7d1, #96c93d); }
+        .category-card:nth-child(4)::before { background: linear-gradient(90deg, #f9ca24, #f0932b); }
+        .category-card:nth-child(5)::before { background: linear-gradient(90deg, #6c5ce7, #a29bfe); }
+        .category-card:nth-child(6)::before { background: linear-gradient(90deg, #fd79a8, #fdcb6e); }
+        .category-card:nth-child(7)::before { background: linear-gradient(90deg, #00b894, #00cec9); }
+        .category-card:nth-child(8)::before { background: linear-gradient(90deg, #e17055, #d63031); }
+        .category-card:nth-child(9)::before { background: linear-gradient(90deg, #74b9ff, #0984e3); }
+        .category-card:nth-child(10)::before { background: linear-gradient(90deg, #a29bfe, #6c5ce7); }
+        .category-card:nth-child(11)::before { background: linear-gradient(90deg, #55a3ff, #003d82); }
+
+        .category-card:hover {
+            box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+            transform: translateY(-6px) scale(1.02);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .category-card:hover::before {
+            height: 5px;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #dadce0;
+        }
+
+        .category-title {
+            font-size: 1.125rem;
+            color: #202124;
+            font-weight: 500;
+            letter-spacing: -0.025em;
+        }
+
+        .category-count {
+            background: #1a73e8;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .repo-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .repo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f3f4;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 2px 0;
+        }
+
+        .repo-item:hover {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .repo-item:last-child {
+            border-bottom: none;
+        }
+
+        .repo-name {
+            font-weight: 500;
+            color: #1a73e8;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        .repo-stars {
+            background: #fef7e0;
+            color: #ea8600;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            margin: 32px 0;
+            padding: 32px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Top sticky loading/progress bar */
+        .top-loading {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: 0 0 16px 0;
+            background: rgba(255,255,255,0.95);
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 10px 14px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            display: none;
+        }
+        .top-loading-inner {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .top-loading-text {
+            color: #202124;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .top-progress-track {
+            flex: 1;
+            height: 8px;
+            background: #f1f3f4;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .top-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #1a73e8, #34a853);
+            transition: width 0.2s ease;
+        }
+
+
+        @media (max-width: 1200px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .chart-canvas {
+            max-height: 400px;
+            transition: all 0.3s ease;
+        }
+
+        .chart-canvas:hover {
+            transform: scale(1.02);
+        }
+
+        /* Subtle scrollbar styling */
+        .repo-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .repo-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .repo-list::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.2);
+            border-radius: 2px;
+        }
+
+        .repo-list::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+
+        /* Enhanced category count styling */
+        .category-count {
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-count {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AgentsMeetRL 🔥</h1>
+            <p>An Awesome List for Reinforcement Learning Based Agentic LLM Open-Source Repos</p>
+            <p>Welcome to the Era of Experience!</p>
+            <a href="https://github.com/thinkwee/AgentsMeetRL" target="_blank" class="project-info">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+
+        <div class="top-loading" id="top-loading">
+            <div class="top-loading-inner">
+                <div class="top-loading-text" id="top-loading-text">Loading repository data...</div>
+                <div class="top-progress-track"><div class="top-progress-bar" id="top-progress-bar"></div></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="total-repos">0</div>
+                <div class="stat-label">Total Repositories in AgentsMeetRL</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-stars">0</div>
+                <div class="stat-label">Stars of All Repositories in AgentsMeetRL</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-categories">0</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="awesome-list-stars">0</div>
+                <div class="stat-label">AgentsMeetRL Stars</div>
+            </div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <div class="chart-title">Repositories by Category</div>
+                <canvas id="categoryChart" class="chart-canvas"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Stars Distribution by Category</div>
+                <canvas id="starsChart" class="chart-canvas"></canvas>
+            </div>
+        </div>
+
+        <div class="categories-grid" id="categories-container" style="display: none;">
+        </div>
+    </div>
+
+    <script>
+        // Repository data will be built dynamically from GitHub README markdown
+        let repositoryData = {};
+
+        let repoStars = {};
+        let totalStars = 0;
+        let totalRepos = 0;
+        let awesomeListStars = 0;
+
+        // Enhanced function to remove all emojis from text
+        function removeEmojis(text) {
+            return text
+                // Remove standard emoji ranges
+                .replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons
+                .replace(/[\u{1F300}-\u{1F5FF}]/gu, '') // Misc Symbols and Pictographs
+                .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transport and Map
+                .replace(/[\u{1F1E0}-\u{1F1FF}]/gu, '') // Regional indicator symbols
+                .replace(/[\u{2600}-\u{26FF}]/gu, '')   // Misc symbols
+                .replace(/[\u{2700}-\u{27BF}]/gu, '')   // Dingbats
+                .replace(/[\u{1F900}-\u{1F9FF}]/gu, '') // Supplemental Symbols and Pictographs
+                .replace(/[\u{1FA70}-\u{1FAFF}]/gu, '') // Symbols and Pictographs Extended-A
+                // Remove variation selectors that make text characters into emoji
+                .replace(/[\u{FE00}-\u{FE0F}]/gu, '')   // Variation selectors
+                // Remove zero-width joiner sequences
+                .replace(/[\u{200D}]/gu, '')             // Zero width joiner
+                // Remove any remaining emoji presentation sequences
+                .replace(/\p{Emoji_Presentation}/gu, '') // Emoji presentation characters
+                .replace(/\p{Emoji}/gu, '')              // All emoji characters
+                // Clean up extra whitespace
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        // Fetch stars for all repositories using parallel requests
+        async function fetchStars() {
+            const allRepos = [];
+            Object.values(repositoryData).forEach(repos => {
+                repos.forEach(repo => {
+                    allRepos.push(repo.stars);
+                });
+            });
+
+            totalRepos = allRepos.length;
+
+            // Update progress
+            const topLoading = document.getElementById('top-loading');
+            const topText = document.getElementById('top-loading-text');
+            const topBar = document.getElementById('top-progress-bar');
+            topLoading.style.display = 'block';
+            let completed = 0;
+            
+            // Process in batches to avoid overwhelming the API
+            const batchSize = 10;
+            const batches = [];
+            for (let i = 0; i < allRepos.length; i += batchSize) {
+                batches.push(allRepos.slice(i, i + batchSize));
+            }
+
+            for (const batch of batches) {
+                const promises = batch.map(async (repoPath) => {
+                    try {
+                        const response = await fetch(`https://img.shields.io/github/stars/${repoPath}`);
+                        if (response.ok) {
+                            const svgText = await response.text();
+                            const starCount = parseStarsFromSVG(svgText);
+                            repoStars[repoPath] = starCount;
+                            totalStars += starCount;
+                        } else {
+                            repoStars[repoPath] = 0;
+                        }
+                    } catch (error) {
+                        console.error(`Error fetching stars for ${repoPath}:`, error);
+                        repoStars[repoPath] = 0;
+                    }
+                    
+                    completed++;
+                    const progress = Math.round((completed / allRepos.length) * 100);
+                    topText.textContent = `Fetching repository stars... ${progress}% (${completed}/${allRepos.length})`;
+                    topBar.style.width = `${progress}%`;
+                });
+                
+                await Promise.all(promises);
+                
+                // Small delay between batches to be respectful to the API
+                if (batches.indexOf(batch) < batches.length - 1) {
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+            }
+        }
+        // Fetch and parse markdown from GitHub to build repositoryData
+        async function fetchAndParseMarkdown() {
+            try {
+                // Use raw content URL for README
+                const readmeUrl = 'https://raw.githubusercontent.com/thinkwee/AgentsMeetRL/main/README.md';
+                const res = await fetch(readmeUrl, { cache: 'no-store' });
+                if (!res.ok) return;
+                const md = await res.text();
+
+                // Parse categories and repos from tables under H2 headings.
+                const lines = md.split(/\r?\n/);
+                const data = {};
+
+                // Helper: normalize category heading to dashboard category key with emoji
+                function normalizeCategory(raw) {
+                    const t = raw.toLowerCase();
+                    if (t.includes('base framework')) return '🔧 Base Framework';
+                    if (t.includes('search/research/web') || t === 'web' || t.includes('search') || t.includes('research')) return '🔍 Search/Research/Web';
+                    if (t.includes('gui')) return '📱 GUI';
+                    if (t.includes('general')) return '💪 General/MultiTask';
+                    if (t.includes('tool')) return '🔨 Tool';
+                    if (t.includes('textgame') || t.includes('game')) return '🎮 TextGame';
+                    if (t.includes('code')) return '💻 Code';
+                    if (t.includes('qa') || t.includes('reasoning') || t.includes('math')) return '🤔 QA(Reasoning/Math)';
+                    if (t.includes('memory')) return '🧠 Memory';
+                    if (t.includes('biomedical')) return '🏥 Biomedical';
+                    if (t.includes('environment')) return '⛰️ Environment';
+                    if (t.includes('embodied')) return '🦾 Embodied';
+                    return null;
+                }
+
+                let currentCategory = null;
+                let inDetails = false;
+                const categoryHeaderRegex = /^##\s+(.+?)\s*$/;
+                const repoTableRowRegex = /^\|\s*\[(.+?)\]\((https?:\/\/github\.com\/[^\s)]+)\)\s*\|/i;
+
+                for (const line of lines) {
+                    if (line.includes('<details')) { inDetails = true; continue; }
+                    if (line.includes('</details>')) { inDetails = false; continue; }
+
+                    const catMatch = line.match(categoryHeaderRegex);
+                    if (catMatch) {
+                        const heading = catMatch[1].trim();
+                        // Skip sections explicitly not to parse
+                        const skip = /under review|waiting for open source|star history|citation/i.test(heading);
+                        if (skip) { currentCategory = null; continue; }
+                        const normalized = normalizeCategory(heading.replace(/^([\u{1F300}-\u{1FAFF}]|\p{Emoji_Presentation})\s*/u, ''));
+                        currentCategory = normalized;
+                        if (currentCategory && !data[currentCategory]) data[currentCategory] = [];
+                        continue;
+                    }
+
+                    if (!currentCategory || inDetails) continue;
+
+                    // Parse repo rows from markdown tables
+                    const rowMatch = line.match(repoTableRowRegex);
+                    if (rowMatch) {
+                        const name = rowMatch[1].trim();
+                        const url = rowMatch[2].trim();
+                        const pathMatch = url.match(/github\.com\/(.+?\/.+?)(?:$|\)|\s)/i);
+                        const repoPath = pathMatch ? pathMatch[1] : '';
+                        if (repoPath) {
+                            data[currentCategory].push({ name, url, stars: repoPath });
+                        }
+                    }
+                }
+
+                // If nothing parsed, keep existing data (noop)
+                if (Object.keys(data).length > 0) {
+                    repositoryData = data;
+                }
+            } catch (e) {
+                console.error('Failed to fetch/parse README:', e);
+            }
+        }
+
+
+        // Fetch AgentsMeetRL awesome list stars
+        async function fetchAwesomeListStars() {
+            try {
+                const response = await fetch(`https://img.shields.io/github/stars/thinkwee/AgentsMeetRL`);
+                if (response.ok) {
+                    const svgText = await response.text();
+                    awesomeListStars = parseStarsFromSVG(svgText);
+                }
+            } catch (error) {
+                console.error('Error fetching awesome list stars:', error);
+                awesomeListStars = 0;
+            }
+        }
+
+        function parseStarsFromSVG(svgText) {
+            try {
+                // Optimized single regex to find star count
+                // Look for numbers in text elements, prioritizing the last (usually the star count)
+                const numberMatch = svgText.match(/<text[^>]*>([^<]*?(\d+(?:\.\d+)?[kKmM]?)[^<]*?)<\/text>/g);
+                
+                if (numberMatch && numberMatch.length > 0) {
+                    // Get the last match (usually the star count)
+                    const lastMatch = numberMatch[numberMatch.length - 1];
+                    const contentMatch = lastMatch.match(/<text[^>]*>([^<]+)<\/text>/);
+                    
+                    if (contentMatch) {
+                        const content = contentMatch[1].trim();
+                        const numberMatch = content.match(/(\d+(?:\.\d+)?[kKmM]?)/);
+                        
+                        if (numberMatch) {
+                            const count = numberMatch[1];
+                            
+                            // Handle k/K and m/M suffixes
+                            if (count.toLowerCase().endsWith('k')) {
+                                return Math.round(parseFloat(count) * 1000);
+                            } else if (count.toLowerCase().endsWith('m')) {
+                                return Math.round(parseFloat(count) * 1000000);
+                            }
+                            return parseInt(count) || 0;
+                        }
+                    }
+                }
+
+                // Fallback: look for any number in the SVG
+                const fallbackMatch = svgText.match(/>\s*(\d+(?:\.\d+)?[kKmM]?)\s*</);
+                if (fallbackMatch) {
+                    const count = fallbackMatch[1];
+                    if (count.toLowerCase().endsWith('k')) {
+                        return Math.round(parseFloat(count) * 1000);
+                    } else if (count.toLowerCase().endsWith('m')) {
+                        return Math.round(parseFloat(count) * 1000000);
+                    }
+                    return parseInt(count) || 0;
+                }
+
+                return 0;
+            } catch (error) {
+                return 0;
+            }
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toString();
+        }
+
+        function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const startTime = Date.now();
+            
+            const updateCounter = () => {
+                const elapsed = Date.now() - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(start + (target - start) * easeOutCubic);
+                
+                element.textContent = formatNumber(current);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = formatNumber(target);
+                }
+            };
+            
+            updateCounter();
+        }
+
+        function updateStats() {
+            const totalReposEl = document.getElementById('total-repos');
+            const totalStarsEl = document.getElementById('total-stars');
+            const totalCategoriesEl = document.getElementById('total-categories');
+            const awesomeListStarsEl = document.getElementById('awesome-list-stars');
+
+            animateCounter(totalReposEl, totalRepos);
+            animateCounter(totalStarsEl, totalStars);
+            animateCounter(totalCategoriesEl, Object.keys(repositoryData).length);
+            animateCounter(awesomeListStarsEl, awesomeListStars);
+        }
+
+        function createCharts() {
+            const categoryNames = Object.keys(repositoryData);
+            const categoryCounts = categoryNames.map(name => repositoryData[name].length);
+            const categoryStars = categoryNames.map(name => 
+                repositoryData[name].reduce((sum, repo) => sum + (repoStars[repo.stars] || 0), 0)
+            );
+
+            // Create labels without emojis for charts
+            const categoryLabelsNoEmoji = categoryNames.map(name => removeEmojis(name));
+
+            const colors = [
+                '#1a73e8', '#34a853', '#ea4335', '#fbbc04', '#9aa0a6',
+                '#ff6d01', '#4285f4', '#00acc1', '#8e24aa', '#43a047'
+            ];
+
+            // Category counts chart
+            new Chart(document.getElementById('categoryChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: categoryLabelsNoEmoji,
+                    datasets: [{
+                        data: categoryCounts,
+                        backgroundColor: colors,
+                        borderWidth: 3,
+                        borderColor: '#fff',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        animateRotate: true,
+                        animateScale: true,
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 15,
+                                font: {
+                                    size: 12,
+                                    weight: '500'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            titleColor: '#fff',
+                            bodyColor: '#fff',
+                            borderColor: '#1a73e8',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            displayColors: true,
+                            callbacks: {
+                                label: function(context) {
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                    return `${context.label}: ${context.parsed} repos (${percentage}%)`;
+                                }
+                            }
+                        }
+                    },
+                    onHover: (event, activeElements) => {
+                        event.native.target.style.cursor = activeElements.length > 0 ? 'pointer' : 'default';
+                    }
+                }
+            });
+
+            // Stars distribution chart
+            new Chart(document.getElementById('starsChart'), {
+                type: 'bar',
+                data: {
+                    labels: categoryLabelsNoEmoji,
+                    datasets: [{
+                        label: 'Total Stars',
+                        data: categoryStars,
+                        backgroundColor: colors.map(color => color + '80'),
+                        borderColor: colors,
+                        borderWidth: 2,
+                        borderRadius: 8,
+                        borderSkipped: false,
+                        hoverBackgroundColor: colors,
+                        hoverBorderWidth: 3,
+                        hoverBorderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            titleColor: '#fff',
+                            bodyColor: '#fff',
+                            borderColor: '#1a73e8',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${formatNumber(context.parsed.y)} stars`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0,0,0,0.1)',
+                                drawBorder: false
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return formatNumber(value);
+                                },
+                                font: {
+                                    size: 11,
+                                    weight: '500'
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                font: {
+                                    size: 11,
+                                    weight: '500'
+                                }
+                            }
+                        }
+                    },
+                    onHover: (event, activeElements) => {
+                        event.native.target.style.cursor = activeElements.length > 0 ? 'pointer' : 'default';
+                    }
+                }
+            });
+        }
+
+
+        function createCategoryCards() {
+            const container = document.getElementById('categories-container');
+            container.innerHTML = '';
+
+            Object.entries(repositoryData).forEach(([category, repos]) => {
+                const categoryStars = repos.reduce((sum, repo) => sum + (repoStars[repo.stars] || 0), 0);
+                
+                // Sort repos by star count (descending)
+                const sortedRepos = repos.sort((a, b) => (repoStars[b.stars] || 0) - (repoStars[a.stars] || 0));
+                
+                const card = document.createElement('div');
+                card.className = 'category-card';
+                
+                card.innerHTML = `
+                    <div class="category-header">
+                        <div class="category-title">${category}</div>
+                        <div class="category-count">${repos.length} repos</div>
+                    </div>
+                    <div class="repo-list">
+                        ${sortedRepos.map(repo => `
+                            <div class="repo-item" data-repo-url="${repo.url}">
+                                <span class="repo-name">${repo.name}</span>
+                                <div class="repo-stars">⭐ ${formatNumber(repoStars[repo.stars] || 0)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                // Add click event listeners for direct navigation
+                const repoItems = card.querySelectorAll('.repo-item');
+                repoItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        const repoUrl = item.dataset.repoUrl;
+                        window.open(repoUrl, '_blank');
+                    });
+                });
+                
+                container.appendChild(card);
+            });
+        }
+
+        async function initDashboard() {
+            // Build data from README first
+            await fetchAndParseMarkdown();
+            
+            // Fetch both repository stars and awesome list stars in parallel
+            await Promise.all([fetchStars(), fetchAwesomeListStars()]);
+            
+            // Hide top loading
+            const topLoading = document.getElementById('top-loading');
+            const topBar = document.getElementById('top-progress-bar');
+            const topText = document.getElementById('top-loading-text');
+            topBar.style.width = '100%';
+            topText.textContent = 'Completed';
+            setTimeout(() => { topLoading.style.display = 'none'; }, 400);
+
+            document.getElementById('categories-container').style.display = 'grid';
+            
+            updateStats();
+            createCharts();
+            createCategoryCards();
+        }
+
+        initDashboard();
+    </script>
+</body>
+</html>
