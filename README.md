@@ -391,6 +391,7 @@ Some Enumeration:
 - [SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents](https://arxiv.org/abs/2509.06283)
 - [WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents](https://arxiv.org/abs/2509.06501)
 - [EnvX: Agentize Everything with Agentic AI](https://arxiv.org/abs/2509.08088)
+- [UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.02544)
 
 ## Star History
 
