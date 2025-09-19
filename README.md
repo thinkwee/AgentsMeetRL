@@ -371,6 +371,7 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Task | 
 | :----: | :----: | :----: |  :----: | :----: |
+| [CompassVerifier](https://github.com/open-compass/CompassVerifier) | <img src="https://img.shields.io/github/stars/open-compass/CompassVerifier?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | Shanghai AI Lab | Knowledge/Math/Science/GeneralReasoning |
 | [Mind2Web-2](https://github.com/OSU-NLP-Group/Mind2Web-2) | <img src="https://img.shields.io/github/stars/OSU-NLP-Group/Mind2Web-2?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Ohio State University | Web |
 | [gem](https://github.com/axon-rl/gem) | <img src="https://img.shields.io/github/stars/axon-rl/gem?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | Sea AI Lab | Math/Code/Game/QA |
 | [MLE-Dojo](https://github.com/MLE-Dojo/MLE-Dojo) | <img src="https://img.shields.io/github/stars/MLE-Dojo/MLE-Dojo?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | GIT, Stanford | MLE |
