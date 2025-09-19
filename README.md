@@ -14,6 +14,7 @@
 ![Code](https://img.shields.io/badge/Code-10-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-13-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
+![Embodied](https://img.shields.io/badge/Embodied-1-C0C5CE?style=for-the-badge)
 ![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-27-FA5A4C?style=for-the-badge)
 
@@ -320,6 +321,24 @@ Some Enumeration:
 | [MEM1](https://github.com/MIT-MI/MEM1) | PPO/GRPO | Single | Outcome | Multi | WebShop/GSM8K/QA | Rule/Model | Yes |
 | [Memento](https://github.com/Agent-on-the-Fly/Memento) | soft Q-Learning | Single | Outcome | Multi | Research/QA/Code/Web | External/Rule | Yes |
 | [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
+
+</details>
+
+## 🦾 Embodied
+
+
+| Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
+| :----: | :----: | :----: |  :----: | :----: | :----: |
+| [Embodied-R1](https://github.com/pickxiguapi/Embodied-R1) | <img src="https://img.shields.io/github/stars/pickxiguapi/Embodied-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Tianjing University | [Paper](http://arxiv.org/abs/2508.13998) | veRL |
+
+
+<details>
+<summary>📋 Click to view technical details</summary>
+
+| Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [Embodied-R1](https://github.com/pickxiguapi/Embodied-R1) | GRPO | Single | Outcome | Single | Grounding/Waypoint | Rule | No |
+
 
 </details>
 
