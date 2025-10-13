@@ -12,7 +12,7 @@
 ![Game](https://img.shields.io/badge/Game-7-1F4CAD?style=for-the-badge)
 <br>
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
-![QA](https://img.shields.io/badge/QA-13-FF69B4?style=for-the-badge)
+![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-1-C0C5CE?style=for-the-badge)
 ![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
@@ -271,6 +271,7 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [AgentFlow](https://github.com/lupantech/AgentFlow) | <img src="https://img.shields.io/github/stars/lupantech/AgentFlow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.09 | Stanford University | [arXiv](https://arxiv.org/abs/2510.05592) | veRL |
 | [ARPO](https://github.com/dongguanting/ARPO) | <img src="https://img.shields.io/github/stars/dongguanting/ARPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | RUC, Kuaishou | [Paper](https://arxiv.org/abs/2507.19849) | veRL |
 | [terminal-bench-rl](https://github.com/Danau5tin/terminal-bench-rl) | <img src="https://img.shields.io/github/stars/Danau5tin/terminal-bench-rl?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | Individual (Danau5tin) | N/A | rLLM |
 | [MOTIF](https://github.com/purbeshmitra/MOTIF) | <img src="https://img.shields.io/github/stars/purbeshmitra/MOTIF?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | University of Maryland | [Paper](https://arxiv.org/abs/2507.02851) | trl |
@@ -290,6 +291,7 @@ Some Enumeration:
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [AgentFlow](https://github.com/lupantech/AgentFlow) | Flow-GRPO | Single | Outcome | Multi | Search/Math/QA | Model/External | Yes |
 | [ARPO](https://github.com/dongguanting/ARPO) | GRPO | Single | Outcome | Multi | Math/Coding | Model/Rule | Yes |
 | [terminal-bench-rl](https://github.com/Danau5tin/terminal-bench-rl) | GRPO | Single | Outcome | Multi | Coding/Terminal | Model+External Verifier | Yes |
 | [MOTIF](https://github.com/purbeshmitra/MOTIF) | GRPO | Single | Outcome | Multi | QA | Rule | No |
