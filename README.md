@@ -417,6 +417,7 @@ Some Enumeration:
 - [EnvX: Agentize Everything with Agentic AI](https://arxiv.org/abs/2509.08088)
 - [UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.02544)
 - [UI-Venus Technical Report: Building High-performance UI Agents with RFT](https://arxiv.org/abs/2508.10833)
+- [Agent2 : An Agent-Generates-Agent Framework for Reinforcement Learning Automation](https://arxiv.org/abs/2509.13368)
 
 ## Star History
 
