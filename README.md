@@ -5,16 +5,16 @@
 <div align="center">
   
 ![Base Framework](https://img.shields.io/badge/Base_Framework-12-BFA2DB?style=for-the-badge)
-![General](https://img.shields.io/badge/General-4-4E6813?style=for-the-badge)
-![Web](https://img.shields.io/badge/Web-15-845C40?style=for-the-badge)
+![General](https://img.shields.io/badge/General-5-4E6813?style=for-the-badge)
+![Web](https://img.shields.io/badge/Web-17-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-8-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-10-D89F7B?style=for-the-badge)
 ![Game](https://img.shields.io/badge/Game-7-1F4CAD?style=for-the-badge)
 <br>
 ![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
-![QA](https://img.shields.io/badge/QA-14-FF69B4?style=for-the-badge)
+![QA](https://img.shields.io/badge/QA-17-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
-![Embodied](https://img.shields.io/badge/Embodied-1-C0C5CE?style=for-the-badge)
+![Embodied](https://img.shields.io/badge/Embodied-2-C0C5CE?style=for-the-badge)
 ![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
 ![Environment](https://img.shields.io/badge/Environment-28-FA5A4C?style=for-the-badge)
 
