@@ -20,6 +20,12 @@
 
 </div>
 
+<div align="center">
+
+[![Interactive Dashboard](https://img.shields.io/badge/📊_Interactive_Dashboard-Visit_Website-blue?style=for-the-badge)](https://thinkwee.top/amr/)
+
+</div>
+
 # When LLM Agents Meet Reinforcement Learning
 
 **AgentsMeetRL** is an awesome list that summarizes **open-source repositories** for training LLM Agents using reinforcement learning:
