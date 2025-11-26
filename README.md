@@ -275,6 +275,7 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [SafeSearch](https://github.com/amazon-science/SafeSearch) | <img src="https://img.shields.io/github/stars/amazon-science/SafeSearch?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Amazon Science | -- | veRL |
 | [Agent0](https://github.com/aiming-lab/Agent0) | <img src="https://img.shields.io/github/stars/aiming-lab/Agent0?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | UNC‑Chapel Hill / Salesforce Research / Stanford University | [Paper](https://arxiv.org/abs/2511.16043) | veRL |
 | [KG-R1](https://github.com/Jinyeop3110/KG-R1) | <img src="https://img.shields.io/github/stars/Jinyeop3110/KG-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | UIUC/Google | [Paper1](https://arxiv.org/pdf/2503.09516), [Paper2](https://arxiv.org/abs/2505.15117) | veRL |
 | [AgentFlow](https://github.com/lupantech/AgentFlow) | <img src="https://img.shields.io/github/stars/lupantech/AgentFlow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.09 | Stanford University | [arXiv](https://arxiv.org/abs/2510.05592) | veRL |
@@ -297,6 +298,7 @@ Some Enumeration:
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [SafeSearch](https://github.com/amazon-science/SafeSearch) | PPO (GAE/GRPO) | Single | Both | Multi | QA/Search | Rule + Model | Search |
 | [Agent0](https://github.com/aiming-lab/Agent0) | ADPO | Multi | Process | Multi | Math/Visual | Model/Verifier | Yes |
 | [KG-R1](https://github.com/Jinyeop3110/KG-R1) | GRPO/PPO | Single | Both | Multi | KGQA | Rule/Model | KG Retrieval |
 | [AgentFlow](https://github.com/lupantech/AgentFlow) | Flow-GRPO | Single | Outcome | Multi | Search/Math/QA | Model/External | Yes |
