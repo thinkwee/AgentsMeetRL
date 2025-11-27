@@ -5,13 +5,13 @@
 <div align="center">
   
 ![Base Framework](https://img.shields.io/badge/Base_Framework-12-BFA2DB?style=for-the-badge)
-![General](https://img.shields.io/badge/General-5-4E6813?style=for-the-badge)
+![General](https://img.shields.io/badge/General-6-4E6813?style=for-the-badge)
 ![Web](https://img.shields.io/badge/Web-17-845C40?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/GUI-8-A259FF?style=for-the-badge)
 ![Tool](https://img.shields.io/badge/Tool-10-D89F7B?style=for-the-badge)
 ![Game](https://img.shields.io/badge/Game-7-1F4CAD?style=for-the-badge)
 <br>
-![Code](https://img.shields.io/badge/Code-11-A47B67?style=for-the-badge)
+![Code](https://img.shields.io/badge/Code-12-A47B67?style=for-the-badge)
 ![QA](https://img.shields.io/badge/QA-17-FF69B4?style=for-the-badge)
 ![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-2-C0C5CE?style=for-the-badge)
@@ -251,7 +251,7 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
-| [PPP-Agent](https://github.com/sunnweiwei/PPP-Agent) | <img src="https://img.shields.io/github/stars/sunnweiwei/PPP-Agent? style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | CMU/OpenHands | [Paper](https://arxiv.org/abs/2511.02208) | veRL |
+| [PPP-Agent](https://github.com/sunnweiwei/PPP-Agent) | <img src="https://img.shields.io/github/stars/sunnweiwei/PPP-Agent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | CMU/OpenHands | [Paper](https://arxiv.org/abs/2511.02208) | veRL |
 | [RepoDeepSearch](https://github.com/Mizersy/RepoDeepSearch) | <img src="https://img.shields.io/github/stars/Mizersy/RepoDeepSearch?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | PKU, Bytedance, BIT | [Paper](https://arxiv.org/abs/2508.03012) | veRL |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | <img src="https://img.shields.io/github/stars/wshi83/MedAgentGym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Emory/Georgia Tech | [Paper](https://arxiv.org/pdf/2506.04405) | Hugginface |
 | [CURE](https://github.com/Gen-Verse/CURE) | <img src="https://img.shields.io/github/stars/Gen-Verse/CURE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | University of Chicago <br> Princeton/ByteDance | [Paper](https://arxiv.org/pdf/2506.03136) | Huggingface |
