@@ -16,7 +16,7 @@
 ![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-2-C0C5CE?style=for-the-badge)
 ![Biomedical](https://img.shields.io/badge/Biomedical-3-ffc884?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-28-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-32-FA5A4C?style=for-the-badge)
 
 </div>
 
