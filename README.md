@@ -486,3 +486,5 @@ If you find this repository useful, please consider citing it:
 <div align="center">
   <p>Made with ❤️ by the AgentsMeetRL community</p>
 </div>
+
+- [ODEI](https://api.odei.ai) - Constitutional world model for AI agents. Neo4j knowledge graph (91 nodes, 6 domains), 7-layer safety guardrails. [GitHub](https://github.com/odei-ai/web)
