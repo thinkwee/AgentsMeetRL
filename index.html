@@ -241,6 +241,8 @@
         .category-card:nth-child(9)::before { background: linear-gradient(90deg, #74b9ff, #0984e3); }
         .category-card:nth-child(10)::before { background: linear-gradient(90deg, #a29bfe, #6c5ce7); }
         .category-card:nth-child(11)::before { background: linear-gradient(90deg, #55a3ff, #003d82); }
+        .category-card:nth-child(12)::before { background: linear-gradient(90deg, #9b59b6, #8e44ad); }
+        .category-card:nth-child(13)::before { background: linear-gradient(90deg, #e74c3c, #c0392b); }
 
         .category-card:hover {
             box-shadow: 0 16px 48px rgba(0,0,0,0.15);
@@ -618,17 +620,18 @@
                 function normalizeCategory(raw) {
                     const t = raw.toLowerCase();
                     if (t.includes('base framework')) return '🔧 Base Framework';
-                    if (t.includes('search/research/web') || t === 'web' || t.includes('search') || t.includes('research')) return '🔍 Search/Research/Web';
-                    if (t.includes('gui')) return '📱 GUI';
+                    if (t.includes('search') && t.includes('rag')) return '🔍 Search & RAG';
+                    if (t.includes('web') && t.includes('gui')) return '🌐 Web & GUI';
                     if (t.includes('general')) return '💪 General/MultiTask';
-                    if (t.includes('tool')) return '🔨 Tool';
-                    if (t.includes('textgame') || t.includes('game')) return '🎮 TextGame';
-                    if (t.includes('code')) return '💻 Code';
-                    if (t.includes('qa') || t.includes('reasoning') || t.includes('math')) return '🤔 QA(Reasoning/Math)';
+                    if (t.includes('tool')) return '🔨 Tool-Use';
+                    if (t.includes('code') && t.includes('swe')) return '💻 Code & SWE';
+                    if (t.includes('reasoning')) return '🤔 Reasoning';
+                    if (t.includes('multi-agent') || t.includes('multi agent')) return '👥 Multi-Agent RL';
                     if (t.includes('memory')) return '🧠 Memory';
-                    if (t.includes('biomedical')) return '🏥 Biomedical';
-                    if (t.includes('environment')) return '⛰️ Environment';
                     if (t.includes('embodied')) return '🦾 Embodied';
+                    if (t.includes('domain')) return '🏷️ Domain-Specific';
+                    if (t.includes('reward') || t.includes('training methodology')) return '🎯 Reward & Training';
+                    if (t.includes('environment')) return '⛰️ Environment';
                     return null;
                 }
 
