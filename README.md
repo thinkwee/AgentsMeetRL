@@ -39,7 +39,6 @@
  - ⚠️ This project is based on code analysis from open-source repositories using LLM coding agents, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
  - 📅 Last updated: 2026-03-24
- - 📢 **2026-03 Update**: Restructured taxonomy from 12 to 16 categories. Added ~70 new repositories covering Sep 2025 – Mar 2026. New categories include Multi-Agent RL, Reward & Training, Safety, VLM Agent, Self-Evolution, and Domain-Specific. Merged the old GUI and Web into Web & GUI, retired TextGame and Biomedical as standalone categories. Total repos grew from ~134 to 205.
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
 
 Taxonomy:
@@ -68,6 +67,9 @@ Some Enumeration:
    - Custom
 
 ---
+
+## Updates
+- 📢 **2026-03 Update**: Restructured taxonomy from 12 to 16 categories. Added ~70 new repositories covering Sep 2025 – Mar 2026. New categories include Multi-Agent RL, Reward & Training, Safety, VLM Agent, Self-Evolution, and Domain-Specific. Merged the old GUI and Web into Web & GUI, retired TextGame and Biomedical as standalone categories. Total repos grew from ~134 to 205.
 
 ## 🔧 Base Framework
 
