@@ -5,21 +5,24 @@
 <div align="center">
 
 ![Base Framework](https://img.shields.io/badge/Base_Framework-18-BFA2DB?style=for-the-badge)
-![General](https://img.shields.io/badge/General-17-4E6813?style=for-the-badge)
-![Search & RAG](https://img.shields.io/badge/Search_&_RAG-21-845C40?style=for-the-badge)
-![Web & GUI](https://img.shields.io/badge/Web_&_GUI-17-A259FF?style=for-the-badge)
+![General](https://img.shields.io/badge/General-16-4E6813?style=for-the-badge)
+![Search & RAG](https://img.shields.io/badge/Search_&_RAG-25-845C40?style=for-the-badge)
+![Web & GUI](https://img.shields.io/badge/Web_&_GUI-20-A259FF?style=for-the-badge)
 <br>
-![Tool](https://img.shields.io/badge/Tool-11-D89F7B?style=for-the-badge)
-![Code & SWE](https://img.shields.io/badge/Code_&_SWE-16-A47B67?style=for-the-badge)
-![Reasoning](https://img.shields.io/badge/Reasoning-17-FF69B4?style=for-the-badge)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent-4-1F4CAD?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-12-D89F7B?style=for-the-badge)
+![Code & SWE](https://img.shields.io/badge/Code_&_SWE-19-A47B67?style=for-the-badge)
+![Reasoning](https://img.shields.io/badge/Reasoning-15-FF69B4?style=for-the-badge)
+![Multi-Agent](https://img.shields.io/badge/Multi--Agent-7-1F4CAD?style=for-the-badge)
 <br>
-![Memory](https://img.shields.io/badge/Memory-5-007a88?style=for-the-badge)
+![Memory](https://img.shields.io/badge/Memory-3-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-2-C0C5CE?style=for-the-badge)
 ![Domain-Specific](https://img.shields.io/badge/Domain--Specific-5-ffc884?style=for-the-badge)
 ![Reward & Training](https://img.shields.io/badge/Reward_&_Training-5-9B59B6?style=for-the-badge)
 <br>
-![Environment](https://img.shields.io/badge/Environment-39-FA5A4C?style=for-the-badge)
+![Safety](https://img.shields.io/badge/Safety-5-E74C3C?style=for-the-badge)
+![VLM Agent](https://img.shields.io/badge/VLM_Agent-7-2ECC71?style=for-the-badge)
+![Self-Evolution](https://img.shields.io/badge/Self--Evolution-6-F39C12?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-40-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -33,9 +36,29 @@
 
 **AgentsMeetRL** is an awesome list that summarizes **open-source repositories** for training LLM Agents using reinforcement learning:
  - 🤖 The criteria for identifying an agent project are that it must have at least one of the following: multi-turn interactions or tool use (so TIR projects, Tool-Integrated Reasoning, are considered in this repo).
- - ⚠️ This project is based on code analysis from open-source repositories using GitHub Copilot Agent, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
+ - ⚠️ This project is based on code analysis from open-source repositories using LLM coding agents, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
+ - 📅 Last updated: 2026-03-24
+ - 📢 **2026-03 Update**: Restructured taxonomy from 12 to 16 categories. Added ~70 new repositories covering Sep 2025 – Mar 2026. New categories include Multi-Agent RL, Reward & Training, Safety, VLM Agent, Self-Evolution, and Domain-Specific. Merged the old GUI and Web into Web & GUI, retired TextGame and Biomedical as standalone categories. Total repos grew from ~134 to 205.
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
+
+Taxonomy:
+ - **Base Framework**: General-purpose RL training frameworks for LLM agents (e.g., veRL, OpenRLHF, trl)
+ - **General/MultiTask**: Agent systems trained/evaluated across multiple tasks or environments
+ - **Search & RAG**: Search-augmented reasoning agents that use retrieval tools to enhance LLM reasoning
+ - **Web & GUI**: Agents that interact with web browsers, mobile/desktop GUIs, or operating systems
+ - **Tool-Use**: Agents trained to invoke external tools (APIs, code executors, MCP, etc.)
+ - **Code & SWE**: Software engineering and code generation agents
+ - **Reasoning**: Reasoning agents with tool-integrated or multi-turn reasoning (math, QA, visual)
+ - **Multi-Agent RL**: Multi-agent collaboration, negotiation, or credit assignment via RL
+ - **Memory**: Agents that learn to manage, retrieve, or evolve memory
+ - **Embodied**: Agents operating in embodied/physical simulation environments
+ - **Domain-Specific**: RL agents for specialized domains (medical, OS tuning, etc.)
+ - **Reward & Training**: Process/outcome reward models and training methodologies for agents
+ - **Safety**: RL for agent safety alignment, adversarial red-teaming, and jailbreak defense/attack
+ - **VLM Agent**: Vision-language model agents trained with RL for multimodal interaction
+ - **Self-Evolution**: Agents that self-evolve via RL feedback loops (⚠️ definition still evolving in the community)
+ - **Environment**: Benchmarks, gyms, and sandbox environments for agent training/evaluation
 
 Some Enumeration:
  - Enumeration for Reward Type:
@@ -116,7 +139,6 @@ Some Enumeration:
 | [VAGEN](https://github.com/RAGEN-AI/VAGEN) | <img src="https://img.shields.io/github/stars/RAGEN-AI/VAGEN?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | RAGEN-AI | [Paper](https://www.notion.so/VAGEN-Training-VLM-Agents-with-Multi-Turn-Reinforcement-Learning-1bfde13afb6e80b792f6d80c7c2fcad0) | veRL |
 | [ART](https://github.com/OpenPipe/ART) | <img src="https://img.shields.io/github/stars/OpenPipe/ART?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | OpenPipe | [Paper](https://github.com/OpenPipe/ART#-citation) | TRL |
 | [OpenManus-RL](https://github.com/OpenManus/OpenManus-RL) | <img src="https://img.shields.io/github/stars/OpenManus/OpenManus-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | UIUC/MetaGPT | -- | Custom |
-| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | <img src="https://img.shields.io/github/stars/RAGEN-AI/RAGEN?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | RAGEN-AI | [Paper](https://arxiv.org/pdf/2504.20073) | veRL |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -139,7 +161,6 @@ Some Enumeration:
 | [VAGEN](https://github.com/RAGEN-AI/VAGEN) | PPO/GRPO | Single | Both | Multi | TextGame/Navigation | All | Yes |
 | [ART](https://github.com/OpenPipe/ART) | GRPO | Multi | Both | Multi | TextGame | All | Yes |
 | [OpenManus-RL](https://github.com/OpenManus/OpenManus-RL) | PPO/DPO/GRPO | Multi | Outcome | Multi | TextGame | All | Yes |
-| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | PPO/GRPO | Single | Both | Multi | TextGame | All | Yes |
 
 </details>
 
@@ -168,7 +189,11 @@ Some Enumeration:
 | [Search-R1](https://github.com/PeterGriffinJin/Search-R1) | <img src="https://img.shields.io/github/stars/PeterGriffinJin/Search-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | UIUC/Google | [paper1](https://arxiv.org/pdf/2503.09516), [paper2](https://arxiv.org/pdf/2505.15117) | veRL |
 | [R1-Searcher](https://github.com/RUCAIBox/R1-Searcher) | <img src="https://img.shields.io/github/stars/RUCAIBox/R1-Searcher?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | RUC | [Paper](https://arxiv.org/pdf/2503.05592) | OpenRLHF |
 | [C-3PO](https://github.com/Chen-GX/C-3PO) | <img src="https://img.shields.io/github/stars/Chen-GX/C-3PO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Alibaba | [Paper](https://arxiv.org/pdf/2502.06205) | OpenRLHF |
-| [Search-o1](https://github.com/RUC-NLPIR/Search-o1) | <img src="https://img.shields.io/github/stars/RUC-NLPIR/Search-o1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | Renmin University of China (RUC) | [Paper](https://arxiv.org/abs/2501.05366) | N/A (Inference Only) |
+| [DeepRetrieval](https://github.com/pat-jj/DeepRetrieval) | <img src="https://img.shields.io/github/stars/pat-jj/DeepRetrieval?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | UIUC | [Paper](https://arxiv.org/abs/2503.00223) | veRL |
+| [SSRL](https://github.com/TsinghuaC3I/SSRL) | <img src="https://img.shields.io/github/stars/TsinghuaC3I/SSRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Tsinghua | [Paper](https://arxiv.org/abs/2508.10874) | Custom |
+| [Research-Venus](https://github.com/antgroup/Research-Venus) | <img src="https://img.shields.io/github/stars/antgroup/Research-Venus?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Ant Group | [Paper](https://arxiv.org/abs/2508.12800) | Custom |
+| [DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | Alibaba/Tongyi Lab | [Paper](https://arxiv.org/abs/2510.24701) | Custom |
+| [DeepDive](https://github.com/THUDM/DeepDive) | <img src="https://img.shields.io/github/stars/THUDM/DeepDive?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | Tsinghua/THUDM | [Paper](https://arxiv.org/abs/2509.10446) | Custom |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -195,7 +220,11 @@ Some Enumeration:
 | [Search-R1](https://github.com/PeterGriffinJin/Search-R1) | PPO/GRPO | Single | Outcome | Multi | Search | All | Search |
 | [R1-Searcher](https://github.com/RUCAIBox/R1-Searcher) | PPO/DPO | Single | Both | Multi | Search | All | Yes |
 | [C-3PO](https://github.com/Chen-GX/C-3PO) | PPO | Multi | Outcome | Multi | Search | Model | Yes |
-| [Search-o1](https://github.com/RUC-NLPIR/Search-o1) | N/A | Single | N/A | Multi | Math/Science QA/Code/Open QA | N/A | Web Search |
+| [DeepRetrieval](https://github.com/pat-jj/DeepRetrieval) | GRPO | Single | Outcome | Multi | Query Generation/IR | Rule | Yes (Search) |
+| [SSRL](https://github.com/TsinghuaC3I/SSRL) | GRPO | Single | Outcome | Multi | Self-Search | Rule | Yes (Self-search) |
+| [Research-Venus](https://github.com/antgroup/Research-Venus) | GRPO | Single | Both | Multi | Deep Research | Model (atomic thought) | Yes (Search) |
+| [DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | RL-based | Single | Outcome | Multi | Deep Research | Model | Yes (Search, Browse) |
+| [DeepDive](https://github.com/THUDM/DeepDive) | GRPO | Single | Outcome | Multi | KG-augmented Search | Rule | Yes (KG + Search) |
 
 </details>
 
@@ -205,7 +234,6 @@ Some Enumeration:
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
 | [MobileAgent](https://github.com/X-PLUG/MobileAgent) | <img src="https://img.shields.io/github/stars/X-PLUG/MobileAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | X-PLUG (TongyiQwen) | [paper](https://arxiv.org/abs/2509.11543) | veRL |
-| [SEAgent](https://github.com/SunzeY/SEAgent) | <img src="https://img.shields.io/github/stars/SunzeY/SEAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Shanghai AI Lab / CUHK | [Paper](https://arxiv.org/abs/2508.04700) | Custom |
 | [InfiGUI-G1](https://github.com/InfiXAI/InfiGUI-G1) | <img src="https://img.shields.io/github/stars/InfiXAI/InfiGUI-G1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | InfiX AI | [Paper](https://arxiv.org/abs/2508.05731) | veRL |
 | [UI-AGILE](https://github.com/KDEGroup/UI-AGILE) | <img src="https://img.shields.io/github/stars/KDEGroup/UI-AGILE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | Xiamen University | [Paper](https://arxiv.org/abs/2507.22025) | Custom |
 | [gui-rcpo](https://github.com/zju-real/gui-rcpo) | <img src="https://img.shields.io/github/stars/zju-real/gui-rcpo?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Zhejiang University | [Paper](https://arxiv.org/abs/2508.05615) | Custom |
@@ -220,7 +248,11 @@ Some Enumeration:
 | [UI-R1](https://github.com/lll6gg/UI-R1) | <img src="https://img.shields.io/github/stars/lll6gg/UI-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | vivo/CUHK | [Paper](https://arxiv.org/pdf/2503.21620) | TRL |
 | [CollabUIAgents](https://github.com/THUNLP-MT/CollabUIAgents) | <img src="https://img.shields.io/github/stars/THUNLP-MT/CollabUIAgents?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Tsinghua/Alibaba/HKUST | [Paper](https://arxiv.org/abs/2502.14496) | Custom |
 | [WebAgent](https://github.com/Alibaba-NLP/WebAgent) | <img src="https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | Alibaba | [paper1](https://arxiv.org/pdf/2501.07572), [paper2](https://arxiv.org/pdf/2505.22648) | LLaMA-Factory |
-| [WebRL](https://github.com/THUDM/WebRL) | <img src="https://img.shields.io/github/stars/THUDM/WebRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2024.11 | Tsinghua/Zhipu AI | [Paper](https://arxiv.org/abs/2411.02337) | Custom |
+| [UI-TARS](https://github.com/bytedance/UI-TARS) | <img src="https://img.shields.io/github/stars/bytedance/UI-TARS?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | ByteDance Seed | [Paper](https://arxiv.org/abs/2509.02544) | Custom |
+| [DigiQ](https://github.com/DigiRL-agent/digiq) | <img src="https://img.shields.io/github/stars/DigiRL-agent/digiq?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | UC Berkeley/CMU/Amazon | [Paper](https://arxiv.org/abs/2502.15760) | Custom |
+| [ZeroGUI](https://github.com/OpenGVLab/ZeroGUI) | <img src="https://img.shields.io/github/stars/OpenGVLab/ZeroGUI?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | Shanghai AI Lab | [Paper](https://arxiv.org/abs/2505.23762) | Custom |
+| [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | <img src="https://img.shields.io/github/stars/Reallm-Labs/InfiGUI-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | Zhejiang University | [Paper](https://arxiv.org/abs/2504.14239) | Custom |
+| [GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | <img src="https://img.shields.io/github/stars/microsoft/GUI-Agent-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Microsoft | [Paper](https://arxiv.org/abs/2502.18906) | Custom |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -228,7 +260,6 @@ Some Enumeration:
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [MobileAgent](https://github.com/X-PLUG/MobileAgent) | semi-online RL | Single | Both | Multi | MobileGUI/Automation | Rule | Yes |
-| [SEAgent](https://github.com/SunzeY/SEAgent) | GRPO | Single | Outcome | Multi | Computer Use (OSWorld) | Model | Yes (Screenshot-based) |
 | [InfiGUI-G1](https://github.com/InfiXAI/InfiGUI-G1) | AEPO | Single | Outcome | Single | GUI/Grounding | Rule | No |
 | [UI-AGILE](https://github.com/KDEGroup/UI-AGILE) | GRPO | Single | Outcome | Single | GUI Grounding | Rule (continuous) | No |
 | [gui-rcpo](https://github.com/zju-real/gui-rcpo) | RCPO | Single | Outcome | Single | GUI Grounding | Rule (self-supervised) | No |
@@ -243,7 +274,11 @@ Some Enumeration:
 | [UI-R1](https://github.com/lll6gg/UI-R1) | GRPO | Single | Process | Both | GUI | Rule | Computer/Phone Use |
 | [CollabUIAgents](https://github.com/THUNLP-MT/CollabUIAgents) | DPO (credit re-assignment) | Multi | Process | Multi | GUI (Mobile + Web) | Model (LLM) | Yes (GUI interaction) |
 | [WebAgent](https://github.com/Alibaba-NLP/WebAgent) | DAPO | Multi | Process | Multi | Web | Model | Yes |
-| [WebRL](https://github.com/THUDM/WebRL) | Actor-Critic RL + ORM | Single | Outcome | Multi | Web Navigation (WebArena) | Model (ORM) | Yes (Web browsing) |
+| [UI-TARS](https://github.com/bytedance/UI-TARS) | Multi-turn RL | Single | Both | Multi | GUI (Cross-platform) | Model | Yes (GUI actions) |
+| [DigiQ](https://github.com/DigiRL-agent/digiq) | Value-based offline RL | Single | Outcome | Multi | Android Device Control | Model (Q-function) | Yes |
+| [ZeroGUI](https://github.com/OpenGVLab/ZeroGUI) | Online RL | Single | Outcome | Multi | GUI Agent | Rule | Yes (GUI actions) |
+| [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | RL + sub-goal guidance | Single | Both | Multi | GUI Reasoning | Rule | Yes |
+| [GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | Value-based RL (VEM) | Single | Outcome | Multi | GUI (Web Shopping) | Model | Yes |
 
 </details>
 
@@ -263,6 +298,7 @@ Some Enumeration:
 | [AWorld](https://github.com/inclusionAI/AWorld) | <img src="https://img.shields.io/github/stars/inclusionAI/AWorld?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | Ant Group (inclusionAI) | [Paper](https://arxiv.org/abs/2508.20404) | veRL |
 | [Agent-R1](https://github.com/0russwest0/Agent-R1) | <img src="https://img.shields.io/github/stars/0russwest0/Agent-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | USTC | [Paper](https://arxiv.org/abs/2511.14460) | veRL |
 | [ReCall](https://github.com/Agent-RL/ReCall) | <img src="https://img.shields.io/github/stars/Agent-RL/ReCall?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | BaiChuan | [Paper](https://arxiv.org/pdf/2503.19470) | veRL |
+| [ToolRL](https://github.com/qiancheng0/ToolRL) | <img src="https://img.shields.io/github/stars/qiancheng0/ToolRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | UIUC | [Paper](https://arxiv.org/abs/2504.13958) | veRL |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -280,6 +316,7 @@ Some Enumeration:
 | [AWorld](https://github.com/inclusionAI/AWorld) | GRPO | Both | Outcome | Multi | Search/Web/Code | External/Rule | Yes |
 | [Agent-R1](https://github.com/0russwest0/Agent-R1) | PPO/GRPO | Single | Both | Multi | Tool-use/QA | Model | Yes |
 | [ReCall](https://github.com/Agent-RL/ReCall) | PPO/GRPO/RLOO/REINFORCE++/ReMax | Single | Outcome | Multi | Tool-use/Math/QA | All | Yes |
+| [ToolRL](https://github.com/qiancheng0/ToolRL) | GRPO/PPO | Single | Outcome | Multi | Tool Learning | Rule/External | Yes |
 
 </details>
 
@@ -295,7 +332,6 @@ Some Enumeration:
 | [CUDA-L1](https://github.com/deepreinforce-ai/CUDA-L1) | <img src="https://img.shields.io/github/stars/deepreinforce-ai/CUDA-L1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | DeepReinforce AI | [Paper](https://arxiv.org/abs/2507.14111) | Custom |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | <img src="https://img.shields.io/github/stars/wshi83/MedAgentGym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Emory/Georgia Tech | [Paper](https://arxiv.org/pdf/2506.04405) | Hugginface |
 | [CURE](https://github.com/Gen-Verse/CURE) | <img src="https://img.shields.io/github/stars/Gen-Verse/CURE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | University of Chicago <br> Princeton/ByteDance | [Paper](https://arxiv.org/pdf/2506.03136) | Huggingface |
-| [MASLab](https://github.com/MASWorks/MASLab) | <img src="https://img.shields.io/github/stars/MASWorks/MASLab?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | MASWorks | [Paper](https://arxiv.org/pdf/2505.16988) | Custom |
 | [Time-R1](https://github.com/ulab-uiuc/Time-R1) | <img src="https://img.shields.io/github/stars/ulab-uiuc/Time-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | UIUC | [Paper](https://arxiv.org/pdf/2505.13508) | veRL |
 | [ML-Agent](https://github.com/MASWorks/ML-Agent) | <img src="https://img.shields.io/github/stars/MASWorks/ML-Agent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | MASWorks | [Paper](https://arxiv.org/pdf/2505.23723) | Custom |
 | [SkyRL](https://github.com/NovaSky-AI/SkyRL) | <img src="https://img.shields.io/github/stars/NovaSky-AI/SkyRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | NovaSky | [Paper](https://arxiv.org/abs/2511.16108) | veRL |
@@ -304,6 +340,10 @@ Some Enumeration:
 | [swe-rl](https://github.com/facebookresearch/swe-rl) | <img src="https://img.shields.io/github/stars/facebookresearch/swe-rl?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Meta/UIUC/CMU | [Paper](https://arxiv.org/abs/2502.18449) | Custom |
 | [rllm](https://github.com/agentica-project/rllm) | <img src="https://img.shields.io/github/stars/agentica-project/rllm?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | Berkeley Sky Computing Lab <br> BAIR / Together AI | [Notion Blog](https://pretty-radio-b75.notion.site/rLLM-A-Framework-for-Post-Training-Language-Agents-21b81902c146819db63cd98a54ba5f31) | veRL |
 | [open-r1](https://github.com/huggingface/open-r1) | <img src="https://img.shields.io/github/stars/huggingface/open-r1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | HuggingFace | -- | TRL |
+| [R1-Code-Interpreter](https://github.com/yongchao98/R1-Code-Interpreter) | <img src="https://img.shields.io/github/stars/yongchao98/R1-Code-Interpreter?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | MIT | [Paper](https://arxiv.org/abs/2505.21668) | Custom |
+| [CTRL](https://github.com/HKUNLP/critic-rl) | <img src="https://img.shields.io/github/stars/HKUNLP/critic-rl?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | HKU/ByteDance | [Paper](https://arxiv.org/abs/2502.03492) | Custom |
+| [DeepAnalyze](https://github.com/ruc-datalab/DeepAnalyze) | <img src="https://img.shields.io/github/stars/ruc-datalab/DeepAnalyze?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | RUC/Tsinghua | [Paper](https://arxiv.org/abs/2510.16872) | Custom |
+| [AceCoder](https://github.com/TIGER-AI-Lab/AceCoder) | <img src="https://img.shields.io/github/stars/TIGER-AI-Lab/AceCoder?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Waterloo (TIGER-Lab) | [Paper](https://arxiv.org/abs/2502.01718) | Custom |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -317,7 +357,6 @@ Some Enumeration:
 | [CUDA-L1](https://github.com/deepreinforce-ai/CUDA-L1) | Contrastive RL | Single | Outcome | Single | CUDA Optimization | Rule (performance) | No |
 | [MedAgentGym](https://github.com/wshi83/MedAgentGym) | SFT/DPO/PPO/GRPO | Single | Outcome | Multi | Medical/Code | External | Yes |
 | [CURE](https://github.com/Gen-Verse/CURE) | PPO | Single | Outcome | Single | Code | External | No |
-| [MASLab](https://github.com/MASWorks/MASLab) | NO RL | Multi | Outcome | Multi | Code/Math/Reasoning | External | Yes |
 | [Time-R1](https://github.com/ulab-uiuc/Time-R1) | PPO/GRPO/DPO | Multi | Outcome | Multi | Temporal | All | Code |
 | [ML-Agent](https://github.com/MASWorks/ML-Agent) | Custom | Single | Process | Multi | Code | All | Yes |
 | [SkyRL](https://github.com/NovaSky-AI/SkyRL) | PPO/GRPO | Single | Outcome | Multi | Math/Code | All | Code |
@@ -326,6 +365,10 @@ Some Enumeration:
 | [swe-rl](https://github.com/facebookresearch/swe-rl) | RL-based | Single | Outcome | Single | SWE (SWE-bench) | Rule (similarity) | No |
 | [rllm](https://github.com/agentica-project/rllm) | PPO/GRPO | Single | Outcome | Multi | Code Edit | External | Yes |
 | [open-r1](https://github.com/huggingface/open-r1) | GRPO | Single | Outcome | Single | Math/Code | All | Yes |
+| [R1-Code-Interpreter](https://github.com/yongchao98/R1-Code-Interpreter) | GRPO | Single | Outcome | Multi | Code Interpretation | Rule/External | Yes (Code exec) |
+| [CTRL](https://github.com/HKUNLP/critic-rl) | RL (critique-revision) | Single | Process | Multi | Code Refinement | Model | Yes (Code exec) |
+| [DeepAnalyze](https://github.com/ruc-datalab/DeepAnalyze) | Curriculum RL | Single | Outcome | Multi | Data Science | Rule/External | Yes (Code exec) |
+| [AceCoder](https://github.com/TIGER-AI-Lab/AceCoder) | GRPO | Single | Outcome | Single | Code Generation | External (test cases) | Yes |
 
 </details>
 
@@ -334,7 +377,6 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
-| [SafeSearch](https://github.com/amazon-science/SafeSearch) | <img src="https://img.shields.io/github/stars/amazon-science/SafeSearch?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Amazon Science | [Paper](https://arxiv.org/abs/2510.17017) | veRL |
 | [Agent0](https://github.com/aiming-lab/Agent0) | <img src="https://img.shields.io/github/stars/aiming-lab/Agent0?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | UNC‑Chapel Hill / Salesforce Research / Stanford University | [Paper](https://arxiv.org/abs/2511.16043) | veRL |
 | [KG-R1](https://github.com/Jinyeop3110/KG-R1) | <img src="https://img.shields.io/github/stars/Jinyeop3110/KG-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | UIUC/Google | [Paper1](https://arxiv.org/pdf/2503.09516), [Paper2](https://arxiv.org/abs/2505.15117) | veRL |
 | [AgentFlow](https://github.com/lupantech/AgentFlow) | <img src="https://img.shields.io/github/stars/lupantech/AgentFlow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.09 | Stanford University | [arXiv](https://arxiv.org/abs/2510.05592) | veRL |
@@ -343,7 +385,6 @@ Some Enumeration:
 | [MOTIF](https://github.com/purbeshmitra/MOTIF) | <img src="https://img.shields.io/github/stars/purbeshmitra/MOTIF?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | University of Maryland | [Paper](https://arxiv.org/abs/2507.02851) | trl |
 | [cmriat/l0](https://github.com/cmriat/l0) | <img src="https://img.shields.io/github/stars/cmriat/l0?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | CMRIAT | [Paper](https://arxiv.org/abs/2506.23667) | veRL |
 | [agent-distillation](https://github.com/Nardien/agent-distillation) | <img src="https://img.shields.io/github/stars/Nardien/agent-distillation?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | KAIST | [Paper](https://arxiv.org/pdf/2505.17612) | Custom |
-| [VDeepEyes](https://github.com/Visual-Agent/DeepEyes) | <img src="https://img.shields.io/github/stars/Visual-Agent/DeepEyes?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | Xiaohongshu/XJTU | [Paper](https://arxiv.org/pdf/2505.14362) | veRL |
 | [EasyR1](https://github.com/hiyouga/EasyR1) | <img src="https://img.shields.io/github/stars/hiyouga/EasyR1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | Individual | [repo1](https://github.com/hiyouga/EasyR1)/[paper2](https://arxiv.org/pdf/2409.19256) | veRL |
 | [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | <img src="https://img.shields.io/github/stars/ADaM-BJTU/AutoCoA?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | BJTU | [Paper](https://arxiv.org/pdf/2503.06580) | veRL |
 | [ToRL](https://github.com/GAIR-NLP/ToRL) | <img src="https://img.shields.io/github/stars/GAIR-NLP/ToRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | SJTU | [Paper](https://arxiv.org/pdf/2503.23383) | veRL |
@@ -357,7 +398,6 @@ Some Enumeration:
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [SafeSearch](https://github.com/amazon-science/SafeSearch) | PPO (GAE/GRPO) | Single | Both | Multi | QA/Search | Rule + Model | Search |
 | [Agent0](https://github.com/aiming-lab/Agent0) | ADPO | Multi | Process | Multi | Math/Visual | Model/Verifier | Yes |
 | [KG-R1](https://github.com/Jinyeop3110/KG-R1) | GRPO/PPO | Single | Both | Multi | KGQA | Rule/Model | KG Retrieval |
 | [AgentFlow](https://github.com/lupantech/AgentFlow) | Flow-GRPO | Single | Outcome | Multi | Search/Math/QA | Model/External | Yes |
@@ -366,7 +406,6 @@ Some Enumeration:
 | [MOTIF](https://github.com/purbeshmitra/MOTIF) | GRPO | Single | Outcome | Multi | QA | Rule | No |
 | [cmriat/l0](https://github.com/cmriat/l0) | PPO | Multi | Process | Multi | QA | All | Yes |
 | [agent-distillation](https://github.com/Nardien/agent-distillation) | PPO | Single | Process | Multi | QA/Math | External | Yes |
-| [VDeepEyes](https://github.com/Visual-Agent/DeepEyes) | PPO/GRPO | Multi | Process | Multi | VQA | All | Yes |
 | [EasyR1](https://github.com/hiyouga/EasyR1) | GRPO | Single | Process | Multi | Vision-Language | Model | Yes |
 | [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | GRPO | Multi | Outcome | Multi | Reasoning/Math/QA | All | Yes |
 | [ToRL](https://github.com/GAIR-NLP/ToRL) | GRPO | Single | Outcome | Single | Math | Rule/External | Yes |
@@ -386,6 +425,9 @@ Some Enumeration:
 | [MASPRM](https://github.com/milad1378yz/MASPRM) | <img src="https://img.shields.io/github/stars/milad1378yz/MASPRM?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | UBC / Huawei | [Paper](https://arxiv.org/abs/2510.24803) | Custom |
 | [ARIA](https://github.com/rhyang2021/ARIA) | <img src="https://img.shields.io/github/stars/rhyang2021/ARIA?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Fudan University | [Paper](https://arxiv.org/abs/2506.00539) | Custom |
 | [AMPO](https://github.com/MozerWang/AMPO) | <img src="https://img.shields.io/github/stars/MozerWang/AMPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | Tongyi Lab, Alibaba | [Paper](https://arxiv.org/abs/2505.02156) | veRL |
+| [MAPoRL](https://github.com/chanwoo-park-official/MAPoRL) | <img src="https://img.shields.io/github/stars/chanwoo-park-official/MAPoRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Academic | -- | Custom |
+| [FlowReasoner](https://github.com/sail-sg/FlowReasoner) | <img src="https://img.shields.io/github/stars/sail-sg/FlowReasoner?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | Sea AI Lab / NUS | [Paper](https://arxiv.org/abs/2504.15257) | Custom |
+| [DrMAS](https://github.com/langfengQ/DrMAS) | <img src="https://img.shields.io/github/stars/langfengQ/DrMAS?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | NTU | [Paper](https://arxiv.org/abs/2602.08847) | Custom |
 
 <details>
 <summary>📋 Click to view technical details</summary>
@@ -396,6 +438,9 @@ Some Enumeration:
 | [MASPRM](https://github.com/milad1378yz/MASPRM) | PRM (trained from MCTS rollouts) | Multi | Process | Multi | Reasoning (GSM8K/MATH/MMLU) | Learned PRM | No |
 | [ARIA](https://github.com/rhyang2021/ARIA) | REINFORCE | Both | Process | Multi | Negotiation/Bargaining | Other | No |
 | [AMPO](https://github.com/MozerWang/AMPO) | BC/AMPO(GRPO improvement) | Multi | Outcome | Multi | Social Interaction | Model-based | No |
+| [MAPoRL](https://github.com/chanwoo-park-official/MAPoRL) | PPO | Multi | Outcome | Multi | Collaborative LLM Tasks | Rule | No |
+| [FlowReasoner](https://github.com/sail-sg/FlowReasoner) | GRPO | Multi | Outcome | Multi | Multi-agent Workflow Design | Rule | Yes |
+| [DrMAS](https://github.com/langfengQ/DrMAS) | GRPO (agent-wise) | Multi | Outcome | Multi | Multi-agent LLM Systems | Rule | No |
 
 </details>
 
@@ -404,8 +449,6 @@ Some Enumeration:
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
-| [MemSkill](https://github.com/ViktorAxelsen/MemSkill) | <img src="https://img.shields.io/github/stars/ViktorAxelsen/MemSkill?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | NTU/UIUC/UIC/Tsinghua | [Paper](https://arxiv.org/abs/2602.02474) | Custom |
-| [MemRL](https://github.com/MemTensor/MemRL) | <img src="https://img.shields.io/github/stars/MemTensor/MemRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | SJTU/Xidian/NUS/USTC/MemTensor | [Paper](https://arxiv.org/abs/2601.03192) | Custom |
 | [MEM1](https://github.com/MIT-MI/MEM1) | <img src="https://img.shields.io/github/stars/MIT-MI/MEM1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | MIT | [Paper](https://arxiv.org/abs/2506.15841) | veRL (based on Search-R1) |
 | [Memento](https://github.com/Agent-on-the-Fly/Memento) | <img src="https://img.shields.io/github/stars/Agent-on-the-Fly/Memento?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | UCL, Huawei | [Paper](https://arxiv.org/abs/2508.16153) | Custom |
 | [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | <img src="https://img.shields.io/github/stars/BytedTsinghua-SIA/MemAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | Bytedance, Tsinghua-SIA | [Paper](https://arxiv.org/abs/2507.02259) | veRL |
@@ -415,8 +458,6 @@ Some Enumeration:
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [MemSkill](https://github.com/ViktorAxelsen/MemSkill) | PPO | Single | Process | Multi | QA/ALFWorld | Model (learned skills) | Yes |
-| [MemRL](https://github.com/MemTensor/MemRL) | RL-based | Single | Process | Multi | HLE/BigCodeBench/ALFWorld | Model (retrieval) | Yes |
 | [MEM1](https://github.com/MIT-MI/MEM1) | PPO/GRPO | Single | Outcome | Multi | WebShop/GSM8K/QA | Rule/Model | Yes |
 | [Memento](https://github.com/Agent-on-the-Fly/Memento) | soft Q-Learning | Single | Outcome | Multi | Research/QA/Code/Web | External/Rule | Yes |
 | [MemAgent](https://github.com/BytedTsinghua-SIA/MemAgent) | PPO, GRPO, DPO | Multi | Outcome | Multi | Long-context QA | Rule/Model/External | Yes |
@@ -489,6 +530,86 @@ Some Enumeration:
 
 </details>
 
+## 🛡️ Safety
+
+
+| Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
+| :----: | :----: | :----: |  :----: | :----: | :----: |
+| [SafeSearch](https://github.com/amazon-science/SafeSearch) | <img src="https://img.shields.io/github/stars/amazon-science/SafeSearch?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Amazon Science | [Paper](https://arxiv.org/abs/2510.17017) | veRL |
+| [curiosity_redteam](https://github.com/Improbable-AI/curiosity_redteam) | <img src="https://img.shields.io/github/stars/Improbable-AI/curiosity_redteam?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2024.2 | MIT | [Paper](https://arxiv.org/abs/2402.19464) | Custom |
+| [RLbreaker](https://github.com/XuanChen-xc/RLbreaker) | <img src="https://img.shields.io/github/stars/XuanChen-xc/RLbreaker?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2024.6 | Purdue | [Paper](https://arxiv.org/abs/2406.08705) | Custom |
+| [xJailbreak](https://github.com/Aegis1863/xJailbreak) | <img src="https://img.shields.io/github/stars/Aegis1863/xJailbreak?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | Academic | [Paper](https://arxiv.org/abs/2501.16727) | Custom |
+| [Auto-RT](https://github.com/icip-cas/Auto-RT) | <img src="https://img.shields.io/github/stars/icip-cas/Auto-RT?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | ICIP-CAS | [Paper](https://arxiv.org/abs/2501.01830) | Custom |
+
+<details>
+<summary>📋 Click to view technical details</summary>
+
+| Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [SafeSearch](https://github.com/amazon-science/SafeSearch) | PPO (GAE/GRPO) | Single | Both | Multi | Safe QA/Search | Rule + Model | Search |
+| [curiosity_redteam](https://github.com/Improbable-AI/curiosity_redteam) | RL + Curiosity | Single | Outcome | Multi | Red Teaming | Model | Yes (iterative query) |
+| [RLbreaker](https://github.com/XuanChen-xc/RLbreaker) | Custom PPO | Single | Outcome | Multi | Jailbreaking | Model | Yes (mutator selection) |
+| [xJailbreak](https://github.com/Aegis1863/xJailbreak) | RL | Single | Outcome | Multi | Jailbreaking | Model (embedding) | Yes (iterative) |
+| [Auto-RT](https://github.com/icip-cas/Auto-RT) | PPO | Single | Outcome | Multi | Red Teaming | Model | Yes (strategy exploration) |
+
+</details>
+
+## 👁️ VLM Agent
+
+
+| Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
+| :----: | :----: | :----: |  :----: | :----: | :----: |
+| [multimodal-search-r1](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1) | <img src="https://img.shields.io/github/stars/EvolvingLMMs-Lab/multimodal-search-r1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.6 | ByteDance/NTU | [Paper](https://arxiv.org/abs/2506.20670) | Custom |
+| [DeepEyesV2](https://github.com/Visual-Agent/DeepEyesV2) | <img src="https://img.shields.io/github/stars/Visual-Agent/DeepEyesV2?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Xiaohongshu | [Paper](https://arxiv.org/abs/2511.05271) | Custom |
+| [VDeepEyes](https://github.com/Visual-Agent/DeepEyes) | <img src="https://img.shields.io/github/stars/Visual-Agent/DeepEyes?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | Xiaohongshu/XJTU | [Paper](https://arxiv.org/pdf/2505.14362) | veRL |
+| [CoSo](https://github.com/langfengQ/CoSo) | <img src="https://img.shields.io/github/stars/langfengQ/CoSo?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.5 | NTU/Alibaba | [Paper](https://arxiv.org/abs/2505.03792) | Custom |
+| [RL4VLM](https://github.com/RL4VLM/RL4VLM) | <img src="https://img.shields.io/github/stars/RL4VLM/RL4VLM?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2024.5 | UC Berkeley | [Paper](https://arxiv.org/abs/2405.10292) | Custom |
+| [VSC-RL](https://github.com/ai-agents-2030/VSC_RL) | <img src="https://img.shields.io/github/stars/ai-agents-2030/VSC_RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.2 | Liverpool/Huawei/Tianjin/UCL | [Paper](https://arxiv.org/abs/2502.07949) | Custom |
+| [AlphaDrive](https://github.com/hustvl/AlphaDrive) | <img src="https://img.shields.io/github/stars/hustvl/AlphaDrive?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.3 | HUST/Horizon Robotics | [Paper](https://arxiv.org/abs/2503.07608) | Custom |
+
+<details>
+<summary>📋 Click to view technical details</summary>
+
+| Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [multimodal-search-r1](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1) | GRPO | Single | Outcome | Multi | Multimodal Search | Rule | Yes (Search) |
+| [DeepEyesV2](https://github.com/Visual-Agent/DeepEyesV2) | Outcome RL | Single | Outcome | Multi | Multimodal Reasoning | Rule | Yes (Code exec, Web search) |
+| [VDeepEyes](https://github.com/Visual-Agent/DeepEyes) | PPO/GRPO | Multi | Process | Multi | VQA | All | Yes |
+| [CoSo](https://github.com/langfengQ/CoSo) | Soft RL (counterfactual) | Single | Outcome | Multi | Android/Card/Embodied | Rule | Yes |
+| [RL4VLM](https://github.com/RL4VLM/RL4VLM) | PPO | Single | Outcome | Multi | GymCards/ALFWorld | Rule | Yes |
+| [VSC-RL](https://github.com/ai-agents-2030/VSC_RL) | Variational RL | Single | Outcome | Multi | Mobile Device Control | Rule | Yes |
+| [AlphaDrive](https://github.com/hustvl/AlphaDrive) | GRPO | Single | Outcome | Multi | Autonomous Driving | Rule (4 planning rewards) | No |
+
+</details>
+
+## 🔄 Self-Evolution
+
+> ⚠️ **Note**: The definition of "Self-Evolution" in the context of RL for LLM agents is still evolving and not yet well-established. This category currently collects works whose paper titles explicitly contain "self-evolving" or "self-evolution", where the agent improves itself through RL-driven feedback loops.
+
+
+| Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
+| :----: | :----: | :----: |  :----: | :----: | :----: |
+| [AgentEvolver](https://github.com/modelscope/AgentEvolver) | <img src="https://img.shields.io/github/stars/modelscope/AgentEvolver?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Alibaba/Tongyi Lab | [Paper](https://arxiv.org/abs/2511.10395) | Custom |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | <img src="https://img.shields.io/github/stars/SunzeY/SEAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.8 | Shanghai AI Lab / CUHK | [Paper](https://arxiv.org/abs/2508.04700) | Custom |
+| [MemSkill](https://github.com/ViktorAxelsen/MemSkill) | <img src="https://img.shields.io/github/stars/ViktorAxelsen/MemSkill?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | NTU/UIUC/UIC/Tsinghua | [Paper](https://arxiv.org/abs/2602.02474) | Custom |
+| [MemRL](https://github.com/MemTensor/MemRL) | <img src="https://img.shields.io/github/stars/MemTensor/MemRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | SJTU/Xidian/NUS/USTC/MemTensor | [Paper](https://arxiv.org/abs/2601.03192) | Custom |
+| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | <img src="https://img.shields.io/github/stars/RAGEN-AI/RAGEN?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.1 | RAGEN-AI | [Paper](https://arxiv.org/pdf/2504.20073) | veRL |
+| [WebRL](https://github.com/THUDM/WebRL) | <img src="https://img.shields.io/github/stars/THUDM/WebRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2024.11 | Tsinghua/Zhipu AI | [Paper](https://arxiv.org/abs/2411.02337) | Custom |
+
+<details>
+<summary>📋 Click to view technical details</summary>
+
+| Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [AgentEvolver](https://github.com/modelscope/AgentEvolver) | ADCA-GRPO | Single | Outcome | Multi | Social Game/Tool-use | Rule | Yes |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | GRPO | Single | Outcome | Multi | Computer Use (OSWorld) | Model | Yes (Screenshot-based) |
+| [MemSkill](https://github.com/ViktorAxelsen/MemSkill) | PPO | Single | Process | Multi | QA/ALFWorld | Model (learned skills) | Yes |
+| [MemRL](https://github.com/MemTensor/MemRL) | RL-based (Q-value) | Single | Process | Multi | HLE/BigCodeBench/ALFWorld | Model (retrieval) | Yes |
+| [RAGEN](https://github.com/RAGEN-AI/RAGEN) | PPO/GRPO (StarPO) | Single | Both | Multi | TextGame | All | Yes |
+| [WebRL](https://github.com/THUDM/WebRL) | Actor-Critic RL + ORM | Single | Outcome | Multi | Web Navigation (WebArena) | Model (ORM) | Yes (Web browsing) |
+
+</details>
+
 ## ⛰️ Environment
 
 | Github Repo | 🌟 Stars | Date | Org | Task |
@@ -497,6 +618,7 @@ Some Enumeration:
 | [OpenEnv](https://github.com/meta-pytorch/OpenEnv) | <img src="https://img.shields.io/github/stars/meta-pytorch/OpenEnv?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.3 | Meta (PyTorch) | Chess/Arcade/Finance |
 | [NeMo-Gym](https://github.com/NVIDIA-NeMo/Gym) | <img src="https://img.shields.io/github/stars/NVIDIA-NeMo/Gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | NVIDIA | Multi-step/Multi-turn |
 | [open-trajectory-gym](https://github.com/westonbrown/open-trajectory-gym) | <img src="https://img.shields.io/github/stars/westonbrown/open-trajectory-gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.3 | Individual | CTF/Security |
+| [R2E-Gym](https://github.com/R2E-Gym/R2E-Gym) | <img src="https://img.shields.io/github/stars/R2E-Gym/R2E-Gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.4 | UC Berkeley/ANU | SWE |
 | [LoCoBench-Agent](https://github.com/SalesforceAIResearch/LoCoBench-Agent) | ![](https://img.shields.io/github/stars/SalesforceAIResearch/LoCoBench-Agent.svg?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700) | 2025.11 | Salesforce AI Research | SWE |
 | [Simia-Agent-Training](https://github.com/microsoft/Simia-Agent-Training) | ![](https://img.shields.io/github/stars/microsoft/Simia-Agent-Training.svg?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700) | 2025.10 | Microsoft | ToolUse/API |
 | [PaperArena](https://github.com/Melmaphother/PaperArena) | <img src="https://img.shields.io/github/stars/Melmaphother/PaperArena?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | University of Science and Technology of China | ScientificLiteratureQA |

@@ -243,6 +243,9 @@
         .category-card:nth-child(11)::before { background: linear-gradient(90deg, #55a3ff, #003d82); }
         .category-card:nth-child(12)::before { background: linear-gradient(90deg, #9b59b6, #8e44ad); }
         .category-card:nth-child(13)::before { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+        .category-card:nth-child(14)::before { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+        .category-card:nth-child(15)::before { background: linear-gradient(90deg, #f39c12, #e67e22); }
+        .category-card:nth-child(16)::before { background: linear-gradient(90deg, #1abc9c, #16a085); }
 
         .category-card:hover {
             box-shadow: 0 16px 48px rgba(0,0,0,0.15);
@@ -631,6 +634,9 @@
                     if (t.includes('embodied')) return '🦾 Embodied';
                     if (t.includes('domain')) return '🏷️ Domain-Specific';
                     if (t.includes('reward') || t.includes('training methodology')) return '🎯 Reward & Training';
+                    if (t.includes('safety')) return '🛡️ Safety';
+                    if (t.includes('vlm')) return '👁️ VLM Agent';
+                    if (t.includes('self-evolution') || t.includes('self evolution')) return '🔄 Self-Evolution';
                     if (t.includes('environment')) return '⛰️ Environment';
                     return null;
                 }
