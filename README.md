@@ -8,16 +8,17 @@
 ![General](https://img.shields.io/badge/General-17-4E6813?style=for-the-badge)
 ![Search & RAG](https://img.shields.io/badge/Search_&_RAG-21-845C40?style=for-the-badge)
 ![Web & GUI](https://img.shields.io/badge/Web_&_GUI-17-A259FF?style=for-the-badge)
-![Tool](https://img.shields.io/badge/Tool-11-D89F7B?style=for-the-badge)
 <br>
+![Tool](https://img.shields.io/badge/Tool-11-D89F7B?style=for-the-badge)
 ![Code & SWE](https://img.shields.io/badge/Code_&_SWE-16-A47B67?style=for-the-badge)
 ![Reasoning](https://img.shields.io/badge/Reasoning-17-FF69B4?style=for-the-badge)
 ![Multi-Agent](https://img.shields.io/badge/Multi--Agent-4-1F4CAD?style=for-the-badge)
-![Memory](https://img.shields.io/badge/Memory-5-007a88?style=for-the-badge)
 <br>
+![Memory](https://img.shields.io/badge/Memory-5-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-2-C0C5CE?style=for-the-badge)
 ![Domain-Specific](https://img.shields.io/badge/Domain--Specific-5-ffc884?style=for-the-badge)
 ![Reward & Training](https://img.shields.io/badge/Reward_&_Training-5-9B59B6?style=for-the-badge)
+<br>
 ![Environment](https://img.shields.io/badge/Environment-39-FA5A4C?style=for-the-badge)
 
 </div>
