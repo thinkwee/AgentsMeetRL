@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="NOVER Logo" width="500">
+  <img src="logo.png" alt="Logo" width="500">
 </div>
 
 <div align="center">
