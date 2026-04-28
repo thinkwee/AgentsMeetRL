@@ -6,7 +6,7 @@
 
 ![Base Framework](https://img.shields.io/badge/Base_Framework-19-BFA2DB?style=for-the-badge)
 ![General](https://img.shields.io/badge/General-17-4E6813?style=for-the-badge)
-![Search & RAG](https://img.shields.io/badge/Search_&_RAG-35-845C40?style=for-the-badge)
+![Search & RAG](https://img.shields.io/badge/Search_&_RAG-37-845C40?style=for-the-badge)
 ![Web & GUI](https://img.shields.io/badge/Web_&_GUI-27-A259FF?style=for-the-badge)
 <br>
 ![Tool](https://img.shields.io/badge/Tool-19-D89F7B?style=for-the-badge)
@@ -38,7 +38,7 @@
  - 🤖 The criteria for identifying an agent project are that it must have at least one of the following: multi-turn interactions or tool use (so TIR projects, Tool-Integrated Reasoning, are considered in this repo).
  - ⚠️ This project is based on code analysis from open-source repositories using LLM coding agents, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
- - 📅 Last updated: 2026-04-18
+ - 📅 Last updated: 2026-04-28
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
 
 Taxonomy:
@@ -178,6 +178,8 @@ Some Enumeration:
 | :----: | :----: | :----: |  :----: | :----: | :----: |
 | [ProRAG](https://github.com/lilinwz/ProRAG) | <img src="https://img.shields.io/github/stars/lilinwz/ProRAG?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | RUC | [Paper](https://arxiv.org/abs/2601.21912) | Custom |
 | [MemSearcher](https://github.com/icip-cas/MemSearcher) | <img src="https://img.shields.io/github/stars/icip-cas/MemSearcher?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | CAS | [Paper](https://arxiv.org/abs/2511.02805) | Custom |
+| [DR-Venus](https://github.com/inclusionAI/DR-Venus) | <img src="https://img.shields.io/github/stars/inclusionAI/DR-Venus?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Ant Group (inclusionAI) | [Paper](https://arxiv.org/abs/2604.19859) | veRL (IGPO-based) |
+| [IGPO](https://github.com/GuoqingWang1/IGPO) | <img src="https://img.shields.io/github/stars/GuoqingWang1/IGPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | Ant Group | [Paper](https://arxiv.org/abs/2510.14967) (ICLR 2026) | veRL |
 | [ReSeek](https://github.com/TencentBAC/ReSeek) | <img src="https://img.shields.io/github/stars/TencentBAC/ReSeek?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | Tencent PCG BAC/Tsinghua University | [Paper](https://arxiv.org/abs/2510.00568) | veRL |
 | [AutoGraph-R1](https://github.com/HKUST-KnowComp/AutoGraph-R1) | <img src="https://img.shields.io/github/stars/HKUST-KnowComp/AutoGraph-R1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | HKUST KnowComp | [Paper](https://arxiv.org/abs/2510.15339) | Custom |
 | [Tree-GRPO](https://github.com/AMAP-ML/Tree-GRPO) | <img src="https://img.shields.io/github/stars/AMAP-ML/Tree-GRPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | AMAP | [Paper](https://arxiv.org/abs/2509.21240) | veRL |
@@ -219,6 +221,8 @@ Some Enumeration:
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [ProRAG](https://github.com/lilinwz/ProRAG) | GRPO + DGA (dual-granularity advantage) | Single | Both | Multi | Multi-hop RAG | Model (PRM via MCTS) | Yes (Retrieval) |
 | [MemSearcher](https://github.com/icip-cas/MemSearcher) | Multi-context GRPO | Single | Outcome | Multi | Search/QA + Memory | Rule/Model | Yes (Web search + Memory) |
+| [DR-Venus](https://github.com/inclusionAI/DR-Venus) | GRPO + IGPO (info-gain turn-level) w/ agentic SFT | Single | Both | Multi | Edge-scale Deep Research (4B) | Intrinsic (info-gain) + Rule (format) | Yes (Search/Browse) |
+| [IGPO](https://github.com/GuoqingWang1/IGPO) | GRPO + IGPO (Information Gain turn-level reward) | Single | Both | Multi | Multi-turn Search Agent (BrowseComp/-ZH) | Intrinsic (belief Δ) + Outcome | Yes (Search) |
 | [ReSeek](https://github.com/TencentBAC/ReSeek) | GRPO/PPO | Single | Both | Multi | QA/Search | Rule | Search/JUDGE |
 | [AutoGraph-R1](https://github.com/HKUST-KnowComp/AutoGraph-R1) | GRPO (via VeRL) | Single | Outcome | Multi | KG Construction for QA | Rule | Yes (Graph retrieval) |
 | [Tree-GRPO](https://github.com/AMAP-ML/Tree-GRPO) | GRPO/Tree-GRPO | Single | Outcome | Multi | Search | Rule | Search |
