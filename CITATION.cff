@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you find this repository useful, please consider citing it."
+title: "When LLM Agents Meet Reinforcement Learning: A Comprehensive Survey"
+abstract: >-
+  AgentsMeetRL is a curated, continuously updated list of open-source
+  repositories for training LLM agents with reinforcement learning, with a
+  focus on the RL frameworks, algorithms, rewards, and environments these
+  projects rely on.
+type: software
+authors:
+  - given-names: Wei
+    family-names: Liu
+  - name: "The AgentsMeetRL Team"
+repository-code: "https://github.com/thinkwee/AgentsMeetRL"
+url: "https://thinkwee.top/amr/"
+date-released: "2025-06-09"
+keywords:
+  - large-language-models
+  - llm-agents
+  - reinforcement-learning
+  - awesome-list
+  - survey

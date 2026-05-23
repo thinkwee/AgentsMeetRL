@@ -42,6 +42,7 @@
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
  - 📅 Last updated: 2026-05-23
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
+ - 📚 If you find this repository helpful for your research, please cite it via the **"Cite this repository"** button on the right sidebar.
 
 Taxonomy:
  - **Base Framework**: General-purpose RL training frameworks for LLM agents (e.g., veRL, OpenRLHF, trl)
@@ -854,20 +855,6 @@ Some Enumeration:
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinkwee/agentsMeetRL&type=Date)](https://www.star-history.com/#thinkwee/agentsMeetRL&Date)
-
-
-## Citation
-
-If you find this repository useful, please consider citing it:
-
-```bibtex
-@misc{agentsMeetRL,
-  title={When LLM Agents Meet Reinforcement Learning: A Comprehensive Survey},
-  author={AgentsMeetRL Contributors},
-  year={2025},
-  url={https://github.com/thinkwee/agentsMeetRL}
-}
-```
 
 ---
 
