@@ -221,8 +221,8 @@ repo and paper, paper-only algorithm, repo-only tool/environment).
 
 **Reference at the idea level, not at the file/line or section level.**
 Repos restructure, papers get revised; the algorithm name and its top-
-level URL are stable. The corpus has 294 entries in `database.json`
-(274 open-source repos + 20 under-review papers) plus 3 paper-only
-algorithms whitelisted in `scripts/lint_skill.py`, for 297 citable
+level URL are stable. The corpus has 312 entries in `database.json`
+(291 open-source repos + 21 under-review papers) plus 3 paper-only
+algorithms whitelisted in `scripts/lint_skill.py`, for 315 citable
 items total. Pick the canonical one; don't pin to its current
 internals.

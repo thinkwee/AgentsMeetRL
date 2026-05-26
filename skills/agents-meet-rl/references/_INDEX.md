@@ -3,7 +3,11 @@
 Per-category catalogues parsed from the AgentsMeetRL awesome list
 (`README.md` at the project root). Each entry includes GitHub URL,
 arXiv URL, RL algorithm, framework, reward design, and turn mode so
-Claude can cite specific work when giving recommendations.
+Claude can cite specific work when giving recommendations — plus an
+**`Idea:`** line distilling that project's distinctive contribution
+(grounded in its paper/repo), so even projects not covered by a
+`problems/` file still carry a usable one-line takeaway. In
+`under-review.md` the same content is the table's `Idea` column.
 
 **When to read which file:**
 

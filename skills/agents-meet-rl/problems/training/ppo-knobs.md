@@ -9,6 +9,10 @@ You've decided to use PPO with a critic (not GRPO). Common when:
 - Tasks where GRPO's group-relative advantage isn't useful (e.g., huge
   state space, can't sample N comparable trajectories).
 
+Config flag names below (e.g. `KLControlConfig`) are taken from veRL at
+the snapshot date; they may be renamed across releases, so check them
+against the framework version you use.
+
 ## Knob 1: clip ε
 
 - 0.2 — vanilla PPO default.

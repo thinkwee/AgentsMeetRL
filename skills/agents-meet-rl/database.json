@@ -17,7 +17,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes (unified model/tool/env abstractions)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unifies the inference and training interaction stack (model-tool-env) so the same execution path serves rollout and RL, with fully-async partial rollout at 1000+ concurrency."
     },
     {
       "category": "base_framework",
@@ -41,7 +42,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (PRM)",
       "tool_usage": "Yes (SandboxFusion)",
-      "focus": null
+      "focus": null,
+      "takeaway": "GRPO-TCR co-trains policy with combined outcome + step-wise reward-model signals while the reward model self-improves via consistency feedback in a closed loop."
     },
     {
       "category": "base_framework",
@@ -65,7 +67,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Mines 'next-state' signals (tool outputs, user replies) for label-free async RL, mixing scalar GRPO rewards with token-level on-policy distillation hints (OPD)."
     },
     {
       "category": "base_framework",
@@ -84,7 +87,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes (Framework-agnostic)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adds a Gateway+DataPool middleware between agents and trainers for universal data collection, multi-dimensional reward eval, and curation of agentic RL data."
     },
     {
       "category": "base_framework",
@@ -103,7 +107,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully asynchronous off-policy RL that decouples inference from training for high-throughput agentic training scaling across 1000+ GPUs."
     },
     {
       "category": "base_framework",
@@ -122,7 +127,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Ray-orchestrated RL library with swappable DTensor (native PyTorch) and Megatron-Core backends scaling from single GPU to multi-node without architecture changes."
     },
     {
       "category": "base_framework",
@@ -146,7 +152,8 @@
       "turn_mode": "Multi",
       "reward_type": "All (Rule/Model/External)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Macro-to-micro flow (M2Flow) auto-decomposes RL workflows over time/space then recomposes optimized execution via context switching and elastic pipelining."
     },
     {
       "category": "base_framework",
@@ -170,7 +177,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Rule",
       "tool_usage": "Planned",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully distributed multi-controller architecture (DistFlow) removes the central-controller bottleneck for near-linear RL scaling up to 1024 GPUs."
     },
     {
       "category": "base_framework",
@@ -194,7 +202,8 @@
       "turn_mode": "Both",
       "reward_type": "External Verifier",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Treats multi-turn/tool/sandbox agentic workflows as pluggable data-generation steps feeding one Megatron-train + SGLang-rollout loop, no separate agent framework."
     },
     {
       "category": "base_framework",
@@ -218,7 +227,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully decouples agent execution from RL training and uses a credit-assignment module to turn arbitrary agent trajectories into trainable MDP transitions."
     },
     {
       "category": "base_framework",
@@ -242,7 +252,8 @@
       "turn_mode": "Both",
       "reward_type": "External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully decoupled async RL: rollout workers generate continuously without waiting while trainers update per batch, removing the slowest-sample sync bottleneck."
     },
     {
       "category": "base_framework",
@@ -266,7 +277,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Single-controller RL framework with a rollout scheduler for fine-grained sample lifecycle control and AutoDeviceMapping for flexible resource allocation."
     },
     {
       "category": "base_framework",
@@ -285,7 +297,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Centralized multi-agent interaction with distributed per-agent policy training, enabling collaborative reasoning while scaling RL across heterogeneous models."
     },
     {
       "category": "base_framework",
@@ -304,7 +317,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "JAX-native post-training library integrating vLLM/MaxText for efficient distributed RL (PPO/GRPO/DAPO) on TPUs."
     },
     {
       "category": "base_framework",
@@ -323,7 +337,8 @@
       "turn_mode": "Both",
       "reward_type": "Rule/Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Concise LLM post-training library with clear abstraction-free implementations yet 3D/5D parallelism, aimed at learning/quick-testing custom RL algorithms."
     },
     {
       "category": "base_framework",
@@ -342,7 +357,8 @@
       "turn_mode": "Both",
       "reward_type": "All",
       "tool_usage": "Code",
-      "focus": null
+      "focus": null,
+      "takeaway": "Standardizes RL environments as composable modules bundling dataset + rubric reward + tool/sandbox harness, decoupling task logic from the training framework."
     },
     {
       "category": "base_framework",
@@ -366,7 +382,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Frames LLM alignment as contextual dueling bandits and uses Thompson-sampling active exploration (SEA) for sample-efficient online preference learning."
     },
     {
       "category": "base_framework",
@@ -390,7 +407,8 @@
       "turn_mode": "Both",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "HybridFlow blends single- and multi-controller paradigms with a 3D-HybridEngine that reshards the actor between train/generate with zero memory redundancy."
     },
     {
       "category": "base_framework",
@@ -414,7 +432,8 @@
       "turn_mode": "Both",
       "reward_type": "Rule/Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Ray + vLLM + DeepSpeed integration delivering a simplified, accessible RLHF framework with 1.22x-1.68x speedups over prior systems."
     },
     {
       "category": "base_framework",
@@ -433,7 +452,8 @@
       "turn_mode": "Single",
       "reward_type": "Custom",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Transformers-ecosystem trainer classes (SFT/GRPO/DPO) that abstract post-training algorithms into easy, auto-distributed APIs."
     }
   ],
   "general_multitask": [
@@ -459,7 +479,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (search, web, embodied)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Two-level uncertainty control: triggers thinking interventions when token-level uncertainty gains plateau and resamples turns with negligible progress to cut wasted rollouts."
     },
     {
       "category": "general_multitask",
@@ -483,7 +504,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model (self-judge)",
       "tool_usage": "Yes (interactive long-horizon envs)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Samples a compact high-level strategy from the initial state, conditions all actions on it, and jointly trains both via hierarchical GRPO rollouts for consistent long-horizon plans."
     },
     {
       "category": "general_multitask",
@@ -507,7 +529,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (interactive envs)",
-      "focus": null
+      "focus": null,
+      "takeaway": "On-policy self-distillation as a sigmoid-gated auxiliary objective, amplifying teacher endorsements while softening rejections to stabilize multi-turn agent RL."
     },
     {
       "category": "general_multitask",
@@ -531,7 +554,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (interactive envs + skill library)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Dynamic curriculum that progressively withdraws in-context skill guidance during RL so skills internalize into model weights for zero-shot agent behavior."
     },
     {
       "category": "general_multitask",
@@ -555,7 +579,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (PRM)",
       "tool_usage": "Yes (Skill-augmented)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Continual meta-learning co-evolving LLM policy and skill library: LLM-evolver synthesizes skills from failures plus gradient updates in idle windows."
     },
     {
       "category": "general_multitask",
@@ -579,7 +604,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Web search, actions)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Distills agent experience into a hierarchical, recursively-evolving SkillBank with adaptive retrieval that co-improves the RL policy while cutting token usage."
     },
     {
       "category": "general_multitask",
@@ -603,7 +629,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Code Sandbox w/ Terminal, File, Internet)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL trains LLMs to explore inside a code sandbox using only non-agentic data, eliciting general agentic ability across math/science/long-context/IF domains."
     },
     {
       "category": "general_multitask",
@@ -627,7 +654,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes (Web search, code, file)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Meta-agent auto-generates agent tools/prompts/configs, plus hybrid in-context practice and training-free GRPO that improves agents without weight updates."
     },
     {
       "category": "general_multitask",
@@ -651,7 +679,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Dual-efficiency preference optimization jointly minimizing tokens-per-step and number-of-steps, rewarding concise reasoning and fewer actions in agent tasks."
     },
     {
       "category": "general_multitask",
@@ -675,7 +704,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (Search, Sandbox, Browser)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-imitation with curriculum-scheduled entropy: intrinsic-reward exploration early, exploiting successful trajectories later, avoiding entropy collapse."
     },
     {
       "category": "general_multitask",
@@ -699,7 +729,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (16,000+ RapidAPIs)",
-      "focus": null
+      "focus": null,
+      "takeaway": "End-to-end tool-reasoning agent with autonomous memory folding, trained via ToolPO using simulated APIs and tool-call advantage attribution for credit."
     },
     {
       "category": "general_multitask",
@@ -723,7 +754,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully-asynchronous generation-training pipeline plus cross-policy sampling and task advantage normalization for stable multi-turn, multi-task agent RL."
     },
     {
       "category": "general_multitask",
@@ -747,7 +779,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model/External",
       "tool_usage": "Yes (Web, Search, Env APIs)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains agents via pure RL without SFT using ScalingInter-RL, which starts with restricted interactions then grows the horizon to prevent behavior collapse."
     },
     {
       "category": "general_multitask",
@@ -771,7 +804,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Consolidates multi-agent systems into one model via multi-agent distillation into SFT trajectories plus agentic RL on chain-of-agents reasoning."
     },
     {
       "category": "general_multitask",
@@ -795,7 +829,8 @@
       "turn_mode": "Both",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unified modular RFT framework spanning sync/async, on/off-policy, and online/offline modes with integrated agent-environment data pipelines."
     },
     {
       "category": "general_multitask",
@@ -819,7 +854,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Stepwise Progress Attribution: a learned progress estimator decomposes delayed task reward into per-step intermediate rewards for credit assignment in agent RL."
     },
     {
       "category": "general_multitask",
@@ -843,7 +879,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "GiGPO: two-level advantage (episode groups + anchor-state step groups) for fine-grained multi-turn credit assignment without extra models or rollouts."
     },
     {
       "category": "general_multitask",
@@ -867,7 +904,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External/Custom",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Optimized async pipeline dispatcher (1.55x speedup) plus AST-based tool-enhanced training, cutting long-horizon agent RL cost over 2x."
     },
     {
       "category": "general_multitask",
@@ -891,7 +929,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "VLM agents trained as POMDP with explicit state-estimation/transition reasoning, a World Modeling Reward, and Bi-Level GAE for turn-aware credit assignment."
     },
     {
       "category": "general_multitask",
@@ -915,7 +954,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Client-server GRPO trainer adding RL to existing agents without GPU-infra hassle, plus RULER for automatic LLM-judged reward generation."
     },
     {
       "category": "general_multitask",
@@ -934,7 +974,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Open RL framework for LLM agents combining reasoning paradigms, diverse rollouts, agent reward models, and test-time trajectory scaling (PPO/DPO/GRPO)."
     }
   ],
   "search_rag": [
@@ -960,7 +1001,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (local search/browse env, Milvus+PostgreSQL)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains deep-research agents in a 'lite virtual world' mirroring real search dynamics, avoiding the instability and cost of live-search RL."
     },
     {
       "category": "search_rag",
@@ -984,7 +1026,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (PRM via MCTS)",
       "tool_usage": "Yes (Retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "GRPO with dual-granularity advantage combining PRM step-level process rewards and global outcome signals to curb process hallucinations in multi-hop RAG."
     },
     {
       "category": "search_rag",
@@ -1008,7 +1051,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Web search + Memory)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Maintains a compact question-relevant memory across turns (stable context length), trained with multi-context GRPO propagating advantages across all turns."
     },
     {
       "category": "search_rag",
@@ -1032,7 +1076,8 @@
       "turn_mode": "Multi",
       "reward_type": "Intrinsic (info-gain) + Rule (format)",
       "tool_usage": "Yes (Search/Browse)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Edge-scale (4B) deep-research agent trained with info-gain turn-level rewards plus format-aware regularization to densify supervision and credit assignment."
     },
     {
       "category": "search_rag",
@@ -1056,7 +1101,8 @@
       "turn_mode": "Multi",
       "reward_type": "Intrinsic (belief Δ) + Outcome",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Derives dense intrinsic turn-level rewards from the policy's own belief update (gain in P(correct answer)), curing advantage collapse in multi-turn search RL."
     },
     {
       "category": "search_rag",
@@ -1080,7 +1126,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Search/JUDGE",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adds a JUDGE self-correction action plus decomposed correctness+utility dense rewards so search agents can re-plan mid-episode instead of locking into bad paths."
     },
     {
       "category": "search_rag",
@@ -1104,7 +1151,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Graph retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains an LLM KG constructor with RL where reward is the graph's downstream RAG utility, optimizing for usefulness rather than intrinsic graph quality."
     },
     {
       "category": "search_rag",
@@ -1128,7 +1176,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "Tree-structured rollouts share prefixes to fit more trajectories per budget and yield step-wise process signals from outcome-only rewards via dual-level advantages."
     },
     {
       "category": "search_rag",
@@ -1152,7 +1201,8 @@
       "turn_mode": "Multi",
       "reward_type": "External/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully asynchronous RL plus autonomous QA synthesis enables 100+ turn, 400k-token search training, showing horizon length beats architecture complexity."
     },
     {
       "category": "search_rag",
@@ -1176,7 +1226,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (EM/F1)",
       "tool_usage": "Yes (Graph retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Treats hypergraph RAG retrieval as a multi-turn agent-environment loop optimized end-to-end by RL, replacing fixed one-shot GraphRAG lookups."
     },
     {
       "category": "search_rag",
@@ -1200,7 +1251,8 @@
       "turn_mode": "Multi",
       "reward_type": "Outcome",
       "tool_usage": "Search, Browse, Coding",
-      "focus": null
+      "focus": null,
+      "takeaway": "End-to-end REINFORCE research agent with strict on-policy rollouts, negative-sample dropping to avoid entropy collapse, and gamma-decay rewards favoring shorter paths."
     },
     {
       "category": "search_rag",
@@ -1219,7 +1271,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Learns optimal reasoning-search trajectories via multi-reward RL (GRPO/PPO) that jointly balances reasoning quality and search effectiveness."
     },
     {
       "category": "search_rag",
@@ -1243,7 +1296,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "SFT cold-start then RL that rewards using internal knowledge and memorizes retrieved facts, so the agent learns when to search vs. recall and needs less retrieval over time."
     },
     {
       "category": "search_rag",
@@ -1267,7 +1321,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "Step-wise PPO with sub-question trajectories and token-level information-gain plus redundancy-penalty rewards to fix sparse rewards in multi-hop search QA."
     },
     {
       "category": "search_rag",
@@ -1291,7 +1346,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "Search-and-refine-during-think: inserts explicit knowledge-refinement steps between searches, trained with GRPO using both retrieval and answer rewards."
     },
     {
       "category": "search_rag",
@@ -1315,7 +1371,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Replaces costly live search APIs during RL with an SFT'd LLM that generates documents whose quality is curriculum-degraded to progressively elicit reasoning."
     },
     {
       "category": "search_rag",
@@ -1339,7 +1396,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (PRM)",
       "tool_usage": "Yes (Wikipedia search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Uses an auto-built process-level reward dataset (query/evidence/answer stages) for process-supervised RAG policy optimization, beating Search-R1 with ~5k vs 90k instances."
     },
     {
       "category": "search_rag",
@@ -1358,7 +1416,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Wiki/Doc search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Applies GRPO with composite accuracy/format/RAGAS rewards to jointly optimize when to retrieve and which reasoning steps to take in knowledge-intensive QA."
     },
     {
       "category": "search_rag",
@@ -1382,7 +1441,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Web Browsing",
-      "focus": null
+      "focus": null,
+      "takeaway": "Deep Web Explorer with autonomous think-search-draft, trained via iterative online DPO so a reasoning model fills knowledge gaps mid-reasoning."
     },
     {
       "category": "search_rag",
@@ -1406,7 +1466,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "End-to-end RL trained directly in the noisy live open web (not a fixed corpus), with browsing agents that cross-validate and self-reflect for robust research."
     },
     {
       "category": "search_rag",
@@ -1434,7 +1495,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL teaches LLMs to interleave multi-turn search queries with reasoning, using retrieved-token masking to keep training stable."
     },
     {
       "category": "search_rag",
@@ -1458,7 +1520,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Two-stage outcome-only RL that incentivizes external search without any process rewards or distillation cold-start."
     },
     {
       "category": "search_rag",
@@ -1482,7 +1545,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Lightweight proxy-centric multi-agent layer over a frozen retriever+LLM, trained via tree-structured rollouts for RL credit assignment across the agents."
     },
     {
       "category": "search_rag",
@@ -1506,7 +1570,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL trains query-generation LLMs using retrieval metrics (e.g. recall) directly as reward, no supervised query data, with a 3B model beating GPT-4o on most IR tasks."
     },
     {
       "category": "search_rag",
@@ -1530,7 +1595,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Self-search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-Search RL elicits the LLM's own internal knowledge as a simulated search engine via format/rule rewards, cutting external API cost with sim-to-real transfer."
     },
     {
       "category": "search_rag",
@@ -1554,7 +1620,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (atomic thought)",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Atomic Thought Rewards decompose agent reasoning into functional units scored by reasoning reward models, giving process-level signal early before switching to outcome rewards."
     },
     {
       "category": "search_rag",
@@ -1578,7 +1645,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (Search, Browse)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Tongyi DeepResearch couples agentic mid-training and post-training with a fully automatic data-synthesis pipeline, removing human annotation for long-horizon research RL."
     },
     {
       "category": "search_rag",
@@ -1602,7 +1670,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (KG + Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "End-to-end multi-turn RL for web-browsing agents with a redundancy penalty that discourages repeated similar queries, enabling longer reasoning chains."
     },
     {
       "category": "search_rag",
@@ -1626,7 +1695,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (LLM-as-Judge)",
       "tool_usage": "Yes (Search/Crawl)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Two-stage SFT-then-RL pipeline over multi-agent synthesized data to boost open-source deep-research agents, combining GRPO with RLAIF for alignment."
     },
     {
       "category": "search_rag",
@@ -1650,7 +1720,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (rubrics)",
       "tool_usage": "Yes (Search/MCP)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Reinforcement Learning with Evolving Rubrics (RLER): evaluation rubrics co-evolve with the policy to give discriminative on-policy feedback for long-form research without verifiable answers."
     },
     {
       "category": "search_rag",
@@ -1674,7 +1745,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-reflection-enhanced RL with a unified cold-start + RL two-stage framework that lengthens tool-use trajectories while reducing accumulated errors."
     },
     {
       "category": "search_rag",
@@ -1698,7 +1770,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Rule",
       "tool_usage": "Yes (Retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Hierarchical process rewards judge the necessity of each search step on-the-fly, adding a bonus for optimal search/non-search ratio to curb over- and under-search."
     },
     {
       "category": "search_rag",
@@ -1722,7 +1795,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Visual retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL for VLMs over visually-rich docs with a crop/scale action space and a reward fusing query rewriting and retrieval performance for coarse-to-fine evidence gathering."
     },
     {
       "category": "search_rag",
@@ -1746,7 +1820,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RAMP pre-training: agents learn to call search to fill masked spans at scale, acquiring universal retrieval-and-reasoning skill before DAPO fine-tuning."
     },
     {
       "category": "search_rag",
@@ -1770,7 +1845,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-hop RAG RL combining outcome reward (answer correctness) with a process reward from relevance-based document verification to learn iterative reason-retrieve loops."
     },
     {
       "category": "search_rag",
@@ -1794,7 +1870,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unified reward design trains a 3B agent to distinguish open- vs closed-ended questions and adapt its search/answer strategy, trained in a local simulated search environment."
     },
     {
       "category": "search_rag",
@@ -1818,7 +1895,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (Gain-Beyond-RAG)",
       "tool_usage": "Yes (Retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains a decoupled search-only agent with a Gain-Beyond-RAG reward (accuracy improvement over naive RAG), leaving the generator LLM frozen."
     },
     {
       "category": "search_rag",
@@ -1842,7 +1920,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Knowledge-boundary-aware reward (IKEA) rewards using internal parametric knowledge first and searching only when insufficient, reducing over-retrieval."
     }
   ],
   "web_gui": [
@@ -1868,7 +1947,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (path-efficiency)",
       "tool_usage": "Yes (GUI actions + structured tool calls)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Staged GUI+tool training: synthesized interleaved trajectories, tool-bootstrapped RFT warmup, then online RL with a Tool-Efficient Path Reward for when to switch GUI vs tool calls."
     },
     {
       "category": "web_gui",
@@ -1892,7 +1972,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model (PRM)",
       "tool_usage": "Yes (GUI + hybrid CLI-GUI + persistent memory)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Combines GiGPO with a Process Reward Model for dense step-level supervision to stabilize mobile-GUI agent RL against environment instability."
     },
     {
       "category": "web_gui",
@@ -1916,7 +1997,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Semi-online RL simulates online training on offline trajectories via a Patch Module that corrects rollout-vs-expert divergence, plus discounted future returns for episode-level signal."
     },
     {
       "category": "web_gui",
@@ -1940,7 +2022,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adaptive Exploration Policy Optimization (AEPO) uses multi-answer generation plus a theoretically grounded Adaptive Exploration Reward to improve semantic GUI grounding."
     },
     {
       "category": "web_gui",
@@ -1964,7 +2047,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (continuous)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Continuous grounding reward plus a 'Simple Thinking' reward balancing planning quality vs speed, with cropping-based resampling to fix sparse rewards in GUI grounding."
     },
     {
       "category": "web_gui",
@@ -1988,7 +2072,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (self-supervised)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Label-free test-time RL: spatial voting grids over multiple sampled predictions yield consensus-region rewards (RCPO) to self-improve GUI grounding without ground truth."
     },
     {
       "category": "web_gui",
@@ -2012,7 +2097,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "GRPO rewards any click landing inside the target element's bounding box rather than the exact center as SFT does, aligning the objective with real user interaction."
     },
     {
       "category": "web_gui",
@@ -2036,7 +2122,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Applies GRPO reinforcement fine-tuning after imitation learning to improve reasoning and generalization to unseen mobile-GUI layouts."
     },
     {
       "category": "web_gui",
@@ -2060,7 +2147,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Web Browsing",
-      "focus": null
+      "focus": null,
+      "takeaway": "Test-Time Interaction: curriculum-based online RL that adaptively grows rollout length, scaling 'doing' (exploration/backtracking) instead of just 'thinking' for web agents."
     },
     {
       "category": "web_gui",
@@ -2084,7 +2172,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-evolutionary RFT for GUI grounding: dense continuous-accuracy policy gradient plus attention-map-guided iterative refinement from a small seed set."
     },
     {
       "category": "web_gui",
@@ -2108,7 +2197,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Computer Use",
-      "focus": null
+      "focus": null,
+      "takeaway": "Augments GRPO with a replay buffer of successful trajectories plus baseline-performance task filtering to stabilize long-horizon GUI-agent RL."
     },
     {
       "category": "web_gui",
@@ -2132,7 +2222,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule/External",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fixes R1-Zero GUI RL failure modes via fast-thinking template, box-size reward constraint to block reward hacking, and difficulty-aware objective scaling."
     },
     {
       "category": "web_gui",
@@ -2156,7 +2247,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (task success)",
       "tool_usage": "Yes (Web browsing)",
-      "focus": null
+      "focus": null,
+      "takeaway": "End-to-end multi-turn web RL using only binary task-success rewards with asynchronous diverse trajectory generation, avoiding reward shaping."
     },
     {
       "category": "web_gui",
@@ -2180,7 +2272,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unified action-space rule-based GRPO for GUI agents, matching prior SOTA with only ~3K curated examples vs 13M."
     },
     {
       "category": "web_gui",
@@ -2204,7 +2297,8 @@
       "turn_mode": "Both",
       "reward_type": "Rule",
       "tool_usage": "Computer/Phone Use",
-      "focus": null
+      "focus": null,
+      "takeaway": "First to adapt DeepSeek-R1-style rule-based RL to multimodal GUI agents via a rule-based action reward optimized with GRPO."
     },
     {
       "category": "web_gui",
@@ -2228,7 +2322,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (LLM)",
       "tool_usage": "Yes (GUI interaction)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-agent credit re-assignment using LLM-assigned process rewards (not env rewards) so role-free agents learn collaboration that generalizes across environments."
     },
     {
       "category": "web_gui",
@@ -2256,7 +2351,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Strictly on-policy GRPO with token-level gradients, leave-one-out advantage, and negative-sample filtering to stabilize RL in non-stationary web info-seeking."
     },
     {
       "category": "web_gui",
@@ -2284,7 +2380,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (GUI actions)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Native cross-platform GUI agent bootstrapped by iteratively collecting, filtering, and reflectively refining online traces on hundreds of VMs, with System-2 reasoning."
     },
     {
       "category": "web_gui",
@@ -2308,7 +2405,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (Q-function)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Offline TD-learned VLM Q-function on frozen intermediate features, then Best-of-N policy extraction, enabling Android-agent improvement without env interaction."
     },
     {
       "category": "web_gui",
@@ -2332,7 +2430,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (GUI actions)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Zero-human-cost online GUI RL using VLMs for automatic task generation and reward estimation, plus two-stage online learning."
     },
     {
       "category": "web_gui",
@@ -2356,7 +2455,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Deliberation enhancement via sub-goal-guidance rewards plus constructed error-recovery scenarios, moving GUI agents from reactive to planning behavior."
     },
     {
       "category": "web_gui",
@@ -2380,7 +2480,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "VEM: a pretrained Value Environment Model estimates state-action values from offline data to guide policy without env interaction or next-state prediction."
     },
     {
       "category": "web_gui",
@@ -2404,7 +2505,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Action-aware SFT plus partially-verifiable KL-trust-region GRPO to handle GUI states where multiple actions are correct but only one is demonstrated."
     },
     {
       "category": "web_gui",
@@ -2428,7 +2530,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Android)",
-      "focus": null
+      "focus": null,
+      "takeaway": "AdaGRPO with difficulty-adaptive positive replay, failure curriculum filtering, and shortest-path reward reshaping to stabilize multi-turn mobile GUI RL."
     },
     {
       "category": "web_gui",
@@ -2452,7 +2555,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Decoupled async RL (env/rollout/data-manager/trainer modules) plus adaptive data curation training on high-entropy decision steps for OSWorld agents."
     },
     {
       "category": "web_gui",
@@ -2476,7 +2580,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Three-stage SFT to offline RL to online RL pipeline with a simulated data-generation environment and a verification-based error-recovery module."
     },
     {
       "category": "web_gui",
@@ -2500,7 +2605,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (continuous)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Replaces sparse binary grounding rewards with continuous Gaussian point + coverage rewards giving dense gradients toward optimal click positions."
     },
     {
       "category": "web_gui",
@@ -2524,7 +2630,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Iterative two-stage training: large-scale continue-pretrain then RFT with a spatially-enhanced composite reward and dual filtering of RL signals."
     },
     {
       "category": "web_gui",
@@ -2548,7 +2655,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Pairs test-time scaling (sample multiple action proposals, judge-model selection) with click-success RL for GUI grounding without explicit thinking."
     }
   ],
   "tool_use": [
@@ -2574,7 +2682,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model (rubric)",
       "tool_usage": "Yes (Python interpreter, web search, mock tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Dual data flywheels (reasoning learns from errors; agentic expands linear workflows into branching behavior trees) auto-generate harder tasks for tool-use RL."
     },
     {
       "category": "tool_use",
@@ -2598,7 +2707,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (MCP: Serper, Web scraping)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains planner and worker roles within a single LLM via role-specific prompts and principled cross-role credit assignment, avoiding separate models."
     },
     {
       "category": "tool_use",
@@ -2622,7 +2732,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule-based",
       "tool_usage": "MCP",
-      "focus": null
+      "focus": null,
+      "takeaway": "First RL framework supporting multi-turn MCP tool calls for deep-research agents, integrating search, web, file, and code execution directly into training."
     },
     {
       "category": "tool_use",
@@ -2646,7 +2757,8 @@
       "turn_mode": "Both",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Tool-as-environment paradigm fully decoupling actor rollout from environment via a unified tool API for native multi-turn tool-calling RL."
     },
     {
       "category": "tool_use",
@@ -2670,7 +2782,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "First systematic study of turn-level reward design for multi-turn agent RL, showing intermediate rewards give finer credit assignment, faster convergence, higher accuracy."
     },
     {
       "category": "tool_use",
@@ -2694,7 +2807,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains tool-use with a binary rule-based reward judging only format validity and call correctness, letting reasoning emerge without annotated trajectories."
     },
     {
       "category": "tool_use",
@@ -2718,7 +2832,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Pairs tool-integrated data synthesis with multi-tool self-critic RL and hierarchical reward design (cold-start SFT then staged RL) for multi-tool coordination."
     },
     {
       "category": "tool_use",
@@ -2742,7 +2857,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "MCP",
-      "focus": null
+      "focus": null,
+      "takeaway": "Decouples environment from RL post-training with async tool-calling, needing only a tool config and reward function while doubling training throughput."
     },
     {
       "category": "tool_use",
@@ -2766,7 +2882,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Code",
-      "focus": null
+      "focus": null,
+      "takeaway": "Uses outcome-reward RL to interleave real-time code execution within reasoning, letting the model learn strategically when and how to invoke the code tool."
     },
     {
       "category": "tool_use",
@@ -2790,7 +2907,8 @@
       "turn_mode": "Multi",
       "reward_type": "External/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Tackles experience-generation bottleneck by distributing agent rollouts across a cluster for 14.6x faster experience collection, enabling large-scale agent RL."
     },
     {
       "category": "tool_use",
@@ -2814,7 +2932,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Formalizes LLM-agent components as an extended MDP and provides a modular, extensible end-to-end RL training framework across diverse task scenarios."
     },
     {
       "category": "tool_use",
@@ -2838,7 +2957,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Treats search/retrieval as integral reasoning steps trained via RL (ReSearch), learning when and how to retrieve without supervised reasoning annotations."
     },
     {
       "category": "tool_use",
@@ -2862,7 +2982,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Shows coarse answer-matching rewards fail for tool use; principled fine-grained reward design over tools and parameters is essential for effective GRPO training."
     },
     {
       "category": "tool_use",
@@ -2886,7 +3007,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes (Search/Code/LLMs)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL with outcome-, efficiency-, and preference-aware rewards trains a small 8B orchestrator to coordinate tools and larger models more cost-effectively."
     },
     {
       "category": "tool_use",
@@ -2910,7 +3032,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (Simulated tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Combines imitation of teacher trajectories with a trial-then-execute phase, then RL, to generalize tool use to novel and unseen tools."
     },
     {
       "category": "tool_use",
@@ -2934,7 +3057,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (verifiable)",
       "tool_usage": "Yes (Synthesized tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Converts static coding problems into interactive multi-turn tool-use environments so agents learn diverse tool workflows via RL rather than static-trajectory SFT."
     },
     {
       "category": "tool_use",
@@ -2958,7 +3082,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Standardized gym with simulated users shows reward-shaping and user-simulator choice matter as much as model scale for training interactive user-facing agents."
     },
     {
       "category": "tool_use",
@@ -2982,7 +3107,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (User-defined tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering."
     },
     {
       "category": "tool_use",
@@ -3006,7 +3132,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model + External",
       "tool_usage": "Yes (Python exec)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Maintains a dynamic sample queue caching and reusing high-quality trajectories to cut online sampling cost while RL-training agents to emit executable Python tool code."
     },
     {
       "category": "tool_use",
@@ -3025,7 +3152,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (Claude-judge)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Hybrid reward pairing LLM-as-judge process scoring with code-based answer verification yields large calculator-tool accuracy gains on a 3B model via GRPO."
     }
   ],
   "code_swe": [
@@ -3051,7 +3179,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External (test-based)",
       "tool_usage": "Yes (bash, file ops, viewer subagent)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Decomposes code editing into Viewer and Editor subagents and trains the editor to adaptively pick edit mode rather than always using find-and-replace."
     },
     {
       "category": "code_swe",
@@ -3075,7 +3204,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (correctness + performance)",
       "tool_usage": "Yes (compile/verify/profile)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Large-scale agentic RL for CUDA kernels combining data synthesis, a skill-augmented dev environment with automated verification/profiling rewards, and stable-training techniques."
     },
     {
       "category": "code_swe",
@@ -3099,7 +3229,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule+Model",
       "tool_usage": "Search, Ask, Browse",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-objective RL (PPP) jointly optimizing productivity, proactivity, and personalization, evaluated in the UserVille simulator with configurable LLM user simulators."
     },
     {
       "category": "code_swe",
@@ -3123,7 +3254,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "ToolTrain: rejection-sampled SFT plus tool-integrated RL teaches LLMs to navigate repository retrieval tools across multi-step reasoning for bug localization."
     },
     {
       "category": "code_swe",
@@ -3147,7 +3279,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (performance)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Contrastive RL using execution speedup as the only reward turns a weak LLM into a CUDA optimizer that combines and rejects optimizations."
     },
     {
       "category": "code_swe",
@@ -3171,7 +3304,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Scalable sandboxed environment of 72K biomedical coding tasks with verifiable feedback for multi-turn trajectory sampling and offline/online RL."
     },
     {
       "category": "code_swe",
@@ -3195,7 +3329,8 @@
       "turn_mode": "Single",
       "reward_type": "External",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Co-evolves a code generator and a unit-test generator via RL with no ground-truth code; the tester learns from the coder's mistakes."
     },
     {
       "category": "code_swe",
@@ -3219,7 +3354,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Code",
-      "focus": null
+      "focus": null,
+      "takeaway": "Three-stage RL curriculum with a dynamic rule-based reward builds temporal understanding then future prediction, letting a 3B model beat far larger ones."
     },
     {
       "category": "code_swe",
@@ -3243,7 +3379,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Online RL for ML-engineering agents using exploration-enriched SFT, step-wise (per-action) RL, and a unified reward unifying heterogeneous ML signals."
     },
     {
       "category": "code_swe",
@@ -3267,7 +3404,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "RLVER: PPO with deterministic emotion scores from self-consistent simulated users as verifiable rewards to train empathetic dialogue agents."
     },
     {
       "category": "code_swe",
@@ -3291,7 +3429,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Web Browsing",
-      "focus": null
+      "focus": null,
+      "takeaway": "SWEET-RL solves multi-turn credit assignment by training a critic with privileged training-time info to give step-level rewards for the policy."
     },
     {
       "category": "code_swe",
@@ -3315,7 +3454,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (similarity)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL on open-source software-evolution data with a lightweight rule-based similarity reward to ground-truth PRs; skills generalize beyond SWE."
     },
     {
       "category": "code_swe",
@@ -3339,7 +3479,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Framework (verl fork) for post-training custom language agents and environments with RL; recipes for DeepSWE, DeepCoder, DeepScaleR."
     },
     {
       "category": "code_swe",
@@ -3358,7 +3499,8 @@
       "turn_mode": "Single",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fully open reproduction of DeepSeek-R1: GRPO plus distillation/R1-Zero pipeline with code-execution sandboxes as verifiable reward signals."
     },
     {
       "category": "code_swe",
@@ -3382,7 +3524,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (Code exec)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-stage RL curriculum partitioning samples by improvement potential teaches LLMs to autonomously emit code queries during reasoning."
     },
     {
       "category": "code_swe",
@@ -3406,7 +3549,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (Code exec)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trains a critic via RL to generate feedback maximizing a fixed generator's code-correction performance, with no human-labeled critiques."
     },
     {
       "category": "code_swe",
@@ -3430,7 +3574,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (Code exec)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Curriculum-based agentic RL plus data-grounded trajectory synthesis trains an 8B model for end-to-end autonomous data science without fixed workflows."
     },
     {
       "category": "code_swe",
@@ -3454,7 +3599,8 @@
       "turn_mode": "Single",
       "reward_type": "External (test cases)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Auto-synthesized (question, test-case) pairs supply verifiable pass-rate rewards for code RL, removing the need for hand-labeled reward data."
     },
     {
       "category": "code_swe",
@@ -3478,7 +3624,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (surrogate) + Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Docker-free SWE RL: a learned world model predicts execution outcomes and test feedback, enabling cheap rollouts and test-time trajectory selection."
     },
     {
       "category": "code_swe",
@@ -3502,7 +3649,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (TFLOPs)",
       "tool_usage": "Yes (compile/benchmark)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Contrastive RL with CUDA execution speed as reward optimizes HGEMM matmul kernels, beating cuBLAS by 19.2% via large-scale config exploration."
     },
     {
       "category": "code_swe",
@@ -3521,7 +3669,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (test-based)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Decomposes issue resolution into localization/repair/unit-test skills, trained via multi-task SFT then two-stage RL on repair, plus similarity-based selection."
     },
     {
       "category": "code_swe",
@@ -3545,7 +3694,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule (verifiable)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Scalable long-CoT RL on R1-Distill models whose key lesson is mitigating premature entropy collapse to sustain exploration and test accuracy."
     }
   ],
   "reasoning": [
@@ -3571,7 +3721,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Verifier",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Symbiotic co-evolution: a curriculum agent proposes harder tool-aware tasks while an executor agent learns to solve them, from zero external data."
     },
     {
       "category": "reasoning",
@@ -3590,7 +3741,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "KG Retrieval",
-      "focus": null
+      "focus": null,
+      "takeaway": "Single unified LLM agent with four KG operations trained by GRPO, giving schema-agnostic train-once-transfer-anywhere KGQA at low token cost."
     },
     {
       "category": "reasoning",
@@ -3614,7 +3766,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Flow-GRPO trains the planner inside a live multi-turn loop by converting it to single-turn updates and broadcasting the trajectory outcome to every turn."
     },
     {
       "category": "reasoning",
@@ -3638,7 +3791,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Entropy-based adaptive rollout that adds step-level sampling after high-uncertainty tool calls, matching baselines with half the tool-use budget."
     },
     {
       "category": "reasoning",
@@ -3657,7 +3811,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model+External Verifier",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "GRPO terminal-agent training with a hybrid reward: 65% Docker-verified weighted unit tests plus 35% LLM-judge scoring of planning and tool-use process."
     },
     {
       "category": "reasoning",
@@ -3681,7 +3836,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-round GRPO that generates thinking tokens across several sequential rounds to expand effective reasoning beyond the context-window limit."
     },
     {
       "category": "reasoning",
@@ -3705,7 +3861,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Code-as-action NB-Agent (REPL) trained purely with RLVR via a low-cost sandboxed concurrent worker pool, lifting factuality QA from a base model with no SFT."
     },
     {
       "category": "reasoning",
@@ -3729,7 +3886,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Distills full tool-using agent behavior (not just CoT) into small LMs via first-thought prefix prompting and self-consistent action generation."
     },
     {
       "category": "reasoning",
@@ -3753,7 +3911,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Efficient multi-modal RL framework (HybridEngine + vLLM SPMD) supporting GRPO/DAPO/RLOO/GSPO etc. for text and vision-language models with padding-free training and LoRA."
     },
     {
       "category": "reasoning",
@@ -3777,7 +3936,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "SFT+RL trains agent models to internalize Chain-of-Action, using step-level action triggers and an internal world model to cut real-environment interaction cost."
     },
     {
       "category": "reasoning",
@@ -3801,7 +3961,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Tool-integrated RL from a base model lets LLMs discover when to invoke code via reward alone, emergently self-regulating ineffective code and switching reasoning modes."
     },
     {
       "category": "reasoning",
@@ -3825,7 +3986,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Decouples reasoning into a high-level meta-thinking agent and a low-level reasoning agent, co-trained via multi-agent RL to elicit metacognitive planning."
     },
     {
       "category": "reasoning",
@@ -3849,7 +4011,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Web Browsing",
-      "focus": null
+      "focus": null,
+      "takeaway": "Augments LLM reasoning with a Mind-Map knowledge-graph agent plus web-search and code agents to keep long tool-heavy reasoning chains coherent."
     },
     {
       "category": "reasoning",
@@ -3873,7 +4036,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Stabilizes multi-turn tool-integrated RL by filtering out 'void' trajectories that yield neither a code block nor a final answer, curbing error accumulation and drift."
     },
     {
       "category": "reasoning",
@@ -3892,7 +4056,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Asynchronous RLHF pipeline decoupling rollout from training (vLLM hybrid engine, dynamic batch size) to remove GPU idling, since generation is ~80% of RLHF time."
     },
     {
       "category": "reasoning",
@@ -3916,7 +4081,8 @@
       "turn_mode": "Multi",
       "reward_type": "External (SandboxFusion)",
       "tool_usage": "Yes (Python)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Hierarchical GRPO jointly optimizing episode-level solving and step-level code, exploiting that intermediate tool-call success predicts final-answer correctness."
     },
     {
       "category": "reasoning",
@@ -3940,7 +4106,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (preference)",
       "tool_usage": "Yes (FlashRAG/Python)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-evolved DPO using entropy-guided self-sampling to teach efficient tool use, fixing insufficient/excessive tool calls and overthinking via the model's own pairs."
     },
     {
       "category": "reasoning",
@@ -3964,7 +4131,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Search/Python)",
-      "focus": null
+      "focus": null,
+      "takeaway": "PPO with a hybrid reward (answer correctness + format + wrong-tool penalty) lets the model autonomously decide whether and which tool to invoke without fixed patterns."
     }
   ],
   "multi_agent": [
@@ -3990,7 +4158,8 @@
       "turn_mode": "Multi",
       "reward_type": "External",
       "tool_usage": "Yes (expert models + 2-tier skill library: OCR/detection/visual)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Outcome-only RL trains a lightweight orchestrator over a frozen expert ensemble to decide which model-skill to invoke and when to stop, generalizing to unseen experts."
     },
     {
       "category": "multi_agent",
@@ -4014,7 +4183,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (verifiable)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "AT-GRPO adds agent- and turn-wise advantage grouping because standard GRPO grouping breaks when prompts vary by role and turn, enabling stable multi-agent RL."
     },
     {
       "category": "multi_agent",
@@ -4038,7 +4208,8 @@
       "turn_mode": "Multi",
       "reward_type": "Learned PRM",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Process reward model for multi-agent systems trained from MCTS rollouts with only terminal rewards propagated to local targets, scoring partial transcripts to guide search."
     },
     {
       "category": "multi_agent",
@@ -4062,7 +4233,8 @@
       "turn_mode": "Multi",
       "reward_type": "Other",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Projects language actions into a low-dimensional intention space so semantically similar actions share rewards, densifying sparse signals and cutting gradient variance."
     },
     {
       "category": "multi_agent",
@@ -4086,7 +4258,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model-based",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adaptive Mode Policy Optimization lets social agents switch reasoning depth (intuitive to deliberate) per context, yielding 33% shorter chains with higher performance."
     },
     {
       "category": "multi_agent",
@@ -4105,7 +4278,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Cooperative multi-agent RL co-training heterogeneous LLMs via PPO with a verifier reward, so different models specialize and learn from each other on collaborative tasks."
     },
     {
       "category": "multi_agent",
@@ -4129,7 +4303,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Reasoning meta-agent (distilled from R1) that generates a per-query multi-agent workflow, refined by RL on execution feedback over performance/complexity/efficiency rewards."
     },
     {
       "category": "multi_agent",
@@ -4153,7 +4328,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Agent-wise advantage normalization using each agent's own reward stats, fixing the gradient-norm instability that global GRPO baselines cause in multi-agent LLM systems."
     },
     {
       "category": "multi_agent",
@@ -4177,7 +4353,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (verifiable)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Jointly RL-trains Solver/Verifier/Corrector agents using agent-specific rewards to cut reward noise plus pipeline-style training for long math trajectories."
     },
     {
       "category": "multi_agent",
@@ -4201,7 +4378,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "M-GRPO optimizes main- and sub-agents separately via group-relative advantages plus trajectory alignment for fixed-size batches, no end-to-end backprop."
     },
     {
       "category": "multi_agent",
@@ -4225,7 +4403,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Agents co-evolve via RL using LLM-as-judge intrinsic rewards mined from peer discussion dynamics, needing no external reward signal."
     },
     {
       "category": "multi_agent",
@@ -4249,7 +4428,8 @@
       "turn_mode": "Multi",
       "reward_type": "Custom",
       "tool_usage": "Minimal",
-      "focus": null
+      "focus": null,
+      "takeaway": "Casts LLM collaboration as cooperative MARL and fine-tunes the system with group-level RL (MAGRPO) instead of hand-engineering per-agent rewards."
     },
     {
       "category": "multi_agent",
@@ -4273,7 +4453,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-play on zero-sum games as an auto-curriculum, stabilized by Role-conditioned Advantage Estimation that accounts for each player's role."
     },
     {
       "category": "multi_agent",
@@ -4297,7 +4478,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Reformulates multi-agent fine-tuning as a Flex-MG game with an algorithm tailored to LLM-based MAS rather than directly porting classical MARL."
     }
   ],
   "memory": [
@@ -4323,7 +4505,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (task accuracy + memory quality)",
       "tool_usage": "Yes (store/retrieve/update/summarize/discard memory tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Exposes store/retrieve/update/summarize/discard as tool actions in the agent's policy, trained with step-wise GRPO to handle sparse memory-op rewards."
     },
     {
       "category": "memory",
@@ -4347,7 +4530,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Maintains a constant-size shared internal state that consolidates memory and reasoning, discarding irrelevant context for efficient long-horizon agents."
     },
     {
       "category": "memory",
@@ -4371,7 +4555,8 @@
       "turn_mode": "Multi",
       "reward_type": "External/Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Memory-augmented MDP that adapts via episodic case retrieval and a learned case-selection policy, with no gradient updates to the underlying LLM."
     },
     {
       "category": "memory",
@@ -4395,7 +4580,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model/External",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL-trains an overwrite-based segment memory (DAPO extended to multi-conversation generation), extrapolating from 8K to 3.5M tokens with little degradation."
     },
     {
       "category": "memory",
@@ -4419,7 +4605,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (downstream QA)",
       "tool_usage": "Yes (memory tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL teaches agents what to store, how to structure, and when to update memory, optimized via downstream QA reward instead of fixed memory heuristics."
     },
     {
       "category": "memory",
@@ -4443,7 +4630,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes (multimodal memory graph)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Builds entity-centric multimodal episodic and semantic memory from streaming audio-visual input, retrieved during multi-turn reasoning for long-video QA."
     }
   ],
   "embodied": [
@@ -4469,7 +4657,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Uses embodiment-agnostic 'pointing' as intermediate action representation, trained via two-stage RFT with multi-task rewards for cross-robot transfer."
     },
     {
       "category": "embodied",
@@ -4493,7 +4682,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/MC",
       "tool_usage": "Environment Actions",
-      "focus": null
+      "focus": null,
+      "takeaway": "Detects bad steps via step-level reward comparison during exploration and uses LLM reflection to build corrected trajectories for calibration before RFT."
     },
     {
       "category": "embodied",
@@ -4517,7 +4707,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "SFT on CoT-annotated demos then GRPO under multi-level rewards, grounding multi-robot cooperative reasoning directly in visual input."
     }
   ],
   "domain_specific": [
@@ -4543,7 +4734,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (clinical fidelity)",
       "tool_usage": "Yes (SAM/MedSAM2)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Reframes interactive segmentation as multi-turn decision-making, trained on expert trajectories with process rewards favoring parsimonious refinement."
     },
     {
       "category": "domain_specific",
@@ -4567,7 +4759,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (LightRAG, kernel config)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Abstracts Linux kernel tuning as an RL environment with rule-based rewards for performance-aware reasoning, plus two-phase training to speed convergence."
     },
     {
       "category": "domain_specific",
@@ -4591,7 +4784,8 @@
       "turn_mode": "Unknown",
       "reward_type": "Unknown",
       "tool_usage": "Unknown",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL-trains triage and attending GP agents for medical VQA with curriculum learning and dynamic entropy so the attending balances trust vs correcting specialists."
     },
     {
       "category": "domain_specific",
@@ -4615,7 +4809,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model/Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Models consultation as multi-turn RL that learns a questioning strategy to actively elicit key patient info, rather than imitating supervised dialogue."
     },
     {
       "category": "domain_specific",
@@ -4639,7 +4834,8 @@
       "turn_mode": "Single",
       "reward_type": "TBD",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "General biomedical agent combining LLM reasoning, retrieval-augmented planning, and code execution; Biomni-R0 adds RL from agent-interaction data on Qwen-32B."
     },
     {
       "category": "domain_specific",
@@ -4663,7 +4859,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model + Rule + safety veto",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Experiential agentic RL with a two-tier reward separating clinical decisions from communication, grounded by a repository of high-quality trajectories."
     },
     {
       "category": "domain_specific",
@@ -4687,7 +4884,8 @@
       "turn_mode": "Multi",
       "reward_type": "External (portfolio returns) + Model",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL-trained 8B reasoner judges alpha-factor relevance from factor logic and real-time news, toggling factors via economic rationale to fight signal decay."
     },
     {
       "category": "domain_specific",
@@ -4711,7 +4909,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "Yes (Search/KG)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Mines longest knowledge-graph chains around rare medical entities to synthesize multi-hop QA, then SFT + online RL with a private medical retriever."
     },
     {
       "category": "domain_specific",
@@ -4735,7 +4934,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model + Rule",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Uses the information gap between direct-answer and reasoning-augmented modes as a GRPO reward signal, with structural+legal-domain reward, no preference labels."
     }
   ],
   "reward_training": [
@@ -4761,7 +4961,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/Model",
       "tool_usage": "Yes",
-      "focus": "PRM Benchmark for Tool-Use"
+      "focus": "PRM Benchmark for Tool-Use",
+      "takeaway": "Benchmark for process reward models in tool use: step-level test cases (history, correct vs wrong action, tool metadata) via offline+online sampling."
     },
     {
       "category": "reward_training",
@@ -4785,7 +4986,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (verifiable)",
       "tool_usage": "No",
-      "focus": "RLVR for World Models"
+      "focus": "RLVR for World Models",
+      "takeaway": "Trains world models with RLVR by treating decoded-prediction metrics (accuracy, perceptual quality) as verifiable rewards, fixing MLE-metric misalignment."
     },
     {
       "category": "reward_training",
@@ -4809,7 +5011,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (PRM)",
       "tool_usage": "Yes",
-      "focus": "Process Reward for Agents"
+      "focus": "Process Reward for Agents",
+      "takeaway": "Lightweight actor-critic PRM via Monte Carlo rollouts (plus InversePRM learning process rewards from demos), bolting onto existing RLHF pipelines."
     },
     {
       "category": "reward_training",
@@ -4833,7 +5036,8 @@
       "turn_mode": "Single",
       "reward_type": "Model (Reward Agent)",
       "tool_usage": "Yes (Verification)",
-      "focus": "Agentic Reward Agent"
+      "focus": "Agentic Reward Agent",
+      "takeaway": "RewardAgent fuses human-preference RM with verifiable factuality and instruction-following signals for more reliable rewards in best-of-n and DPO."
     },
     {
       "category": "reward_training",
@@ -4857,7 +5061,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (regression PRM)",
       "tool_usage": "Yes",
-      "focus": "Generalizable Agent RM"
+      "focus": "Generalizable Agent RM",
+      "takeaway": "Finetuning a reward model to guide policy at test time (best-of-N, step-level beam search) generalizes better across agent tasks than finetuning the policy."
     },
     {
       "category": "reward_training",
@@ -4881,7 +5086,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (ProgRM)",
       "tool_usage": "Yes",
-      "focus": "Progress Reward Model (ProgRM)"
+      "focus": "Progress Reward Model (ProgRM)",
+      "takeaway": "ProgRM predicts per-step task-completion progress (LCS self-annotation of key steps) as dense reward, beating outcome RMs that over-penalize failed GUI trajectories."
     }
   ],
   "safety": [
@@ -4907,7 +5113,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "Search",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-objective RL adding a query-level shaping term that penalizes unsafe search queries, cutting harmfulness >90% while keeping QA utility for search agents."
     },
     {
       "category": "safety",
@@ -4931,7 +5138,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (iterative query)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adds curiosity/novelty bonuses to RL red-teaming so the attacker covers a far more diverse span of prompts instead of collapsing to a few effective test cases."
     },
     {
       "category": "safety",
@@ -4955,7 +5163,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (mutator selection)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Frames jailbreaking as RL-guided search (customized PPO + bespoke reward) instead of random genetic mutation, yielding transferable black-box attacks."
     },
     {
       "category": "safety",
@@ -4979,7 +5188,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (embedding)",
       "tool_usage": "Yes (iterative)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL jailbreak guided by embedding proximity between benign and malicious prompts, giving a denser reward that preserves intent while maximizing attack success."
     },
     {
       "category": "safety",
@@ -5003,7 +5213,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (strategy exploration)",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL red-teaming that optimizes multi-step attack strategies via early-terminated exploration and progressive reward tracking with intermediate downgrade models."
     },
     {
       "category": "safety",
@@ -5027,7 +5238,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "Yes (tool monitoring)",
-      "focus": null
+      "focus": null,
+      "takeaway": "TS-Guard, a multi-task RL guardrail that judges tool-call safety from interaction history at each step, cutting harmful invocations ~65% under prompt injection."
     },
     {
       "category": "safety",
@@ -5051,7 +5263,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (harmfulness judge) + Rule",
       "tool_usage": "Yes (target LLM)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Trajectory-level RL for multi-turn jailbreaks: final-turn harmfulness as outcome reward plus refusal-penalty and semantic-steering process rewards for sparse signal."
     },
     {
       "category": "safety",
@@ -5075,7 +5288,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (judge)",
       "tool_usage": "Yes (target LLM)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Three-stage GRPO red-teaming (imitation cold-start, diversity+consistency warm-up, progressive jailbreak reward) to balance attack effectiveness and diversity."
     },
     {
       "category": "safety",
@@ -5099,7 +5313,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Reasoning-based VLM safety guard: SFT cold-start then online RL with length-aware safety reward and dynamic clipping for deliberative multimodal moderation."
     }
   ],
   "vlm_agent": [
@@ -5125,7 +5340,8 @@
       "turn_mode": "Single-turn parallel",
       "reward_type": "Rule + Model",
       "tool_usage": "Yes (parallel video-window crop tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "PARA-GRPO for long-video agents: targeted format reward at fragile structural tokens plus frame-budget randomization to stop tool-prior-induced format collapse."
     },
     {
       "category": "vlm_agent",
@@ -5149,7 +5365,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model (LLM judge)",
       "tool_usage": "Yes (text/image search, OCR, crop, sharpen, SR, perspective)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-turn fatal-aware GRPO masks post-tool-failure tokens while keeping pre-failure reasoning via one-sided advantage clamping for multimodal deep search."
     },
     {
       "category": "vlm_agent",
@@ -5173,7 +5390,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule/External",
       "tool_usage": "Yes (web search, web read, Google Lens, image search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "DAPO trained by replaying cached tool interactions (no live API calls) on 21K multi-hop data, deepening multimodal search reasoning from 2.27 to 4.28 steps."
     },
     {
       "category": "vlm_agent",
@@ -5197,7 +5415,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "First end-to-end RL (GRPO) teaching LMMs on-demand multi-turn image+text search, with search penalty and search-balanced data cutting calls >30%."
     },
     {
       "category": "vlm_agent",
@@ -5221,7 +5440,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Code exec, Web search)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Shows direct RL alone fails to induce robust tool use; needs cold-start then RL to get task-adaptive tool invocation (image ops for perception, code for math)."
     },
     {
       "category": "vlm_agent",
@@ -5245,7 +5465,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "RL trains a VLM to use its own grounding as an intrinsic tool, deciding when/where to zoom into images for active perception, with no SFT cold-start or external APIs."
     },
     {
       "category": "vlm_agent",
@@ -5269,7 +5490,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Counterfactual soft RL uses causal influence of each token on the post-processed action to focus exploration on action-critical tokens and suppress redundant ones."
     },
     {
       "category": "vlm_agent",
@@ -5293,7 +5515,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Fine-tunes a whole VLM with PPO by prompting CoT reasoning, parsing the text into executable actions, and using environment task rewards as the RL signal."
     },
     {
       "category": "vlm_agent",
@@ -5317,7 +5540,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Recasts VLM agent control as variational subgoal-conditioned RL via an SGC-ELBO objective that maximizes subgoal return while staying near a reference goal policy for sparse long-horizon tasks."
     },
     {
       "category": "vlm_agent",
@@ -5341,7 +5565,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (4 planning rewards)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Brings GRPO to driving planning with four planning-tailored rewards plus a two-stage SFT-then-RL recipe, yielding emergent multimodal planning behaviors."
     },
     {
       "category": "vlm_agent",
@@ -5365,7 +5590,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (image crop)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Over-turn masking avoids penalizing responses that hit the turn cap during GRPO, letting models trained on ~6 turns scale to tens of turns of visual search at inference."
     },
     {
       "category": "vlm_agent",
@@ -5389,7 +5615,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (LLM-Judge)",
       "tool_usage": "Yes (hi-res request)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Model starts at low resolution and emits a special token to request a high-res image only when needed; RL with LLM-as-Judge trains this adaptive token-compression behavior."
     },
     {
       "category": "vlm_agent",
@@ -5413,7 +5640,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (PDMS)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Unifies reasoning and action in one autoregressive model by tokenizing trajectories into discrete actions, then uses GRPO RFT to drop unnecessary reasoning in easy driving scenes."
     },
     {
       "category": "vlm_agent",
@@ -5437,7 +5665,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule + Model",
       "tool_usage": "Yes (zoom/select-frame)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Adds pixel-space operations (zoom-in, select-frame) to VLM reasoning, using a curiosity-driven reward to balance exploring these visual ops against text reasoning."
     },
     {
       "category": "vlm_agent",
@@ -5461,7 +5690,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Search/Python)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Agentic RFT teaches LVLMs multimodal tool use, browsing the web and writing code to manipulate input images for adaptive multi-step reasoning."
     },
     {
       "category": "vlm_agent",
@@ -5485,7 +5715,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (Python visual tools)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Integrates Python visual-editing tools into RFT so VLMs learn when/how to insert visual steps in multimodal CoT, trained with outcome-only rewards (no process supervision)."
     },
     {
       "category": "vlm_agent",
@@ -5509,7 +5740,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (GroundingDINO/SAM/OCR/crop)",
-      "focus": null
+      "focus": null,
+      "takeaway": "V-ToolRL lets LVLMs discover tool-use strategies by directly optimizing task success from tool-interaction feedback, packaged in an open framework with standardized vision-tool interfaces."
     },
     {
       "category": "vlm_agent",
@@ -5533,7 +5765,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (outcome+format)",
       "tool_usage": "Yes (zoom-in)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Two-stage SFT-then-RL pipeline trains a VLM to iteratively zoom into key image regions, using only answer accuracy and format as outcome rewards."
     },
     {
       "category": "vlm_agent",
@@ -5557,7 +5790,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule",
       "tool_usage": "Yes (bbox)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Grounded reasoning interleaves natural language with explicit bbox coordinates; GRPO-GR trains it from only answer-accuracy and format rewards, no reasoning-chain or bbox labels."
     }
   ],
   "self_evolution": [
@@ -5583,7 +5817,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (intrinsic; world-knowledge gain)",
       "tool_usage": "Yes (web pipeline for env-specific knowledge construction)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Outcome reward measures how much an agent's self-generated world knowledge raises downstream success, enabling reward-free spontaneous adaptation to unseen environments at inference."
     },
     {
       "category": "self_evolution",
@@ -5607,7 +5842,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-questioning (task generation), self-navigating (experience-reuse exploration), and self-attributing (per-action differentiated rewards) make agent RL self-sufficient and sample-efficient."
     },
     {
       "category": "self_evolution",
@@ -5631,7 +5867,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model",
       "tool_usage": "Yes (Screenshot-based)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-evolving computer-use agent: a World State Model scores trajectories and a curriculum generates tasks, with GRPO on successes plus adversarial imitation of failure actions."
     },
     {
       "category": "self_evolution",
@@ -5655,7 +5892,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (learned skills)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Treats memory operations as learnable evolvable skills: a controller learns skill selection while a designer reviews failures and refines the skill set in a closed loop."
     },
     {
       "category": "self_evolution",
@@ -5679,7 +5917,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (retrieval)",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "Non-parametric memory RL decouples stable reasoning from plastic episodic memory, using two-phase retrieval and environmental feedback to surface high-utility strategies without weight updates."
     },
     {
       "category": "self_evolution",
@@ -5703,7 +5942,8 @@
       "turn_mode": "Multi",
       "reward_type": "All",
       "tool_usage": "Yes",
-      "focus": null
+      "focus": null,
+      "takeaway": "StarPO does trajectory-level agent RL; StarPO-S adds trajectory filtering, critic, and gradient stabilization to escape the 'Echo Trap' reward-variance/gradient-spike failure mode."
     },
     {
       "category": "self_evolution",
@@ -5727,7 +5967,8 @@
       "turn_mode": "Multi",
       "reward_type": "Model (ORM)",
       "tool_usage": "Yes (Web browsing)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-evolving online curriculum RL generates new tasks from failed attempts, paired with an outcome-supervised reward model and adaptive RL to train open-source web agents."
     },
     {
       "category": "self_evolution",
@@ -5751,7 +5992,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule",
       "tool_usage": "Yes (experience retrieval)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Closed-loop self-improvement: offline self-distillation builds a repository of reusable strategic principles, then online retrieval of those principles drives RL policy updates."
     },
     {
       "category": "self_evolution",
@@ -5775,7 +6017,8 @@
       "turn_mode": "Multi",
       "reward_type": "Rule (majority voting)",
       "tool_usage": "No",
-      "focus": null
+      "focus": null,
+      "takeaway": "Co-evolutionary GRPO where a Challenger is rewarded for posing tasks at the edge of Solver ability and the Solver for solving them, no human data."
     },
     {
       "category": "self_evolution",
@@ -5799,7 +6042,8 @@
       "turn_mode": "Single",
       "reward_type": "Rule + learnability",
       "tool_usage": "Yes (Python exec)",
-      "focus": null
+      "focus": null,
+      "takeaway": "Single model proposes its own tasks and learns from code-execution-verified rewards via TRR++, a self-play loop needing zero external datasets."
     }
   ],
   "environment": [
@@ -5820,7 +6064,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "'Everything as Environment' abstraction extending MCP into one Environment API so tools, benchmarks, and multi-agent systems plug into RL training uniformly."
     },
     {
       "category": "environment",
@@ -5839,7 +6084,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-language sandbox platform with standardized lifecycle APIs over Docker/K8s for secure agent code execution in RL training and evaluation."
     },
     {
       "category": "environment",
@@ -5858,7 +6104,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Gymnasium-style step()/reset()/state() standard for containerized agentic execution environments, removing per-env custom integration for RL."
     },
     {
       "category": "environment",
@@ -5877,7 +6124,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Manages the full stateful agent system (data, harness, verifier, exec context) so evaluation, optimization, and RL share one reproducible pipeline at scale."
     },
     {
       "category": "environment",
@@ -5896,7 +6144,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "SFT->online RL->GEPA post-training pipeline on multi-turn tool-use trajectories for locally-deployable CTF/security agents, bring-your-own components."
     },
     {
       "category": "environment",
@@ -5915,7 +6164,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "SWE-GEN builds executable training envs from commits (not human PRs) plus hybrid exec/exec-free verifiers for scalable real-world SWE-agent RL."
     },
     {
       "category": "environment",
@@ -5934,7 +6184,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Turns 8K static code scenarios into interactive multi-turn envs to test long-context (10K-1M tokens) SWE-agent behavior across languages."
     },
     {
       "category": "environment",
@@ -5953,7 +6204,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Uses reasoning models to simulate realistic environments, then trains tool-use agents via SFT and RL on those synthetic trajectories instead of real systems."
     },
     {
       "category": "environment",
@@ -5972,7 +6224,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Benchmark for research questions needing cross-paper synthesis via orchestrated external tools (PDF parsing, retrieval, computation)."
     },
     {
       "category": "environment",
@@ -5991,7 +6244,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Multi-agent deep-research system combining adaptive query decomposition, specialized search agents, reflection, and human-in-the-loop steering."
     },
     {
       "category": "environment",
@@ -6010,7 +6264,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Gaia2 evaluation in evolving environments where new info and shifting conditions force agents to adapt strategies, adding temporal complexity to static benchmarks."
     },
     {
       "category": "environment",
@@ -6029,7 +6284,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Evaluates deep-research agents against a fixed ~100K human-verified corpus to control retrieval and isolate retriever-vs-LLM effects fairly."
     },
     {
       "category": "environment",
@@ -6053,7 +6309,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Connects LLMs to 28 live MCP servers (250 tools) to test cross-domain orchestration, schema understanding, and fuzzy-instruction tool planning."
     },
     {
       "category": "environment",
@@ -6072,7 +6329,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Benchmark of 550+ executable real-world tools used simultaneously, an OS-like environment for testing agents in large tool spaces."
     },
     {
       "category": "environment",
@@ -6091,7 +6349,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Verifier model classifying outputs as correct/incorrect/quality-problematic robustly across prompt formats, for consistent RL reward signals."
     },
     {
       "category": "environment",
@@ -6110,7 +6369,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Dual-control simulation where agent and simulated user both act, testing policy adherence and tool use in customer-service dialogues."
     },
     {
       "category": "environment",
@@ -6129,7 +6389,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Benchmarks agents against real live MCP servers and unfamiliar tool spaces over multi-step tasks rather than simplified synthetic tool calls."
     },
     {
       "category": "environment",
@@ -6148,7 +6409,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Toolkit that turns any GitHub repo into a SWE-gym, generating unlimited synthetic training tasks for SWE agents."
     },
     {
       "category": "environment",
@@ -6172,7 +6434,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "First training environment of 2,438 executable real-world Python tasks for SWE agents via SFT plus inference-time verifier scaling."
     },
     {
       "category": "environment",
@@ -6191,7 +6454,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Evaluates long-horizon agentic search with an Agent-as-a-Judge rubric scoring citation-backed synthesis of real-time information."
     },
     {
       "category": "environment",
@@ -6210,7 +6474,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Gym-style composable env API for LLM agents with async vectorization, tool integration (Python/search/MCP), and adapters to 6 RL frameworks."
     },
     {
       "category": "environment",
@@ -6229,7 +6494,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Gym-style sandbox over 200+ Kaggle ML-engineering tasks giving both final-outcome and intermediate-step rewards via a FeedbackManager for SFT/RL."
     },
     {
       "category": "environment",
@@ -6248,7 +6514,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Microservice framework for async LLM RL: envs run as decoupled services that tokenize/score rollouts into a shared trajectory API queue independent of trainers."
     },
     {
       "category": "environment",
@@ -6267,7 +6534,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Evolutionarily auto-generated 1000+ verifiable reasoning tasks (case_generator/prompt_func/verify_func) showing task-count scaling boosts RL reasoning via cross-task transfer."
     },
     {
       "category": "environment",
@@ -6286,7 +6554,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-bootstrapping RLVR loop (Generator/Verifier/Agent) over 8729 seed questions in 12 computable domains using executable rationales for deterministic reward."
     },
     {
       "category": "environment",
@@ -6305,7 +6574,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Benchmark evaluating LLM agents on multi-step interdependent data-science workflows (plan, code, sequential execution) via completion-rate, cost, and error metrics."
     },
     {
       "category": "environment",
@@ -6324,7 +6594,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "100+ procedural dataset generators with built-in score_answer functions giving infinite difficulty-adjustable, algorithmically verifiable rewards for RL reasoning training."
     },
     {
       "category": "environment",
@@ -6343,7 +6614,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Gymnasium-style unified reset/step interface bundling diverse LLM-app environments (QA, customer service, terminal) with built-in feedback for RL/SFT benchmarking."
     },
     {
       "category": "environment",
@@ -6362,7 +6634,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Interactive debugging env wrapping pdb plus bash/view/grep/edit/eval tools so agents debug via real breakpoints/state inspection, not just code synthesis."
     },
     {
       "category": "environment",
@@ -6381,7 +6654,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "LLMEnv adapter exposing gymnasium control/game envs to LLM agents via observation/action/goal schemas plus history-reflection, targeting planning over real-time control."
     },
     {
       "category": "environment",
@@ -6400,7 +6674,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "14 ReAct-format envs as HTTP services plus AgentEvol, a self-evolution method letting agents improve beyond seen data across tasks/environments."
     },
     {
       "category": "environment",
@@ -6419,7 +6694,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Benchmark for tool-agent-user interaction: LLM-simulated users hold dynamic multi-turn conversations testing API tool use under policy constraints (pass^k consistency)."
     },
     {
       "category": "environment",
@@ -6438,7 +6714,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "High-fidelity sandbox of 9 apps/457 APIs over ~100 simulated people where agents write interactive Python; success judged by database-state changes."
     },
     {
       "category": "environment",
@@ -6457,7 +6734,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Live-emulator benchmark of 116 tasks across 20 apps with parameter-randomized dynamic task instantiation and durable reward signals to prevent solution memorization."
     },
     {
       "category": "environment",
@@ -6476,7 +6754,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Simulated software company (GitLab, PM, chat) benchmarking agents on consequential cross-role work tasks with checkpoint-based deterministic and LLM evaluators."
     },
     {
       "category": "environment",
@@ -6495,7 +6774,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Single Agent base class abstracting context, episode batching, reward assignment, and PPO loops so LLMs can be online-RL fine-tuned in Gym with three methods."
     },
     {
       "category": "environment",
@@ -6514,7 +6794,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Multimodal extension of WebArena with visually-grounded web tasks evaluated via screenshots and Set-of-Marks element marking for vision-language agents."
     },
     {
       "category": "environment",
@@ -6533,7 +6814,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Eight multi-turn RL benchmarks (mazes, chess, Wordle, 20-questions) stressing credit assignment, trajectory stitching, and info-gathering with BC+ILQL/PPO baselines."
     },
     {
       "category": "environment",
@@ -6552,7 +6834,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Computer-use benchmark running real OSes (Ubuntu/Windows via VM/Docker/AWS) where screenshot-driven agents do open-ended GUI/file/web tasks with parallel evaluation."
     },
     {
       "category": "environment",
@@ -6571,7 +6854,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Self-hostable replicas of real sites (shop, GitLab, Reddit, maps) for reproducible web-agent eval scored by functional task outcomes, not surface metrics."
     },
     {
       "category": "environment",
@@ -6590,7 +6874,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "First benchmark evaluating LLM-as-agent across 8 multi-turn interactive environments (OS, DB, knowledge graph, card game, ALFWorld, web shop/browse)."
     },
     {
       "category": "environment",
@@ -6609,7 +6894,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Simulated e-commerce env (1.18M products, 12k instructions) for instruction-following shopping supporting IL/RL/IL+RL with sim-to-real transfer to live sites."
     },
     {
       "category": "environment",
@@ -6628,7 +6914,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Text-based environment of 10 elementary-science task families (up to 1,386 variations) with tunable simplifications, benchmarking agent scientific reasoning."
     },
     {
       "category": "environment",
@@ -6647,7 +6934,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Aligns parallel TextWorld and embodied ALFRED/THOR tasks so agents learn abstract high-level policies in text before transferring to 3D actuation."
     },
     {
       "category": "environment",
@@ -6666,7 +6954,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Open-ended Factorio benchmark where agents act via a Python-code REPL (observe output, generate program, get state feedback) for non-saturating evals."
     },
     {
       "category": "environment",
@@ -6685,7 +6974,8 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Python interface to real interactive-fiction games exposing object trees, vocab, and template action generators to tame combinatorial text action spaces."
     },
     {
       "category": "environment",
@@ -6704,93 +6994,115 @@
       "turn_mode": null,
       "reward_type": null,
       "tool_usage": null,
-      "focus": null
+      "focus": null,
+      "takeaway": "Procedurally generates text adventure games (tw-make) behind a Gym-like API to supply diverse, difficulty-controllable RL training scenarios."
     }
   ],
   "under_review": [
     {
       "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
-      "url": "https://arxiv.org/abs/2604.15840"
+      "url": "https://arxiv.org/abs/2604.15840",
+      "takeaway": "CoEvolve: agent-data mutual evolution that mines forgetting/uncertainty signals from rollouts to synthesize new tasks and update the RL training distribution."
     },
     {
       "title": "JoyAgents-R1: Joint Evolution Dynamics for Versatile Multi-LLM Agents with Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2506.19846"
+      "url": "https://arxiv.org/abs/2506.19846",
+      "takeaway": "HiMA-Ecom/HiMA-R1: variance-reduction GRPO that selects informative agent groups by reward variance for joint training of hierarchical e-commerce multi-agents."
     },
     {
       "title": "Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2507.17842"
+      "url": "https://arxiv.org/abs/2507.17842",
+      "takeaway": "Shop-R1: two-stage RL simulating shopper behavior via logit-guided rationale rewards plus difficulty-aware hierarchical action rewards to curb reward hacking."
     },
     {
       "title": "Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2508.03501"
+      "url": "https://arxiv.org/abs/2508.03501",
+      "takeaway": "Trains long-context multi-turn SWE agents via rejection fine-tuning then synchronous DAPO RL, lifting Qwen2.5-72B from 11% to 39% on SWE-bench Verified."
     },
     {
       "title": "Acting Less is Reasoning More! Teaching Model to Act Efficiently",
-      "url": "https://arxiv.org/abs/2504.14870"
+      "url": "https://arxiv.org/abs/2504.14870",
+      "takeaway": "OTC-PO: rewards correct answers with minimal tool calls (tool productivity) to fight cognitive offloading, cutting calls up to 68% while keeping accuracy."
     },
     {
       "title": "Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2505.01441"
+      "url": "https://arxiv.org/abs/2505.01441",
+      "takeaway": "ARTIST: outcome-based RL teaching LLMs to autonomously decide when/which tools to invoke within multi-turn reasoning without step-level supervision."
     },
     {
       "title": "ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents",
-      "url": "https://arxiv.org/abs/2508.14040"
+      "url": "https://arxiv.org/abs/2508.14040",
+      "takeaway": "ComputerRL: scales online RL over thousands of parallel desktops with an API-GUI action paradigm and Entropulse (RL/SFT alternation) to avoid entropy collapse."
     },
     {
       "title": "Atom-Searcher: Enhancing Agentic Deep Research via Fine-Grained Atomic Thought Reward",
-      "url": "https://github.com/antgroup/Research-Venus"
+      "url": "https://github.com/antgroup/Research-Venus",
+      "takeaway": "Atom-Searcher: decomposes reasoning into 'Atomic Thoughts' scored by a reasoning reward model for dense process-level rewards on a curriculum schedule."
     },
     {
       "title": "MUA-RL: MULTI-TURN USER-INTERACTING AGENTREINFORCEMENT LEARNING FOR AGENTIC TOOL USE",
-      "url": "https://github.com/zzwkk/MUA-RL"
+      "url": "https://github.com/zzwkk/MUA-RL",
+      "takeaway": "MUA-RL: multi-turn agentic tool-use RL with fresh per-rollout environments and a conversation schema controlling backprop for sustained agent-user dialogue."
     },
     {
       "title": "Understanding Tool-Integrated Reasoning",
-      "url": "https://zhongwenxu.notion.site/Understanding-Tool-Integrated-Reasoning-2551c4e140e3805489fadcc802a1ea83"
+      "url": "https://zhongwenxu.notion.site/Understanding-Tool-Integrated-Reasoning-2551c4e140e3805489fadcc802a1ea83",
+      "takeaway": "Understanding TIR: formal proof tools strictly expand LLM support, plus ASPO (Advantage Shaping Policy Optimization) that reshapes advantage to guide tool use."
     },
     {
       "title": "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2508.19828"
+      "url": "https://arxiv.org/abs/2508.19828",
+      "takeaway": "Memory-R1: outcome-driven RL (PPO/GRPO) trains a Memory Manager (ADD/UPDATE/DELETE/NOOP) and Answer agent for learned external memory using only 152 QA pairs."
     },
     {
       "title": "Encouraging Good Processes Without the Need for Good Answers: Reinforcement Learning for LLM Agent Planning",
-      "url": "https://arxiv.org/abs/2508.19598"
+      "url": "https://arxiv.org/abs/2508.19598",
+      "takeaway": "RLTR: decouples agent planning from answering, rewarding tool-use completeness of invocation sequences so planning improves without verifiable final answers."
     },
     {
       "title": "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents",
-      "url": "https://arxiv.org/abs/2509.06283"
+      "url": "https://arxiv.org/abs/2509.06283",
+      "takeaway": "SFR-DeepResearch: simple RL recipe on entirely synthetic data that continually trains reasoning-optimized single agents while preserving reasoning ability."
     },
     {
       "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
-      "url": "https://arxiv.org/abs/2509.06501"
+      "url": "https://arxiv.org/abs/2509.06501",
+      "takeaway": "WebExplorer: model-based exploration with long-to-short query evolution generates hard data for SFT+RL, training an 8B web agent over ~16 search turns."
     },
     {
       "title": "EnvX: Agentize Everything with Agentic AI",
-      "url": "https://arxiv.org/abs/2509.08088"
+      "url": "https://arxiv.org/abs/2509.08088",
+      "takeaway": "EnvX: agentizes GitHub repos via TODO-guided environment init and an Agent-to-Agent protocol for multi-repo collaboration; RL not detailed in abstract."
     },
     {
       "title": "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2509.02544"
+      "url": "https://arxiv.org/abs/2509.02544",
+      "takeaway": "UI-TARS-2: stabilized multi-turn RL for GUI agents with a data flywheel, hybrid file/terminal+GUI environments, and a unified sandbox for large-scale rollouts."
     },
     {
       "title": "UI-Venus Technical Report: Building High-performance UI Agents with RFT",
-      "url": "https://arxiv.org/abs/2508.10833"
+      "url": "https://arxiv.org/abs/2508.10833",
+      "takeaway": "UI-Venus: reinforcement fine-tuning of Qwen2.5-VL UI agents with grounding/navigation reward design plus self-evolving trajectory alignment and sparse-action enhancement."
     },
     {
       "title": "Agent2 : An Agent-Generates-Agent Framework for Reinforcement Learning Automation",
-      "url": "https://arxiv.org/abs/2509.13368"
+      "url": "https://arxiv.org/abs/2509.13368",
+      "takeaway": "Agent2: an LLM Generator Agent auto-designs/optimizes RL Target Agents by splitting development into MDP modeling and algorithmic optimization stages."
     },
     {
       "title": "Adversarial Reinforcement Learning for Large Language Model Agent Safety",
-      "url": "https://arxiv.org/abs/2510.05442"
+      "url": "https://arxiv.org/abs/2510.05442",
+      "takeaway": "ARLAS: trains LLM agent safety as a two-player zero-sum game with population-based learning defending against all prior attacker checkpoints to avoid cyclic dynamics."
     },
     {
       "title": "Learning to Refine: An Agentic RL Approach for Iterative SPARQL Query Construction",
-      "url": "https://www.arxiv.org/abs/2511.11770"
+      "url": "https://www.arxiv.org/abs/2511.11770",
+      "takeaway": "A 3B model learns iterative SPARQL query construction via outcome-only GRPO (no SFT), using real-time execution feedback to recover from errors and self-refine."
     },
     {
       "title": "InfoFlow: Reinforcing Search Agent Via Reward Density Optimization",
-      "url": "https://arxiv.org/abs/2510.26575"
+      "url": "https://arxiv.org/abs/2510.26575",
+      "takeaway": "InfoFlow combats sparse search rewards via reward-density optimization: subproblem intermediate rewards, corrective guidance on stalls, and a history-compressing refiner agent."
     }
   ]
 }

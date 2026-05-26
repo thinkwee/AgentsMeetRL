@@ -6,6 +6,10 @@ You're already on GRPO and training is roughly working, but you want to
 tune. This file lists the knobs that actually move the needle in this
 corpus, with the algorithm/idea behind each.
 
+Config flag names below (e.g. `norm_adv_by_std_in_grpo`) are taken from
+veRL at the snapshot date; they may be renamed across releases, so check
+them against the framework version you use.
+
 ## Knob 1: group size N
 
 - **Common settings**: N=8 to N=16 in most papers; N=4 only on cheap

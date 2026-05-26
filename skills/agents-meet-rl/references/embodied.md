@@ -5,6 +5,7 @@ Agents in physical/simulated robotic environments.
 _Total: 3 entries._
 
 ### Embodied-R1
+- **Idea:** Uses embodiment-agnostic 'pointing' as intermediate action representation, trained via two-stage RFT with multi-task rewards for cross-robot transfer.
 - `https://github.com/pickxiguapi/Embodied-R1` · org: Tianjing University · date: 2025.8
 - Paper(s): [Paper](http://arxiv.org/abs/2508.13998)
 - Algorithm: GRPO · Framework: veRL · Agent: Single · Turns: Single · Tools: No
@@ -12,6 +13,7 @@ _Total: 3 entries._
 - Task: Grounding/Waypoint
 
 ### VIKI-R
+- **Idea:** SFT on CoT-annotated demos then GRPO under multi-level rewards, grounding multi-robot cooperative reasoning directly in visual input.
 - `https://github.com/MARS-EAI/VIKI-R` · org: MARS-EAI (NeurIPS 2025 D&B) · date: 2025.6
 - Paper(s): [Paper](https://arxiv.org/abs/2506.09049)
 - Algorithm: GRPO (RFT after SFT) · Framework: veRL + LLaMA-Factory · Agent: Multi · Turns: Multi · Tools: No
@@ -19,6 +21,7 @@ _Total: 3 entries._
 - Task: Embodied Multi-Robot Cooperation (VIKI-Bench)
 
 ### STeCa
+- **Idea:** Detects bad steps via step-level reward comparison during exploration and uses LLM reflection to build corrected trajectories for calibration before RFT.
 - `https://github.com/WangHanLinHenry/STeCa` · org: The Hong Kong Polytechnic University · date: 2025.2
 - Paper(s): [Paper](https://arxiv.org/abs/2502.14276)
 - Algorithm: DPO (RFT) · Framework: FastChat/TRL · Agent: Single · Turns: Multi · Tools: Environment Actions

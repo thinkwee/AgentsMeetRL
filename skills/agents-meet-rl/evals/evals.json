@@ -47,7 +47,7 @@
       "category": "post-snapshot-staleness",
       "prompt": "Have you read the GRPO-Plus paper from 2026-08?",
       "expected_behavior": [
-        "Recognizes that 2026-08 is after the snapshot date 2026-04-28.",
+        "Recognizes that 2026-08 is after the snapshot date 2026-05-23.",
         "Explicitly flags that this skill's corpus does not cover that paper rather than fabricating a description.",
         "Optionally suggests the user read the paper directly and can come back with specific symptoms."
       ]

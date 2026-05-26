@@ -5,6 +5,7 @@ Agents that improve themselves through closed-loop feedback (challenger/solver, 
 _Total: 10 entries._
 
 ### world-knowledge
+- **Idea:** Outcome reward measures how much an agent's self-generated world knowledge raises downstream success, enabling reward-free spontaneous adaptation to unseen environments at inference.
 - `https://github.com/Bklight999/world-knowledge` · org: HKUST / Tencent · date: 2026.4
 - Paper(s): [Paper](https://arxiv.org/abs/2604.18131)
 - Algorithm: Outcome-based RL (reward-free self-evolution) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (web pipeline for env-specific knowledge construction)
@@ -12,6 +13,7 @@ _Total: 10 entries._
 - Task: Web Agents (WebVoyager/WebWalker; +20% on Qwen3-30B & Seed-OSS-36B)
 
 ### MemSkill
+- **Idea:** Treats memory operations as learnable evolvable skills: a controller learns skill selection while a designer reviews failures and refines the skill set in a closed loop.
 - `https://github.com/ViktorAxelsen/MemSkill` · org: NTU/UIUC/UIC/Tsinghua · date: 2026.2
 - Paper(s): [Paper](https://arxiv.org/abs/2602.02474)
 - Algorithm: PPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes
@@ -19,6 +21,7 @@ _Total: 10 entries._
 - Task: QA/ALFWorld
 
 ### MemRL
+- **Idea:** Non-parametric memory RL decouples stable reasoning from plastic episodic memory, using two-phase retrieval and environmental feedback to surface high-utility strategies without weight updates.
 - `https://github.com/MemTensor/MemRL` · org: SJTU/Xidian/NUS/USTC/MemTensor · date: 2026.1
 - Paper(s): [Paper](https://arxiv.org/abs/2601.03192)
 - Algorithm: RL-based (Q-value) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes
@@ -26,6 +29,7 @@ _Total: 10 entries._
 - Task: HLE/BigCodeBench/ALFWorld
 
 ### AgentEvolver
+- **Idea:** Self-questioning (task generation), self-navigating (experience-reuse exploration), and self-attributing (per-action differentiated rewards) make agent RL self-sufficient and sample-efficient.
 - `https://github.com/modelscope/AgentEvolver` · org: Alibaba/Tongyi Lab · date: 2025.11
 - Paper(s): [Paper](https://arxiv.org/abs/2511.10395)
 - Algorithm: ADCA-GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes
@@ -33,6 +37,7 @@ _Total: 10 entries._
 - Task: Social Game/Tool-use
 
 ### EvolveR
+- **Idea:** Closed-loop self-improvement: offline self-distillation builds a repository of reusable strategic principles, then online retrieval of those principles drives RL policy updates.
 - `https://github.com/Edaizi/EvolveR` · org: KnowledgeXLab / Shanghai AI Lab · date: 2025.10
 - Paper(s): [Paper](https://arxiv.org/abs/2510.16079)
 - Algorithm: GRPO (closed-loop online+offline) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (experience retrieval)
@@ -40,6 +45,7 @@ _Total: 10 entries._
 - Task: Multi-hop QA (NQ/HotpotQA)
 
 ### SEAgent
+- **Idea:** Self-evolving computer-use agent: a World State Model scores trajectories and a curriculum generates tasks, with GRPO on successes plus adversarial imitation of failure actions.
 - `https://github.com/SunzeY/SEAgent` · org: Shanghai AI Lab / CUHK · date: 2025.8
 - Paper(s): [Paper](https://arxiv.org/abs/2508.04700)
 - Algorithm: GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Screenshot-based)
@@ -47,6 +53,7 @@ _Total: 10 entries._
 - Task: Computer Use (OSWorld)
 
 ### R-Zero
+- **Idea:** Co-evolutionary GRPO where a Challenger is rewarded for posing tasks at the edge of Solver ability and the Solver for solving them, no human data.
 - `https://github.com/Chengsong-Huang/R-Zero` · org: Tencent AI Seattle Lab / WashU / UMD · date: 2025.8
 - Paper(s): [Paper](https://arxiv.org/abs/2508.05004)
 - Algorithm: GRPO (Challenger + Solver co-evolution) · Framework: EasyR1 · Agent: Multi · Turns: Multi · Tools: No
@@ -54,6 +61,7 @@ _Total: 10 entries._
 - Task: Math/SuperGPQA/MMLU-Pro/BBEH
 
 ### Absolute-Zero-Reasoner
+- **Idea:** Single model proposes its own tasks and learns from code-execution-verified rewards via TRR++, a self-play loop needing zero external datasets.
 - `https://github.com/LeapLabTHU/Absolute-Zero-Reasoner` · org: Tsinghua (LeapLabTHU) / BIGAI / PSU · date: 2025.5
 - Paper(s): [Paper](https://arxiv.org/abs/2505.03335)
 - Algorithm: TRR++ (Task-Relative REINFORCE++) · Framework: veRL · Agent: Single · Turns: Single · Tools: Yes (Python exec)
@@ -61,6 +69,7 @@ _Total: 10 entries._
 - Task: Code/Math Reasoning (HumanEval/MBPP/LiveCodeBench)
 
 ### RAGEN
+- **Idea:** StarPO does trajectory-level agent RL; StarPO-S adds trajectory filtering, critic, and gradient stabilization to escape the 'Echo Trap' reward-variance/gradient-spike failure mode.
 - `https://github.com/RAGEN-AI/RAGEN` · org: RAGEN-AI · date: 2025.4
 - Paper(s): [Paper](https://arxiv.org/abs/2504.20073)
 - Algorithm: PPO/GRPO (StarPO) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes
@@ -68,6 +77,7 @@ _Total: 10 entries._
 - Task: TextGame
 
 ### WebRL
+- **Idea:** Self-evolving online curriculum RL generates new tasks from failed attempts, paired with an outcome-supervised reward model and adaptive RL to train open-source web agents.
 - `https://github.com/THUDM/WebRL` · org: Tsinghua/Zhipu AI · date: 2024.11
 - Paper(s): [Paper](https://arxiv.org/abs/2411.02337)
 - Algorithm: Actor-Critic RL + ORM · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Web browsing)

@@ -3,6 +3,13 @@ name: agents-meet-rl
 description: "Troubleshooter for agentic-RL training, evaluation, and experiment design on LLM agents (single or multi-agent, multi-turn, tool-augmented). Routes a user's symptom to fixes anchored in the corpus. TRIGGER when: user is training, evaluating, or designing experiments for an RL-trained LLM agent; symptoms like reward not moving, eval flat, KL/entropy/length blow-ups, retokenization drift, tool-call parse failures, credit assignment, async-rollout staleness, judge inconsistency, benchmark contamination, pass@k vs pass@1; choices about ablation, baseline, framework, algorithm, reward, or data curation; user names GRPO, PPO, DAPO, veRL, OpenRLHF, slime, AReaL, RAGEN, or similar. SKIP: generic supervised LLM fine-tuning with no RL component; classical RL theory or tabular RL; non-LLM agents. Distilled from the AgentsMeetRL awesome list, snapshot 2026-05-23."
 ---
 
+## What this is
+
+A corpus-anchored handbook for diagnosis and selection. It supplies
+knowledge — it does **not** read or run your training: it can't inspect
+your logs, wandb, or live metrics. You bring the symptom; it returns
+likely causes, checks, and cited fixes for you to apply.
+
 ## Where things are
 
 - **`problems/_INDEX.md`** — symptom → file routing, grouped under
@@ -12,11 +19,14 @@ description: "Troubleshooter for agentic-RL training, evaluation, and experiment
   decision / modality / eval-checklist / research-workflow files use
   task-oriented structures.
 - **`references/_INDEX.md`** + **`references/<cat>.md`** — per-category
-  project lists with full metadata. Use for "which framework /
-  benchmark" selection and to look up algorithm or project names not
-  routed via `problems/_INDEX.md`.
-- **`database.json`** — machine-readable, 312 entries plus 3
-  paper-only algorithms (DAPO, Dr.GRPO, VAPO) whitelisted in
+  project lists with full metadata. Each entry carries an **`Idea:`**
+  line — one sentence on its distinctive contribution, grounded in the
+  paper/repo. Use for "which framework / benchmark" selection, to look
+  up project names not routed via `problems/_INDEX.md`, and to answer
+  "what's the idea behind X" by quoting its `Idea:` line.
+- **`database.json`** — machine-readable, 312 entries (each with a
+  `takeaway` field mirroring the `Idea:` line) plus 3 paper-only
+  algorithms (DAPO, Dr.GRPO, VAPO) whitelisted in
   `scripts/lint_skill.py`.
 
 ## Citing fixes
