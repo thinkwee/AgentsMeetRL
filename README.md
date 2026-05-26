@@ -79,7 +79,7 @@ Some Enumeration:
 ## 🤖 Use as a Claude Code Skill
 
 <div align="center">
-  <img src="AgentsMeetRL_Skill_landscape.png" alt="Logo" width="300">
+  <img src="AgentsMeetRL_Skill_landscape.png" alt="Logo" width="600">
 </div>
 
 This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **312 projects** (snapshot **2026-05-23**). Once installed, Claude Code auto-invokes it whenever your question matches.
