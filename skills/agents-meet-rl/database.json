@@ -1,0 +1,6796 @@
+{
+  "base_framework": [
+    {
+      "category": "base_framework",
+      "name": "uni-agent",
+      "github_url": "https://github.com/verl-project/uni-agent",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "verl-project",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE-Bench/Search/General Agent (1000+ concurrent)",
+      "rl_algorithm": "GRPO/GSPO (partial rollout, fully-async)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes (unified model/tool/env abstractions)",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "Open-AgentRL",
+      "github_url": "https://github.com/Gen-Verse/Open-AgentRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.02488"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "Gen-Verse",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Reasoning/GUI/Coding",
+      "rl_algorithm": "GRPO-TCR",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM)",
+      "tool_usage": "Yes (SandboxFusion)",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "OpenClaw-RL",
+      "github_url": "https://github.com/Gen-Verse/OpenClaw-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.10165"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Gen-Verse",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Terminal/GUI/SWE/Tool-call",
+      "rl_algorithm": "GRPO/OPD",
+      "agent_arity": "Both",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "Claw-R1",
+      "github_url": "https://github.com/AgentR1/Claw-R1",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "USTC",
+      "rl_framework": null,
+      "domain": null,
+      "task": "General Agent",
+      "rl_algorithm": "Generic RL Framework",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes (Framework-agnostic)",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "prime-rl",
+      "github_url": "https://github.com/PrimeIntellect-ai/prime-rl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Prime Intellect",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code/Search",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "NeMo-RL",
+      "github_url": "https://github.com/NVIDIA-NeMo/RL",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "NVIDIA",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Reasoning/Code",
+      "rl_algorithm": "GRPO/DAPO/GDPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "RLinf",
+      "github_url": "https://github.com/RLinf/RLinf",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.15965"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tsinghua/Infinigence AI/PKU",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Robotics/Math/Code/QA/VQA",
+      "rl_algorithm": "PPO/GRPO/DAPO/SAC/REINFORCE++/CrossQ/RLPD",
+      "agent_arity": "Both",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All (Rule/Model/External)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "siiRL",
+      "github_url": "https://github.com/sii-research/siiRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.13833"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Shanghai Innovation Institute",
+      "rl_framework": null,
+      "domain": null,
+      "task": "LLM/VLM/LLM-MAS PostTraining",
+      "rl_algorithm": "PPO/GRPO/CPGD/MARFT",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Planned",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "slime",
+      "github_url": "https://github.com/THUDM/slime",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "blog",
+          "url": "https://lmsys.org/blog/2025-07-09-slime/"
+        }
+      ],
+      "date": "2025.6",
+      "org": "Tsinghua University (THUDM)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code",
+      "rl_algorithm": "GRPO/GSPO/REINFORCE++",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Both",
+      "reward_type": "External Verifier",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "agent-lightning",
+      "github_url": "https://github.com/microsoft/agent-lightning",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.03680"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Microsoft Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Calculator/SQL",
+      "rl_algorithm": "PPO/Custom/Automatic Prompt Optimization",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "AReaL",
+      "github_url": "https://github.com/inclusionAI/AReaL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.24298"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "AntGroup/Tsinghua",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Both",
+      "reward_phase": "Outcome",
+      "turn_mode": "Both",
+      "reward_type": "External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "ROLL",
+      "github_url": "https://github.com/alibaba/ROLL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.06122"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Alibaba",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/QA/Code/Alignment",
+      "rl_algorithm": "PPO/GRPO/Reinforce++/TOPR/RAFT++",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "MARTI",
+      "github_url": "https://github.com/TsinghuaC3I/MARTI",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Tsinghua",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math",
+      "rl_algorithm": "PPO/GRPO/REINFORCE++/TTRL",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "Tunix",
+      "github_url": "https://github.com/google/tunix",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Google",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code/Game",
+      "rl_algorithm": "PPO/GRPO/GSPO-Token/DAPO/Dr.GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "RL2",
+      "github_url": "https://github.com/ChenmienTan/RL2",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Accio",
+      "rl_framework": null,
+      "domain": null,
+      "task": "QA/Dialogue",
+      "rl_algorithm": "Dr. GRPO/PPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Both",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "verifiers",
+      "github_url": "https://github.com/willccbb/verifiers",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "Individual",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Reasoning/Math/Code",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Both",
+      "reward_type": "All",
+      "tool_usage": "Code",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "oat",
+      "github_url": "https://github.com/sail-sg/oat",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2411.01493"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.11",
+      "org": "NUS/Sea AI",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Alignment",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "veRL",
+      "github_url": "https://github.com/volcengine/verl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2409.19256"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.9",
+      "org": "ByteDance",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/QA/Reasoning/Search",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Both",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "OpenRLHF",
+      "github_url": "https://github.com/OpenRLHF/OpenRLHF",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2405.11143"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.5",
+      "org": "OpenRLHF",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Dialogue/Chat/Completion",
+      "rl_algorithm": "PPO/REINFORCE++/GRPO/DPO/IPO/KTO/RLOO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Both",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "base_framework",
+      "name": "trl",
+      "github_url": "https://github.com/huggingface/trl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2019.11",
+      "org": "HuggingFace",
+      "rl_framework": null,
+      "domain": null,
+      "task": "QA",
+      "rl_algorithm": "PPO/GRPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Single",
+      "reward_type": "Custom",
+      "tool_usage": "No",
+      "focus": null
+    }
+  ],
+  "general_multitask": [
+    {
+      "category": "general_multitask",
+      "name": "T2PO",
+      "github_url": "https://github.com/WillDreamer/T2PO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.02178"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Academic (ICML 2026 Spotlight)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "WebShop/ALFWorld/SearchQA/Embody/Game",
+      "rl_algorithm": "T²PO (token+turn uncertainty-guided)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (search, web, embodied)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "StraTA",
+      "github_url": "https://github.com/xxyQwQ/StraTA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.06642"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Shanghai AI Lab / Oxford / Multi-institution",
+      "rl_framework": "rLLM",
+      "domain": null,
+      "task": "ALFWorld (93.1%)/WebShop (84.2%)/SciWorld (63.5%)",
+      "rl_algorithm": "Hierarchical GRPO + Strategic Trajectory Abstraction",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (self-judge)",
+      "tool_usage": "Yes (interactive long-horizon envs)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SDAR",
+      "github_url": "https://github.com/ZJU-REAL/SDAR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.15155"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Zhejiang University (ZJU-REAL)",
+      "rl_framework": "veRL (GiGPO-based)",
+      "domain": null,
+      "task": "ALFWorld/WebShop/Search-QA",
+      "rl_algorithm": "Self-Distilled Agentic RL (GRPO + gated OPSD)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (interactive envs)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SkillZero",
+      "github_url": "https://github.com/ZJU-REAL/SkillZero",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.02268"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Zhejiang University (ZJU-REAL)",
+      "rl_framework": "veRL (GiGPO-based)",
+      "domain": null,
+      "task": "ALFWorld/WebShop/Search-QA",
+      "rl_algorithm": "In-Context Agentic RL (GRPO + skill-context curriculum withdrawal)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (interactive envs + skill library)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "MetaClaw",
+      "github_url": "https://github.com/aiming-lab/MetaClaw",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.17187"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "UNC-Chapel Hill (AIMING Lab)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "General Agentic",
+      "rl_algorithm": "GRPO (LoRA)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM)",
+      "tool_usage": "Yes (Skill-augmented)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SkillRL",
+      "github_url": "https://github.com/aiming-lab/SkillRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.08234"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "UNC-Chapel Hill (AIMING Lab)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "ALFWorld/WebShop/Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Web search, actions)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "LLM-in-Sandbox",
+      "github_url": "https://github.com/llm-in-sandbox/llm-in-sandbox",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://huggingface.co/papers/2601.16206"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "RUC/MSRA/THU",
+      "rl_framework": "rllm (w/ veRL)",
+      "domain": null,
+      "task": "Math/Physics/Chemistry/Biomedicine/Long-context/IF/SWE",
+      "rl_algorithm": "GRPO++",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Code Sandbox w/ Terminal, File, Internet)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "youtu-agent",
+      "github_url": "https://github.com/TencentCloudADP/youtu-agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.24615"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "Tencent Youtu Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research/Data Analysis/Tool-use",
+      "rl_algorithm": "Training-Free GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes (Web search, code, file)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "DEPO",
+      "github_url": "https://github.com/OpenCausaLab/DEPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.15392"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "HKUST/SJTU",
+      "rl_framework": "LLaMA-Factory",
+      "domain": null,
+      "task": "Agent (BabyAI/WebShop)",
+      "rl_algorithm": "KTO + Efficiency Loss",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SPEAR",
+      "github_url": "https://github.com/TencentYoutuResearch/SPEAR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.22601"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tencent Youtu Lab",
+      "rl_framework": "veRL/verl-agent",
+      "domain": null,
+      "task": "Math/Agent",
+      "rl_algorithm": "GRPO/GiGPO + SIL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Search, Sandbox, Browser)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "DeepAgent",
+      "github_url": "https://github.com/RUC-NLPIR/DeepAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.21618"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "RUC/Xiaohongshu",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "ToolBench/ALFWorld/WebShop/GAIA/HLE",
+      "rl_algorithm": "ToolPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (16,000+ RapidAPIs)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "AgentRL",
+      "github_url": "https://github.com/THUDM/AgentRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.04206"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Tsinghua",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Agent Tasks",
+      "rl_algorithm": "GRPO/REINFORCE++/RLOO/ReMax/GAE",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "AgentGym-RL",
+      "github_url": "https://github.com/WooooDyy/AgentGym-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.08755"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Fudan University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Web/Search/Game/Embodied/Science",
+      "rl_algorithm": "PPO/GRPO/RLOO/REINFORCE++",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes (Web, Search, Env APIs)",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "Agent_Foundation_Models",
+      "github_url": "https://github.com/OPPO-PersonalAI/Agent_Foundation_Models",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.13167"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "OPPO Personal AI Lab",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA/Code/Math",
+      "rl_algorithm": "DAPO/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "Trinity-RFT",
+      "github_url": "https://github.com/modelscope/Trinity-RFT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.17826"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Alibaba",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math/TextGame/Web",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Both",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SPA-RL-Agent",
+      "github_url": "https://github.com/WangHanLinHenry/SPA-RL-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.20732"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "PolyU",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "Navigation/Web/TextGame",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "verl-agent",
+      "github_url": "https://github.com/langfengQ/verl-agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.10978"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "NTU/Skywork",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Phone Use/Math/Code/Web/TextGame",
+      "rl_algorithm": "PPO/GRPO/GiGPO/DAPO/RLOO/REINFORCE++",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "SkyRL",
+      "github_url": "https://github.com/NovaSky-AI/SkyRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.16108"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "UC Berkeley / NovaSky-AI",
+      "rl_framework": "Self (skyrl-train)",
+      "domain": null,
+      "task": "Long-horizon Agents (SWE-Bench/Search/Math/SQL)",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External/Custom",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "VAGEN",
+      "github_url": "https://github.com/mll-lab-nu/VAGEN",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.16907"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Northwestern University (mll-lab-nu)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Navigation/TextGame/Multimodal",
+      "rl_algorithm": "PPO/GRPO (World Modeling RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "ART",
+      "github_url": "https://github.com/OpenPipe/ART",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "Paper",
+          "url": "https://github.com/OpenPipe/ART#-citation"
+        }
+      ],
+      "date": "2025.3",
+      "org": "OpenPipe",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "general_multitask",
+      "name": "OpenManus-RL",
+      "github_url": "https://github.com/OpenManus/OpenManus-RL",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "UIUC/MetaGPT",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": "PPO/DPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    }
+  ],
+  "search_rag": [
+    {
+      "category": "search_rag",
+      "name": "LiteResearcher",
+      "github_url": "https://github.com/simplex-ai-inc/LiteResearcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.17931"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Simplex AI / ZJU / PolyU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research (GAIA 71.3% / Xbench-DS 78.0%, 4B SOTA)",
+      "rl_algorithm": "Scalable Agentic RL (curriculum w/ lite virtual world)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (local search/browse env, Milvus+PostgreSQL)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "ProRAG",
+      "github_url": "https://github.com/lilinwz/ProRAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.21912"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "RUC",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multi-hop RAG",
+      "rl_algorithm": "GRPO + DGA (dual-granularity advantage)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM via MCTS)",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "MemSearcher",
+      "github_url": "https://github.com/icip-cas/MemSearcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.02805"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "CAS",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Search/QA + Memory",
+      "rl_algorithm": "Multi-context GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Web search + Memory)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DR-Venus",
+      "github_url": "https://github.com/inclusionAI/DR-Venus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.19859"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": "veRL (IGPO-based)",
+      "domain": null,
+      "task": "Edge-scale Deep Research (4B)",
+      "rl_algorithm": "GRPO + IGPO (info-gain turn-level) w/ agentic SFT",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Intrinsic (info-gain) + Rule (format)",
+      "tool_usage": "Yes (Search/Browse)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "IGPO",
+      "github_url": "https://github.com/GuoqingWang1/IGPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.14967"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Ant Group",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Multi-turn Search Agent (BrowseComp/-ZH)",
+      "rl_algorithm": "GRPO + IGPO (Information Gain turn-level reward)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Intrinsic (belief Δ) + Outcome",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "ReSeek",
+      "github_url": "https://github.com/TencentBAC/ReSeek",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.00568"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Tencent PCG BAC/Tsinghua University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA/Search",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Search/JUDGE",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "AutoGraph-R1",
+      "github_url": "https://github.com/HKUST-KnowComp/AutoGraph-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.15339"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "HKUST KnowComp",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "KG Construction for QA",
+      "rl_algorithm": "GRPO (via VeRL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Graph retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Tree-GRPO",
+      "github_url": "https://github.com/AMAP-ML/Tree-GRPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.21240"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "AMAP",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "GRPO/Tree-GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "ASearcher",
+      "github_url": "https://github.com/inclusionAI/ASearcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.07976"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Research RL Lab  /  Tsinghua University & UW",
+      "rl_framework": "RealHF/AReaL",
+      "domain": null,
+      "task": "Math/Code/SearchQA",
+      "rl_algorithm": "PPO/GRPO + Decoupled PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Graph-R1",
+      "github_url": "https://github.com/LHRLAB/Graph-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.21892"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "BUPT/NTU/NUS",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "KGQA",
+      "rl_algorithm": "GRPO/REINFORCE++/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (EM/F1)",
+      "tool_usage": "Yes (Graph retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Kimi-Researcher",
+      "github_url": "https://github.com/moonshotai/Kimi-Researcher",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "blog",
+          "url": "https://moonshotai.github.io/Kimi-Researcher/"
+        }
+      ],
+      "date": "2025.6",
+      "org": "Moonshot AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Research",
+      "rl_algorithm": "REINFORCE",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Outcome",
+      "tool_usage": "Search, Browse, Coding",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "R-Search",
+      "github_url": "https://github.com/QingFei1/R-Search",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA/Search",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "R1-Searcher-plus",
+      "github_url": "https://github.com/RUCAIBox/R1-Searcher-plus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.17005"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "RUC",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "Custom",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "StepSearch",
+      "github_url": "https://github.com/Zillwang/StepSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.15107"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "SenseTime",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "AutoRefine",
+      "github_url": "https://github.com/syr-cn/AutoRefine",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://www.arxiv.org/abs/2505.11277"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "USTC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "RAG QA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "ZeroSearch",
+      "github_url": "https://github.com/Alibaba-NLP/ZeroSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.04588"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Alibaba",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA/Search",
+      "rl_algorithm": "PPO/GRPO/REINFORCE",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "ReasonRAG",
+      "github_url": "https://github.com/wlzhang2020/ReasonRAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.14069"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "CityU HK / Huawei",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multi-hop QA",
+      "rl_algorithm": "DPO + MCTS-based PRM",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM)",
+      "tool_usage": "Yes (Wikipedia search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Agentic-RAG-R1",
+      "github_url": "https://github.com/jiangxinke/Agentic-RAG-R1",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "PKU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Knowledge-intensive QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Wiki/Doc search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "WebThinker",
+      "github_url": "https://github.com/RUC-NLPIR/WebThinker",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.21776"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "RUC",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Reasoning/QA/Research",
+      "rl_algorithm": "DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Web Browsing",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepResearcher",
+      "github_url": "https://github.com/GAIR-NLP/DeepResearcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.03160"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "SJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Research",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Search-R1",
+      "github_url": "https://github.com/PeterGriffinJin/Search-R1",
+      "papers": [
+        {
+          "text": "paper1",
+          "url": "https://arxiv.org/abs/2503.09516"
+        },
+        {
+          "text": "paper2",
+          "url": "https://arxiv.org/abs/2505.15117"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "UIUC/Google",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "R1-Searcher",
+      "github_url": "https://github.com/RUCAIBox/R1-Searcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.05592"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "RUC",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "C-3PO",
+      "github_url": "https://github.com/Chen-GX/C-3PO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.06205"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Alibaba",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepRetrieval",
+      "github_url": "https://github.com/pat-jj/DeepRetrieval",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.00223"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "UIUC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Query Generation/IR",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "SSRL",
+      "github_url": "https://github.com/TsinghuaC3I/SSRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.10874"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Self-Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Self-search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "Research-Venus",
+      "github_url": "https://github.com/antgroup/Research-Venus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.12800"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (atomic thought)",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepResearch",
+      "github_url": "https://github.com/Alibaba-NLP/DeepResearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.24701"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Alibaba/Tongyi Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research",
+      "rl_algorithm": "RL-based",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Search, Browse)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepDive",
+      "github_url": "https://github.com/THUDM/DeepDive",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.10446"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tsinghua/THUDM",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "KG-augmented Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (KG + Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "O-Researcher",
+      "github_url": "https://github.com/OPPO-PersonalAI/O-Researcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.03743"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "OPPO PersonalAI Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research (Zhihu-KOL/WideSearch/ELI5)",
+      "rl_algorithm": "GRPO + RLAIF",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM-as-Judge)",
+      "tool_usage": "Yes (Search/Crawl)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "DR Tulu",
+      "github_url": "https://github.com/rlresearch/dr-tulu",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.19399"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "AI2 / UW / CMU / MIT",
+      "rl_framework": "Open-Instruct",
+      "domain": null,
+      "task": "Long-form Deep Research",
+      "rl_algorithm": "GRPO + evolving rubrics",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (rubrics)",
+      "tool_usage": "Yes (Search/MCP)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "WebSeer",
+      "github_url": "https://github.com/99hgz/WebSeer",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.18798"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Web Search QA (w/ self-reflection)",
+      "rl_algorithm": "GRPO-style",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "HiPRAG",
+      "github_url": "https://github.com/qualidea1217/HiPRAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.07794"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Efficient Agentic RAG",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "VRAG",
+      "github_url": "https://github.com/Alibaba-NLP/VRAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.22019"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "USTC / Tongyi Lab, Alibaba",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Visually-rich RAG",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Visual retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "MaskSearch",
+      "github_url": "https://github.com/Alibaba-NLP/MaskSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.20285"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Tongyi Lab, Alibaba",
+      "rl_framework": "DAPO / veRL",
+      "domain": null,
+      "task": "RAMP Pretraining + QA",
+      "rl_algorithm": "DAPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "R3-RAG",
+      "github_url": "https://github.com/Yuan-Li-FNLP/R3-RAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.23794"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Fudan NLP",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Multi-hop QA",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "O2-Searcher",
+      "github_url": "https://github.com/KnowledgeXLab/O2-Searcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.16582"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "KnowledgeXLab",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Open-ended QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "s3",
+      "github_url": "https://github.com/pat-jj/s3",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.14146"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "UIUC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "RAG / Medical QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (Gain-Beyond-RAG)",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null
+    },
+    {
+      "category": "search_rag",
+      "name": "knowledge-r1",
+      "github_url": "https://github.com/hzy312/knowledge-r1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.07596"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "CAS / UCAS",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Knowledge-intensive QA (KB-aware)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null
+    }
+  ],
+  "web_gui": [
+    {
+      "category": "web_gui",
+      "name": "ToolCUA",
+      "github_url": "https://github.com/X-PLUG/ToolCUA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.12481"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Alibaba Tongyi Lab (X-PLUG)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Computer Use (OSWorld-MCP, hybrid GUI+tool)",
+      "rl_algorithm": "Tool-Bootstrapped GUI RFT + Online Agentic RL (Tool-Efficient Path Reward)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (path-efficiency)",
+      "tool_usage": "Yes (GUI actions + structured tool calls)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "ClawGUI",
+      "github_url": "https://github.com/ZJU-REAL/ClawGUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.11784"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Zhejiang University (ZJU-REAL)",
+      "rl_framework": "Custom (veRL-based)",
+      "domain": null,
+      "task": "Mobile GUI (Android/HarmonyOS/iOS, MobileWorld)",
+      "rl_algorithm": "GiGPO + Process Reward Model",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (PRM)",
+      "tool_usage": "Yes (GUI + hybrid CLI-GUI + persistent memory)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "MobileAgent",
+      "github_url": "https://github.com/X-PLUG/MobileAgent",
+      "papers": [
+        {
+          "text": "paper",
+          "url": "https://arxiv.org/abs/2509.11543"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "X-PLUG (TongyiQwen)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "MobileGUI/Automation",
+      "rl_algorithm": "semi-online RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "InfiGUI-G1",
+      "github_url": "https://github.com/InfiXAI/InfiGUI-G1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.05731"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "InfiX AI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "GUI/Grounding",
+      "rl_algorithm": "AEPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "UI-AGILE",
+      "github_url": "https://github.com/KDEGroup/UI-AGILE",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.22025"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Xiamen University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (continuous)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "gui-rcpo",
+      "github_url": "https://github.com/zju-real/gui-rcpo",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.05615"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Zhejiang University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "RCPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (self-supervised)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "Grounding-R1",
+      "github_url": "https://github.com/Yan98/Grounding-R1",
+      "papers": [
+        {
+          "text": "blog",
+          "url": "https://huggingface.co/blog/HelloKKMe/grounding-r1"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Salesforce",
+      "rl_framework": "trl",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "AgentCPM-GUI",
+      "github_url": "https://github.com/OpenBMB/AgentCPM-GUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.01391"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "OpenBMB/Tsinghua/RUC",
+      "rl_framework": "Huggingface",
+      "domain": null,
+      "task": "Mobile GUI",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "TTI",
+      "github_url": "https://github.com/test-time-interaction/TTI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.07976"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "CMU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": "REINFORCE/BC",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Web Browsing",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "SE-GUI",
+      "github_url": "https://github.com/YXB-NKU/SE-GUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.12370"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Nankai University/vivo",
+      "rl_framework": "trl",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Single",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "ARPO",
+      "github_url": "https://github.com/dvlab-research/ARPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.16282"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "CUHK/HKUST",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "GUI",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Computer Use",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-G1",
+      "github_url": "https://github.com/Yuqi-Zhou/GUI-G1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.15810"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "RUC",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "GUI",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule/External",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "WebAgent-R1",
+      "github_url": "https://github.com/weizhepei/WebAgent-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.16421"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Amazon/UVA",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Web Navigation (WebArena-Lite)",
+      "rl_algorithm": "M-GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (task success)",
+      "tool_usage": "Yes (Web browsing)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-R1",
+      "github_url": "https://github.com/ritzz-ai/GUI-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.10458"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "CAS/NUS",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "GUI",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "UI-R1",
+      "github_url": "https://github.com/lll6gg/UI-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.21620"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "vivo/CUHK",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "GUI",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Both",
+      "reward_type": "Rule",
+      "tool_usage": "Computer/Phone Use",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "CollabUIAgents",
+      "github_url": "https://github.com/THUNLP-MT/CollabUIAgents",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.14496"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Tsinghua/Alibaba/HKUST",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (Mobile + Web)",
+      "rl_algorithm": "DPO (credit re-assignment)",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM)",
+      "tool_usage": "Yes (GUI interaction)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "WebAgent",
+      "github_url": "https://github.com/Alibaba-NLP/WebAgent",
+      "papers": [
+        {
+          "text": "paper1",
+          "url": "https://arxiv.org/abs/2501.07572"
+        },
+        {
+          "text": "paper2",
+          "url": "https://arxiv.org/abs/2505.22648"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "Alibaba",
+      "rl_framework": "LLaMA-Factory",
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": "DAPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "UI-TARS",
+      "github_url": "https://github.com/bytedance/UI-TARS",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2501.12326"
+        },
+        {
+          "text": "paper2",
+          "url": "https://arxiv.org/abs/2509.02544"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "ByteDance Seed",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (Cross-platform)",
+      "rl_algorithm": "Multi-turn RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (GUI actions)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "DigiQ",
+      "github_url": "https://github.com/DigiRL-agent/digiq",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.15760"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "UC Berkeley/CMU/Amazon",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Android Device Control",
+      "rl_algorithm": "Value-based offline RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (Q-function)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "ZeroGUI",
+      "github_url": "https://github.com/OpenGVLab/ZeroGUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.23762"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Shanghai AI Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Agent",
+      "rl_algorithm": "Online RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (GUI actions)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "InfiGUI-R1",
+      "github_url": "https://github.com/Reallm-Labs/InfiGUI-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.14239"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Zhejiang University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Reasoning",
+      "rl_algorithm": "RL + sub-goal guidance",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-Agent-RL",
+      "github_url": "https://github.com/microsoft/GUI-Agent-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.18906"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Microsoft",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (Web Shopping)",
+      "rl_algorithm": "Value-based RL (VEM)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-Libra",
+      "github_url": "https://github.com/GUI-Libra/GUI-Libra",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.22190"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "GUI-Libra (MS-affiliated)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (AndroidWorld/WebArena/Online-Mind2Web)",
+      "rl_algorithm": "KL-regularized GRPO (Partially Verifiable RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "MobileRL",
+      "github_url": "https://github.com/THUDM/MobileRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.18119"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tsinghua / Zhipu AI (THUDM)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile GUI (AndroidWorld/AndroidLab)",
+      "rl_algorithm": "AdaGRPO (Difficulty-Adaptive)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Android)",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "DART-GUI",
+      "github_url": "https://github.com/Computer-use-agents/dart-gui",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.23866"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Computer-use-agents",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "GUI (OSWorld)",
+      "rl_algorithm": "Decoupled GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "Mano-P",
+      "github_url": "https://github.com/Mininglamp-AI/Mano-P",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.17336"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Mininglamp AI",
+      "rl_framework": "Mano-SDK",
+      "domain": null,
+      "task": "GUI (OSWorld)",
+      "rl_algorithm": "Three-stage SFT→Offline RL→Online RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-G2",
+      "github_url": "https://github.com/ZJU-REAL/GUI-G2",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.15846"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Zhejiang University (ZJU-REAL)",
+      "rl_framework": "Custom (VLM-R1)",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "GRPO (Gaussian Reward)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (continuous)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "MagicGUI",
+      "github_url": "https://github.com/MagicAgent-GUI/MagicGUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.03700"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Honor (MagicAgent-GUI)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile GUI",
+      "rl_algorithm": "Reinforcement Fine-Tuning (RFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "web_gui",
+      "name": "GTA1",
+      "github_url": "https://github.com/Yan98/GTA1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.05791"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Salesforce / ANU",
+      "rl_framework": "Custom (DeepSpeed)",
+      "domain": null,
+      "task": "GUI Grounding (OSWorld/ScreenSpot-Pro)",
+      "rl_algorithm": "GRPO-style (click-success reward)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    }
+  ],
+  "tool_use": [
+    {
+      "category": "tool_use",
+      "name": "AgenticQwen",
+      "github_url": "https://github.com/haruhi-sudo/data_synth_and_rl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.21590"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Alibaba PAI",
+      "rl_framework": "veRL (w/ EasyDistill)",
+      "domain": null,
+      "task": "Industrial Tool Use (search, data analysis, tau-bench airline/retail/telecom)",
+      "rl_algorithm": "Multi-round RL (Reasoning RL + Agentic RL w/ dual data flywheels)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (rubric)",
+      "tool_usage": "Yes (Python interpreter, web search, mock tools)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "MATPO",
+      "github_url": "https://github.com/mzf666/MATPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.04678"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "MiroMind AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Tool-use/Search",
+      "rl_algorithm": "GRPO (multi-agent)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (MCP: Serper, Web scraping)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "MiroRL",
+      "github_url": "https://github.com/MiroMindAI/MiroRL",
+      "papers": [
+        {
+          "text": "HF Repo",
+          "url": "https://huggingface.co/miromind-ai"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "MiroMindAI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Reasoning/Planning/ToolUse",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-based",
+      "tool_usage": "MCP",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "verl-tool",
+      "github_url": "https://github.com/TIGER-AI-Lab/verl-tool",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "X",
+          "url": "https://x.com/DongfuJiang/status/1929198238017720379"
+        }
+      ],
+      "date": "2025.6",
+      "org": "TIGER-Lab",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math/Code",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Both",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "Multi-Turn-RL-Agent",
+      "github_url": "https://github.com/SiliangZeng/Multi-Turn-RL-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.11821"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "University of Minnesota",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Tool-use/Math",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "Tool-N1",
+      "github_url": "https://github.com/NVlabs/Tool-N1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.00024"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "NVIDIA",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math/Dialogue",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "Tool-Star",
+      "github_url": "https://github.com/dongguanting/Tool-Star",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.16410"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "RUC",
+      "rl_framework": "LLaMA-Factory",
+      "domain": null,
+      "task": "Multi-modal/Tool Use/Dialogue",
+      "rl_algorithm": "PPO/DPO/ORPO/SimPO/KTO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "RL-Factory",
+      "github_url": "https://github.com/Simple-Efficient/RL-Factory",
+      "papers": [
+        {
+          "text": "model",
+          "url": "https://huggingface.co/Simple-Efficient/RLFactory-Qwen3-8B-GRPO"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Simple-Efficient",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-use/NL2SQL",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "MCP",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ReTool",
+      "github_url": "https://github.com/ReTool-RL/ReTool",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.11536"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "ByteDance",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Code",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "AWorld",
+      "github_url": "https://github.com/inclusionAI/AWorld",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.20404"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search/Web/Code",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Both",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "Agent-R1",
+      "github_url": "https://github.com/0russwest0/Agent-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.14460"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "USTC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-use/QA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ReCall",
+      "github_url": "https://github.com/Agent-RL/ReCall",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.19470"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "BaiChuan",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-use/Math/QA",
+      "rl_algorithm": "PPO/GRPO/RLOO/REINFORCE++/ReMax",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolRL",
+      "github_url": "https://github.com/qiancheng0/ToolRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.13958"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "UIUC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool Learning",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolOrchestra",
+      "github_url": "https://github.com/NVlabs/ToolOrchestra",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.21689"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "NVIDIA / HKU",
+      "rl_framework": "Custom (veRL-based)",
+      "domain": null,
+      "task": "Tool orchestration / agentic workflows",
+      "rl_algorithm": "End-to-end RL (outcome+efficiency+preference)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes (Search/Code/LLMs)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolMaster",
+      "github_url": "https://github.com/NEUIR/ToolMaster",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.12762"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Northeastern University (NEUIR)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Tool trialing + execution (ToolHop/TMDB/StableToolBench)",
+      "rl_algorithm": "SFT + GRPO (trial-then-execute)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Simulated tools)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "CodeGym",
+      "github_url": "https://github.com/StigLidu/CodeGym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.17325"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Synthetic Multi-turn Tool-Use",
+      "rl_algorithm": "GRPO-family",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "Yes (Synthesized tools)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "UserRL",
+      "github_url": "https://github.com/SalesforceAIResearch/UserRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.19736"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Salesforce AI Research",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "User-centric (Function/Persuade/Search/Tau Gyms)",
+      "rl_algorithm": "GRPO (multi-turn credit)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolBrain",
+      "github_url": "https://github.com/ToolBrain/ToolBrain",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.00023"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "ToolBrain (AAMAS 2026)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic tool training",
+      "rl_algorithm": "GRPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (User-defined tools)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "Tool-R1",
+      "github_url": "https://github.com/YBYBZhang/Tool-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.12867"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Individual (YBYBZhang)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic Tool Use (GAIA)",
+      "rl_algorithm": "Policy optimization (PPO-style)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model + External",
+      "tool_usage": "Yes (Python exec)",
+      "focus": null
+    },
+    {
+      "category": "tool_use",
+      "name": "calculator_agent_rl",
+      "github_url": "https://github.com/Danau5tin/calculator_agent_rl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Individual (Danau5tin)",
+      "rl_framework": "Verifiers",
+      "domain": null,
+      "task": "Calculator Tool Use",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (Claude-judge)",
+      "tool_usage": "Yes",
+      "focus": null
+    }
+  ],
+  "code_swe": [
+    {
+      "category": "code_swe",
+      "name": "SWE-Edit",
+      "github_url": "https://github.com/microsoft/SWE-Edit",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.26102"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Microsoft Research",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "SWE-bench Verified (find-replace vs whole-file rewrite)",
+      "rl_algorithm": "GRPO (adaptive mode selection)",
+      "agent_arity": "Multi (Viewer + Editor subagents)",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External (test-based)",
+      "tool_usage": "Yes (bash, file ops, viewer subagent)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "CUDA-Agent",
+      "github_url": "https://github.com/BytedTsinghua-SIA/CUDA-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.24286"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "ByteDance/Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "CUDA Kernel Generation",
+      "rl_algorithm": "Agentic RL (staged)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (correctness + performance)",
+      "tool_usage": "Yes (compile/verify/profile)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "PPP-Agent",
+      "github_url": "https://github.com/sunnweiwei/PPP-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.02208"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "CMU/OpenHands",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "SWE/Research",
+      "rl_algorithm": "PPP-RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule+Model",
+      "tool_usage": "Search, Ask, Browse",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "RepoDeepSearch",
+      "github_url": "https://github.com/Mizersy/RepoDeepSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.03012"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "PKU, Bytedance, BIT",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search/Repair",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "CUDA-L1",
+      "github_url": "https://github.com/deepreinforce-ai/CUDA-L1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.14111"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "DeepReinforce AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "CUDA Optimization",
+      "rl_algorithm": "Contrastive RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (performance)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "MedAgentGym",
+      "github_url": "https://github.com/wshi83/MedAgentGym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.04405"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Emory/Georgia Tech",
+      "rl_framework": "Hugginface",
+      "domain": null,
+      "task": "Medical/Code",
+      "rl_algorithm": "SFT/DPO/PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "CURE",
+      "github_url": "https://github.com/Gen-Verse/CURE",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.03136"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "University of Chicago  /  Princeton/ByteDance",
+      "rl_framework": "Huggingface",
+      "domain": null,
+      "task": "Code",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "External",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "Time-R1",
+      "github_url": "https://github.com/ulab-uiuc/Time-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.13508"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "UIUC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Temporal",
+      "rl_algorithm": "PPO/GRPO/DPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Code",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "ML-Agent",
+      "github_url": "https://github.com/MASWorks/ML-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.23723"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "MASWorks",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code",
+      "rl_algorithm": "Custom",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "digitalhuman",
+      "github_url": "https://github.com/Tencent/digitalhuman",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.03112"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Tencent",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Empathy/Math/Code/MultimodalQA",
+      "rl_algorithm": "PPO/GRPO/ReMax/RLOO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "sweet_rl",
+      "github_url": "https://github.com/facebookresearch/sweet_rl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.15478"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "Meta/UCB",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Design/Code",
+      "rl_algorithm": "DPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Web Browsing",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "swe-rl",
+      "github_url": "https://github.com/facebookresearch/swe-rl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.18449"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Meta/UIUC/CMU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "SWE (SWE-bench)",
+      "rl_algorithm": "RL-based",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (similarity)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "rllm",
+      "github_url": "https://github.com/agentica-project/rllm",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "Notion Blog",
+          "url": "https://pretty-radio-b75.notion.site/rLLM-A-Framework-for-Post-Training-Language-Agents-21b81902c146819db63cd98a54ba5f31"
+        }
+      ],
+      "date": "2025.1",
+      "org": "Berkeley Sky Computing Lab  /  BAIR / Together AI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Code Edit",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "open-r1",
+      "github_url": "https://github.com/huggingface/open-r1",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "HuggingFace",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "Math/Code",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "R1-Code-Interpreter",
+      "github_url": "https://github.com/yongchao98/R1-Code-Interpreter",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.21668"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "MIT",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code Interpretation",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Code exec)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "CTRL",
+      "github_url": "https://github.com/HKUNLP/critic-rl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.03492"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "HKU/ByteDance",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code Refinement",
+      "rl_algorithm": "RL (critique-revision)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Code exec)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "DeepAnalyze",
+      "github_url": "https://github.com/ruc-datalab/DeepAnalyze",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.16872"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "RUC/Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Data Science",
+      "rl_algorithm": "Curriculum RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Code exec)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "AceCoder",
+      "github_url": "https://github.com/TIGER-AI-Lab/AceCoder",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.01718"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Waterloo (TIGER-Lab)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code Generation",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "External (test cases)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "SWE-World",
+      "github_url": "https://github.com/RUCAIBox/SWE-World",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.03419"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "RUC (RUCAIBox)",
+      "rl_framework": "OpenRLHF + veRL",
+      "domain": null,
+      "task": "Docker-free SWE (SWE-Bench Verified)",
+      "rl_algorithm": "RL with learned world model (SWT + SWR)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (surrogate) + Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "CUDA-L2",
+      "github_url": "https://github.com/deepreinforce-ai/CUDA-L2",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.02551"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "DeepReinforce AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "HGEMM / CUDA Matmul",
+      "rl_algorithm": "Contrastive RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (TFLOPs)",
+      "tool_usage": "Yes (compile/benchmark)",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "SWE-Swiss",
+      "github_url": "https://github.com/zhenyuhe00/SWE-Swiss",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Tsinghua / ByteDance",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "SWE (Localization/Repair/Unit-Test)",
+      "rl_algorithm": "Two-stage RL curriculum",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (test-based)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "code_swe",
+      "name": "Skywork-OR1",
+      "github_url": "https://github.com/SkyworkAI/Skywork-OR1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.22312"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Skywork AI",
+      "rl_framework": "Custom (veRL fork)",
+      "domain": null,
+      "task": "Math + Code (AIME/LiveCodeBench)",
+      "rl_algorithm": "Large-scale rule-based RL (GRPO variant)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "No",
+      "focus": null
+    }
+  ],
+  "reasoning": [
+    {
+      "category": "reasoning",
+      "name": "Agent0",
+      "github_url": "https://github.com/aiming-lab/Agent0",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.16043"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "UNC‑Chapel Hill / Salesforce Research / Stanford University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math/Visual",
+      "rl_algorithm": "ADPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Verifier",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "KG-R1",
+      "github_url": "https://github.com/Jinyeop3110/KG-R1",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "UIUC/Google",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "KGQA",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "KG Retrieval",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "AgentFlow",
+      "github_url": "https://github.com/lupantech/AgentFlow",
+      "papers": [
+        {
+          "text": "arXiv",
+          "url": "https://arxiv.org/abs/2510.05592"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Stanford University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search/Math/QA",
+      "rl_algorithm": "Flow-GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "ARPO",
+      "github_url": "https://github.com/dongguanting/ARPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.19849"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "RUC, Kuaishou",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math/Coding",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "terminal-bench-rl",
+      "github_url": "https://github.com/Danau5tin/terminal-bench-rl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Individual (Danau5tin)",
+      "rl_framework": "rLLM",
+      "domain": null,
+      "task": "Coding/Terminal",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model+External Verifier",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "MOTIF",
+      "github_url": "https://github.com/purbeshmitra/MOTIF",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.02851"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "University of Maryland",
+      "rl_framework": "trl",
+      "domain": null,
+      "task": "QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "cmriat/l0",
+      "github_url": "https://github.com/cmriat/l0",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.23667"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "CMRIAT",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "QA",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "agent-distillation",
+      "github_url": "https://github.com/Nardien/agent-distillation",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.17612"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "KAIST",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "QA/Math",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "EasyR1",
+      "github_url": "https://github.com/hiyouga/EasyR1",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "repo1",
+          "url": "https://github.com/hiyouga/EasyR1"
+        }
+      ],
+      "date": "2025.4",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Vision-Language",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "AutoCoA",
+      "github_url": "https://github.com/ADaM-BJTU/AutoCoA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.06580"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "BJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Reasoning/Math/QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "ToRL",
+      "github_url": "https://github.com/GAIR-NLP/ToRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.23383"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "SJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "ReMA",
+      "github_url": "https://github.com/ziyuwan/ReMA-public",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.09501"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "SJTU, UCL",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "Agentic-Reasoning",
+      "github_url": "https://github.com/theworldofagents/Agentic-Reasoning",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.04644"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Oxford",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "QA/Math",
+      "rl_algorithm": "Custom",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Web Browsing",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "SimpleTIR",
+      "github_url": "https://github.com/ltzheng/SimpleTIR",
+      "papers": [],
+      "blog_urls": [
+        {
+          "text": "Notion Blog",
+          "url": "https://simpletir.notion.site/report"
+        }
+      ],
+      "date": "2025.2",
+      "org": "NTU, Bytedance",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math, Coding",
+      "rl_algorithm": "PPO/GRPO (with extensions)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "openrlhf_async_pipline",
+      "github_url": "https://github.com/yyht/openrlhf_async_pipline",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.5",
+      "org": "OpenRLHF",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Dialogue/Reasoning/QA",
+      "rl_algorithm": "PPO/REINFORCE++/DPO/RLOO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "THOR",
+      "github_url": "https://github.com/JingMog/THOR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.13761"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "USTC / iFLYTEK",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math (MATH500/AIME/Olympiad)",
+      "rl_algorithm": "Hierarchical GRPO (trajectory+step)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External (SandboxFusion)",
+      "tool_usage": "Yes (Python)",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "Tool-Light",
+      "github_url": "https://github.com/RUC-NLPIR/Tool-Light",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.23285"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "RUC (RUC-NLPIR)",
+      "rl_framework": "LLaMA-Factory",
+      "domain": null,
+      "task": "Tool-Integrated Reasoning",
+      "rl_algorithm": "Self-Evolved DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (preference)",
+      "tool_usage": "Yes (FlashRAG/Python)",
+      "focus": null
+    },
+    {
+      "category": "reasoning",
+      "name": "AutoTIR",
+      "github_url": "https://github.com/weiyifan1023/AutoTIR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.21836"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Beihang University / BAAI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Autonomous Tool Selection (QA/Math/IF)",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search/Python)",
+      "focus": null
+    }
+  ],
+  "multi_agent": [
+    {
+      "category": "multi_agent",
+      "name": "Maestro",
+      "github_url": "https://github.com/jinyangwu/Maestro",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.22177"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Tsinghua / Multi-institution",
+      "rl_framework": "veRL + verl-tool",
+      "domain": null,
+      "task": "10 multimodal benchmarks (math/chart/HR/domain — 70.1% avg, beats GPT-5 & Gemini-2.5-Pro)",
+      "rl_algorithm": "Outcome RL (lightweight orchestrator over frozen expert ensembles)",
+      "agent_arity": "Multi (orchestrator + frozen experts)",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External",
+      "tool_usage": "Yes (expert models + 2-tier skill library: OCR/detection/visual)",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "PettingLLMs",
+      "github_url": "https://github.com/pettingllms-ai/PettingLLMs",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.11062"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Intel / UCSD",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Game/Code/Math/Planning",
+      "rl_algorithm": "AT-GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "MASPRM",
+      "github_url": "https://github.com/milad1378yz/MASPRM",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.24803"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "UBC / Huawei",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Reasoning (GSM8K/MATH/MMLU)",
+      "rl_algorithm": "PRM (trained from MCTS rollouts)",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Learned PRM",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "ARIA",
+      "github_url": "https://github.com/rhyang2021/ARIA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.00539"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Fudan University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Negotiation/Bargaining",
+      "rl_algorithm": "REINFORCE",
+      "agent_arity": "Both",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Other",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "AMPO",
+      "github_url": "https://github.com/MozerWang/AMPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.02156"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Tongyi Lab, Alibaba",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Social Interaction",
+      "rl_algorithm": "BC/AMPO(GRPO improvement)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model-based",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "MAPoRL",
+      "github_url": "https://github.com/chanwoo-park-official/MAPoRL",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Collaborative LLM Tasks",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "FlowReasoner",
+      "github_url": "https://github.com/sail-sg/FlowReasoner",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.15257"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Sea AI Lab / NUS",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multi-agent Workflow Design",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "DrMAS",
+      "github_url": "https://github.com/langfengQ/DrMAS",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.08847"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "NTU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multi-agent LLM Systems",
+      "rl_algorithm": "GRPO (agent-wise)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "MarsRL",
+      "github_url": "https://github.com/liushulinle/MarsRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.11373"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Academic",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Math Reasoning (AIME/BeyondAIME)",
+      "rl_algorithm": "RLVR (agent-specific rewards)",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "MrlX",
+      "github_url": "https://github.com/AQ-MedAI/MrlX",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.13288"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Ant Group (AQ-MedAI)",
+      "rl_framework": "Custom (SGLang + Megatron)",
+      "domain": null,
+      "task": "Deep Research (GAIA/XBench)",
+      "rl_algorithm": "M-GRPO (hierarchical)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "CoMAS",
+      "github_url": "https://github.com/xxyQwQ/CoMAS",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.08529"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Shanghai AI Lab / CUHK / Oxford / NUS",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Co-evolving Reasoning",
+      "rl_algorithm": "RL w/ LLM-Judge intrinsic reward",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "CoMLRL",
+      "github_url": "https://github.com/OpenMLRL/CoMLRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.04652"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "OpenMLRL",
+      "rl_framework": "TRL",
+      "domain": null,
+      "task": "Writing / Code / Minecraft",
+      "rl_algorithm": "MAGRPO / MAREINFORCE / MARLOO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Custom",
+      "tool_usage": "Minimal",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "SPIRAL",
+      "github_url": "https://github.com/spiral-rl/spiral",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.24119"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "NUS / A*STAR / Sea AI Lab",
+      "rl_framework": "Oat",
+      "domain": null,
+      "task": "Zero-sum Games (TicTacToe/Kuhn/Negotiation)",
+      "rl_algorithm": "Role-conditioned Advantage Estimation (RAE)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "multi_agent",
+      "name": "MARFT",
+      "github_url": "https://github.com/jwliao-ai/MARFT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.16129"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "SII / SJTU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Research / Math",
+      "rl_algorithm": "MARFT paradigm (action+token level)",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    }
+  ],
+  "memory": [
+    {
+      "category": "memory",
+      "name": "AgeMem",
+      "github_url": "https://github.com/y1y5/AgeMem",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.01885"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Multi-institution (incl. Alibaba DAMO)",
+      "rl_framework": "Trinity-RFT",
+      "domain": null,
+      "task": "Unified LTM/STM management (memory ops as tools)",
+      "rl_algorithm": "Step-wise GRPO (3-stage progressive RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (task accuracy + memory quality)",
+      "tool_usage": "Yes (store/retrieve/update/summarize/discard memory tools)",
+      "focus": null
+    },
+    {
+      "category": "memory",
+      "name": "MEM1",
+      "github_url": "https://github.com/MIT-MI/MEM1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.15841"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "MIT",
+      "rl_framework": "veRL (based on Search-R1)",
+      "domain": null,
+      "task": "WebShop/GSM8K/QA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "memory",
+      "name": "Memento",
+      "github_url": "https://github.com/Agent-on-the-Fly/Memento",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.16153"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "UCL, Huawei",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Research/QA/Code/Web",
+      "rl_algorithm": "soft Q-Learning",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External/Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "memory",
+      "name": "MemAgent",
+      "github_url": "https://github.com/BytedTsinghua-SIA/MemAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.02259"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Bytedance, Tsinghua-SIA",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Long-context QA",
+      "rl_algorithm": "PPO, GRPO, DPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "memory",
+      "name": "Mem-alpha",
+      "github_url": "https://github.com/wangyu-ustc/Mem-alpha",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.25911"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "UCSD / USTC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Long-context QA + Memory Construction",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (downstream QA)",
+      "tool_usage": "Yes (memory tools)",
+      "focus": null
+    },
+    {
+      "category": "memory",
+      "name": "M3-Agent",
+      "github_url": "https://github.com/bytedance-seed/m3-agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.09736"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "ByteDance Seed / Zhejiang University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Long-video QA (M3-Bench)",
+      "rl_algorithm": "RL-based",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (multimodal memory graph)",
+      "focus": null
+    }
+  ],
+  "embodied": [
+    {
+      "category": "embodied",
+      "name": "Embodied-R1",
+      "github_url": "https://github.com/pickxiguapi/Embodied-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "http://arxiv.org/abs/2508.13998"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Tianjing University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Grounding/Waypoint",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "embodied",
+      "name": "STeCa",
+      "github_url": "https://github.com/WangHanLinHenry/STeCa",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.14276"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "The Hong Kong Polytechnic University",
+      "rl_framework": "FastChat/TRL",
+      "domain": null,
+      "task": "Embodied/Household",
+      "rl_algorithm": "DPO (RFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/MC",
+      "tool_usage": "Environment Actions",
+      "focus": null
+    },
+    {
+      "category": "embodied",
+      "name": "VIKI-R",
+      "github_url": "https://github.com/MARS-EAI/VIKI-R",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.09049"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "MARS-EAI (NeurIPS 2025 D&B)",
+      "rl_framework": "veRL + LLaMA-Factory",
+      "domain": null,
+      "task": "Embodied Multi-Robot Cooperation (VIKI-Bench)",
+      "rl_algorithm": "GRPO (RFT after SFT)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "No",
+      "focus": null
+    }
+  ],
+  "domain_specific": [
+    {
+      "category": "domain_specific",
+      "name": "MedSAM-Agent",
+      "github_url": "https://github.com/CUHK-AIM-Group/MedSAM-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.03320"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "CUHK/Tencent",
+      "rl_framework": "Custom",
+      "domain": "Medical",
+      "task": "Medical Image Segmentation",
+      "rl_algorithm": "GRPO (via veRL)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (clinical fidelity)",
+      "tool_usage": "Yes (SAM/MedSAM2)",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "OS-R1",
+      "github_url": "https://github.com/LHY-24/OS-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.12551"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "ISCAS",
+      "rl_framework": "Custom",
+      "domain": "OS/Systems",
+      "task": "Linux Kernel Tuning",
+      "rl_algorithm": "GRPO (via veRL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (LightRAG, kernel config)",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "MMedAgent-RL",
+      "github_url": "https://github.com/JanerhYang/MMedAgent-RL",
+      "papers": [
+        {
+          "text": "paper",
+          "url": "https://arxiv.org/abs/2506.00555"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Unknown",
+      "rl_framework": "Unknown",
+      "domain": "Medical",
+      "task": "Unknown",
+      "rl_algorithm": "Unknown",
+      "agent_arity": "Multi",
+      "reward_phase": "Unknown",
+      "turn_mode": "Unknown",
+      "reward_type": "Unknown",
+      "tool_usage": "Unknown",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "DoctorAgent-RL",
+      "github_url": "https://github.com/JarvisUSTC/DoctorAgent-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.19630"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "UCAS/CAS/USTC",
+      "rl_framework": "RAGEN",
+      "domain": "Medical",
+      "task": "Consultation/Diagnosis",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "Biomni",
+      "github_url": "https://github.com/snap-stanford/Biomni",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.05.30.656746v1"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "Stanford University (SNAP)",
+      "rl_framework": "Custom",
+      "domain": "Biomedical",
+      "task": "scRNAseq/CRISPR/ADMET/Knowledge",
+      "rl_algorithm": "TBD",
+      "agent_arity": "Single",
+      "reward_phase": "TBD",
+      "turn_mode": "Single",
+      "reward_type": "TBD",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "Doctor-R1",
+      "github_url": "https://github.com/thu-unicorn/Doctor-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.04284"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Tsinghua (thu-unicorn)",
+      "rl_framework": "veRL",
+      "domain": "Medical",
+      "task": "Clinical inquiry & diagnosis",
+      "rl_algorithm": "Experiential Agentic RL",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model + Rule + safety veto",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "Alpha-R1",
+      "github_url": "https://github.com/FinStep-AI/Alpha-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.23515"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "SJTU / FinStep.AI / StepFun",
+      "rl_framework": "Custom",
+      "domain": "Financial",
+      "task": "Alpha factor screening (with real-time news)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External (portfolio returns) + Model",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "MedResearcher-R1",
+      "github_url": "https://github.com/AQ-MedAI/MedResearcher-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.14880"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group (AQ-MedAI)",
+      "rl_framework": "Custom",
+      "domain": "Medical",
+      "task": "Medical Deep Research (MedBrowseComp)",
+      "rl_algorithm": "GRPO-based (SFT + Online RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (Search/KG)",
+      "focus": null
+    },
+    {
+      "category": "domain_specific",
+      "name": "LegalDelta",
+      "github_url": "https://github.com/NEUIR/LegalDelta",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.12281"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Northeastern University (NEUIR)",
+      "rl_framework": "Custom",
+      "domain": "Legal",
+      "task": "Legal Reasoning",
+      "rl_algorithm": "GRPO (CoT-guided info-gain)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model + Rule",
+      "tool_usage": "No",
+      "focus": null
+    }
+  ],
+  "reward_training": [
+    {
+      "category": "reward_training",
+      "name": "ToolPRMBench",
+      "github_url": "https://github.com/David-Li0406/ToolPRMBench",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.12294"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Arizona State University",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Tool-Use",
+      "rl_algorithm": "N/A (Benchmark)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes",
+      "focus": "PRM Benchmark for Tool-Use"
+    },
+    {
+      "category": "reward_training",
+      "name": "RLVR-World",
+      "github_url": "https://github.com/thuml/RLVR-World",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.13934"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "THU ML Group",
+      "rl_framework": null,
+      "domain": null,
+      "task": "World Modeling (Language/Video)",
+      "rl_algorithm": "RLVR",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (verifiable)",
+      "tool_usage": "No",
+      "focus": "RLVR for World Models"
+    },
+    {
+      "category": "reward_training",
+      "name": "AgentPRM",
+      "github_url": "https://github.com/sanjibanc/agent_prm",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.10325"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Cornell",
+      "rl_framework": null,
+      "domain": null,
+      "task": "ALFWorld/General",
+      "rl_algorithm": "PPO/DPO + PRM",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM)",
+      "tool_usage": "Yes",
+      "focus": "Process Reward for Agents"
+    },
+    {
+      "category": "reward_training",
+      "name": "Agentic-Reward-Modeling",
+      "github_url": "https://github.com/THU-KEG/Agentic-Reward-Modeling",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.19328"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "THU-KEG",
+      "rl_framework": null,
+      "domain": null,
+      "task": "General Instruction",
+      "rl_algorithm": "DPO/Best-of-N",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Model (Reward Agent)",
+      "tool_usage": "Yes (Verification)",
+      "focus": "Agentic Reward Agent"
+    },
+    {
+      "category": "reward_training",
+      "name": "AgentRM",
+      "github_url": "https://github.com/thunlp/AgentRM",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.18407"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "THUNLP/Tsinghua",
+      "rl_framework": null,
+      "domain": null,
+      "task": "9 Agent Tasks",
+      "rl_algorithm": "MCTS/RM-guided",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (regression PRM)",
+      "tool_usage": "Yes",
+      "focus": "Generalizable Agent RM"
+    },
+    {
+      "category": "reward_training",
+      "name": "AgentProg",
+      "github_url": "https://github.com/MobileLLM/AgentProg",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.18121"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "MobileLLM",
+      "rl_framework": null,
+      "domain": null,
+      "task": "GUI Agent Training",
+      "rl_algorithm": "Online RL w/ progress reward",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (ProgRM)",
+      "tool_usage": "Yes",
+      "focus": "Progress Reward Model (ProgRM)"
+    }
+  ],
+  "safety": [
+    {
+      "category": "safety",
+      "name": "SafeSearch",
+      "github_url": "https://github.com/amazon-science/SafeSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.17017"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Amazon Science",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Safe QA/Search",
+      "rl_algorithm": "PPO (GAE/GRPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Search",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "curiosity_redteam",
+      "github_url": "https://github.com/Improbable-AI/curiosity_redteam",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2402.19464"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.2",
+      "org": "MIT",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Red Teaming",
+      "rl_algorithm": "RL + Curiosity",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (iterative query)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "RLbreaker",
+      "github_url": "https://github.com/XuanChen-xc/RLbreaker",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2406.08705"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.6",
+      "org": "Purdue",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Jailbreaking",
+      "rl_algorithm": "Custom PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (mutator selection)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "xJailbreak",
+      "github_url": "https://github.com/Aegis1863/xJailbreak",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2501.16727"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Jailbreaking",
+      "rl_algorithm": "RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (embedding)",
+      "tool_usage": "Yes (iterative)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "Auto-RT",
+      "github_url": "https://github.com/icip-cas/Auto-RT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2501.01830"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "ICIP-CAS",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Red Teaming",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (strategy exploration)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "ToolSafe",
+      "github_url": "https://github.com/MurrayTom/ToolSafe",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.10156"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Academic (MurrayTom)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-Invocation Safety Guardrail",
+      "rl_algorithm": "Multi-task GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (tool monitoring)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "TROJail",
+      "github_url": "https://github.com/xxiqiao/TROJail",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.07761"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "Academic (ACL 2026)",
+      "rl_framework": "RAGEN + vLLM",
+      "domain": null,
+      "task": "Multi-turn Jailbreak Attack",
+      "rl_algorithm": "Multi-turn GRPO variant",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (harmfulness judge) + Rule",
+      "tool_usage": "Yes (target LLM)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "Jailbreak-R1",
+      "github_url": "https://github.com/yuki-younai/Jailbreak-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.00782"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Academic (yuki-younai)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Red-teaming Prompt Generation",
+      "rl_algorithm": "GRPO (3-stage: imitation→warm-up→progressive)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (judge)",
+      "tool_usage": "Yes (target LLM)",
+      "focus": null
+    },
+    {
+      "category": "safety",
+      "name": "GuardReasoner-VL",
+      "github_url": "https://github.com/yueliu1999/GuardReasoner-VL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.11049"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "NUS (yueliu1999)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "VLM Safety Guard (multimodal)",
+      "rl_algorithm": "Online RL w/ rejection sampling",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "No",
+      "focus": null
+    }
+  ],
+  "vlm_agent": [
+    {
+      "category": "vlm_agent",
+      "name": "ParaVT",
+      "github_url": "https://github.com/EvolvingLMMs-Lab/ParaVT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.20342"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "NTU / HKU / Tsinghua / MiroMind (LMMs-Lab)",
+      "rl_framework": "AReaL",
+      "domain": null,
+      "task": "Long-video understanding (VideoMME/LongVideoBench/LVBench/MLVU/MMVU/Charades-STA)",
+      "rl_algorithm": "PARA-GRPO (Parseability-Anchored, Ratio-gAted)",
+      "agent_arity": "Multi (main + parallel sub-agents w/ shared weights)",
+      "reward_phase": "Both (outcome + targeted format)",
+      "turn_mode": "Single-turn parallel",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (parallel video-window crop tools)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "OpenSearch-VL",
+      "github_url": "https://github.com/shawn0728/OpenSearch-VL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.05185"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "CUHK / NTU / HKU / Multi-institution",
+      "rl_framework": "rLLM/veRL/Megatron-LM",
+      "domain": null,
+      "task": "Multimodal Deep Search (Qwen3-VL base)",
+      "rl_algorithm": "Multi-turn fatal-aware GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (LLM judge)",
+      "tool_usage": "Yes (text/image search, OCR, crop, sharpen, SR, perspective)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "MTA-Agent",
+      "github_url": "https://github.com/SalesforceAIResearch/MTA-Agent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.06376"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Salesforce AI Research",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multimodal Deep Search (21K MTA-Vision-DeepSearch; 32B beats GPT-5 54.63%)",
+      "rl_algorithm": "DAPO (w/ cached tool interactions)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (web search, web read, Google Lens, image search)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "multimodal-search-r1",
+      "github_url": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.20670"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "ByteDance/NTU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multimodal Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "DeepEyesV2",
+      "github_url": "https://github.com/Visual-Agent/DeepEyesV2",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.05271"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Xiaohongshu",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multimodal Reasoning",
+      "rl_algorithm": "Outcome RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Code exec, Web search)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VDeepEyes",
+      "github_url": "https://github.com/Visual-Agent/DeepEyes",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.14362"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Xiaohongshu/XJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "VQA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "CoSo",
+      "github_url": "https://github.com/langfengQ/CoSo",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.03792"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "NTU/Alibaba",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Android/Card/Embodied",
+      "rl_algorithm": "Soft RL (counterfactual)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "RL4VLM",
+      "github_url": "https://github.com/RL4VLM/RL4VLM",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2405.10292"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.5",
+      "org": "UC Berkeley",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GymCards/ALFWorld",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VSC-RL",
+      "github_url": "https://github.com/ai-agents-2030/VSC_RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.07949"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Liverpool/Huawei/Tianjin/UCL",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile Device Control",
+      "rl_algorithm": "Variational RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "AlphaDrive",
+      "github_url": "https://github.com/hustvl/AlphaDrive",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.07608"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "HUST/Horizon Robotics",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Autonomous Driving",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (4 planning rewards)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "Mini-o3",
+      "github_url": "https://github.com/Mini-o3/Mini-o3",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.07969"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Mini-o3 team",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Visual Search (V*/HR-Bench)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (image crop)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VisionThink",
+      "github_url": "https://github.com/dvlab-research/VisionThink",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.13348"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "CUHK (dvlab-research)",
+      "rl_framework": "veRL + EasyR1",
+      "domain": null,
+      "task": "Efficient VQA",
+      "rl_algorithm": "GRPO w/ LLM-as-Judge",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM-Judge)",
+      "tool_usage": "Yes (hi-res request)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "AutoVLA",
+      "github_url": "https://github.com/ucla-mobility/AutoVLA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.13757"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "UCLA Mobility Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Autonomous Driving (nuScenes/nuPlan/Waymo)",
+      "rl_algorithm": "GRPO (RFT after SFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (PDMS)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "Pixel-Reasoner",
+      "github_url": "https://github.com/TIGER-AI-Lab/Pixel-Reasoner",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.15966"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "University of Waterloo (TIGER-AI-Lab)",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Visual Reasoning (V*/TallyQA/Info-VQA)",
+      "rl_algorithm": "Curiosity-driven GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (zoom/select-frame)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "Visual-ARFT",
+      "github_url": "https://github.com/Liuziyu77/Visual-RFT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.14246"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Shanghai AI Lab / SJTU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multimodal Agentic Tool Use (MAT-Search/Coding)",
+      "rl_algorithm": "GRPO (agentic RFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search/Python)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VTool-R1",
+      "github_url": "https://github.com/VTOOL-R1/vtool-r1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.19255"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "UIUC",
+      "rl_framework": "veRL + EasyR1",
+      "domain": null,
+      "task": "Chart/Table VQA",
+      "rl_algorithm": "RFT (GRPO-based)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Python visual tools)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "OpenThinkIMG",
+      "github_url": "https://github.com/zhaochen0110/OpenThinkIMG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.08617"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Academic (zhaochen0110)",
+      "rl_framework": "OpenR1",
+      "domain": null,
+      "task": "Chart Reasoning",
+      "rl_algorithm": "V-ToolRL (GRPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (GroundingDINO/SAM/OCR/crop)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "Chain-of-Focus",
+      "github_url": "https://github.com/xtong-zhang/Chain-of-Focus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.15436"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Multi-institution",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Visual Reasoning (V*)",
+      "rl_algorithm": "AGAR (GRPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (outcome+format)",
+      "tool_usage": "Yes (zoom-in)",
+      "focus": null
+    },
+    {
+      "category": "vlm_agent",
+      "name": "GRIT",
+      "github_url": "https://github.com/eric-ai-lab/GRIT",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.15879"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "UC Santa Cruz (eric-ai-lab)",
+      "rl_framework": "trl",
+      "domain": null,
+      "task": "Visual Reasoning (bbox)",
+      "rl_algorithm": "GRPO-GR (Grounded Reasoning)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (bbox)",
+      "focus": null
+    }
+  ],
+  "self_evolution": [
+    {
+      "category": "self_evolution",
+      "name": "world-knowledge",
+      "github_url": "https://github.com/Bklight999/world-knowledge",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.18131"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "HKUST / Tencent",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Web Agents (WebVoyager/WebWalker; +20% on Qwen3-30B & Seed-OSS-36B)",
+      "rl_algorithm": "Outcome-based RL (reward-free self-evolution)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (intrinsic; world-knowledge gain)",
+      "tool_usage": "Yes (web pipeline for env-specific knowledge construction)",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "AgentEvolver",
+      "github_url": "https://github.com/modelscope/AgentEvolver",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.10395"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Alibaba/Tongyi Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Social Game/Tool-use",
+      "rl_algorithm": "ADCA-GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "SEAgent",
+      "github_url": "https://github.com/SunzeY/SEAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.04700"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Shanghai AI Lab / CUHK",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Computer Use (OSWorld)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Screenshot-based)",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "MemSkill",
+      "github_url": "https://github.com/ViktorAxelsen/MemSkill",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.02474"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "NTU/UIUC/UIC/Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "QA/ALFWorld",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (learned skills)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "MemRL",
+      "github_url": "https://github.com/MemTensor/MemRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.03192"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "SJTU/Xidian/NUS/USTC/MemTensor",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "HLE/BigCodeBench/ALFWorld",
+      "rl_algorithm": "RL-based (Q-value)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (retrieval)",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "RAGEN",
+      "github_url": "https://github.com/RAGEN-AI/RAGEN",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.20073"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "RAGEN-AI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": "PPO/GRPO (StarPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "WebRL",
+      "github_url": "https://github.com/THUDM/WebRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2411.02337"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.11",
+      "org": "Tsinghua/Zhipu AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Web Navigation (WebArena)",
+      "rl_algorithm": "Actor-Critic RL + ORM",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (ORM)",
+      "tool_usage": "Yes (Web browsing)",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "EvolveR",
+      "github_url": "https://github.com/Edaizi/EvolveR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.16079"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "KnowledgeXLab / Shanghai AI Lab",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Multi-hop QA (NQ/HotpotQA)",
+      "rl_algorithm": "GRPO (closed-loop online+offline)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (experience retrieval)",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "R-Zero",
+      "github_url": "https://github.com/Chengsong-Huang/R-Zero",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.05004"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Tencent AI Seattle Lab / WashU / UMD",
+      "rl_framework": "EasyR1",
+      "domain": null,
+      "task": "Math/SuperGPQA/MMLU-Pro/BBEH",
+      "rl_algorithm": "GRPO (Challenger + Solver co-evolution)",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (majority voting)",
+      "tool_usage": "No",
+      "focus": null
+    },
+    {
+      "category": "self_evolution",
+      "name": "Absolute-Zero-Reasoner",
+      "github_url": "https://github.com/LeapLabTHU/Absolute-Zero-Reasoner",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.03335"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Tsinghua (LeapLabTHU) / BIGAI / PSU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Code/Math Reasoning (HumanEval/MBPP/LiveCodeBench)",
+      "rl_algorithm": "TRR++ (Task-Relative REINFORCE++)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule + learnability",
+      "tool_usage": "Yes (Python exec)",
+      "focus": null
+    }
+  ],
+  "environment": [
+    {
+      "category": "environment",
+      "name": "AEnvironment",
+      "github_url": "https://github.com/inclusionAI/AEnvironment",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Agentic RL Env Platform (MCP, AReaL-integrated, TAU2/SWE/Terminal-Bench)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "OpenSandbox",
+      "github_url": "https://github.com/alibaba/OpenSandbox",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Alibaba",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Code/GUI/Agent Eval",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "OpenEnv",
+      "github_url": "https://github.com/meta-pytorch/OpenEnv",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Meta (PyTorch)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Chess/Arcade/Finance",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "NeMo-Gym",
+      "github_url": "https://github.com/NVIDIA-NeMo/Gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "NVIDIA",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Multi-step/Multi-turn",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "open-trajectory-gym",
+      "github_url": "https://github.com/westonbrown/open-trajectory-gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Individual",
+      "rl_framework": null,
+      "domain": null,
+      "task": "CTF/Security",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "R2E-Gym",
+      "github_url": "https://github.com/R2E-Gym/R2E-Gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "UC Berkeley/ANU",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "LoCoBench-Agent",
+      "github_url": "https://github.com/SalesforceAIResearch/LoCoBench-Agent",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Salesforce AI Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "Simia-Agent-Training",
+      "github_url": "https://github.com/microsoft/Simia-Agent-Training",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Microsoft",
+      "rl_framework": null,
+      "domain": null,
+      "task": "ToolUse/API",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "PaperArena",
+      "github_url": "https://github.com/Melmaphother/PaperArena",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "University of Science and Technology of China",
+      "rl_framework": null,
+      "domain": null,
+      "task": "ScientificLiteratureQA",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "enterprise-deep-research",
+      "github_url": "https://github.com/SalesforceAIResearch/enterprise-deep-research",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Salesforce AI Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "DeepResearch",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "meta-agents-research-environments",
+      "github_url": "https://github.com/facebookresearch/meta-agents-research-environments",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Meta (FAIR)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Gaia2 / Multi-universe",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "BrowseComp-Plus",
+      "github_url": "https://github.com/texttron/BrowseComp-Plus",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "University of Waterloo",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Deep Research Eval",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "MCP-Bench",
+      "github_url": "https://github.com/Accenture/mcp-bench",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.20453"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Accenture",
+      "rl_framework": null,
+      "domain": null,
+      "task": "MCP Tool-use (28 servers)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "MCPVerse",
+      "github_url": "https://github.com/hailsham/mcpverse",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Individual",
+      "rl_framework": null,
+      "domain": null,
+      "task": "MCP Tools (550+)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "CompassVerifier",
+      "github_url": "https://github.com/open-compass/CompassVerifier",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Shanghai AI Lab",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Reasoning",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "tau2-bench",
+      "github_url": "https://github.com/sierra-research/tau2-bench",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Sierra Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Tool-Agent-User",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "MCP-Universe",
+      "github_url": "https://github.com/SalesforceAIResearch/MCP-Universe",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Salesforce AI Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "MCP Tool-use",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "SWE-smith",
+      "github_url": "https://github.com/SWE-bench/SWE-smith",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Princeton/Stanford/SWE-bench",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "SWE-Gym",
+      "github_url": "https://github.com/SWE-Gym/SWE-Gym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2412.21139"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.12",
+      "org": "UC Berkeley/UIUC/CMU/Apple",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "Mind2Web-2",
+      "github_url": "https://github.com/OSU-NLP-Group/Mind2Web-2",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "Ohio State University",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "gem",
+      "github_url": "https://github.com/axon-rl/gem",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Sea AI Lab",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code/Game/QA",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "MLE-Dojo",
+      "github_url": "https://github.com/MLE-Dojo/MLE-Dojo",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "GIT, Stanford",
+      "rl_framework": null,
+      "domain": null,
+      "task": "MLE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "atropos",
+      "github_url": "https://github.com/NousResearch/atropos",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Nous Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Game/Code/Tool",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "InternBootcamp",
+      "github_url": "https://github.com/InternLM/InternBootcamp",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "InternBootcamp",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Coding/QA/Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "loong",
+      "github_url": "https://github.com/camel-ai/loong",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "CAMEL-AI.org",
+      "rl_framework": null,
+      "domain": null,
+      "task": "RLVR",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "DataSciBench",
+      "github_url": "https://github.com/THUDM/DataSciBench",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Tsinghua",
+      "rl_framework": null,
+      "domain": null,
+      "task": "data analysis",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "reasoning-gym",
+      "github_url": "https://github.com/open-thought/reasoning-gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "open-thought",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "llmgym",
+      "github_url": "https://github.com/tensorzero/llmgym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.1",
+      "org": "tensorzero",
+      "rl_framework": null,
+      "domain": null,
+      "task": "TextGame/Tool",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "debug-gym",
+      "github_url": "https://github.com/microsoft/debug-gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.11",
+      "org": "Microsoft Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Debugging/Game/Code",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "gym-llm",
+      "github_url": "https://github.com/rsanchezmo/gym-llm",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.8",
+      "org": "Rodrigo Sánchez Molina",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Control/Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "AgentGym",
+      "github_url": "https://github.com/WooooDyy/AgentGym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.6",
+      "org": "Fudan",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Web/Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "tau-bench",
+      "github_url": "https://github.com/sierra-research/tau-bench",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.6",
+      "org": "Sierra",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Tool",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "appworld",
+      "github_url": "https://github.com/StonyBrookNLP/appworld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.6",
+      "org": "Stony Brook University",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Phone Use",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "android_world",
+      "github_url": "https://github.com/google-research/android_world",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.5",
+      "org": "Google Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Phone Use",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "TheAgentCompany",
+      "github_url": "https://github.com/TheAgentCompany/TheAgentCompany",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.3",
+      "org": "CMU, Duke",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Coding",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "LlamaGym",
+      "github_url": "https://github.com/KhoomeiK/LlamaGym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.3",
+      "org": "Rohan Pandey",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "visualwebarena",
+      "github_url": "https://github.com/web-arena-x/visualwebarena",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2024.1",
+      "org": "CMU",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "LMRL-Gym",
+      "github_url": "https://github.com/abdulhaim/LMRL-Gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2023.12",
+      "org": "UC Berkeley",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "OSWorld",
+      "github_url": "https://github.com/xlang-ai/OSWorld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2023.10",
+      "org": "HKU, CMU, Salesforce, Waterloo",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Computer Use",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "webarena",
+      "github_url": "https://github.com/web-arena-x/webarena",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2023.7",
+      "org": "CMU",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "AgentBench",
+      "github_url": "https://github.com/THUDM/AgentBench",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2023.7",
+      "org": "Tsinghua University",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Game/Web/QA/Tool",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "WebShop",
+      "github_url": "https://github.com/princeton-nlp/WebShop",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2022.7",
+      "org": "Princeton-NLP",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Web",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "ScienceWorld",
+      "github_url": "https://github.com/allenai/ScienceWorld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2022.3",
+      "org": "AllenAI",
+      "rl_framework": null,
+      "domain": null,
+      "task": "TextGame/ScienceQA",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "alfworld",
+      "github_url": "https://github.com/alfworld/alfworld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2020.10",
+      "org": "Microsoft, CMU, UW",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Embodied",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "factorio-learning-environment",
+      "github_url": "https://github.com/JackHopkins/factorio-learning-environment",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2021.6",
+      "org": "JackHopkins",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Game",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "jericho",
+      "github_url": "https://github.com/microsoft/jericho",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2018.10",
+      "org": "Microsoft, GIT",
+      "rl_framework": null,
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    },
+    {
+      "category": "environment",
+      "name": "TextWorld",
+      "github_url": "https://github.com/microsoft/TextWorld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2018.6",
+      "org": "Microsoft Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null
+    }
+  ],
+  "under_review": [
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/abs/2604.15840"
+    },
+    {
+      "title": "JoyAgents-R1: Joint Evolution Dynamics for Versatile Multi-LLM Agents with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2506.19846"
+    },
+    {
+      "title": "Shop-R1: Rewarding LLMs to Simulate Human Behavior in Online Shopping via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2507.17842"
+    },
+    {
+      "title": "Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2508.03501"
+    },
+    {
+      "title": "Acting Less is Reasoning More! Teaching Model to Act Efficiently",
+      "url": "https://arxiv.org/abs/2504.14870"
+    },
+    {
+      "title": "Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2505.01441"
+    },
+    {
+      "title": "ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents",
+      "url": "https://arxiv.org/abs/2508.14040"
+    },
+    {
+      "title": "Atom-Searcher: Enhancing Agentic Deep Research via Fine-Grained Atomic Thought Reward",
+      "url": "https://github.com/antgroup/Research-Venus"
+    },
+    {
+      "title": "MUA-RL: MULTI-TURN USER-INTERACTING AGENTREINFORCEMENT LEARNING FOR AGENTIC TOOL USE",
+      "url": "https://github.com/zzwkk/MUA-RL"
+    },
+    {
+      "title": "Understanding Tool-Integrated Reasoning",
+      "url": "https://zhongwenxu.notion.site/Understanding-Tool-Integrated-Reasoning-2551c4e140e3805489fadcc802a1ea83"
+    },
+    {
+      "title": "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2508.19828"
+    },
+    {
+      "title": "Encouraging Good Processes Without the Need for Good Answers: Reinforcement Learning for LLM Agent Planning",
+      "url": "https://arxiv.org/abs/2508.19598"
+    },
+    {
+      "title": "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents",
+      "url": "https://arxiv.org/abs/2509.06283"
+    },
+    {
+      "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
+      "url": "https://arxiv.org/abs/2509.06501"
+    },
+    {
+      "title": "EnvX: Agentize Everything with Agentic AI",
+      "url": "https://arxiv.org/abs/2509.08088"
+    },
+    {
+      "title": "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2509.02544"
+    },
+    {
+      "title": "UI-Venus Technical Report: Building High-performance UI Agents with RFT",
+      "url": "https://arxiv.org/abs/2508.10833"
+    },
+    {
+      "title": "Agent2 : An Agent-Generates-Agent Framework for Reinforcement Learning Automation",
+      "url": "https://arxiv.org/abs/2509.13368"
+    },
+    {
+      "title": "Adversarial Reinforcement Learning for Large Language Model Agent Safety",
+      "url": "https://arxiv.org/abs/2510.05442"
+    },
+    {
+      "title": "Learning to Refine: An Agentic RL Approach for Iterative SPARQL Query Construction",
+      "url": "https://www.arxiv.org/abs/2511.11770"
+    },
+    {
+      "title": "InfoFlow: Reinforcing Search Agent Via Reward Density Optimization",
+      "url": "https://arxiv.org/abs/2510.26575"
+    }
+  ]
+}

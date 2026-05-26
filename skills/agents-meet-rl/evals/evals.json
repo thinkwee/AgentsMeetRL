@@ -1,0 +1,56 @@
+{
+  "skill_name": "agents-meet-rl",
+  "description": "Evaluation scenarios for the Agentic-RL troubleshooter. Each scenario simulates a real researcher query and lists expected behaviors that signal the skill activated correctly.",
+  "evals": [
+    {
+      "id": 1,
+      "category": "training-symptom",
+      "prompt": "I'm training an agentic-RL search agent with GRPO. After 200 steps the reward is stuck near 0 and entropy is collapsing. What's wrong?",
+      "expected_behavior": [
+        "Reads problems/_INDEX.md and routes to a problem file matching reward-stuck or entropy-collapse symptoms (e.g. problems/training/reward-not-increasing.md, problems/training/entropy-collapse.md, or problems/training/unstable-curves.md).",
+        "Returns root causes and diagnosis checks before jumping to fixes.",
+        "Cites at least one algorithm or paper (e.g. DAPO clip-higher, Dr.GRPO normalization fix) at the idea level with a canonical URL — not a file path inside any repo."
+      ]
+    },
+    {
+      "id": 2,
+      "category": "algorithm-name-lookup",
+      "prompt": "What is DAPO and when should I use it instead of GRPO?",
+      "expected_behavior": [
+        "Recognizes DAPO as a paper-only algorithm (in the lint whitelist) and returns the paper URL https://arxiv.org/abs/2503.14476 plus org (ByteDance Seed) and date (2025.3).",
+        "Explains DAPO's contributions (clip-higher / token-level loss / dynamic sampling / overlong reward shaping) at the idea level — no fabricated section numbers.",
+        "Gives a comparison vs GRPO grounded in problems/training/algorithm-choice.md or references/reasoning.md, not invented."
+      ]
+    },
+    {
+      "id": 3,
+      "category": "framework-selection",
+      "prompt": "I want to train a multi-turn tool-use agent at ~30B scale with async rollouts. Which base framework should I pick?",
+      "expected_behavior": [
+        "Reads references/base-frameworks.md (or its ToC) before recommending.",
+        "Recommends one or two frameworks (e.g. AReaL, slime, OpenRLHF) with concrete grounds — async support, scale, multi-turn handling — and cites each with github + arxiv (when present) + org + date as found in the corpus.",
+        "Does not invent framework names or URLs; if unsure, says so."
+      ]
+    },
+    {
+      "id": 4,
+      "category": "evaluation-symptom",
+      "prompt": "My training reward keeps going up but my held-out benchmark score is flat. What's happening?",
+      "expected_behavior": [
+        "Routes via problems/_INDEX.md to a file like problems/training/reward-up-eval-flat.md or similar.",
+        "Lists overfitting-to-reward, train/test split contamination, judge inconsistency, and pass@k vs pass@1 mismatch as candidate root causes.",
+        "Recommends concrete diagnoses (held-out subset evaluation, contamination check) before fixes."
+      ]
+    },
+    {
+      "id": 5,
+      "category": "post-snapshot-staleness",
+      "prompt": "Have you read the GRPO-Plus paper from 2026-08?",
+      "expected_behavior": [
+        "Recognizes that 2026-08 is after the snapshot date 2026-04-28.",
+        "Explicitly flags that this skill's corpus does not cover that paper rather than fabricating a description.",
+        "Optionally suggests the user read the paper directly and can come back with specific symptoms."
+      ]
+    }
+  ]
+}

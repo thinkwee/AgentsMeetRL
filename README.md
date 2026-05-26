@@ -76,6 +76,26 @@ Some Enumeration:
 - 📢 **2026-04 Update**: Added 67 new repositories covering Apr 2025 – Apr 2026 across nearly every category (notably VLM Agent +9, Search & RAG +10, Web & GUI +7, Tool-Use +7). Also reclassified SkyRL (→ General) and SPIRAL (→ Multi-Agent), and updated the VAGEN entry to its NeurIPS'25 upstream repo.
 - 📢 **2026-03 Update**: Restructured taxonomy from 12 to 16 categories (added Multi-Agent RL, Reward & Training, Safety, VLM Agent, Self-Evolution, Domain-Specific; merged GUI into Web & GUI; retired TextGame/Biomedical). Added ~70 new repositories covering Sep 2025 – Mar 2026, growing the total from ~134 to 205.
 
+## 🤖 Use as a Claude Code Skill
+
+This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **312 projects** (snapshot **2026-05-23**). Once installed, Claude Code auto-invokes it whenever your question matches.
+
+**Install as a plugin (recommended):**
+
+```text
+/plugin marketplace add thinkwee/claude-plugins
+/plugin install agents-meet-rl@thinkwee
+```
+
+**Or install manually:**
+
+```bash
+git clone https://github.com/thinkwee/AgentsMeetRL
+cp -r AgentsMeetRL/skills/agents-meet-rl ~/.claude/skills/
+```
+
+Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropping"* or *"which RL framework should I pick for a multi-turn tool-use agent?"* — the skill routes your symptom to fixes grounded in this corpus.
+
 ## 🔧 Base Framework
 
 
