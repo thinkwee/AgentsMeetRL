@@ -2,11 +2,19 @@
 
 Software-engineering agents that locate, repair, and test. Most use SWE-bench-style verifiable rewards.
 
-_Total: 22 entries._
+_Total: 24 entries._
 
 ## Contents
 
-SWE-Edit, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch, CUDA-L1, SWE-Swiss, MedAgentGym, CURE, Time-R1, ML-Agent, R1-Code-Interpreter, digitalhuman, Skywork-OR1, sweet_rl, swe-rl, CTRL, AceCoder, rllm, open-r1.
+FastContext, SWE-Edit, CodeScout, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch, CUDA-L1, digitalhuman, SWE-Swiss, MedAgentGym, CURE, Time-R1, ML-Agent, R1-Code-Interpreter, Skywork-OR1, sweet_rl, swe-rl, CTRL, AceCoder, rllm, open-r1.
+
+### FastContext
+- **Idea:** Trains a small parallel-tool-calling repository-explorer subagent so a coding agent gets focused file/line context cheaply via task-grounded RL.
+- `https://github.com/microsoft/fastcontext` · org: Microsoft · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.14066)
+- Algorithm: Task-grounded RL · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Read/Glob/Grep, parallel)
+- Reward phase: Outcome · Reward type: Rule-Based
+- Task: Repo-explorer subagent (context gathering + citations)
 
 ### SWE-Edit
 - **Idea:** Decomposes code editing into Viewer and Editor subagents and trains the editor to adaptively pick edit mode rather than always using find-and-replace.
@@ -15,6 +23,14 @@ SWE-Edit, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch
 - Algorithm: GRPO (adaptive mode selection) · Framework: Custom · Agent: Multi (Viewer + Editor subagents) · Turns: Multi · Tools: Yes (bash, file ops, viewer subagent)
 - Reward phase: Outcome · Reward type: Rule/External (test-based)
 - Task: SWE-bench Verified (find-replace vs whole-file rewrite)
+
+### CodeScout
+- **Idea:** RL recipe for code-search agents using a multi-level (file/module/function) F1 reward over a plain Unix terminal toolset.
+- `https://github.com/OpenHands/codescout` · org: OpenHands · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.17829)
+- Algorithm: GSPO · Framework: SkyRL · Agent: Single · Turns: Multi · Tools: Yes (terminal: rg/sed/cat)
+- Reward phase: Outcome · Reward type: Rule-Based (F1)
+- Task: Repo-level code search/localization (terminal)
 
 ### CUDA-Agent
 - **Idea:** Large-scale agentic RL for CUDA kernels combining data synthesis, a skill-augmented dev environment with automated verification/profiling rewards, and stable-training techniques.
@@ -72,6 +88,14 @@ SWE-Edit, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch
 - Reward phase: Outcome · Reward type: Rule (performance)
 - Task: CUDA Optimization
 
+### digitalhuman
+- **Idea:** RLVER: PPO with deterministic emotion scores from self-consistent simulated users as verifiable rewards to train empathetic dialogue agents.
+- `https://github.com/Tencent/digitalhuman` · org: Tencent · date: 2025.7
+- Paper(s): [Paper](https://arxiv.org/abs/2507.03112)
+- Algorithm: PPO/GRPO/ReMax/RLOO · Framework: veRL · Agent: Multi · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Rule/Model/External
+- Task: Empathy/Math/Code/MultimodalQA
+
 ### SWE-Swiss
 - **Idea:** Decomposes issue resolution into localization/repair/unit-test skills, trained via multi-task SFT then two-stage RL on repair, plus similarity-based selection.
 - `https://github.com/zhenyuhe00/SWE-Swiss` · org: Tsinghua / ByteDance · date: 2025.7
@@ -119,14 +143,6 @@ SWE-Edit, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch
 - Algorithm: GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Code exec)
 - Reward phase: Outcome · Reward type: Rule/External
 - Task: Code Interpretation
-
-### digitalhuman
-- **Idea:** RLVER: PPO with deterministic emotion scores from self-consistent simulated users as verifiable rewards to train empathetic dialogue agents.
-- `https://github.com/Tencent/digitalhuman` · org: Tencent · date: 2025.7
-- Paper(s): [Paper](https://arxiv.org/abs/2507.03112)
-- Algorithm: PPO/GRPO/ReMax/RLOO · Framework: veRL · Agent: Multi · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: Rule/Model/External
-- Task: Empathy/Math/Code/MultimodalQA
 
 ### Skywork-OR1
 - **Idea:** Scalable long-CoT RL on R1-Distill models whose key lesson is mitigating premature entropy collapse to sustain exploration and test accuracy.

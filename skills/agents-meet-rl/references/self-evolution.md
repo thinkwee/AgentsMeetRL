@@ -2,7 +2,15 @@
 
 Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training).
 
-_Total: 10 entries._
+_Total: 13 entries._
+
+### SIRI
+- **Idea:** Self-internalizing RL discovers, validates (paired skill-augmented vs skill-free rollouts), and distills the agent's own skills without any external skill bank.
+- `https://github.com/kirito618/SIRI` · org: Academic · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.02355)
+- Algorithm: GiGPO + self-skill mining/distillation · Framework: Custom (GiGPO) · Agent: Single · Turns: Multi · Tools: Yes (interactive actions)
+- Reward phase: Both · Reward type: External + Custom
+- Task: Self-internalizing intrinsic skills (ALFWorld/WebShop)
 
 ### world-knowledge
 - **Idea:** Outcome reward measures how much an agent's self-generated world knowledge raises downstream success, enabling reward-free spontaneous adaptation to unseen environments at inference.
@@ -11,6 +19,22 @@ _Total: 10 entries._
 - Algorithm: Outcome-based RL (reward-free self-evolution) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (web pipeline for env-specific knowledge construction)
 - Reward phase: Outcome · Reward type: Model (intrinsic; world-knowledge gain)
 - Task: Web Agents (WebVoyager/WebWalker; +20% on Qwen3-30B & Seed-OSS-36B)
+
+### ARISE
+- **Idea:** Hierarchical RL with a persistent skill library that co-evolves with reasoning, using counterfactual credit to reward skill quality.
+- `https://github.com/Skylanding/ARISE` · org: George Washington University · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.16060)
+- Algorithm: Hierarchical RL (options + intra-option) w/ skill evolution · Framework: veRL · Agent: Single · Turns: Multi · Tools: No (skill reuse over multi-step reasoning)
+- Reward phase: Both · Reward type: External + Custom (skill-quality)
+- Task: Reasoning w/ intrinsic skill library (7 Olympiad benchmarks)
+
+### Tool-R0
+- **Idea:** Self-play from zero data: a Generator proposes frontier-difficulty tool-use tasks while a Solver learns to solve them, forming a self-improving loop.
+- `https://github.com/emrecanacikgoz/Tool-R0` · org: UIUC / ETH Zurich · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.21320)
+- Algorithm: Self-play RL (generator+solver co-evolution) · Framework: veRL · Agent: Multi · Turns: Multi · Tools: Yes (real tool/function calls)
+- Reward phase: Both · Reward type: External + Custom
+- Task: Self-evolving tool-learning from zero data
 
 ### MemSkill
 - **Idea:** Treats memory operations as learnable evolvable skills: a controller learns skill selection while a designer reviews failures and refines the skill set in a closed loop.

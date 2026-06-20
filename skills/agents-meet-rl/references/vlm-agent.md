@@ -2,11 +2,27 @@
 
 Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search).
 
-_Total: 19 entries._
+_Total: 27 entries._
 
 ## Contents
 
-ParaVT, OpenSearch-VL, MTA-Agent, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+HyperEyes, ODE, ParaVT, OpenSearch-VL, MTA-Agent, Gen-Searcher, MM-DeepResearch, PyVision-RL, Vision-DeepResearch, ARM-Thinker, CodeDance, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+
+### HyperEyes
+- **Idea:** Fuses visual grounding and retrieval into one Unified Grounded Search action and searches multiple entities concurrently, training inference efficiency as an objective.
+- `https://github.com/DeepExperience/HyperEyes` · org: DeepExperience · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.07177)
+- Algorithm: Dual-grained efficiency-aware RL · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (visual grounding + retrieval)
+- Reward phase: Both · Reward type: Custom + Rule
+- Task: Parallel multimodal search (unified grounded search)
+
+### ODE
+- **Idea:** On-policy data evolution over a 9-tool visual-native harness (visual search, zoom, code) with an image-bank memory for multimodal deep search.
+- `https://github.com/JoeYing1019/ODE` · org: HKUST / CUHK / PKU · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.10832)
+- Algorithm: GRPO (async) + SFT cold-start · Framework: verl + rllm · Agent: Single · Turns: Multi · Tools: Yes (web/image/visual search, code)
+- Reward phase: Both · Reward type: External + Rule
+- Task: Visual-native multimodal deep search (9-tool harness)
 
 ### ParaVT
 - **Idea:** PARA-GRPO for long-video agents: targeted format reward at fragile structural tokens plus frame-budget randomization to stop tool-prior-induced format collapse.
@@ -31,6 +47,54 @@ ParaVT, OpenSearch-VL, MTA-Agent, DeepEyesV2, Mini-o3, VisionThink, multimodal-s
 - Algorithm: DAPO (w/ cached tool interactions) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (web search, web read, Google Lens, image search)
 - Reward phase: Outcome · Reward type: Rule/External
 - Task: Multimodal Deep Search (21K MTA-Vision-DeepSearch; 32B beats GPT-5 54.63%)
+
+### Gen-Searcher
+- **Idea:** Reinforces multi-hop web + visual-reference search before grounded image synthesis, with dual text and image rewards.
+- `https://github.com/tulerfeng/Gen-Searcher` · org: Academic · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.28767)
+- Algorithm: GRPO (after SFT) · Framework: rllm + verl · Agent: Single · Turns: Multi · Tools: Yes (search, image search, browse, image-gen)
+- Reward phase: Both · Reward type: Model (dual text+image)
+- Task: Search-augmented image-generation deep research
+
+### MM-DeepResearch
+- **Idea:** A simple multimodal agentic-search baseline that learns when/how to call image-to-image, text-to-image, and text-to-text retrieval engines via GRPO.
+- `https://github.com/HJYao00/MM-DeepResearch` · org: Academic · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.01050)
+- Algorithm: Multi-turn agentic GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (image/text search engines)
+- Reward phase: Both · Reward type: Model (judge) + Rule
+- Task: Multimodal agentic search baseline
+
+### PyVision-RL
+- **Idea:** Writes Python-as-tool on the fly for agentic image and video understanding, with an accumulative per-turn tool reward to prevent interaction collapse.
+- `https://github.com/agents-x-project/PyVision-RL` · org: agents-x-project · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.20739)
+- Algorithm: GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (Python-as-tool, frame sampling)
+- Reward phase: Both · Reward type: External + Custom
+- Task: Agentic image+video understanding w/ dynamic Python tooling
+
+### Vision-DeepResearch
+- **Idea:** Incentivizes long-horizon multimodal deep research (dozens of turns, hundreds of searches) in an MLLM via cold-start SFT then GRPO.
+- `https://github.com/Osilly/Vision-DeepResearch` · org: Academic (ICML 2026) · date: 2026.1
+- Paper(s): [Paper](https://arxiv.org/abs/2601.22060)
+- Algorithm: GRPO (after cold-start SFT) · Framework: rllm + verl · Agent: Single · Turns: Multi · Tools: Yes (visual+textual search, browse)
+- Reward phase: Both · Reward type: External + Rule
+- Task: Multimodal deep-research MLLM (dozens of turns)
+
+### ARM-Thinker
+- **Idea:** A multimodal generative reward model that thinks, acts (zoom/crop, doc retrieval, validators), and verifies in an iterative loop, trained with two-stage GRPO.
+- `https://github.com/InternLM/ARM-Thinker` · org: Shanghai AI Lab / InternLM · date: 2025.12
+- Paper(s): [Paper](https://arxiv.org/abs/2512.05111)
+- Algorithm: GRPO (two-stage) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (zoom/crop, doc retrieval, validators)
+- Reward phase: Both · Reward type: External + Rule
+- Task: Agentic multimodal reward modeling (Think-Act-Verify)
+
+### CodeDance
+- **Idea:** A dynamic tool-integrated MLLM that composes code-as-tools (crop, draw, count, plot) over multiple turns for executable visual reasoning, with a balanced adaptive tool-call reward.
+- `https://github.com/CodeDance-VL/CodeDance` · org: ByteDance · date: 2025.12
+- Paper(s): [Paper](https://arxiv.org/abs/2512.17312)
+- Algorithm: GRPO/DAPO (agent-loop) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (Python sandbox: crop/draw/plot)
+- Reward phase: Both · Reward type: External + Custom
+- Task: Executable visual reasoning (visual search/math/chart via code)
 
 ### DeepEyesV2
 - **Idea:** Shows direct RL alone fails to induce robust tool use; needs cold-start then RL to get task-adaptive tool invocation (image ops for perception, code for math).

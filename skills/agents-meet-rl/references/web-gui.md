@@ -2,11 +2,19 @@
 
 Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate.
 
-_Total: 29 entries._
+_Total: 31 entries._
 
 ## Contents
 
-ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, UI-AGILE, GUI-G2, MagicGUI, Grounding-R1, AgentCPM-GUI, TTI, GTA1, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent.
+OpenWebRL, ToolCUA, ClawGUI, OpAgent, GUI-Libra, MobileAgent, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, MagicGUI, UI-AGILE, GUI-G2, GTA1, Grounding-R1, AgentCPM-GUI, TTI, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent, UI-TARS.
+
+### OpenWebRL
+- **Idea:** Demystifies online multi-turn RL for visual web agents on live websites with a format + LLM-judge reward over a Playwright sandbox.
+- `https://github.com/OpenWebRL/OpenWebRL` · org: UIUC / Microsoft Research · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.02031)
+- Algorithm: GRPO (online multi-turn) · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (Playwright browser)
+- Reward phase: Both · Reward type: Rule + Model (format + LLM-judge)
+- Task: Visual web browsing on live sites (WebVoyager/Online-Mind2Web)
 
 ### ToolCUA
 - **Idea:** Staged GUI+tool training: synthesized interleaved trajectories, tool-bootstrapped RFT warmup, then online RL with a Tool-Efficient Path Reward for when to switch GUI vs tool calls.
@@ -24,6 +32,14 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Reward phase: Both · Reward type: Rule + Model (PRM)
 - Task: Mobile GUI (Android/HarmonyOS/iOS, MobileWorld)
 
+### OpAgent
+- **Idea:** Online agentic RL over a high-concurrency Playwright engine with a hybrid RDTree process reward plus a WebJudge VLM outcome score (WebArena SOTA).
+- `https://github.com/codefuse-ai/OpAgent` · org: Codefuse AI (Ant Group) · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.13559)
+- Algorithm: Online agentic RL (GRPO/PPO) · Framework: Agent-R1 (veRL) · Agent: Multi · Turns: Multi · Tools: Yes (Playwright browser)
+- Reward phase: Both · Reward type: Rule + Model (RDTree + WebJudge)
+- Task: Web navigation (WebArena 71.6% pass@5)
+
 ### GUI-Libra
 - **Idea:** Action-aware SFT plus partially-verifiable KL-trust-region GRPO to handle GUI states where multiple actions are correct but only one is demonstrated.
 - `https://github.com/GUI-Libra/GUI-Libra` · org: GUI-Libra (MS-affiliated) · date: 2026.2
@@ -39,14 +55,6 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Algorithm: semi-online RL · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes
 - Reward phase: Both · Reward type: Rule
 - Task: MobileGUI/Automation
-
-### UI-TARS
-- **Idea:** Native cross-platform GUI agent bootstrapped by iteratively collecting, filtering, and reflectively refining online traces on hundreds of VMs, with System-2 reasoning.
-- `https://github.com/bytedance/UI-TARS` · org: ByteDance Seed · date: 2025.1
-- Paper(s): [Paper](https://arxiv.org/abs/2501.12326)
-- Algorithm: Multi-turn RL · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (GUI actions)
-- Reward phase: Both · Reward type: Model
-- Task: GUI (Cross-platform)
 
 ### MobileRL
 - **Idea:** AdaGRPO with difficulty-adaptive positive replay, failure curriculum filtering, and shortest-path reward reshaping to stabilize multi-turn mobile GUI RL.
@@ -88,6 +96,14 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Reward phase: Outcome · Reward type: Rule (self-supervised)
 - Task: GUI Grounding
 
+### MagicGUI
+- **Idea:** Iterative two-stage training: large-scale continue-pretrain then RFT with a spatially-enhanced composite reward and dual filtering of RL signals.
+- `https://github.com/MagicAgent-GUI/MagicGUI` · org: Honor (MagicAgent-GUI) · date: 2025.8
+- Paper(s): [Paper](https://arxiv.org/abs/2508.03700)
+- Algorithm: Reinforcement Fine-Tuning (RFT) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Model/Rule
+- Task: Mobile GUI
+
 ### UI-AGILE
 - **Idea:** Continuous grounding reward plus a 'Simple Thinking' reward balancing planning quality vs speed, with cropping-based resampling to fix sparse rewards in GUI grounding.
 - `https://github.com/KDEGroup/UI-AGILE` · org: Xiamen University · date: 2025.7
@@ -104,13 +120,13 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Reward phase: Outcome · Reward type: Rule (continuous)
 - Task: GUI Grounding
 
-### MagicGUI
-- **Idea:** Iterative two-stage training: large-scale continue-pretrain then RFT with a spatially-enhanced composite reward and dual filtering of RL signals.
-- `https://github.com/MagicAgent-GUI/MagicGUI` · org: Honor (MagicAgent-GUI) · date: 2025.8
-- Paper(s): [Paper](https://arxiv.org/abs/2508.03700)
-- Algorithm: Reinforcement Fine-Tuning (RFT) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: Model/Rule
-- Task: Mobile GUI
+### GTA1
+- **Idea:** Pairs test-time scaling (sample multiple action proposals, judge-model selection) with click-success RL for GUI grounding without explicit thinking.
+- `https://github.com/Yan98/GTA1` · org: Salesforce / ANU · date: 2025.7
+- Paper(s): [Paper](https://arxiv.org/abs/2507.05791)
+- Algorithm: GRPO-style (click-success reward) · Framework: Custom (DeepSpeed) · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Rule
+- Task: GUI Grounding (OSWorld/ScreenSpot-Pro)
 
 ### Grounding-R1
 - **Idea:** GRPO rewards any click landing inside the target element's bounding box rather than the exact center as SFT does, aligning the objective with real user interaction.
@@ -135,14 +151,6 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Algorithm: REINFORCE/BC · Framework: Custom · Agent: Single · Turns: Multi · Tools: Web Browsing
 - Reward phase: Outcome · Reward type: External
 - Task: Web
-
-### GTA1
-- **Idea:** Pairs test-time scaling (sample multiple action proposals, judge-model selection) with click-success RL for GUI grounding without explicit thinking.
-- `https://github.com/Yan98/GTA1` · org: Salesforce / ANU · date: 2025.7
-- Paper(s): [Paper](https://arxiv.org/abs/2507.05791)
-- Algorithm: GRPO-style (click-success reward) · Framework: Custom (DeepSpeed) · Agent: Single · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: Rule
-- Task: GUI Grounding (OSWorld/ScreenSpot-Pro)
 
 ### SE-GUI
 - **Idea:** Self-evolutionary RFT for GUI grounding: dense continuous-accuracy policy gradient plus attention-map-guided iterative refinement from a small seed set.
@@ -239,3 +247,11 @@ ToolCUA, ClawGUI, GUI-Libra, MobileAgent, UI-TARS, MobileRL, DART-GUI, Mano-P, I
 - Algorithm: DAPO · Framework: LLaMA-Factory · Agent: Multi · Turns: Multi · Tools: Yes
 - Reward phase: Process · Reward type: Model
 - Task: Web
+
+### UI-TARS
+- **Idea:** Native cross-platform GUI agent bootstrapped by iteratively collecting, filtering, and reflectively refining online traces on hundreds of VMs, with System-2 reasoning.
+- `https://github.com/bytedance/UI-TARS` · org: ByteDance Seed · date: 2025.1
+- Paper(s): [Paper](https://arxiv.org/abs/2501.12326)
+- Algorithm: Multi-turn RL · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (GUI actions)
+- Reward phase: Both · Reward type: Model
+- Task: GUI (Cross-platform)

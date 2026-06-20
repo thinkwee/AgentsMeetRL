@@ -2,11 +2,59 @@
 
 Agents that interleave reasoning and retrieval. Most use rule-based EM/F1 outcome rewards or info-gain process rewards.
 
-_Total: 38 entries._
+_Total: 45 entries._
 
 ## Contents
 
-LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR Tulu, IGPO, ReSeek, AutoGraph-R1, WebSeer, HiPRAG, Tree-GRPO, DeepResearch, DeepDive, ASearcher, SSRL, Research-Venus, Graph-R1, Kimi-Researcher, R-Search, R1-Searcher-plus, StepSearch, AutoRefine, ZeroSearch, ReasonRAG, VRAG, MaskSearch, R3-RAG, O2-Searcher, s3, knowledge-r1, WebThinker, DeepResearcher, Search-R1, R1-Searcher, C-3PO, DeepRetrieval.
+Harness-1, SlimSearcher, DeepRubric, SAAS, CuSearch, ORBIT, LiteResearcher, DR-Venus, MR-Search, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR Tulu, IGPO, ReSeek, AutoGraph-R1, DeepResearch, WebSeer, HiPRAG, Tree-GRPO, DeepDive, ASearcher, SSRL, Research-Venus, Graph-R1, Kimi-Researcher, R-Search, R1-Searcher-plus, StepSearch, AutoRefine, ZeroSearch, ReasonRAG, VRAG, MaskSearch, R3-RAG, O2-Searcher, s3, knowledge-r1, WebThinker, DeepResearcher, Search-R1, R1-Searcher, DeepRetrieval, C-3PO.
+
+### Harness-1
+- **Idea:** Externalizes search state (candidate pool, evidence, verification records) into a stateful harness so a small 20B policy can run long-horizon retrieval.
+- `https://github.com/pat-jj/harness-1` · org: UIUC · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.02373)
+- Algorithm: GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (search/retrieval/rerank)
+- Reward phase: Outcome · Reward type: External + Rule
+- Task: Long-horizon search (web/finance/patents) w/ state-externalizing harness
+
+### SlimSearcher
+- **Idea:** Adaptive reward gating cascades a correctness gate with tool/token-efficiency rewards, cutting deep-research tool-call rounds 17-58% without losing accuracy.
+- `https://github.com/AQ-MedAI/AntAFu-DeepResearch` · org: Ant Group / ZJU · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.07074)
+- Algorithm: GRPO + Adaptive Reward Gating · Framework: Custom (agentic RL) · Agent: Single · Turns: Multi · Tools: Yes (web search, browse)
+- Reward phase: Outcome · Reward type: Custom + Rule
+- Task: Efficiency-aware deep research (GAIA/BrowseComp/xBench)
+
+### DeepRubric
+- **Idea:** Recursive sub-question expansion turns deep-research supervision into an evidence tree of atomic verifiable rubric leaves, cutting RL GPU-hours ~13x.
+- `https://github.com/ZMingHang/DeepRubric-Code` · org: Shandong University · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.17029)
+- Algorithm: GRPO + rubric rewards · Framework: verl-tool · Agent: Single · Turns: Multi · Tools: Yes (search/browse/scholar)
+- Reward phase: Process · Reward type: Model + Rule (rubric)
+- Task: Deep research report synthesis (evidence-tree rubric)
+
+### SAAS
+- **Idea:** Boundary-aware reward teaches the agent when NOT to search, mitigating over-search while keeping minimal sufficient retrieval.
+- `https://github.com/XMUDeepLIT/SAAS` · org: Xiamen University · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.29796)
+- Algorithm: RL w/ boundary-aware reward (2-stage curriculum) · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (search)
+- Reward phase: Outcome · Reward type: Rule-Based
+- Task: Self-aware agentic search (over-search mitigation, 7 QA sets)
+
+### CuSearch
+- **Idea:** Search-depth-aware curriculum rollout reallocates RL update budget toward deeper-search trajectories, lifting multi-hop EM from outcome-only supervision.
+- `https://github.com/MrToser/CuSearch` · org: Academic · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.11611)
+- Algorithm: GRPO + Search-Depth curriculum rollout · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (retrieval/search)
+- Reward phase: Outcome · Reward type: Rule-Based (EM)
+- Task: Agentic RAG multi-hop QA
+
+### ORBIT
+- **Idea:** Generates 20K verifiable reasoning-intensive web-QA queries at near-zero API cost to train search agents with GRPO on a tight budget.
+- `https://github.com/castorini/orbit` · org: University of Waterloo · date: 2026.4
+- Paper(s): [Paper](https://arxiv.org/abs/2604.01195)
+- Algorithm: GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (web search)
+- Reward phase: Outcome · Reward type: External + Rule
+- Task: Verifiable data-gen + RL for web search (Qwen3-4B)
 
 ### LiteResearcher
 - **Idea:** Trains deep-research agents in a 'lite virtual world' mirroring real search dynamics, avoiding the instability and cost of live-search RL.
@@ -23,6 +71,14 @@ LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR 
 - Algorithm: GRPO + IGPO (info-gain turn-level) w/ agentic SFT · Framework: veRL (IGPO-based) · Agent: Single · Turns: Multi · Tools: Yes (Search/Browse)
 - Reward phase: Both · Reward type: Intrinsic (info-gain) + Rule (format)
 - Task: Edge-scale Deep Research (4B)
+
+### MR-Search
+- **Idea:** In-context meta-RL conditions each search episode on past episodes plus a self-generated reflection, giving fine-grained multi-episode credit.
+- `https://github.com/tengxiao1/MR-Search` · org: Academic · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.11327)
+- Algorithm: In-context Meta-RL (multi-episode credit) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (search)
+- Reward phase: Outcome · Reward type: Rule-Based
+- Task: Agentic search w/ self-reflection
 
 ### ProRAG
 - **Idea:** GRPO with dual-granularity advantage combining PRM step-level process rewards and global outcome signals to curb process hallucinations in multi-hop RAG.
@@ -88,6 +144,14 @@ LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR 
 - Reward phase: Outcome · Reward type: Rule
 - Task: KG Construction for QA
 
+### DeepResearch
+- **Idea:** Tongyi DeepResearch couples agentic mid-training and post-training with a fully automatic data-synthesis pipeline, removing human annotation for long-horizon research RL.
+- `https://github.com/Alibaba-NLP/DeepResearch` · org: Alibaba/Tongyi Lab · date: 2025.10
+- Paper(s): [Paper](https://arxiv.org/abs/2510.24701)
+- Algorithm: RL-based · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Search, Browse)
+- Reward phase: Outcome · Reward type: Model
+- Task: Deep Research
+
 ### WebSeer
 - **Idea:** Self-reflection-enhanced RL with a unified cold-start + RL two-stage framework that lengthens tool-use trajectories while reducing accumulated errors.
 - `https://github.com/99hgz/WebSeer` · org: Individual · date: 2025.10
@@ -111,14 +175,6 @@ LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR 
 - Algorithm: GRPO/Tree-GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Search
 - Reward phase: Outcome · Reward type: Rule
 - Task: Search
-
-### DeepResearch
-- **Idea:** Tongyi DeepResearch couples agentic mid-training and post-training with a fully automatic data-synthesis pipeline, removing human annotation for long-horizon research RL.
-- `https://github.com/Alibaba-NLP/DeepResearch` · org: Alibaba/Tongyi Lab · date: 2025.10
-- Paper(s): [Paper](https://arxiv.org/abs/2510.24701)
-- Algorithm: RL-based · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (Search, Browse)
-- Reward phase: Outcome · Reward type: Model
-- Task: Deep Research
 
 ### DeepDive
 - **Idea:** End-to-end multi-turn RL for web-browsing agents with a redundancy penalty that discourages repeated similar queries, enabling longer reasoning chains.
@@ -296,14 +352,6 @@ LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR 
 - Reward phase: Both · Reward type: All
 - Task: Search
 
-### C-3PO
-- **Idea:** Lightweight proxy-centric multi-agent layer over a frozen retriever+LLM, trained via tree-structured rollouts for RL credit assignment across the agents.
-- `https://github.com/Chen-GX/C-3PO` · org: Alibaba · date: 2025.2
-- Paper(s): [Paper](https://arxiv.org/abs/2502.06205)
-- Algorithm: PPO · Framework: OpenRLHF · Agent: Multi · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: Model
-- Task: Search
-
 ### DeepRetrieval
 - **Idea:** RL trains query-generation LLMs using retrieval metrics (e.g. recall) directly as reward, no supervised query data, with a 3B model beating GPT-4o on most IR tasks.
 - `https://github.com/pat-jj/DeepRetrieval` · org: UIUC · date: 2025.3
@@ -311,3 +359,11 @@ LiteResearcher, DR-Venus, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR 
 - Algorithm: GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (Search)
 - Reward phase: Outcome · Reward type: Rule
 - Task: Query Generation/IR
+
+### C-3PO
+- **Idea:** Lightweight proxy-centric multi-agent layer over a frozen retriever+LLM, trained via tree-structured rollouts for RL credit assignment across the agents.
+- `https://github.com/Chen-GX/C-3PO` · org: Alibaba · date: 2025.2
+- Paper(s): [Paper](https://arxiv.org/abs/2502.06205)
+- Algorithm: PPO · Framework: OpenRLHF · Agent: Multi · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Model
+- Task: Search

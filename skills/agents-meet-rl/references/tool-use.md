@@ -2,11 +2,27 @@
 
 Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity.
 
-_Total: 20 entries._
+_Total: 23 entries._
 
 ## Contents
 
-AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-R1, MiroRL, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, AWorld, Agent-R1, ReCall.
+SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATPO, ToolBrain, CodeGym, UserRL, Tool-R1, MiroRL, AWorld, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, ReCall.
+
+### SPADER
+- **Idea:** Step-wise Peer Advantage gives critic-free step-level credit, plus a diversity-aware exploration reward for comprehensive multi-answer QA.
+- `https://github.com/KhanCold/spader` · org: Zhejiang University · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.00593)
+- Algorithm: GRPO + Step-wise Peer Advantage (SPA) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (search)
+- Reward phase: Both · Reward type: Rule-Based (entity-match + diversity)
+- Task: Long-horizon tool-augmented multi-answer QA (QAMPARI)
+
+### APPO
+- **Idea:** Procedure-aware branching extends ARPO with fine-grained credit at tool-call decision points across reasoning, search, and code.
+- `https://github.com/AMAP-ML/APPO` · org: Alibaba AMAP (AMAP-ML) · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.12384)
+- Algorithm: APPO (procedure-aware branching; extends ARPO/GRPO) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (search + code)
+- Reward phase: Process · Reward type: Rule-Based
+- Task: Multi-turn TIR (reasoning+search+code, 13 benchmarks)
 
 ### AgenticQwen
 - **Idea:** Dual data flywheels (reasoning learns from errors; agentic expands linear workflows into branching behavior trees) auto-generate harder tasks for tool-use RL.
@@ -16,13 +32,13 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Reward phase: Outcome · Reward type: Rule + Model (rubric)
 - Task: Industrial Tool Use (search, data analysis, tau-bench airline/retail/telecom)
 
-### ToolOrchestra
-- **Idea:** RL with outcome-, efficiency-, and preference-aware rewards trains a small 8B orchestrator to coordinate tools and larger models more cost-effectively.
-- `https://github.com/NVlabs/ToolOrchestra` · org: NVIDIA / HKU · date: 2025.11
-- Paper(s): [Paper](https://arxiv.org/abs/2511.21689)
-- Algorithm: End-to-end RL (outcome+efficiency+preference) · Framework: Custom (veRL-based) · Agent: Single · Turns: Multi · Tools: Yes (Search/Code/LLMs)
-- Reward phase: Both · Reward type: All
-- Task: Tool orchestration / agentic workflows
+### Agent-STAR
+- **Idea:** A full data-synthesis to SFT to RL recipe with dense curriculum rewards for long-horizon (up to 60-turn) ReAct tool agents on TravelPlanner.
+- `https://github.com/WxxShirley/Agent-STAR` · org: CUHK · date: 2026.3
+- Paper(s): [Paper](https://arxiv.org/abs/2603.21972)
+- Algorithm: GRPO + dense/curriculum reward (STAR recipe) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (planning APIs)
+- Reward phase: Both · Reward type: Rule + External
+- Task: Long-horizon tool-using agents (TravelPlanner, ReAct up to 60 turns)
 
 ### ToolMaster
 - **Idea:** Combines imitation of teacher trajectories with a trial-then-execute phase, then RL, to generalize tool use to novel and unseen tools.
@@ -32,6 +48,22 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Reward phase: Outcome · Reward type: Rule/External
 - Task: Tool trialing + execution (ToolHop/TMDB/StableToolBench)
 
+### Agent-R1
+- **Idea:** Formalizes LLM-agent components as an extended MDP and provides a modular, extensible end-to-end RL training framework across diverse task scenarios.
+- `https://github.com/0russwest0/Agent-R1` · org: USTC · date: 2025.11
+- Paper(s): [Paper](https://arxiv.org/abs/2511.14460)
+- Algorithm: PPO/GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Both · Reward type: Model
+- Task: Tool-use/QA
+
+### ToolOrchestra
+- **Idea:** RL with outcome-, efficiency-, and preference-aware rewards trains a small 8B orchestrator to coordinate tools and larger models more cost-effectively.
+- `https://github.com/NVlabs/ToolOrchestra` · org: NVIDIA / HKU · date: 2025.11
+- Paper(s): [Paper](https://arxiv.org/abs/2511.21689)
+- Algorithm: End-to-end RL (outcome+efficiency+preference) · Framework: Custom (veRL-based) · Agent: Single · Turns: Multi · Tools: Yes (Search/Code/LLMs)
+- Reward phase: Both · Reward type: All
+- Task: Tool orchestration / agentic workflows
+
 ### MATPO
 - **Idea:** Trains planner and worker roles within a single LLM via role-specific prompts and principled cross-role credit assignment, avoiding separate models.
 - `https://github.com/mzf666/MATPO` · org: MiroMind AI · date: 2025.10
@@ -39,6 +71,14 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Algorithm: GRPO (multi-agent) · Framework: Custom · Agent: Multi · Turns: Multi · Tools: Yes (MCP: Serper, Web scraping)
 - Reward phase: Outcome · Reward type: Rule
 - Task: Tool-use/Search
+
+### ToolBrain
+- **Idea:** Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering.
+- `https://github.com/ToolBrain/ToolBrain` · org: ToolBrain (AAMAS 2026) · date: 2025.10
+- Paper(s): [Paper](https://arxiv.org/abs/2510.00023)
+- Algorithm: GRPO/DPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (User-defined tools)
+- Reward phase: Outcome · Reward type: Rule/Model
+- Task: Agentic tool training
 
 ### CodeGym
 - **Idea:** Converts static coding problems into interactive multi-turn tool-use environments so agents learn diverse tool workflows via RL rather than static-trajectory SFT.
@@ -56,14 +96,6 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Reward phase: Both · Reward type: Model/External
 - Task: User-centric (Function/Persuade/Search/Tau Gyms)
 
-### ToolBrain
-- **Idea:** Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering.
-- `https://github.com/ToolBrain/ToolBrain` · org: ToolBrain (AAMAS 2026) · date: 2025.10
-- Paper(s): [Paper](https://arxiv.org/abs/2510.00023)
-- Algorithm: GRPO/DPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (User-defined tools)
-- Reward phase: Outcome · Reward type: Rule/Model
-- Task: Agentic tool training
-
 ### Tool-R1
 - **Idea:** Maintains a dynamic sample queue caching and reusing high-quality trajectories to cut online sampling cost while RL-training agents to emit executable Python tool code.
 - `https://github.com/YBYBZhang/Tool-R1` · org: Individual (YBYBZhang) · date: 2025.9
@@ -79,6 +111,14 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Algorithm: GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: MCP
 - Reward phase: Both · Reward type: Rule-based
 - Task: Reasoning/Planning/ToolUse
+
+### AWorld
+- **Idea:** Tackles experience-generation bottleneck by distributing agent rollouts across a cluster for 14.6x faster experience collection, enabling large-scale agent RL.
+- `https://github.com/inclusionAI/AWorld` · org: Ant Group (inclusionAI) · date: 2025.8
+- Paper(s): [Paper](https://arxiv.org/abs/2508.20404)
+- Algorithm: GRPO · Framework: veRL · Agent: Both · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: External/Rule
+- Task: Search/Web/Code
 
 ### verl-tool
 - **Idea:** Tool-as-environment paradigm fully decoupling actor rollout from environment via a unified tool API for native multi-turn tool-calling RL.
@@ -143,22 +183,6 @@ AgenticQwen, ToolOrchestra, ToolMaster, MATPO, CodeGym, UserRL, ToolBrain, Tool-
 - Algorithm: GRPO/PPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes
 - Reward phase: Outcome · Reward type: Rule/External
 - Task: Tool Learning
-
-### AWorld
-- **Idea:** Tackles experience-generation bottleneck by distributing agent rollouts across a cluster for 14.6x faster experience collection, enabling large-scale agent RL.
-- `https://github.com/inclusionAI/AWorld` · org: Ant Group (inclusionAI) · date: 2025.8
-- Paper(s): [Paper](https://arxiv.org/abs/2508.20404)
-- Algorithm: GRPO · Framework: veRL · Agent: Both · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: External/Rule
-- Task: Search/Web/Code
-
-### Agent-R1
-- **Idea:** Formalizes LLM-agent components as an extended MDP and provides a modular, extensible end-to-end RL training framework across diverse task scenarios.
-- `https://github.com/0russwest0/Agent-R1` · org: USTC · date: 2025.11
-- Paper(s): [Paper](https://arxiv.org/abs/2511.14460)
-- Algorithm: PPO/GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes
-- Reward phase: Both · Reward type: Model
-- Task: Tool-use/QA
 
 ### ReCall
 - **Idea:** Treats search/retrieval as integral reasoning steps trained via RL (ReSearch), learning when and how to retrieve without supervised reasoning annotations.

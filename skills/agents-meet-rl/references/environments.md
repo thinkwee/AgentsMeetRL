@@ -2,17 +2,29 @@
 
 Sandbox environments and benchmarks. Pick one matching your task before designing rewards.
 
-_Total: 47 entries._
+_Total: 53 entries._
 
 ## Contents
 
-AEnvironment, OpenSandbox, OpenEnv, open-trajectory-gym, NeMo-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+MobileGym, AEnvironment, Gym-Anything, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+
+### MobileGym
+- **Idea:** Browser-hosted, fully controllable Android simulator with deterministic verifiable judging and 256-instance parallel rollouts for online mobile-GUI RL.
+- `https://github.com/Purewhiter/mobilegym` · org: Academic · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.26114)
+- Task: Mobile GUI (Android sim, verifiable, parallel)
 
 ### AEnvironment
 - **Idea:** 'Everything as Environment' abstraction extending MCP into one Environment API so tools, benchmarks, and multi-agent systems plug into RL training uniformly.
 - `https://github.com/inclusionAI/AEnvironment` · org: Ant Group (inclusionAI) · date: 2026.5
 - Paper(s): —
 - Task: Agentic RL Env Platform (MCP, AReaL-integrated, TAU2/SWE/Terminal-Bench)
+
+### Gym-Anything
+- **Idea:** Turns any software into a computer-use agent environment with realistic data, tasks, and automatic verifiers (CUA-World ships 200+ real apps in sandboxed VMs).
+- `https://github.com/cmu-l3/gym-anything` · org: CMU L3 Lab · date: 2026.4
+- Paper(s): [Paper](https://arxiv.org/abs/2604.06126)
+- Task: Computer Use (200+ apps)
 
 ### OpenSandbox
 - **Idea:** Multi-language sandbox platform with standardized lifecycle APIs over Docker/K8s for secure agent code execution in RL training and evaluation.
@@ -32,11 +44,35 @@ AEnvironment, OpenSandbox, OpenEnv, open-trajectory-gym, NeMo-Gym, LoCoBench-Age
 - Paper(s): —
 - Task: CTF/Security
 
+### Agent-World-Model
+- **Idea:** 1,000 executable, SQL-database-backed synthetic tool-use environments (avg 35 tools each) exposed through a unified MCP interface for large-scale agentic RL.
+- `https://github.com/Snowflake-Labs/agent-world-model` · org: Snowflake AI Research · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.10090)
+- Task: Tool-use (1,000 MCP synthetic envs)
+
+### TermiGen
+- **Idea:** 3,500+ verified executable Docker terminal environments with error-correction trajectory synthesis for training robust terminal/tool-use agents.
+- `https://github.com/ucsb-mlsec/terminal-bench-env` · org: UCSB · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.07274)
+- Task: Terminal/Tool-use (3,500+ envs)
+
+### VisGym
+- **Idea:** A gymnasium of 17 multimodal environments with controllable difficulty, input representation, horizon, and feedback for training and evaluating VLM agents.
+- `https://github.com/visgym/VisGym` · org: UC Berkeley · date: 2026.1
+- Paper(s): [Paper](https://arxiv.org/abs/2601.16973)
+- Task: Multimodal/VLM (17 envs)
+
 ### NeMo-Gym
 - **Idea:** Manages the full stateful agent system (data, harness, verifier, exec context) so evaluation, optimization, and RL share one reproducible pipeline at scale.
 - `https://github.com/NVIDIA-NeMo/Gym` · org: NVIDIA · date: 2026.1
 - Paper(s): —
 - Task: Multi-step/Multi-turn
+
+### VISTA-Gym
+- **Idea:** A tool-integrated visual-reasoning environment (detection, segmentation, OCR, crop) across 13 datasets, used to scale agentic RL for VLMs.
+- `https://github.com/Lucanyc/VISTA-Gym` · org: Texas A&M / Emory / KAUST · date: 2025.11
+- Paper(s): [Paper](https://arxiv.org/abs/2511.19773)
+- Task: Tool-integrated visual reasoning (VLM)
 
 ### LoCoBench-Agent
 - **Idea:** Turns 8K static code scenarios into interactive multi-turn envs to test long-context (10K-1M tokens) SWE-agent behavior across languages.

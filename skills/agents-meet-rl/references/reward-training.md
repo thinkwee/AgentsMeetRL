@@ -2,7 +2,43 @@
 
 Process/outcome reward models, PRM benchmarks, training recipes.
 
-_Total: 6 entries._
+_Total: 10 entries._
+
+### AgentV-RL
+- **Idea:** Turns reward modeling into a multi-turn tool-augmented deliberative process with forward+backward verifier agents; a 4B verifier beats SOTA ORMs by 25%.
+- `https://github.com/JiazhengZhang/AgentV-RL` · org: Academic · date: 2026.4
+- Paper(s): [Paper](https://arxiv.org/abs/2604.16004)
+- Algorithm: RL (verl) training an agentic verifier · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (verifier invokes tools, e.g. code)
+- Reward phase: Process · Reward type: Model-Based
+- Task: Tool-augmented deliberative verifier (reward model)
+- Focus: Agentic Verifier Reward Model
+
+### DataMind
+- **Idea:** An environment-aware generative process reward model (DataPRM) scores intermediate Python/SQL steps and plugs into RL for data-analysis agents.
+- `https://github.com/zjunlp/DataMind` · org: Zhejiang University (ZJUNLP) · date: 2026.4
+- Paper(s): [Paper](https://arxiv.org/abs/2604.24198)
+- Algorithm: RL w/ generative PRM (DataPRM) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (code-based multi-turn)
+- Reward phase: Process · Reward type: Model (PRM) + External (execution)
+- Task: Agentic data analysis (Python/SQL; ScienceAgentBench/DABench)
+- Focus: Process Reward Model (DataPRM)
+
+### ARLArena
+- **Idea:** Decomposes the agentic policy gradient into four design axes and proposes SAMPO to prevent training collapse across web, embodied, math, game, and search.
+- `https://github.com/WillDreamer/ARL-Arena` · org: UCLA · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.21534)
+- Algorithm: SAMPO (Stable Agentic Policy Optimization) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (code/web/search/embodied)
+- Reward phase: Outcome · Reward type: External + Rule
+- Task: Stable agentic RL across web/embodied/math/game/search
+- Focus: Stable Agentic RL (SAMPO)
+
+### Agent-RRM
+- **Idea:** Trains a reasoning reward model that emits structured trajectory critiques and scores, then uses it to train multi-turn tool-use agents.
+- `https://github.com/kxfan2002/Reagent` · org: Academic · date: 2026.1
+- Paper(s): [Paper](https://arxiv.org/abs/2601.22154)
+- Algorithm: Agentic RL w/ trained reasoning RM · Framework: veRL / rLLM · Agent: Single · Turns: Multi · Tools: Yes (agentic trajectories)
+- Reward phase: Process · Reward type: Model-Based (RRM)
+- Task: Reward model for agents (web nav, multi-hop QA)
+- Focus: Reasoning Reward Model for Agents
 
 ### ToolPRMBench
 - **Idea:** Benchmark for process reward models in tool use: step-level test cases (history, correct vs wrong action, tool metadata) via offline+online sampling.

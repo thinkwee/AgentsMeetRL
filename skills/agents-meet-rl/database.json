@@ -2,6 +2,81 @@
   "base_framework": [
     {
       "category": "base_framework",
+      "name": "AgentJet",
+      "github_url": "https://github.com/modelscope/AgentJet",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.04484"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "ModelScope (Alibaba)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Swarm agentic RL (heterogeneous multi-agent, multi-task)",
+      "rl_algorithm": "GRPO/PPO (swarm, multi-dim reward)",
+      "agent_arity": "Both",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All (Custom/External/Rule)",
+      "tool_usage": "Yes (tool calls, agent frameworks)",
+      "focus": null,
+      "takeaway": "Decoupled swarm server/client design trains heterogeneous, non-shared-parameter multi-agent teams, with a context-merging timeline module for 1.5-10x rollout speedup."
+    },
+    {
+      "category": "base_framework",
+      "name": "HarnessX",
+      "github_url": "https://github.com/Darwin-Agent/HarnessX",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.14249"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Darwin-Agent",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Composable agent-harness foundry (ALFWorld/GAIA/WebShop/SWE-bench)",
+      "rl_algorithm": "GRPO/PPO (slime/verl recipes)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External + Custom",
+      "tool_usage": "Yes (harness orchestrates tools/memory)",
+      "focus": null,
+      "takeaway": "Interleaves trace-driven harness evolution with model RL over a shared replay buffer, co-improving the agent scaffold and the policy."
+    },
+    {
+      "category": "base_framework",
+      "name": "Polar",
+      "github_url": "https://github.com/NVIDIA-NeMo/ProRL-Agent-Server",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.24220"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "NVIDIA (NeMo)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Agentic RL on any harness (SWE-Bench/SWE-Gym)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Both",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External Verifier",
+      "tool_usage": "Yes (real agent harnesses: shell/Codex/Claude Code)",
+      "focus": null,
+      "takeaway": "Treats any real agent harness (Codex, Claude Code, shell) as the RL environment with token-faithful rollouts, so GRPO improves the exact agent that ships."
+    },
+    {
+      "category": "base_framework",
       "name": "uni-agent",
       "github_url": "https://github.com/verl-project/uni-agent",
       "papers": [],
@@ -19,31 +94,6 @@
       "tool_usage": "Yes (unified model/tool/env abstractions)",
       "focus": null,
       "takeaway": "Unifies the inference and training interaction stack (model-tool-env) so the same execution path serves rollout and RL, with fully-async partial rollout at 1000+ concurrency."
-    },
-    {
-      "category": "base_framework",
-      "name": "Open-AgentRL",
-      "github_url": "https://github.com/Gen-Verse/Open-AgentRL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2602.02488"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2026.2",
-      "org": "Gen-Verse",
-      "rl_framework": null,
-      "domain": null,
-      "task": "Reasoning/GUI/Coding",
-      "rl_algorithm": "GRPO-TCR",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Model (PRM)",
-      "tool_usage": "Yes (SandboxFusion)",
-      "focus": null,
-      "takeaway": "GRPO-TCR co-trains policy with combined outcome + step-wise reward-model signals while the reward model self-improves via consistency feedback in a closed loop."
     },
     {
       "category": "base_framework",
@@ -92,23 +142,28 @@
     },
     {
       "category": "base_framework",
-      "name": "prime-rl",
-      "github_url": "https://github.com/PrimeIntellect-ai/prime-rl",
-      "papers": [],
+      "name": "Open-AgentRL",
+      "github_url": "https://github.com/Gen-Verse/Open-AgentRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.02488"
+        }
+      ],
       "blog_urls": [],
-      "date": "2025.2",
-      "org": "Prime Intellect",
+      "date": "2026.2",
+      "org": "Gen-Verse",
       "rl_framework": null,
       "domain": null,
-      "task": "Math/Code/Search",
-      "rl_algorithm": "GRPO/PPO",
-      "agent_arity": "Multi",
-      "reward_phase": "Outcome",
+      "task": "Reasoning/GUI/Coding",
+      "rl_algorithm": "GRPO-TCR",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
       "turn_mode": "Multi",
-      "reward_type": "Model/External",
-      "tool_usage": "Yes",
+      "reward_type": "Model (PRM)",
+      "tool_usage": "Yes (SandboxFusion)",
       "focus": null,
-      "takeaway": "Fully asynchronous off-policy RL that decouples inference from training for high-throughput agentic training scaling across 1000+ GPUs."
+      "takeaway": "GRPO-TCR co-trains policy with combined outcome + step-wise reward-model signals while the reward model self-improves via consistency feedback in a closed loop."
     },
     {
       "category": "base_framework",
@@ -154,6 +209,31 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "Macro-to-micro flow (M2Flow) auto-decomposes RL workflows over time/space then recomposes optimized execution via context switching and elastic pipelining."
+    },
+    {
+      "category": "base_framework",
+      "name": "agent-lightning",
+      "github_url": "https://github.com/microsoft/agent-lightning",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.03680"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Microsoft Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Calculator/SQL",
+      "rl_algorithm": "PPO/Custom/Automatic Prompt Optimization",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External/Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Fully decouples agent execution from RL training and uses a credit-assignment module to turn arbitrary agent trajectories into trainable MDP transitions."
     },
     {
       "category": "base_framework",
@@ -207,28 +287,28 @@
     },
     {
       "category": "base_framework",
-      "name": "agent-lightning",
-      "github_url": "https://github.com/microsoft/agent-lightning",
+      "name": "ROLL",
+      "github_url": "https://github.com/alibaba/ROLL",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.03680"
+          "url": "https://arxiv.org/abs/2506.06122"
         }
       ],
       "blog_urls": [],
-      "date": "2025.8",
-      "org": "Microsoft Research",
+      "date": "2025.6",
+      "org": "Alibaba",
       "rl_framework": null,
       "domain": null,
-      "task": "Calculator/SQL",
-      "rl_algorithm": "PPO/Custom/Automatic Prompt Optimization",
+      "task": "Math/QA/Code/Alignment",
+      "rl_algorithm": "PPO/GRPO/Reinforce++/TOPR/RAFT++",
       "agent_arity": "Multi",
-      "reward_phase": "Outcome",
+      "reward_phase": "Both",
       "turn_mode": "Multi",
-      "reward_type": "Model/External/Rule",
+      "reward_type": "All",
       "tool_usage": "Yes",
       "focus": null,
-      "takeaway": "Fully decouples agent execution from RL training and uses a credit-assignment module to turn arbitrary agent trajectories into trainable MDP transitions."
+      "takeaway": "Single-controller RL framework with a rollout scheduler for fine-grained sample lifecycle control and AutoDeviceMapping for flexible resource allocation."
     },
     {
       "category": "base_framework",
@@ -254,31 +334,6 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "Fully decoupled async RL: rollout workers generate continuously without waiting while trainers update per batch, removing the slowest-sample sync bottleneck."
-    },
-    {
-      "category": "base_framework",
-      "name": "ROLL",
-      "github_url": "https://github.com/alibaba/ROLL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2506.06122"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.6",
-      "org": "Alibaba",
-      "rl_framework": null,
-      "domain": null,
-      "task": "Math/QA/Code/Alignment",
-      "rl_algorithm": "PPO/GRPO/Reinforce++/TOPR/RAFT++",
-      "agent_arity": "Multi",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Single-controller RL framework with a rollout scheduler for fine-grained sample lifecycle control and AutoDeviceMapping for flexible resource allocation."
     },
     {
       "category": "base_framework",
@@ -359,6 +414,26 @@
       "tool_usage": "Code",
       "focus": null,
       "takeaway": "Standardizes RL environments as composable modules bundling dataset + rubric reward + tool/sandbox harness, decoupling task logic from the training framework."
+    },
+    {
+      "category": "base_framework",
+      "name": "prime-rl",
+      "github_url": "https://github.com/PrimeIntellect-ai/prime-rl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Prime Intellect",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Math/Code/Search",
+      "rl_algorithm": "GRPO/PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Fully asynchronous off-policy RL that decouples inference from training for high-throughput agentic training scaling across 1000+ GPUs."
     },
     {
       "category": "base_framework",
@@ -981,6 +1056,156 @@
   "search_rag": [
     {
       "category": "search_rag",
+      "name": "Harness-1",
+      "github_url": "https://github.com/pat-jj/harness-1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.02373"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "UIUC",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Long-horizon search (web/finance/patents) w/ state-externalizing harness",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (search/retrieval/rerank)",
+      "focus": null,
+      "takeaway": "Externalizes search state (candidate pool, evidence, verification records) into a stateful harness so a small 20B policy can run long-horizon retrieval."
+    },
+    {
+      "category": "search_rag",
+      "name": "SlimSearcher",
+      "github_url": "https://github.com/AQ-MedAI/AntAFu-DeepResearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.07074"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Ant Group / ZJU",
+      "rl_framework": "Custom (agentic RL)",
+      "domain": null,
+      "task": "Efficiency-aware deep research (GAIA/BrowseComp/xBench)",
+      "rl_algorithm": "GRPO + Adaptive Reward Gating",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Custom + Rule",
+      "tool_usage": "Yes (web search, browse)",
+      "focus": null,
+      "takeaway": "Adaptive reward gating cascades a correctness gate with tool/token-efficiency rewards, cutting deep-research tool-call rounds 17-58% without losing accuracy."
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepRubric",
+      "github_url": "https://github.com/ZMingHang/DeepRubric-Code",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.17029"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Shandong University",
+      "rl_framework": "verl-tool",
+      "domain": null,
+      "task": "Deep research report synthesis (evidence-tree rubric)",
+      "rl_algorithm": "GRPO + rubric rewards",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model + Rule (rubric)",
+      "tool_usage": "Yes (search/browse/scholar)",
+      "focus": null,
+      "takeaway": "Recursive sub-question expansion turns deep-research supervision into an evidence tree of atomic verifiable rubric leaves, cutting RL GPU-hours ~13x."
+    },
+    {
+      "category": "search_rag",
+      "name": "SAAS",
+      "github_url": "https://github.com/XMUDeepLIT/SAAS",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.29796"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Xiamen University",
+      "rl_framework": "slime",
+      "domain": null,
+      "task": "Self-aware agentic search (over-search mitigation, 7 QA sets)",
+      "rl_algorithm": "RL w/ boundary-aware reward (2-stage curriculum)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based",
+      "tool_usage": "Yes (search)",
+      "focus": null,
+      "takeaway": "Boundary-aware reward teaches the agent when NOT to search, mitigating over-search while keeping minimal sufficient retrieval."
+    },
+    {
+      "category": "search_rag",
+      "name": "CuSearch",
+      "github_url": "https://github.com/MrToser/CuSearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.11611"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic RAG multi-hop QA",
+      "rl_algorithm": "GRPO + Search-Depth curriculum rollout",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (EM)",
+      "tool_usage": "Yes (retrieval/search)",
+      "focus": null,
+      "takeaway": "Search-depth-aware curriculum rollout reallocates RL update budget toward deeper-search trajectories, lifting multi-hop EM from outcome-only supervision."
+    },
+    {
+      "category": "search_rag",
+      "name": "ORBIT",
+      "github_url": "https://github.com/castorini/orbit",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.01195"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "University of Waterloo",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Verifiable data-gen + RL for web search (Qwen3-4B)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (web search)",
+      "focus": null,
+      "takeaway": "Generates 20K verifiable reasoning-intensive web-QA queries at near-zero API cost to train search agents with GRPO on a tight budget."
+    },
+    {
+      "category": "search_rag",
       "name": "LiteResearcher",
       "github_url": "https://github.com/simplex-ai-inc/LiteResearcher",
       "papers": [
@@ -1003,6 +1228,56 @@
       "tool_usage": "Yes (local search/browse env, Milvus+PostgreSQL)",
       "focus": null,
       "takeaway": "Trains deep-research agents in a 'lite virtual world' mirroring real search dynamics, avoiding the instability and cost of live-search RL."
+    },
+    {
+      "category": "search_rag",
+      "name": "DR-Venus",
+      "github_url": "https://github.com/inclusionAI/DR-Venus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.19859"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": "veRL (IGPO-based)",
+      "domain": null,
+      "task": "Edge-scale Deep Research (4B)",
+      "rl_algorithm": "GRPO + IGPO (info-gain turn-level) w/ agentic SFT",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Intrinsic (info-gain) + Rule (format)",
+      "tool_usage": "Yes (Search/Browse)",
+      "focus": null,
+      "takeaway": "Edge-scale (4B) deep-research agent trained with info-gain turn-level rewards plus format-aware regularization to densify supervision and credit assignment."
+    },
+    {
+      "category": "search_rag",
+      "name": "MR-Search",
+      "github_url": "https://github.com/tengxiao1/MR-Search",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.11327"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic search w/ self-reflection",
+      "rl_algorithm": "In-context Meta-RL (multi-episode credit)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based",
+      "tool_usage": "Yes (search)",
+      "focus": null,
+      "takeaway": "In-context meta-RL conditions each search episode on past episodes plus a self-generated reflection, giving fine-grained multi-episode credit."
     },
     {
       "category": "search_rag",
@@ -1031,6 +1306,51 @@
     },
     {
       "category": "search_rag",
+      "name": "O-Researcher",
+      "github_url": "https://github.com/OPPO-PersonalAI/O-Researcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.03743"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "OPPO PersonalAI Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research (Zhihu-KOL/WideSearch/ELI5)",
+      "rl_algorithm": "GRPO + RLAIF",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM-as-Judge)",
+      "tool_usage": "Yes (Search/Crawl)",
+      "focus": null,
+      "takeaway": "Two-stage SFT-then-RL pipeline over multi-agent synthesized data to boost open-source deep-research agents, combining GRPO with RLAIF for alignment."
+    },
+    {
+      "category": "search_rag",
+      "name": "Agentic-RAG-R1",
+      "github_url": "https://github.com/jiangxinke/Agentic-RAG-R1",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "PKU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Knowledge-intensive QA",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Wiki/Doc search)",
+      "focus": null,
+      "takeaway": "Applies GRPO with composite accuracy/format/RAGAS rewards to jointly optimize when to retrieve and which reasoning steps to take in knowledge-intensive QA."
+    },
+    {
+      "category": "search_rag",
       "name": "MemSearcher",
       "github_url": "https://github.com/icip-cas/MemSearcher",
       "papers": [
@@ -1056,28 +1376,28 @@
     },
     {
       "category": "search_rag",
-      "name": "DR-Venus",
-      "github_url": "https://github.com/inclusionAI/DR-Venus",
+      "name": "DR Tulu",
+      "github_url": "https://github.com/rlresearch/dr-tulu",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2604.19859"
+          "url": "https://arxiv.org/abs/2511.19399"
         }
       ],
       "blog_urls": [],
-      "date": "2026.4",
-      "org": "Ant Group (inclusionAI)",
-      "rl_framework": "veRL (IGPO-based)",
+      "date": "2025.11",
+      "org": "AI2 / UW / CMU / MIT",
+      "rl_framework": "Open-Instruct",
       "domain": null,
-      "task": "Edge-scale Deep Research (4B)",
-      "rl_algorithm": "GRPO + IGPO (info-gain turn-level) w/ agentic SFT",
+      "task": "Long-form Deep Research",
+      "rl_algorithm": "GRPO + evolving rubrics",
       "agent_arity": "Single",
-      "reward_phase": "Both",
+      "reward_phase": "Outcome",
       "turn_mode": "Multi",
-      "reward_type": "Intrinsic (info-gain) + Rule (format)",
-      "tool_usage": "Yes (Search/Browse)",
+      "reward_type": "Model (rubrics)",
+      "tool_usage": "Yes (Search/MCP)",
       "focus": null,
-      "takeaway": "Edge-scale (4B) deep-research agent trained with info-gain turn-level rewards plus format-aware regularization to densify supervision and credit assignment."
+      "takeaway": "Reinforcement Learning with Evolving Rubrics (RLER): evaluation rubrics co-evolve with the policy to give discriminative on-policy feedback for long-form research without verifiable answers."
     },
     {
       "category": "search_rag",
@@ -1156,6 +1476,81 @@
     },
     {
       "category": "search_rag",
+      "name": "DeepResearch",
+      "github_url": "https://github.com/Alibaba-NLP/DeepResearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.24701"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Alibaba/Tongyi Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research",
+      "rl_algorithm": "RL-based",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Search, Browse)",
+      "focus": null,
+      "takeaway": "Tongyi DeepResearch couples agentic mid-training and post-training with a fully automatic data-synthesis pipeline, removing human annotation for long-horizon research RL."
+    },
+    {
+      "category": "search_rag",
+      "name": "WebSeer",
+      "github_url": "https://github.com/99hgz/WebSeer",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.18798"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Web Search QA (w/ self-reflection)",
+      "rl_algorithm": "GRPO-style",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (Search)",
+      "focus": null,
+      "takeaway": "Self-reflection-enhanced RL with a unified cold-start + RL two-stage framework that lengthens tool-use trajectories while reducing accumulated errors."
+    },
+    {
+      "category": "search_rag",
+      "name": "HiPRAG",
+      "github_url": "https://github.com/qualidea1217/HiPRAG",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.07794"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Individual",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Efficient Agentic RAG",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Yes (Retrieval)",
+      "focus": null,
+      "takeaway": "Hierarchical process rewards judge the necessity of each search step on-the-fly, adding a bonus for optimal search/non-search ratio to curb over- and under-search."
+    },
+    {
+      "category": "search_rag",
       "name": "Tree-GRPO",
       "github_url": "https://github.com/AMAP-ML/Tree-GRPO",
       "papers": [
@@ -1181,6 +1576,31 @@
     },
     {
       "category": "search_rag",
+      "name": "DeepDive",
+      "github_url": "https://github.com/THUDM/DeepDive",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.10446"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tsinghua/THUDM",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "KG-augmented Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (KG + Search)",
+      "focus": null,
+      "takeaway": "End-to-end multi-turn RL for web-browsing agents with a redundancy penalty that discourages repeated similar queries, enabling longer reasoning chains."
+    },
+    {
+      "category": "search_rag",
       "name": "ASearcher",
       "github_url": "https://github.com/inclusionAI/ASearcher",
       "papers": [
@@ -1203,6 +1623,56 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "Fully asynchronous RL plus autonomous QA synthesis enables 100+ turn, 400k-token search training, showing horizon length beats architecture complexity."
+    },
+    {
+      "category": "search_rag",
+      "name": "SSRL",
+      "github_url": "https://github.com/TsinghuaC3I/SSRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.10874"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Self-Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Self-search)",
+      "focus": null,
+      "takeaway": "Self-Search RL elicits the LLM's own internal knowledge as a simulated search engine via format/rule rewards, cutting external API cost with sim-to-real transfer."
+    },
+    {
+      "category": "search_rag",
+      "name": "Research-Venus",
+      "github_url": "https://github.com/antgroup/Research-Venus",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.12800"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Deep Research",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (atomic thought)",
+      "tool_usage": "Yes (Search)",
+      "focus": null,
+      "takeaway": "Atomic Thought Rewards decompose agent reasoning into functional units scored by reasoning reward models, giving process-level signal early before switching to outcome rewards."
     },
     {
       "category": "search_rag",
@@ -1401,380 +1871,6 @@
     },
     {
       "category": "search_rag",
-      "name": "Agentic-RAG-R1",
-      "github_url": "https://github.com/jiangxinke/Agentic-RAG-R1",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2025.12",
-      "org": "PKU",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Knowledge-intensive QA",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/Model",
-      "tool_usage": "Yes (Wiki/Doc search)",
-      "focus": null,
-      "takeaway": "Applies GRPO with composite accuracy/format/RAGAS rewards to jointly optimize when to retrieve and which reasoning steps to take in knowledge-intensive QA."
-    },
-    {
-      "category": "search_rag",
-      "name": "WebThinker",
-      "github_url": "https://github.com/RUC-NLPIR/WebThinker",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2504.21776"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.4",
-      "org": "RUC",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Reasoning/QA/Research",
-      "rl_algorithm": "DPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model/External",
-      "tool_usage": "Web Browsing",
-      "focus": null,
-      "takeaway": "Deep Web Explorer with autonomous think-search-draft, trained via iterative online DPO so a reasoning model fills knowledge gaps mid-reasoning."
-    },
-    {
-      "category": "search_rag",
-      "name": "DeepResearcher",
-      "github_url": "https://github.com/GAIR-NLP/DeepResearcher",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2504.03160"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.4",
-      "org": "SJTU",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Research",
-      "rl_algorithm": "PPO/GRPO",
-      "agent_arity": "Multi",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "End-to-end RL trained directly in the noisy live open web (not a fixed corpus), with browsing agents that cross-validate and self-reflect for robust research."
-    },
-    {
-      "category": "search_rag",
-      "name": "Search-R1",
-      "github_url": "https://github.com/PeterGriffinJin/Search-R1",
-      "papers": [
-        {
-          "text": "paper1",
-          "url": "https://arxiv.org/abs/2503.09516"
-        },
-        {
-          "text": "paper2",
-          "url": "https://arxiv.org/abs/2505.15117"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.3",
-      "org": "UIUC/Google",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Search",
-      "rl_algorithm": "PPO/GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Search",
-      "focus": null,
-      "takeaway": "RL teaches LLMs to interleave multi-turn search queries with reasoning, using retrieved-token masking to keep training stable."
-    },
-    {
-      "category": "search_rag",
-      "name": "R1-Searcher",
-      "github_url": "https://github.com/RUCAIBox/R1-Searcher",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2503.05592"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.3",
-      "org": "RUC",
-      "rl_framework": "OpenRLHF",
-      "domain": null,
-      "task": "Search",
-      "rl_algorithm": "PPO/DPO",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Two-stage outcome-only RL that incentivizes external search without any process rewards or distillation cold-start."
-    },
-    {
-      "category": "search_rag",
-      "name": "C-3PO",
-      "github_url": "https://github.com/Chen-GX/C-3PO",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.06205"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "Alibaba",
-      "rl_framework": "OpenRLHF",
-      "domain": null,
-      "task": "Search",
-      "rl_algorithm": "PPO",
-      "agent_arity": "Multi",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Lightweight proxy-centric multi-agent layer over a frozen retriever+LLM, trained via tree-structured rollouts for RL credit assignment across the agents."
-    },
-    {
-      "category": "search_rag",
-      "name": "DeepRetrieval",
-      "github_url": "https://github.com/pat-jj/DeepRetrieval",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2503.00223"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.3",
-      "org": "UIUC",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Query Generation/IR",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (Search)",
-      "focus": null,
-      "takeaway": "RL trains query-generation LLMs using retrieval metrics (e.g. recall) directly as reward, no supervised query data, with a 3B model beating GPT-4o on most IR tasks."
-    },
-    {
-      "category": "search_rag",
-      "name": "SSRL",
-      "github_url": "https://github.com/TsinghuaC3I/SSRL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.10874"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Tsinghua",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Self-Search",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (Self-search)",
-      "focus": null,
-      "takeaway": "Self-Search RL elicits the LLM's own internal knowledge as a simulated search engine via format/rule rewards, cutting external API cost with sim-to-real transfer."
-    },
-    {
-      "category": "search_rag",
-      "name": "Research-Venus",
-      "github_url": "https://github.com/antgroup/Research-Venus",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.12800"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Ant Group",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Deep Research",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Model (atomic thought)",
-      "tool_usage": "Yes (Search)",
-      "focus": null,
-      "takeaway": "Atomic Thought Rewards decompose agent reasoning into functional units scored by reasoning reward models, giving process-level signal early before switching to outcome rewards."
-    },
-    {
-      "category": "search_rag",
-      "name": "DeepResearch",
-      "github_url": "https://github.com/Alibaba-NLP/DeepResearch",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.24701"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "Alibaba/Tongyi Lab",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Deep Research",
-      "rl_algorithm": "RL-based",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes (Search, Browse)",
-      "focus": null,
-      "takeaway": "Tongyi DeepResearch couples agentic mid-training and post-training with a fully automatic data-synthesis pipeline, removing human annotation for long-horizon research RL."
-    },
-    {
-      "category": "search_rag",
-      "name": "DeepDive",
-      "github_url": "https://github.com/THUDM/DeepDive",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.10446"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Tsinghua/THUDM",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "KG-augmented Search",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (KG + Search)",
-      "focus": null,
-      "takeaway": "End-to-end multi-turn RL for web-browsing agents with a redundancy penalty that discourages repeated similar queries, enabling longer reasoning chains."
-    },
-    {
-      "category": "search_rag",
-      "name": "O-Researcher",
-      "github_url": "https://github.com/OPPO-PersonalAI/O-Researcher",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2601.03743"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2026.1",
-      "org": "OPPO PersonalAI Lab",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Deep Research (Zhihu-KOL/WideSearch/ELI5)",
-      "rl_algorithm": "GRPO + RLAIF",
-      "agent_arity": "Multi",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "Model (LLM-as-Judge)",
-      "tool_usage": "Yes (Search/Crawl)",
-      "focus": null,
-      "takeaway": "Two-stage SFT-then-RL pipeline over multi-agent synthesized data to boost open-source deep-research agents, combining GRPO with RLAIF for alignment."
-    },
-    {
-      "category": "search_rag",
-      "name": "DR Tulu",
-      "github_url": "https://github.com/rlresearch/dr-tulu",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2511.19399"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.11",
-      "org": "AI2 / UW / CMU / MIT",
-      "rl_framework": "Open-Instruct",
-      "domain": null,
-      "task": "Long-form Deep Research",
-      "rl_algorithm": "GRPO + evolving rubrics",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model (rubrics)",
-      "tool_usage": "Yes (Search/MCP)",
-      "focus": null,
-      "takeaway": "Reinforcement Learning with Evolving Rubrics (RLER): evaluation rubrics co-evolve with the policy to give discriminative on-policy feedback for long-form research without verifiable answers."
-    },
-    {
-      "category": "search_rag",
-      "name": "WebSeer",
-      "github_url": "https://github.com/99hgz/WebSeer",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.18798"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "Individual",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Web Search QA (w/ self-reflection)",
-      "rl_algorithm": "GRPO-style",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/Model",
-      "tool_usage": "Yes (Search)",
-      "focus": null,
-      "takeaway": "Self-reflection-enhanced RL with a unified cold-start + RL two-stage framework that lengthens tool-use trajectories while reducing accumulated errors."
-    },
-    {
-      "category": "search_rag",
-      "name": "HiPRAG",
-      "github_url": "https://github.com/qualidea1217/HiPRAG",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.07794"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "Individual",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Efficient Agentic RAG",
-      "rl_algorithm": "PPO",
-      "agent_arity": "Single",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "Model/Rule",
-      "tool_usage": "Yes (Retrieval)",
-      "focus": null,
-      "takeaway": "Hierarchical process rewards judge the necessity of each search step on-the-fly, adding a bonus for optimal search/non-search ratio to curb over- and under-search."
-    },
-    {
-      "category": "search_rag",
       "name": "VRAG",
       "github_url": "https://github.com/Alibaba-NLP/VRAG",
       "papers": [
@@ -1922,9 +2018,188 @@
       "tool_usage": "Yes (Retrieval)",
       "focus": null,
       "takeaway": "Knowledge-boundary-aware reward (IKEA) rewards using internal parametric knowledge first and searching only when insufficient, reducing over-retrieval."
+    },
+    {
+      "category": "search_rag",
+      "name": "WebThinker",
+      "github_url": "https://github.com/RUC-NLPIR/WebThinker",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.21776"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "RUC",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Reasoning/QA/Research",
+      "rl_algorithm": "DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Web Browsing",
+      "focus": null,
+      "takeaway": "Deep Web Explorer with autonomous think-search-draft, trained via iterative online DPO so a reasoning model fills knowledge gaps mid-reasoning."
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepResearcher",
+      "github_url": "https://github.com/GAIR-NLP/DeepResearcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.03160"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "SJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Research",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "End-to-end RL trained directly in the noisy live open web (not a fixed corpus), with browsing agents that cross-validate and self-reflect for robust research."
+    },
+    {
+      "category": "search_rag",
+      "name": "Search-R1",
+      "github_url": "https://github.com/PeterGriffinJin/Search-R1",
+      "papers": [
+        {
+          "text": "paper1",
+          "url": "https://arxiv.org/abs/2503.09516"
+        },
+        {
+          "text": "paper2",
+          "url": "https://arxiv.org/abs/2505.15117"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "UIUC/Google",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Search",
+      "focus": null,
+      "takeaway": "RL teaches LLMs to interleave multi-turn search queries with reasoning, using retrieved-token masking to keep training stable."
+    },
+    {
+      "category": "search_rag",
+      "name": "R1-Searcher",
+      "github_url": "https://github.com/RUCAIBox/R1-Searcher",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.05592"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "RUC",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Two-stage outcome-only RL that incentivizes external search without any process rewards or distillation cold-start."
+    },
+    {
+      "category": "search_rag",
+      "name": "DeepRetrieval",
+      "github_url": "https://github.com/pat-jj/DeepRetrieval",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.00223"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "UIUC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Query Generation/IR",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search)",
+      "focus": null,
+      "takeaway": "RL trains query-generation LLMs using retrieval metrics (e.g. recall) directly as reward, no supervised query data, with a 3B model beating GPT-4o on most IR tasks."
+    },
+    {
+      "category": "search_rag",
+      "name": "C-3PO",
+      "github_url": "https://github.com/Chen-GX/C-3PO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.06205"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Alibaba",
+      "rl_framework": "OpenRLHF",
+      "domain": null,
+      "task": "Search",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Lightweight proxy-centric multi-agent layer over a frozen retriever+LLM, trained via tree-structured rollouts for RL credit assignment across the agents."
     }
   ],
   "web_gui": [
+    {
+      "category": "web_gui",
+      "name": "OpenWebRL",
+      "github_url": "https://github.com/OpenWebRL/OpenWebRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.02031"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "UIUC / Microsoft Research",
+      "rl_framework": "slime",
+      "domain": null,
+      "task": "Visual web browsing on live sites (WebVoyager/Online-Mind2Web)",
+      "rl_algorithm": "GRPO (online multi-turn)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (format + LLM-judge)",
+      "tool_usage": "Yes (Playwright browser)",
+      "focus": null,
+      "takeaway": "Demystifies online multi-turn RL for visual web agents on live websites with a format + LLM-judge reward over a Playwright sandbox."
+    },
     {
       "category": "web_gui",
       "name": "ToolCUA",
@@ -1977,6 +2252,56 @@
     },
     {
       "category": "web_gui",
+      "name": "OpAgent",
+      "github_url": "https://github.com/codefuse-ai/OpAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.13559"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "Codefuse AI (Ant Group)",
+      "rl_framework": "Agent-R1 (veRL)",
+      "domain": null,
+      "task": "Web navigation (WebArena 71.6% pass@5)",
+      "rl_algorithm": "Online agentic RL (GRPO/PPO)",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (RDTree + WebJudge)",
+      "tool_usage": "Yes (Playwright browser)",
+      "focus": null,
+      "takeaway": "Online agentic RL over a high-concurrency Playwright engine with a hybrid RDTree process reward plus a WebJudge VLM outcome score (WebArena SOTA)."
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-Libra",
+      "github_url": "https://github.com/GUI-Libra/GUI-Libra",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.22190"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "GUI-Libra (MS-affiliated)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (AndroidWorld/WebArena/Online-Mind2Web)",
+      "rl_algorithm": "KL-regularized GRPO (Partially Verifiable RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Action-aware SFT plus partially-verifiable KL-trust-region GRPO to handle GUI states where multiple actions are correct but only one is demonstrated."
+    },
+    {
+      "category": "web_gui",
       "name": "MobileAgent",
       "github_url": "https://github.com/X-PLUG/MobileAgent",
       "papers": [
@@ -1999,6 +2324,81 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "Semi-online RL simulates online training on offline trajectories via a Patch Module that corrects rollout-vs-expert divergence, plus discounted future returns for episode-level signal."
+    },
+    {
+      "category": "web_gui",
+      "name": "MobileRL",
+      "github_url": "https://github.com/THUDM/MobileRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.18119"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Tsinghua / Zhipu AI (THUDM)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile GUI (AndroidWorld/AndroidLab)",
+      "rl_algorithm": "AdaGRPO (Difficulty-Adaptive)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Android)",
+      "focus": null,
+      "takeaway": "AdaGRPO with difficulty-adaptive positive replay, failure curriculum filtering, and shortest-path reward reshaping to stabilize multi-turn mobile GUI RL."
+    },
+    {
+      "category": "web_gui",
+      "name": "DART-GUI",
+      "github_url": "https://github.com/Computer-use-agents/dart-gui",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.23866"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Computer-use-agents",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "GUI (OSWorld)",
+      "rl_algorithm": "Decoupled GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Decoupled async RL (env/rollout/data-manager/trainer modules) plus adaptive data curation training on high-entropy decision steps for OSWorld agents."
+    },
+    {
+      "category": "web_gui",
+      "name": "Mano-P",
+      "github_url": "https://github.com/Mininglamp-AI/Mano-P",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.17336"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Mininglamp AI",
+      "rl_framework": "Mano-SDK",
+      "domain": null,
+      "task": "GUI (OSWorld)",
+      "rl_algorithm": "Three-stage SFT→Offline RL→Online RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Three-stage SFT to offline RL to online RL pipeline with a simulated data-generation environment and a verification-based error-recovery module."
     },
     {
       "category": "web_gui",
@@ -2027,6 +2427,56 @@
     },
     {
       "category": "web_gui",
+      "name": "gui-rcpo",
+      "github_url": "https://github.com/zju-real/gui-rcpo",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.05615"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Zhejiang University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Grounding",
+      "rl_algorithm": "RCPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (self-supervised)",
+      "tool_usage": "No",
+      "focus": null,
+      "takeaway": "Label-free test-time RL: spatial voting grids over multiple sampled predictions yield consensus-region rewards (RCPO) to self-improve GUI grounding without ground truth."
+    },
+    {
+      "category": "web_gui",
+      "name": "MagicGUI",
+      "github_url": "https://github.com/MagicAgent-GUI/MagicGUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.03700"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Honor (MagicAgent-GUI)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile GUI",
+      "rl_algorithm": "Reinforcement Fine-Tuning (RFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model/Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Iterative two-stage training: large-scale continue-pretrain then RFT with a spatially-enhanced composite reward and dual filtering of RL signals."
+    },
+    {
+      "category": "web_gui",
       "name": "UI-AGILE",
       "github_url": "https://github.com/KDEGroup/UI-AGILE",
       "papers": [
@@ -2052,28 +2502,53 @@
     },
     {
       "category": "web_gui",
-      "name": "gui-rcpo",
-      "github_url": "https://github.com/zju-real/gui-rcpo",
+      "name": "GUI-G2",
+      "github_url": "https://github.com/ZJU-REAL/GUI-G2",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.05615"
+          "url": "https://arxiv.org/abs/2507.15846"
         }
       ],
       "blog_urls": [],
-      "date": "2025.8",
-      "org": "Zhejiang University",
-      "rl_framework": "Custom",
+      "date": "2025.7",
+      "org": "Zhejiang University (ZJU-REAL)",
+      "rl_framework": "Custom (VLM-R1)",
       "domain": null,
       "task": "GUI Grounding",
-      "rl_algorithm": "RCPO",
+      "rl_algorithm": "GRPO (Gaussian Reward)",
       "agent_arity": "Single",
       "reward_phase": "Outcome",
       "turn_mode": "Single",
-      "reward_type": "Rule (self-supervised)",
+      "reward_type": "Rule (continuous)",
       "tool_usage": "No",
       "focus": null,
-      "takeaway": "Label-free test-time RL: spatial voting grids over multiple sampled predictions yield consensus-region rewards (RCPO) to self-improve GUI grounding without ground truth."
+      "takeaway": "Replaces sparse binary grounding rewards with continuous Gaussian point + coverage rewards giving dense gradients toward optimal click positions."
+    },
+    {
+      "category": "web_gui",
+      "name": "GTA1",
+      "github_url": "https://github.com/Yan98/GTA1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.05791"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Salesforce / ANU",
+      "rl_framework": "Custom (DeepSpeed)",
+      "domain": null,
+      "task": "GUI Grounding (OSWorld/ScreenSpot-Pro)",
+      "rl_algorithm": "GRPO-style (click-success reward)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Pairs test-time scaling (sample multiple action proposals, judge-model selection) with click-success RL for GUI grounding without explicit thinking."
     },
     {
       "category": "web_gui",
@@ -2252,6 +2727,31 @@
     },
     {
       "category": "web_gui",
+      "name": "ZeroGUI",
+      "github_url": "https://github.com/OpenGVLab/ZeroGUI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.23762"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Shanghai AI Lab",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Agent",
+      "rl_algorithm": "Online RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (GUI actions)",
+      "focus": null,
+      "takeaway": "Zero-human-cost online GUI RL using VLMs for automatic task generation and reward estimation, plus two-stage online learning."
+    },
+    {
+      "category": "web_gui",
       "name": "GUI-R1",
       "github_url": "https://github.com/ritzz-ai/GUI-R1",
       "papers": [
@@ -2274,6 +2774,31 @@
       "tool_usage": "No",
       "focus": null,
       "takeaway": "Unified action-space rule-based GRPO for GUI agents, matching prior SOTA with only ~3K curated examples vs 13M."
+    },
+    {
+      "category": "web_gui",
+      "name": "InfiGUI-R1",
+      "github_url": "https://github.com/Reallm-Labs/InfiGUI-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.14239"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Zhejiang University",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI Reasoning",
+      "rl_algorithm": "RL + sub-goal guidance",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Deliberation enhancement via sub-goal-guidance rewards plus constructed error-recovery scenarios, moving GUI agents from reactive to planning behavior."
     },
     {
       "category": "web_gui",
@@ -2324,6 +2849,56 @@
       "tool_usage": "Yes (GUI interaction)",
       "focus": null,
       "takeaway": "Multi-agent credit re-assignment using LLM-assigned process rewards (not env rewards) so role-free agents learn collaboration that generalizes across environments."
+    },
+    {
+      "category": "web_gui",
+      "name": "DigiQ",
+      "github_url": "https://github.com/DigiRL-agent/digiq",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.15760"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "UC Berkeley/CMU/Amazon",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Android Device Control",
+      "rl_algorithm": "Value-based offline RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (Q-function)",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Offline TD-learned VLM Q-function on frozen intermediate features, then Best-of-N policy extraction, enabling Android-agent improvement without env interaction."
+    },
+    {
+      "category": "web_gui",
+      "name": "GUI-Agent-RL",
+      "github_url": "https://github.com/microsoft/GUI-Agent-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.18906"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Microsoft",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GUI (Web Shopping)",
+      "rl_algorithm": "Value-based RL (VEM)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "VEM: a pretrained Value Environment Model estimates state-action values from offline data to guide policy without env interaction or next-state prediction."
     },
     {
       "category": "web_gui",
@@ -2382,284 +2957,59 @@
       "tool_usage": "Yes (GUI actions)",
       "focus": null,
       "takeaway": "Native cross-platform GUI agent bootstrapped by iteratively collecting, filtering, and reflectively refining online traces on hundreds of VMs, with System-2 reasoning."
-    },
-    {
-      "category": "web_gui",
-      "name": "DigiQ",
-      "github_url": "https://github.com/DigiRL-agent/digiq",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.15760"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "UC Berkeley/CMU/Amazon",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Android Device Control",
-      "rl_algorithm": "Value-based offline RL",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model (Q-function)",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Offline TD-learned VLM Q-function on frozen intermediate features, then Best-of-N policy extraction, enabling Android-agent improvement without env interaction."
-    },
-    {
-      "category": "web_gui",
-      "name": "ZeroGUI",
-      "github_url": "https://github.com/OpenGVLab/ZeroGUI",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.23762"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "Shanghai AI Lab",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "GUI Agent",
-      "rl_algorithm": "Online RL",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (GUI actions)",
-      "focus": null,
-      "takeaway": "Zero-human-cost online GUI RL using VLMs for automatic task generation and reward estimation, plus two-stage online learning."
-    },
-    {
-      "category": "web_gui",
-      "name": "InfiGUI-R1",
-      "github_url": "https://github.com/Reallm-Labs/InfiGUI-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2504.14239"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.4",
-      "org": "Zhejiang University",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "GUI Reasoning",
-      "rl_algorithm": "RL + sub-goal guidance",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Deliberation enhancement via sub-goal-guidance rewards plus constructed error-recovery scenarios, moving GUI agents from reactive to planning behavior."
-    },
-    {
-      "category": "web_gui",
-      "name": "GUI-Agent-RL",
-      "github_url": "https://github.com/microsoft/GUI-Agent-RL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.18906"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "Microsoft",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "GUI (Web Shopping)",
-      "rl_algorithm": "Value-based RL (VEM)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "VEM: a pretrained Value Environment Model estimates state-action values from offline data to guide policy without env interaction or next-state prediction."
-    },
-    {
-      "category": "web_gui",
-      "name": "GUI-Libra",
-      "github_url": "https://github.com/GUI-Libra/GUI-Libra",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2602.22190"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2026.2",
-      "org": "GUI-Libra (MS-affiliated)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "GUI (AndroidWorld/WebArena/Online-Mind2Web)",
-      "rl_algorithm": "KL-regularized GRPO (Partially Verifiable RL)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Action-aware SFT plus partially-verifiable KL-trust-region GRPO to handle GUI states where multiple actions are correct but only one is demonstrated."
-    },
-    {
-      "category": "web_gui",
-      "name": "MobileRL",
-      "github_url": "https://github.com/THUDM/MobileRL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.18119"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Tsinghua / Zhipu AI (THUDM)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Mobile GUI (AndroidWorld/AndroidLab)",
-      "rl_algorithm": "AdaGRPO (Difficulty-Adaptive)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (Android)",
-      "focus": null,
-      "takeaway": "AdaGRPO with difficulty-adaptive positive replay, failure curriculum filtering, and shortest-path reward reshaping to stabilize multi-turn mobile GUI RL."
-    },
-    {
-      "category": "web_gui",
-      "name": "DART-GUI",
-      "github_url": "https://github.com/Computer-use-agents/dart-gui",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.23866"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Computer-use-agents",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "GUI (OSWorld)",
-      "rl_algorithm": "Decoupled GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Decoupled async RL (env/rollout/data-manager/trainer modules) plus adaptive data curation training on high-entropy decision steps for OSWorld agents."
-    },
-    {
-      "category": "web_gui",
-      "name": "Mano-P",
-      "github_url": "https://github.com/Mininglamp-AI/Mano-P",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.17336"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Mininglamp AI",
-      "rl_framework": "Mano-SDK",
-      "domain": null,
-      "task": "GUI (OSWorld)",
-      "rl_algorithm": "Three-stage SFT→Offline RL→Online RL",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Three-stage SFT to offline RL to online RL pipeline with a simulated data-generation environment and a verification-based error-recovery module."
-    },
-    {
-      "category": "web_gui",
-      "name": "GUI-G2",
-      "github_url": "https://github.com/ZJU-REAL/GUI-G2",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2507.15846"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.7",
-      "org": "Zhejiang University (ZJU-REAL)",
-      "rl_framework": "Custom (VLM-R1)",
-      "domain": null,
-      "task": "GUI Grounding",
-      "rl_algorithm": "GRPO (Gaussian Reward)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Single",
-      "reward_type": "Rule (continuous)",
-      "tool_usage": "No",
-      "focus": null,
-      "takeaway": "Replaces sparse binary grounding rewards with continuous Gaussian point + coverage rewards giving dense gradients toward optimal click positions."
-    },
-    {
-      "category": "web_gui",
-      "name": "MagicGUI",
-      "github_url": "https://github.com/MagicAgent-GUI/MagicGUI",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.03700"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Honor (MagicAgent-GUI)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Mobile GUI",
-      "rl_algorithm": "Reinforcement Fine-Tuning (RFT)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model/Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Iterative two-stage training: large-scale continue-pretrain then RFT with a spatially-enhanced composite reward and dual filtering of RL signals."
-    },
-    {
-      "category": "web_gui",
-      "name": "GTA1",
-      "github_url": "https://github.com/Yan98/GTA1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2507.05791"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.7",
-      "org": "Salesforce / ANU",
-      "rl_framework": "Custom (DeepSpeed)",
-      "domain": null,
-      "task": "GUI Grounding (OSWorld/ScreenSpot-Pro)",
-      "rl_algorithm": "GRPO-style (click-success reward)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Pairs test-time scaling (sample multiple action proposals, judge-model selection) with click-success RL for GUI grounding without explicit thinking."
     }
   ],
   "tool_use": [
+    {
+      "category": "tool_use",
+      "name": "SPADER",
+      "github_url": "https://github.com/KhanCold/spader",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.00593"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Zhejiang University",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Long-horizon tool-augmented multi-answer QA (QAMPARI)",
+      "rl_algorithm": "GRPO + Step-wise Peer Advantage (SPA)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (entity-match + diversity)",
+      "tool_usage": "Yes (search)",
+      "focus": null,
+      "takeaway": "Step-wise Peer Advantage gives critic-free step-level credit, plus a diversity-aware exploration reward for comprehensive multi-answer QA."
+    },
+    {
+      "category": "tool_use",
+      "name": "APPO",
+      "github_url": "https://github.com/AMAP-ML/APPO",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.12384"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Alibaba AMAP (AMAP-ML)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Multi-turn TIR (reasoning+search+code, 13 benchmarks)",
+      "rl_algorithm": "APPO (procedure-aware branching; extends ARPO/GRPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based",
+      "tool_usage": "Yes (search + code)",
+      "focus": null,
+      "takeaway": "Procedure-aware branching extends ARPO with fine-grained credit at tool-call decision points across reasoning, search, and code."
+    },
     {
       "category": "tool_use",
       "name": "AgenticQwen",
@@ -2684,6 +3034,106 @@
       "tool_usage": "Yes (Python interpreter, web search, mock tools)",
       "focus": null,
       "takeaway": "Dual data flywheels (reasoning learns from errors; agentic expands linear workflows into branching behavior trees) auto-generate harder tasks for tool-use RL."
+    },
+    {
+      "category": "tool_use",
+      "name": "Agent-STAR",
+      "github_url": "https://github.com/WxxShirley/Agent-STAR",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.21972"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "CUHK",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Long-horizon tool-using agents (TravelPlanner, ReAct up to 60 turns)",
+      "rl_algorithm": "GRPO + dense/curriculum reward (STAR recipe)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + External",
+      "tool_usage": "Yes (planning APIs)",
+      "focus": null,
+      "takeaway": "A full data-synthesis to SFT to RL recipe with dense curriculum rewards for long-horizon (up to 60-turn) ReAct tool agents on TravelPlanner."
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolMaster",
+      "github_url": "https://github.com/NEUIR/ToolMaster",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.12762"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Northeastern University (NEUIR)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Tool trialing + execution (ToolHop/TMDB/StableToolBench)",
+      "rl_algorithm": "SFT + GRPO (trial-then-execute)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Simulated tools)",
+      "focus": null,
+      "takeaway": "Combines imitation of teacher trajectories with a trial-then-execute phase, then RL, to generalize tool use to novel and unseen tools."
+    },
+    {
+      "category": "tool_use",
+      "name": "Agent-R1",
+      "github_url": "https://github.com/0russwest0/Agent-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.14460"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "USTC",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-use/QA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Formalizes LLM-agent components as an extended MDP and provides a modular, extensible end-to-end RL training framework across diverse task scenarios."
+    },
+    {
+      "category": "tool_use",
+      "name": "ToolOrchestra",
+      "github_url": "https://github.com/NVlabs/ToolOrchestra",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.21689"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "NVIDIA / HKU",
+      "rl_framework": "Custom (veRL-based)",
+      "domain": null,
+      "task": "Tool orchestration / agentic workflows",
+      "rl_algorithm": "End-to-end RL (outcome+efficiency+preference)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes (Search/Code/LLMs)",
+      "focus": null,
+      "takeaway": "RL with outcome-, efficiency-, and preference-aware rewards trains a small 8B orchestrator to coordinate tools and larger models more cost-effectively."
     },
     {
       "category": "tool_use",
@@ -2712,6 +3162,106 @@
     },
     {
       "category": "tool_use",
+      "name": "ToolBrain",
+      "github_url": "https://github.com/ToolBrain/ToolBrain",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.00023"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "ToolBrain (AAMAS 2026)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic tool training",
+      "rl_algorithm": "GRPO/DPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model",
+      "tool_usage": "Yes (User-defined tools)",
+      "focus": null,
+      "takeaway": "Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering."
+    },
+    {
+      "category": "tool_use",
+      "name": "CodeGym",
+      "github_url": "https://github.com/StigLidu/CodeGym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.17325"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Synthetic Multi-turn Tool-Use",
+      "rl_algorithm": "GRPO-family",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "Yes (Synthesized tools)",
+      "focus": null,
+      "takeaway": "Converts static coding problems into interactive multi-turn tool-use environments so agents learn diverse tool workflows via RL rather than static-trajectory SFT."
+    },
+    {
+      "category": "tool_use",
+      "name": "UserRL",
+      "github_url": "https://github.com/SalesforceAIResearch/UserRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.19736"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Salesforce AI Research",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "User-centric (Function/Persuade/Search/Tau Gyms)",
+      "rl_algorithm": "GRPO (multi-turn credit)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model/External",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Standardized gym with simulated users shows reward-shaping and user-simulator choice matter as much as model scale for training interactive user-facing agents."
+    },
+    {
+      "category": "tool_use",
+      "name": "Tool-R1",
+      "github_url": "https://github.com/YBYBZhang/Tool-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2509.12867"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.9",
+      "org": "Individual (YBYBZhang)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Agentic Tool Use (GAIA)",
+      "rl_algorithm": "Policy optimization (PPO-style)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model + External",
+      "tool_usage": "Yes (Python exec)",
+      "focus": null,
+      "takeaway": "Maintains a dynamic sample queue caching and reusing high-quality trajectories to cut online sampling cost while RL-training agents to emit executable Python tool code."
+    },
+    {
+      "category": "tool_use",
       "name": "MiroRL",
       "github_url": "https://github.com/MiroMindAI/MiroRL",
       "papers": [
@@ -2734,6 +3284,31 @@
       "tool_usage": "MCP",
       "focus": null,
       "takeaway": "First RL framework supporting multi-turn MCP tool calls for deep-research agents, integrating search, web, file, and code execution directly into training."
+    },
+    {
+      "category": "tool_use",
+      "name": "AWorld",
+      "github_url": "https://github.com/inclusionAI/AWorld",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.20404"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Search/Web/Code",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Both",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External/Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Tackles experience-generation bottleneck by distributing agent rollouts across a cluster for 14.6x faster experience collection, enabling large-scale agent RL."
     },
     {
       "category": "tool_use",
@@ -2862,6 +3437,26 @@
     },
     {
       "category": "tool_use",
+      "name": "calculator_agent_rl",
+      "github_url": "https://github.com/Danau5tin/calculator_agent_rl",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Individual (Danau5tin)",
+      "rl_framework": "Verifiers",
+      "domain": null,
+      "task": "Calculator Tool Use",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (Claude-judge)",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Hybrid reward pairing LLM-as-judge process scoring with code-based answer verification yields large calculator-tool accuracy gains on a 3B model via GRPO."
+    },
+    {
+      "category": "tool_use",
       "name": "ReTool",
       "github_url": "https://github.com/ReTool-RL/ReTool",
       "papers": [
@@ -2884,81 +3479,6 @@
       "tool_usage": "Code",
       "focus": null,
       "takeaway": "Uses outcome-reward RL to interleave real-time code execution within reasoning, letting the model learn strategically when and how to invoke the code tool."
-    },
-    {
-      "category": "tool_use",
-      "name": "AWorld",
-      "github_url": "https://github.com/inclusionAI/AWorld",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.20404"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Ant Group (inclusionAI)",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Search/Web/Code",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Both",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "External/Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Tackles experience-generation bottleneck by distributing agent rollouts across a cluster for 14.6x faster experience collection, enabling large-scale agent RL."
-    },
-    {
-      "category": "tool_use",
-      "name": "Agent-R1",
-      "github_url": "https://github.com/0russwest0/Agent-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2511.14460"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.11",
-      "org": "USTC",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Tool-use/QA",
-      "rl_algorithm": "PPO/GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Formalizes LLM-agent components as an extended MDP and provides a modular, extensible end-to-end RL training framework across diverse task scenarios."
-    },
-    {
-      "category": "tool_use",
-      "name": "ReCall",
-      "github_url": "https://github.com/Agent-RL/ReCall",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2503.19470"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.3",
-      "org": "BaiChuan",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "Tool-use/Math/QA",
-      "rl_algorithm": "PPO/GRPO/RLOO/REINFORCE++/ReMax",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Treats search/retrieval as integral reasoning steps trained via RL (ReSearch), learning when and how to retrieve without supervised reasoning annotations."
     },
     {
       "category": "tool_use",
@@ -2987,176 +3507,56 @@
     },
     {
       "category": "tool_use",
-      "name": "ToolOrchestra",
-      "github_url": "https://github.com/NVlabs/ToolOrchestra",
+      "name": "ReCall",
+      "github_url": "https://github.com/Agent-RL/ReCall",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2511.21689"
+          "url": "https://arxiv.org/abs/2503.19470"
         }
       ],
       "blog_urls": [],
-      "date": "2025.11",
-      "org": "NVIDIA / HKU",
-      "rl_framework": "Custom (veRL-based)",
-      "domain": null,
-      "task": "Tool orchestration / agentic workflows",
-      "rl_algorithm": "End-to-end RL (outcome+efficiency+preference)",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes (Search/Code/LLMs)",
-      "focus": null,
-      "takeaway": "RL with outcome-, efficiency-, and preference-aware rewards trains a small 8B orchestrator to coordinate tools and larger models more cost-effectively."
-    },
-    {
-      "category": "tool_use",
-      "name": "ToolMaster",
-      "github_url": "https://github.com/NEUIR/ToolMaster",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2601.12762"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2026.1",
-      "org": "Northeastern University (NEUIR)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Tool trialing + execution (ToolHop/TMDB/StableToolBench)",
-      "rl_algorithm": "SFT + GRPO (trial-then-execute)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/External",
-      "tool_usage": "Yes (Simulated tools)",
-      "focus": null,
-      "takeaway": "Combines imitation of teacher trajectories with a trial-then-execute phase, then RL, to generalize tool use to novel and unseen tools."
-    },
-    {
-      "category": "tool_use",
-      "name": "CodeGym",
-      "github_url": "https://github.com/StigLidu/CodeGym",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.17325"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Academic",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Synthetic Multi-turn Tool-Use",
-      "rl_algorithm": "GRPO-family",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule (verifiable)",
-      "tool_usage": "Yes (Synthesized tools)",
-      "focus": null,
-      "takeaway": "Converts static coding problems into interactive multi-turn tool-use environments so agents learn diverse tool workflows via RL rather than static-trajectory SFT."
-    },
-    {
-      "category": "tool_use",
-      "name": "UserRL",
-      "github_url": "https://github.com/SalesforceAIResearch/UserRL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.19736"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Salesforce AI Research",
+      "date": "2025.3",
+      "org": "BaiChuan",
       "rl_framework": "veRL",
       "domain": null,
-      "task": "User-centric (Function/Persuade/Search/Tau Gyms)",
-      "rl_algorithm": "GRPO (multi-turn credit)",
+      "task": "Tool-use/Math/QA",
+      "rl_algorithm": "PPO/GRPO/RLOO/REINFORCE++/ReMax",
       "agent_arity": "Single",
-      "reward_phase": "Both",
+      "reward_phase": "Outcome",
       "turn_mode": "Multi",
-      "reward_type": "Model/External",
+      "reward_type": "All",
       "tool_usage": "Yes",
       "focus": null,
-      "takeaway": "Standardized gym with simulated users shows reward-shaping and user-simulator choice matter as much as model scale for training interactive user-facing agents."
-    },
-    {
-      "category": "tool_use",
-      "name": "ToolBrain",
-      "github_url": "https://github.com/ToolBrain/ToolBrain",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.00023"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "ToolBrain (AAMAS 2026)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Agentic tool training",
-      "rl_algorithm": "GRPO/DPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/Model",
-      "tool_usage": "Yes (User-defined tools)",
-      "focus": null,
-      "takeaway": "Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering."
-    },
-    {
-      "category": "tool_use",
-      "name": "Tool-R1",
-      "github_url": "https://github.com/YBYBZhang/Tool-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2509.12867"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.9",
-      "org": "Individual (YBYBZhang)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Agentic Tool Use (GAIA)",
-      "rl_algorithm": "Policy optimization (PPO-style)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model + External",
-      "tool_usage": "Yes (Python exec)",
-      "focus": null,
-      "takeaway": "Maintains a dynamic sample queue caching and reusing high-quality trajectories to cut online sampling cost while RL-training agents to emit executable Python tool code."
-    },
-    {
-      "category": "tool_use",
-      "name": "calculator_agent_rl",
-      "github_url": "https://github.com/Danau5tin/calculator_agent_rl",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "Individual (Danau5tin)",
-      "rl_framework": "Verifiers",
-      "domain": null,
-      "task": "Calculator Tool Use",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Model (Claude-judge)",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Hybrid reward pairing LLM-as-judge process scoring with code-based answer verification yields large calculator-tool accuracy gains on a 3B model via GRPO."
+      "takeaway": "Treats search/retrieval as integral reasoning steps trained via RL (ReSearch), learning when and how to retrieve without supervised reasoning annotations."
     }
   ],
   "code_swe": [
+    {
+      "category": "code_swe",
+      "name": "FastContext",
+      "github_url": "https://github.com/microsoft/fastcontext",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.14066"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Microsoft",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Repo-explorer subagent (context gathering + citations)",
+      "rl_algorithm": "Task-grounded RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based",
+      "tool_usage": "Yes (Read/Glob/Grep, parallel)",
+      "focus": null,
+      "takeaway": "Trains a small parallel-tool-calling repository-explorer subagent so a coding agent gets focused file/line context cheaply via task-grounded RL."
+    },
     {
       "category": "code_swe",
       "name": "SWE-Edit",
@@ -3181,6 +3581,31 @@
       "tool_usage": "Yes (bash, file ops, viewer subagent)",
       "focus": null,
       "takeaway": "Decomposes code editing into Viewer and Editor subagents and trains the editor to adaptively pick edit mode rather than always using find-and-replace."
+    },
+    {
+      "category": "code_swe",
+      "name": "CodeScout",
+      "github_url": "https://github.com/OpenHands/codescout",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.17829"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "OpenHands",
+      "rl_framework": "SkyRL",
+      "domain": null,
+      "task": "Repo-level code search/localization (terminal)",
+      "rl_algorithm": "GSPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (F1)",
+      "tool_usage": "Yes (terminal: rg/sed/cat)",
+      "focus": null,
+      "takeaway": "RL recipe for code-search agents using a multi-level (file/module/function) F1 reward over a plain Unix terminal toolset."
     },
     {
       "category": "code_swe",
@@ -3209,6 +3634,56 @@
     },
     {
       "category": "code_swe",
+      "name": "SWE-World",
+      "github_url": "https://github.com/RUCAIBox/SWE-World",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.03419"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "RUC (RUCAIBox)",
+      "rl_framework": "OpenRLHF + veRL",
+      "domain": null,
+      "task": "Docker-free SWE (SWE-Bench Verified)",
+      "rl_algorithm": "RL with learned world model (SWT + SWR)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (surrogate) + Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Docker-free SWE RL: a learned world model predicts execution outcomes and test feedback, enabling cheap rollouts and test-time trajectory selection."
+    },
+    {
+      "category": "code_swe",
+      "name": "CUDA-L2",
+      "github_url": "https://github.com/deepreinforce-ai/CUDA-L2",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.02551"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "DeepReinforce AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "HGEMM / CUDA Matmul",
+      "rl_algorithm": "Contrastive RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (TFLOPs)",
+      "tool_usage": "Yes (compile/benchmark)",
+      "focus": null,
+      "takeaway": "Contrastive RL with CUDA execution speed as reward optimizes HGEMM matmul kernels, beating cuBLAS by 19.2% via large-scale config exploration."
+    },
+    {
+      "category": "code_swe",
       "name": "PPP-Agent",
       "github_url": "https://github.com/sunnweiwei/PPP-Agent",
       "papers": [
@@ -3231,6 +3706,31 @@
       "tool_usage": "Search, Ask, Browse",
       "focus": null,
       "takeaway": "Multi-objective RL (PPP) jointly optimizing productivity, proactivity, and personalization, evaluated in the UserVille simulator with configurable LLM user simulators."
+    },
+    {
+      "category": "code_swe",
+      "name": "DeepAnalyze",
+      "github_url": "https://github.com/ruc-datalab/DeepAnalyze",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.16872"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "RUC/Tsinghua",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Data Science",
+      "rl_algorithm": "Curriculum RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Code exec)",
+      "focus": null,
+      "takeaway": "Curriculum-based agentic RL plus data-grounded trajectory synthesis trains an 8B model for end-to-end autonomous data science without fixed workflows."
     },
     {
       "category": "code_swe",
@@ -3281,6 +3781,51 @@
       "tool_usage": "No",
       "focus": null,
       "takeaway": "Contrastive RL using execution speedup as the only reward turns a weak LLM into a CUDA optimizer that combines and rejects optimizations."
+    },
+    {
+      "category": "code_swe",
+      "name": "digitalhuman",
+      "github_url": "https://github.com/Tencent/digitalhuman",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2507.03112"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Tencent",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Empathy/Math/Code/MultimodalQA",
+      "rl_algorithm": "PPO/GRPO/ReMax/RLOO",
+      "agent_arity": "Multi",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/Model/External",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "RLVER: PPO with deterministic emotion scores from self-consistent simulated users as verifiable rewards to train empathetic dialogue agents."
+    },
+    {
+      "category": "code_swe",
+      "name": "SWE-Swiss",
+      "github_url": "https://github.com/zhenyuhe00/SWE-Swiss",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.7",
+      "org": "Tsinghua / ByteDance",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "SWE (Localization/Repair/Unit-Test)",
+      "rl_algorithm": "Two-stage RL curriculum",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (test-based)",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Decomposes issue resolution into localization/repair/unit-test skills, trained via multi-task SFT then two-stage RL on repair, plus similarity-based selection."
     },
     {
       "category": "code_swe",
@@ -3384,28 +3929,53 @@
     },
     {
       "category": "code_swe",
-      "name": "digitalhuman",
-      "github_url": "https://github.com/Tencent/digitalhuman",
+      "name": "R1-Code-Interpreter",
+      "github_url": "https://github.com/yongchao98/R1-Code-Interpreter",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2507.03112"
+          "url": "https://arxiv.org/abs/2505.21668"
         }
       ],
       "blog_urls": [],
-      "date": "2025.7",
-      "org": "Tencent",
-      "rl_framework": "veRL",
+      "date": "2025.5",
+      "org": "MIT",
+      "rl_framework": "Custom",
       "domain": null,
-      "task": "Empathy/Math/Code/MultimodalQA",
-      "rl_algorithm": "PPO/GRPO/ReMax/RLOO",
-      "agent_arity": "Multi",
+      "task": "Code Interpretation",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
       "reward_phase": "Outcome",
       "turn_mode": "Multi",
-      "reward_type": "Rule/Model/External",
-      "tool_usage": "Yes",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (Code exec)",
       "focus": null,
-      "takeaway": "RLVER: PPO with deterministic emotion scores from self-consistent simulated users as verifiable rewards to train empathetic dialogue agents."
+      "takeaway": "Multi-stage RL curriculum partitioning samples by improvement potential teaches LLMs to autonomously emit code queries during reasoning."
+    },
+    {
+      "category": "code_swe",
+      "name": "Skywork-OR1",
+      "github_url": "https://github.com/SkyworkAI/Skywork-OR1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.22312"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Skywork AI",
+      "rl_framework": "Custom (veRL fork)",
+      "domain": null,
+      "task": "Math + Code (AIME/LiveCodeBench)",
+      "rl_algorithm": "Large-scale rule-based RL (GRPO variant)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "Rule (verifiable)",
+      "tool_usage": "No",
+      "focus": null,
+      "takeaway": "Scalable long-CoT RL on R1-Distill models whose key lesson is mitigating premature entropy collapse to sustain exploration and test accuracy."
     },
     {
       "category": "code_swe",
@@ -3459,6 +4029,56 @@
     },
     {
       "category": "code_swe",
+      "name": "CTRL",
+      "github_url": "https://github.com/HKUNLP/critic-rl",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.03492"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "HKU/ByteDance",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code Refinement",
+      "rl_algorithm": "RL (critique-revision)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Code exec)",
+      "focus": null,
+      "takeaway": "Trains a critic via RL to generate feedback maximizing a fixed generator's code-correction performance, with no human-labeled critiques."
+    },
+    {
+      "category": "code_swe",
+      "name": "AceCoder",
+      "github_url": "https://github.com/TIGER-AI-Lab/AceCoder",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.01718"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Waterloo (TIGER-Lab)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Code Generation",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Single",
+      "reward_type": "External (test cases)",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Auto-synthesized (question, test-case) pairs supply verifiable pass-rate rewards for code RL, removing the need for hand-labeled reward data."
+    },
+    {
+      "category": "code_swe",
       "name": "rllm",
       "github_url": "https://github.com/agentica-project/rllm",
       "papers": [],
@@ -3501,201 +4121,6 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "Fully open reproduction of DeepSeek-R1: GRPO plus distillation/R1-Zero pipeline with code-execution sandboxes as verifiable reward signals."
-    },
-    {
-      "category": "code_swe",
-      "name": "R1-Code-Interpreter",
-      "github_url": "https://github.com/yongchao98/R1-Code-Interpreter",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.21668"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "MIT",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Code Interpretation",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/External",
-      "tool_usage": "Yes (Code exec)",
-      "focus": null,
-      "takeaway": "Multi-stage RL curriculum partitioning samples by improvement potential teaches LLMs to autonomously emit code queries during reasoning."
-    },
-    {
-      "category": "code_swe",
-      "name": "CTRL",
-      "github_url": "https://github.com/HKUNLP/critic-rl",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.03492"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "HKU/ByteDance",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Code Refinement",
-      "rl_algorithm": "RL (critique-revision)",
-      "agent_arity": "Single",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes (Code exec)",
-      "focus": null,
-      "takeaway": "Trains a critic via RL to generate feedback maximizing a fixed generator's code-correction performance, with no human-labeled critiques."
-    },
-    {
-      "category": "code_swe",
-      "name": "DeepAnalyze",
-      "github_url": "https://github.com/ruc-datalab/DeepAnalyze",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.16872"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "RUC/Tsinghua",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Data Science",
-      "rl_algorithm": "Curriculum RL",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/External",
-      "tool_usage": "Yes (Code exec)",
-      "focus": null,
-      "takeaway": "Curriculum-based agentic RL plus data-grounded trajectory synthesis trains an 8B model for end-to-end autonomous data science without fixed workflows."
-    },
-    {
-      "category": "code_swe",
-      "name": "AceCoder",
-      "github_url": "https://github.com/TIGER-AI-Lab/AceCoder",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.01718"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "Waterloo (TIGER-Lab)",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Code Generation",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Single",
-      "reward_type": "External (test cases)",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Auto-synthesized (question, test-case) pairs supply verifiable pass-rate rewards for code RL, removing the need for hand-labeled reward data."
-    },
-    {
-      "category": "code_swe",
-      "name": "SWE-World",
-      "github_url": "https://github.com/RUCAIBox/SWE-World",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2602.03419"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2026.2",
-      "org": "RUC (RUCAIBox)",
-      "rl_framework": "OpenRLHF + veRL",
-      "domain": null,
-      "task": "Docker-free SWE (SWE-Bench Verified)",
-      "rl_algorithm": "RL with learned world model (SWT + SWR)",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Model (surrogate) + Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Docker-free SWE RL: a learned world model predicts execution outcomes and test feedback, enabling cheap rollouts and test-time trajectory selection."
-    },
-    {
-      "category": "code_swe",
-      "name": "CUDA-L2",
-      "github_url": "https://github.com/deepreinforce-ai/CUDA-L2",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2512.02551"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.12",
-      "org": "DeepReinforce AI",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "HGEMM / CUDA Matmul",
-      "rl_algorithm": "Contrastive RL",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Single",
-      "reward_type": "Rule (TFLOPs)",
-      "tool_usage": "Yes (compile/benchmark)",
-      "focus": null,
-      "takeaway": "Contrastive RL with CUDA execution speed as reward optimizes HGEMM matmul kernels, beating cuBLAS by 19.2% via large-scale config exploration."
-    },
-    {
-      "category": "code_swe",
-      "name": "SWE-Swiss",
-      "github_url": "https://github.com/zhenyuhe00/SWE-Swiss",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2025.7",
-      "org": "Tsinghua / ByteDance",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "SWE (Localization/Repair/Unit-Test)",
-      "rl_algorithm": "Two-stage RL curriculum",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule (test-based)",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Decomposes issue resolution into localization/repair/unit-test skills, trained via multi-task SFT then two-stage RL on repair, plus similarity-based selection."
-    },
-    {
-      "category": "code_swe",
-      "name": "Skywork-OR1",
-      "github_url": "https://github.com/SkyworkAI/Skywork-OR1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.22312"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "Skywork AI",
-      "rl_framework": "Custom (veRL fork)",
-      "domain": null,
-      "task": "Math + Code (AIME/LiveCodeBench)",
-      "rl_algorithm": "Large-scale rule-based RL (GRPO variant)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Single",
-      "reward_type": "Rule (verifiable)",
-      "tool_usage": "No",
-      "focus": null,
-      "takeaway": "Scalable long-CoT RL on R1-Distill models whose key lesson is mitigating premature entropy collapse to sustain exploration and test accuracy."
     }
   ],
   "reasoning": [
@@ -4637,6 +5062,81 @@
   "embodied": [
     {
       "category": "embodied",
+      "name": "Embodied-R1.5",
+      "github_url": "https://github.com/pickxiguapi/Embodied-R1.5",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.11324"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Tianjin University",
+      "rl_framework": "EasyR1 / veRL",
+      "domain": null,
+      "task": "Embodied foundation model w/ Planner-Grounder-Corrector closed-loop",
+      "rl_algorithm": "RFT (GRPO-family multimodal)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based",
+      "tool_usage": "No (closed-loop PGC)",
+      "focus": null,
+      "takeaway": "A single 8B embodied foundation model plays Planner-Grounder-Corrector in a closed loop, RFT-tuned with a multi-task balanced recipe to self-correct long-horizon real-robot tasks."
+    },
+    {
+      "category": "embodied",
+      "name": "AVA-VLA",
+      "github_url": "https://github.com/LeiDQ/AVA-VLA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.15099"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "UCAS",
+      "rl_framework": "Custom (PPO)",
+      "domain": null,
+      "task": "VLA manipulation (LIBERO/ALOHA), latent CoT w/ early-exit",
+      "rl_algorithm": "PPO (latent reasoning as sequential decision)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External (task success) + Custom",
+      "tool_usage": "No (closed-loop manipulation)",
+      "focus": null,
+      "takeaway": "Casts latent reasoning as a sequential decision process and adds adaptive early-exit, optimizing VLA reasoning trajectories with task and trajectory-consistency rewards."
+    },
+    {
+      "category": "embodied",
+      "name": "WorldVLN",
+      "github_url": "https://github.com/EmbodiedCity/WorldVLN.code",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.15964"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Tsinghua (EmbodiedCity)",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Aerial (UAV) vision-language navigation (closed-loop)",
+      "rl_algorithm": "Action-aware GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "No (closed-loop UAV control)",
+      "focus": null,
+      "takeaway": "Action-aware GRPO on an autoregressive world-action model closes the loop for aerial vision-language navigation by re-encoding observations after each action."
+    },
+    {
+      "category": "embodied",
       "name": "Embodied-R1",
       "github_url": "https://github.com/pickxiguapi/Embodied-R1",
       "papers": [
@@ -4662,31 +5162,6 @@
     },
     {
       "category": "embodied",
-      "name": "STeCa",
-      "github_url": "https://github.com/WangHanLinHenry/STeCa",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.14276"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "The Hong Kong Polytechnic University",
-      "rl_framework": "FastChat/TRL",
-      "domain": null,
-      "task": "Embodied/Household",
-      "rl_algorithm": "DPO (RFT)",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Rule/MC",
-      "tool_usage": "Environment Actions",
-      "focus": null,
-      "takeaway": "Detects bad steps via step-level reward comparison during exploration and uses LLM reflection to build corrected trajectories for calibration before RFT."
-    },
-    {
-      "category": "embodied",
       "name": "VIKI-R",
       "github_url": "https://github.com/MARS-EAI/VIKI-R",
       "papers": [
@@ -4709,9 +5184,59 @@
       "tool_usage": "No",
       "focus": null,
       "takeaway": "SFT on CoT-annotated demos then GRPO under multi-level rewards, grounding multi-robot cooperative reasoning directly in visual input."
+    },
+    {
+      "category": "embodied",
+      "name": "STeCa",
+      "github_url": "https://github.com/WangHanLinHenry/STeCa",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.14276"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "The Hong Kong Polytechnic University",
+      "rl_framework": "FastChat/TRL",
+      "domain": null,
+      "task": "Embodied/Household",
+      "rl_algorithm": "DPO (RFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/MC",
+      "tool_usage": "Environment Actions",
+      "focus": null,
+      "takeaway": "Detects bad steps via step-level reward comparison during exploration and uses LLM reflection to build corrected trajectories for calibration before RFT."
     }
   ],
   "domain_specific": [
+    {
+      "category": "domain_specific",
+      "name": "Gene-Disease-Curation",
+      "github_url": "https://github.com/chaeeunlee-io/GeneDiseaseCurationAgents",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.14160"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "Academic",
+      "rl_framework": "Custom",
+      "domain": "Medical",
+      "task": "Clinical gene-disease validity curation (ClinGen)",
+      "rl_algorithm": "Process-supervised Multi-Agent RL",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (process) + Rule (outcome)",
+      "tool_usage": "Yes (agent-as-tool, evidence synthesis)",
+      "focus": null,
+      "takeaway": "Process-supervised hierarchical multi-agent RL improves clinical gene-disease validity curation, with process+outcome rewards lifting process F1 0.39->0.52 on ClinGen."
+    },
     {
       "category": "domain_specific",
       "name": "MedSAM-Agent",
@@ -4739,6 +5264,81 @@
     },
     {
       "category": "domain_specific",
+      "name": "ChemCraft",
+      "github_url": "https://github.com/HowardLi1984/ChemCraft",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.17687"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Peking University / IDEA",
+      "rl_framework": "veRL",
+      "domain": "Chemistry",
+      "task": "Chemical LM orchestrating chemistry tools (molecular design/synthesis)",
+      "rl_algorithm": "SMILES-GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External (dense chemical) + Rule",
+      "tool_usage": "Yes (chemical agent sandbox)",
+      "focus": null,
+      "takeaway": "SMILES-GRPO trains a chemical language model to orchestrate chemistry tools in an agent sandbox for molecular design and synthesis-pathway prediction."
+    },
+    {
+      "category": "domain_specific",
+      "name": "Alpha-R1",
+      "github_url": "https://github.com/FinStep-AI/Alpha-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.23515"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "SJTU / FinStep.AI / StepFun",
+      "rl_framework": "Custom",
+      "domain": "Financial",
+      "task": "Alpha factor screening (with real-time news)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External (portfolio returns) + Model",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "RL-trained 8B reasoner judges alpha-factor relevance from factor logic and real-time news, toggling factors via economic rationale to fight signal decay."
+    },
+    {
+      "category": "domain_specific",
+      "name": "Doctor-R1",
+      "github_url": "https://github.com/thu-unicorn/Doctor-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2510.04284"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Tsinghua (thu-unicorn)",
+      "rl_framework": "veRL",
+      "domain": "Medical",
+      "task": "Clinical inquiry & diagnosis",
+      "rl_algorithm": "Experiential Agentic RL",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model + Rule + safety veto",
+      "tool_usage": "No",
+      "focus": null,
+      "takeaway": "Experiential agentic RL with a two-tier reward separating clinical decisions from communication, grounded by a repository of high-quality trajectories."
+    },
+    {
+      "category": "domain_specific",
       "name": "OS-R1",
       "github_url": "https://github.com/LHY-24/OS-R1",
       "papers": [
@@ -4761,6 +5361,56 @@
       "tool_usage": "Yes (LightRAG, kernel config)",
       "focus": null,
       "takeaway": "Abstracts Linux kernel tuning as an RL environment with rule-based rewards for performance-aware reasoning, plus two-phase training to speed convergence."
+    },
+    {
+      "category": "domain_specific",
+      "name": "MedResearcher-R1",
+      "github_url": "https://github.com/AQ-MedAI/MedResearcher-R1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.14880"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Ant Group (AQ-MedAI)",
+      "rl_framework": "Custom",
+      "domain": "Medical",
+      "task": "Medical Deep Research (MedBrowseComp)",
+      "rl_algorithm": "GRPO-based (SFT + Online RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model",
+      "tool_usage": "Yes (Search/KG)",
+      "focus": null,
+      "takeaway": "Mines longest knowledge-graph chains around rare medical entities to synthesize multi-hop QA, then SFT + online RL with a private medical retriever."
+    },
+    {
+      "category": "domain_specific",
+      "name": "LegalDelta",
+      "github_url": "https://github.com/NEUIR/LegalDelta",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.12281"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Northeastern University (NEUIR)",
+      "rl_framework": "Custom",
+      "domain": "Legal",
+      "task": "Legal Reasoning",
+      "rl_algorithm": "GRPO (CoT-guided info-gain)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model + Rule",
+      "tool_usage": "No",
+      "focus": null,
+      "takeaway": "Uses the information gap between direct-answer and reasoning-augmented modes as a GRPO reward signal, with structural+legal-domain reward, no preference labels."
     },
     {
       "category": "domain_specific",
@@ -4836,109 +5486,109 @@
       "tool_usage": "Yes",
       "focus": null,
       "takeaway": "General biomedical agent combining LLM reasoning, retrieval-augmented planning, and code execution; Biomni-R0 adds RL from agent-interaction data on Qwen-32B."
-    },
-    {
-      "category": "domain_specific",
-      "name": "Doctor-R1",
-      "github_url": "https://github.com/thu-unicorn/Doctor-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2510.04284"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.10",
-      "org": "Tsinghua (thu-unicorn)",
-      "rl_framework": "veRL",
-      "domain": "Medical",
-      "task": "Clinical inquiry & diagnosis",
-      "rl_algorithm": "Experiential Agentic RL",
-      "agent_arity": "Multi",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "Model + Rule + safety veto",
-      "tool_usage": "No",
-      "focus": null,
-      "takeaway": "Experiential agentic RL with a two-tier reward separating clinical decisions from communication, grounded by a repository of high-quality trajectories."
-    },
-    {
-      "category": "domain_specific",
-      "name": "Alpha-R1",
-      "github_url": "https://github.com/FinStep-AI/Alpha-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2512.23515"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.12",
-      "org": "SJTU / FinStep.AI / StepFun",
-      "rl_framework": "Custom",
-      "domain": "Financial",
-      "task": "Alpha factor screening (with real-time news)",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "External (portfolio returns) + Model",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "RL-trained 8B reasoner judges alpha-factor relevance from factor logic and real-time news, toggling factors via economic rationale to fight signal decay."
-    },
-    {
-      "category": "domain_specific",
-      "name": "MedResearcher-R1",
-      "github_url": "https://github.com/AQ-MedAI/MedResearcher-R1",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.14880"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Ant Group (AQ-MedAI)",
-      "rl_framework": "Custom",
-      "domain": "Medical",
-      "task": "Medical Deep Research (MedBrowseComp)",
-      "rl_algorithm": "GRPO-based (SFT + Online RL)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule + Model",
-      "tool_usage": "Yes (Search/KG)",
-      "focus": null,
-      "takeaway": "Mines longest knowledge-graph chains around rare medical entities to synthesize multi-hop QA, then SFT + online RL with a private medical retriever."
-    },
-    {
-      "category": "domain_specific",
-      "name": "LegalDelta",
-      "github_url": "https://github.com/NEUIR/LegalDelta",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.12281"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.8",
-      "org": "Northeastern University (NEUIR)",
-      "rl_framework": "Custom",
-      "domain": "Legal",
-      "task": "Legal Reasoning",
-      "rl_algorithm": "GRPO (CoT-guided info-gain)",
-      "agent_arity": "Single",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "Model + Rule",
-      "tool_usage": "No",
-      "focus": null,
-      "takeaway": "Uses the information gap between direct-answer and reasoning-augmented modes as a GRPO reward signal, with structural+legal-domain reward, no preference labels."
     }
   ],
   "reward_training": [
+    {
+      "category": "reward_training",
+      "name": "AgentV-RL",
+      "github_url": "https://github.com/JiazhengZhang/AgentV-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.16004"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Academic",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Tool-augmented deliberative verifier (reward model)",
+      "rl_algorithm": "RL (verl) training an agentic verifier",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model-Based",
+      "tool_usage": "Yes (verifier invokes tools, e.g. code)",
+      "focus": "Agentic Verifier Reward Model",
+      "takeaway": "Turns reward modeling into a multi-turn tool-augmented deliberative process with forward+backward verifier agents; a 4B verifier beats SOTA ORMs by 25%."
+    },
+    {
+      "category": "reward_training",
+      "name": "DataMind",
+      "github_url": "https://github.com/zjunlp/DataMind",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.24198"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "Zhejiang University (ZJUNLP)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Agentic data analysis (Python/SQL; ScienceAgentBench/DABench)",
+      "rl_algorithm": "RL w/ generative PRM (DataPRM)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (PRM) + External (execution)",
+      "tool_usage": "Yes (code-based multi-turn)",
+      "focus": "Process Reward Model (DataPRM)",
+      "takeaway": "An environment-aware generative process reward model (DataPRM) scores intermediate Python/SQL steps and plugs into RL for data-analysis agents."
+    },
+    {
+      "category": "reward_training",
+      "name": "ARLArena",
+      "github_url": "https://github.com/WillDreamer/ARL-Arena",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.21534"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "UCLA",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Stable agentic RL across web/embodied/math/game/search",
+      "rl_algorithm": "SAMPO (Stable Agentic Policy Optimization)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (code/web/search/embodied)",
+      "focus": "Stable Agentic RL (SAMPO)",
+      "takeaway": "Decomposes the agentic policy gradient into four design axes and proposes SAMPO to prevent training collapse across web, embodied, math, game, and search."
+    },
+    {
+      "category": "reward_training",
+      "name": "Agent-RRM",
+      "github_url": "https://github.com/kxfan2002/Reagent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.22154"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Academic",
+      "rl_framework": "veRL / rLLM",
+      "domain": null,
+      "task": "Reward model for agents (web nav, multi-hop QA)",
+      "rl_algorithm": "Agentic RL w/ trained reasoning RM",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model-Based (RRM)",
+      "tool_usage": "Yes (agentic trajectories)",
+      "focus": "Reasoning Reward Model for Agents",
+      "takeaway": "Trains a reasoning reward model that emits structured trajectory critiques and scores, then uses it to train multi-turn tool-use agents."
+    },
     {
       "category": "reward_training",
       "name": "ToolPRMBench",
@@ -4988,6 +5638,31 @@
       "tool_usage": "No",
       "focus": "RLVR for World Models",
       "takeaway": "Trains world models with RLVR by treating decoded-prediction metrics (accuracy, perceptual quality) as verifiable rewards, fixing MLE-metric misalignment."
+    },
+    {
+      "category": "reward_training",
+      "name": "AgentProg",
+      "github_url": "https://github.com/MobileLLM/AgentProg",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.18121"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "MobileLLM",
+      "rl_framework": null,
+      "domain": null,
+      "task": "GUI Agent Training",
+      "rl_algorithm": "Online RL w/ progress reward",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (ProgRM)",
+      "tool_usage": "Yes",
+      "focus": "Progress Reward Model (ProgRM)",
+      "takeaway": "ProgRM predicts per-step task-completion progress (LCS self-annotation of key steps) as dense reward, beating outcome RMs that over-penalize failed GUI trajectories."
     },
     {
       "category": "reward_training",
@@ -5063,31 +5738,6 @@
       "tool_usage": "Yes",
       "focus": "Generalizable Agent RM",
       "takeaway": "Finetuning a reward model to guide policy at test time (best-of-N, step-level beam search) generalizes better across agent tasks than finetuning the policy."
-    },
-    {
-      "category": "reward_training",
-      "name": "AgentProg",
-      "github_url": "https://github.com/MobileLLM/AgentProg",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.18121"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "MobileLLM",
-      "rl_framework": null,
-      "domain": null,
-      "task": "GUI Agent Training",
-      "rl_algorithm": "Online RL w/ progress reward",
-      "agent_arity": "Single",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "Model (ProgRM)",
-      "tool_usage": "Yes",
-      "focus": "Progress Reward Model (ProgRM)",
-      "takeaway": "ProgRM predicts per-step task-completion progress (LCS self-annotation of key steps) as dense reward, beating outcome RMs that over-penalize failed GUI trajectories."
     }
   ],
   "safety": [
@@ -5320,6 +5970,56 @@
   "vlm_agent": [
     {
       "category": "vlm_agent",
+      "name": "HyperEyes",
+      "github_url": "https://github.com/DeepExperience/HyperEyes",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.07177"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "DeepExperience",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Parallel multimodal search (unified grounded search)",
+      "rl_algorithm": "Dual-grained efficiency-aware RL",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Custom + Rule",
+      "tool_usage": "Yes (visual grounding + retrieval)",
+      "focus": null,
+      "takeaway": "Fuses visual grounding and retrieval into one Unified Grounded Search action and searches multiple entities concurrently, training inference efficiency as an objective."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "ODE",
+      "github_url": "https://github.com/JoeYing1019/ODE",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.10832"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "HKUST / CUHK / PKU",
+      "rl_framework": "verl + rllm",
+      "domain": null,
+      "task": "Visual-native multimodal deep search (9-tool harness)",
+      "rl_algorithm": "GRPO (async) + SFT cold-start",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (web/image/visual search, code)",
+      "focus": null,
+      "takeaway": "On-policy data evolution over a 9-tool visual-native harness (visual search, zoom, code) with an image-bank memory for multimodal deep search."
+    },
+    {
+      "category": "vlm_agent",
       "name": "ParaVT",
       "github_url": "https://github.com/EvolvingLMMs-Lab/ParaVT",
       "papers": [
@@ -5395,28 +6095,153 @@
     },
     {
       "category": "vlm_agent",
-      "name": "multimodal-search-r1",
-      "github_url": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+      "name": "Gen-Searcher",
+      "github_url": "https://github.com/tulerfeng/Gen-Searcher",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2506.20670"
+          "url": "https://arxiv.org/abs/2603.28767"
         }
       ],
       "blog_urls": [],
-      "date": "2025.6",
-      "org": "ByteDance/NTU",
-      "rl_framework": "Custom",
+      "date": "2026.3",
+      "org": "Academic",
+      "rl_framework": "rllm + verl",
       "domain": null,
-      "task": "Multimodal Search",
+      "task": "Search-augmented image-generation deep research",
+      "rl_algorithm": "GRPO (after SFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (dual text+image)",
+      "tool_usage": "Yes (search, image search, browse, image-gen)",
+      "focus": null,
+      "takeaway": "Reinforces multi-hop web + visual-reference search before grounded image synthesis, with dual text and image rewards."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "MM-DeepResearch",
+      "github_url": "https://github.com/HJYao00/MM-DeepResearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2603.01050"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.3",
+      "org": "Academic",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Multimodal agentic search baseline",
+      "rl_algorithm": "Multi-turn agentic GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Model (judge) + Rule",
+      "tool_usage": "Yes (image/text search engines)",
+      "focus": null,
+      "takeaway": "A simple multimodal agentic-search baseline that learns when/how to call image-to-image, text-to-image, and text-to-text retrieval engines via GRPO."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "PyVision-RL",
+      "github_url": "https://github.com/agents-x-project/PyVision-RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.20739"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "agents-x-project",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Agentic image+video understanding w/ dynamic Python tooling",
       "rl_algorithm": "GRPO",
       "agent_arity": "Single",
-      "reward_phase": "Outcome",
+      "reward_phase": "Both",
       "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes (Search)",
+      "reward_type": "External + Custom",
+      "tool_usage": "Yes (Python-as-tool, frame sampling)",
       "focus": null,
-      "takeaway": "First end-to-end RL (GRPO) teaching LMMs on-demand multi-turn image+text search, with search penalty and search-balanced data cutting calls >30%."
+      "takeaway": "Writes Python-as-tool on the fly for agentic image and video understanding, with an accumulative per-turn tool reward to prevent interaction collapse."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "Vision-DeepResearch",
+      "github_url": "https://github.com/Osilly/Vision-DeepResearch",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.22060"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Academic (ICML 2026)",
+      "rl_framework": "rllm + verl",
+      "domain": null,
+      "task": "Multimodal deep-research MLLM (dozens of turns)",
+      "rl_algorithm": "GRPO (after cold-start SFT)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (visual+textual search, browse)",
+      "focus": null,
+      "takeaway": "Incentivizes long-horizon multimodal deep research (dozens of turns, hundreds of searches) in an MLLM via cold-start SFT then GRPO."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "ARM-Thinker",
+      "github_url": "https://github.com/InternLM/ARM-Thinker",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.05111"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "Shanghai AI Lab / InternLM",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Agentic multimodal reward modeling (Think-Act-Verify)",
+      "rl_algorithm": "GRPO (two-stage)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External + Rule",
+      "tool_usage": "Yes (zoom/crop, doc retrieval, validators)",
+      "focus": null,
+      "takeaway": "A multimodal generative reward model that thinks, acts (zoom/crop, doc retrieval, validators), and verifies in an iterative loop, trained with two-stage GRPO."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "CodeDance",
+      "github_url": "https://github.com/CodeDance-VL/CodeDance",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2512.17312"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.12",
+      "org": "ByteDance",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Executable visual reasoning (visual search/math/chart via code)",
+      "rl_algorithm": "GRPO/DAPO (agent-loop)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External + Custom",
+      "tool_usage": "Yes (Python sandbox: crop/draw/plot)",
+      "focus": null,
+      "takeaway": "A dynamic tool-integrated MLLM that composes code-as-tools (crop, draw, count, plot) over multiple turns for executable visual reasoning, with a balanced adaptive tool-call reward."
     },
     {
       "category": "vlm_agent",
@@ -5442,131 +6267,6 @@
       "tool_usage": "Yes (Code exec, Web search)",
       "focus": null,
       "takeaway": "Shows direct RL alone fails to induce robust tool use; needs cold-start then RL to get task-adaptive tool invocation (image ops for perception, code for math)."
-    },
-    {
-      "category": "vlm_agent",
-      "name": "VDeepEyes",
-      "github_url": "https://github.com/Visual-Agent/DeepEyes",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.14362"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "Xiaohongshu/XJTU",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "VQA",
-      "rl_algorithm": "PPO/GRPO",
-      "agent_arity": "Multi",
-      "reward_phase": "Process",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "RL trains a VLM to use its own grounding as an intrinsic tool, deciding when/where to zoom into images for active perception, with no SFT cold-start or external APIs."
-    },
-    {
-      "category": "vlm_agent",
-      "name": "CoSo",
-      "github_url": "https://github.com/langfengQ/CoSo",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2505.03792"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "NTU/Alibaba",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Android/Card/Embodied",
-      "rl_algorithm": "Soft RL (counterfactual)",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Counterfactual soft RL uses causal influence of each token on the post-processed action to focus exploration on action-critical tokens and suppress redundant ones."
-    },
-    {
-      "category": "vlm_agent",
-      "name": "RL4VLM",
-      "github_url": "https://github.com/RL4VLM/RL4VLM",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2405.10292"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2024.5",
-      "org": "UC Berkeley",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "GymCards/ALFWorld",
-      "rl_algorithm": "PPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Fine-tunes a whole VLM with PPO by prompting CoT reasoning, parsing the text into executable actions, and using environment task rewards as the RL signal."
-    },
-    {
-      "category": "vlm_agent",
-      "name": "VSC-RL",
-      "github_url": "https://github.com/ai-agents-2030/VSC_RL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2502.07949"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.2",
-      "org": "Liverpool/Huawei/Tianjin/UCL",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Mobile Device Control",
-      "rl_algorithm": "Variational RL",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "Recasts VLM agent control as variational subgoal-conditioned RL via an SGC-ELBO objective that maximizes subgoal return while staying near a reference goal policy for sparse long-horizon tasks."
-    },
-    {
-      "category": "vlm_agent",
-      "name": "AlphaDrive",
-      "github_url": "https://github.com/hustvl/AlphaDrive",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2503.07608"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2025.3",
-      "org": "HUST/Horizon Robotics",
-      "rl_framework": "Custom",
-      "domain": null,
-      "task": "Autonomous Driving",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
-      "turn_mode": "Multi",
-      "reward_type": "Rule (4 planning rewards)",
-      "tool_usage": "No",
-      "focus": null,
-      "takeaway": "Brings GRPO to driving planning with four planning-tailored rewards plus a two-stage SFT-then-RL recipe, yielding emergent multimodal planning behaviors."
     },
     {
       "category": "vlm_agent",
@@ -5620,6 +6320,31 @@
     },
     {
       "category": "vlm_agent",
+      "name": "multimodal-search-r1",
+      "github_url": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2506.20670"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.6",
+      "org": "ByteDance/NTU",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Multimodal Search",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes (Search)",
+      "focus": null,
+      "takeaway": "First end-to-end RL (GRPO) teaching LMMs on-demand multi-turn image+text search, with search penalty and search-balanced data cutting calls >30%."
+    },
+    {
+      "category": "vlm_agent",
       "name": "AutoVLA",
       "github_url": "https://github.com/ucla-mobility/AutoVLA",
       "papers": [
@@ -5642,6 +6367,56 @@
       "tool_usage": "No",
       "focus": null,
       "takeaway": "Unifies reasoning and action in one autoregressive model by tokenizing trajectories into discrete actions, then uses GRPO RFT to drop unnecessary reasoning in easy driving scenes."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VDeepEyes",
+      "github_url": "https://github.com/Visual-Agent/DeepEyes",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.14362"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Xiaohongshu/XJTU",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "VQA",
+      "rl_algorithm": "PPO/GRPO",
+      "agent_arity": "Multi",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "RL trains a VLM to use its own grounding as an intrinsic tool, deciding when/where to zoom into images for active perception, with no SFT cold-start or external APIs."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "CoSo",
+      "github_url": "https://github.com/langfengQ/CoSo",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2505.03792"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "NTU/Alibaba",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Android/Card/Embodied",
+      "rl_algorithm": "Soft RL (counterfactual)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Counterfactual soft RL uses causal influence of each token on the post-processed action to focus exploration on action-critical tokens and suppress redundant ones."
     },
     {
       "category": "vlm_agent",
@@ -5792,9 +6567,109 @@
       "tool_usage": "Yes (bbox)",
       "focus": null,
       "takeaway": "Grounded reasoning interleaves natural language with explicit bbox coordinates; GRPO-GR trains it from only answer-accuracy and format rewards, no reasoning-chain or bbox labels."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "AlphaDrive",
+      "github_url": "https://github.com/hustvl/AlphaDrive",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2503.07608"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.3",
+      "org": "HUST/Horizon Robotics",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Autonomous Driving",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (4 planning rewards)",
+      "tool_usage": "No",
+      "focus": null,
+      "takeaway": "Brings GRPO to driving planning with four planning-tailored rewards plus a two-stage SFT-then-RL recipe, yielding emergent multimodal planning behaviors."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VSC-RL",
+      "github_url": "https://github.com/ai-agents-2030/VSC_RL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2502.07949"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.2",
+      "org": "Liverpool/Huawei/Tianjin/UCL",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Mobile Device Control",
+      "rl_algorithm": "Variational RL",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Recasts VLM agent control as variational subgoal-conditioned RL via an SGC-ELBO objective that maximizes subgoal return while staying near a reference goal policy for sparse long-horizon tasks."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "RL4VLM",
+      "github_url": "https://github.com/RL4VLM/RL4VLM",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2405.10292"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.5",
+      "org": "UC Berkeley",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "GymCards/ALFWorld",
+      "rl_algorithm": "PPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "Fine-tunes a whole VLM with PPO by prompting CoT reasoning, parsing the text into executable actions, and using environment task rewards as the RL signal."
     }
   ],
   "self_evolution": [
+    {
+      "category": "self_evolution",
+      "name": "SIRI",
+      "github_url": "https://github.com/kirito618/SIRI",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.02355"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Academic",
+      "rl_framework": "Custom (GiGPO)",
+      "domain": null,
+      "task": "Self-internalizing intrinsic skills (ALFWorld/WebShop)",
+      "rl_algorithm": "GiGPO + self-skill mining/distillation",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "External + Custom",
+      "tool_usage": "Yes (interactive actions)",
+      "focus": null,
+      "takeaway": "Self-internalizing RL discovers, validates (paired skill-augmented vs skill-free rollouts), and distills the agent's own skills without any external skill bank."
+    },
     {
       "category": "self_evolution",
       "name": "world-knowledge",
@@ -5822,53 +6697,53 @@
     },
     {
       "category": "self_evolution",
-      "name": "AgentEvolver",
-      "github_url": "https://github.com/modelscope/AgentEvolver",
+      "name": "ARISE",
+      "github_url": "https://github.com/Skylanding/ARISE",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2511.10395"
+          "url": "https://arxiv.org/abs/2603.16060"
         }
       ],
       "blog_urls": [],
-      "date": "2025.11",
-      "org": "Alibaba/Tongyi Lab",
-      "rl_framework": "Custom",
+      "date": "2026.3",
+      "org": "George Washington University",
+      "rl_framework": "veRL",
       "domain": null,
-      "task": "Social Game/Tool-use",
-      "rl_algorithm": "ADCA-GRPO",
+      "task": "Reasoning w/ intrinsic skill library (7 Olympiad benchmarks)",
+      "rl_algorithm": "Hierarchical RL (options + intra-option) w/ skill evolution",
       "agent_arity": "Single",
-      "reward_phase": "Outcome",
+      "reward_phase": "Both",
       "turn_mode": "Multi",
-      "reward_type": "Rule",
-      "tool_usage": "Yes",
+      "reward_type": "External + Custom (skill-quality)",
+      "tool_usage": "No (skill reuse over multi-step reasoning)",
       "focus": null,
-      "takeaway": "Self-questioning (task generation), self-navigating (experience-reuse exploration), and self-attributing (per-action differentiated rewards) make agent RL self-sufficient and sample-efficient."
+      "takeaway": "Hierarchical RL with a persistent skill library that co-evolves with reasoning, using counterfactual credit to reward skill quality."
     },
     {
       "category": "self_evolution",
-      "name": "SEAgent",
-      "github_url": "https://github.com/SunzeY/SEAgent",
+      "name": "Tool-R0",
+      "github_url": "https://github.com/emrecanacikgoz/Tool-R0",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2508.04700"
+          "url": "https://arxiv.org/abs/2602.21320"
         }
       ],
       "blog_urls": [],
-      "date": "2025.8",
-      "org": "Shanghai AI Lab / CUHK",
-      "rl_framework": "Custom",
+      "date": "2026.2",
+      "org": "UIUC / ETH Zurich",
+      "rl_framework": "veRL",
       "domain": null,
-      "task": "Computer Use (OSWorld)",
-      "rl_algorithm": "GRPO",
-      "agent_arity": "Single",
-      "reward_phase": "Outcome",
+      "task": "Self-evolving tool-learning from zero data",
+      "rl_algorithm": "Self-play RL (generator+solver co-evolution)",
+      "agent_arity": "Multi",
+      "reward_phase": "Both",
       "turn_mode": "Multi",
-      "reward_type": "Model",
-      "tool_usage": "Yes (Screenshot-based)",
+      "reward_type": "External + Custom",
+      "tool_usage": "Yes (real tool/function calls)",
       "focus": null,
-      "takeaway": "Self-evolving computer-use agent: a World State Model scores trajectories and a curriculum generates tasks, with GRPO on successes plus adversarial imitation of failure actions."
+      "takeaway": "Self-play from zero data: a Generator proposes frontier-difficulty tool-use tasks while a Solver learns to solve them, forming a self-improving loop."
     },
     {
       "category": "self_evolution",
@@ -5922,53 +6797,28 @@
     },
     {
       "category": "self_evolution",
-      "name": "RAGEN",
-      "github_url": "https://github.com/RAGEN-AI/RAGEN",
+      "name": "AgentEvolver",
+      "github_url": "https://github.com/modelscope/AgentEvolver",
       "papers": [
         {
           "text": "Paper",
-          "url": "https://arxiv.org/abs/2504.20073"
+          "url": "https://arxiv.org/abs/2511.10395"
         }
       ],
       "blog_urls": [],
-      "date": "2025.4",
-      "org": "RAGEN-AI",
-      "rl_framework": "veRL",
-      "domain": null,
-      "task": "TextGame",
-      "rl_algorithm": "PPO/GRPO (StarPO)",
-      "agent_arity": "Single",
-      "reward_phase": "Both",
-      "turn_mode": "Multi",
-      "reward_type": "All",
-      "tool_usage": "Yes",
-      "focus": null,
-      "takeaway": "StarPO does trajectory-level agent RL; StarPO-S adds trajectory filtering, critic, and gradient stabilization to escape the 'Echo Trap' reward-variance/gradient-spike failure mode."
-    },
-    {
-      "category": "self_evolution",
-      "name": "WebRL",
-      "github_url": "https://github.com/THUDM/WebRL",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2411.02337"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2024.11",
-      "org": "Tsinghua/Zhipu AI",
+      "date": "2025.11",
+      "org": "Alibaba/Tongyi Lab",
       "rl_framework": "Custom",
       "domain": null,
-      "task": "Web Navigation (WebArena)",
-      "rl_algorithm": "Actor-Critic RL + ORM",
+      "task": "Social Game/Tool-use",
+      "rl_algorithm": "ADCA-GRPO",
       "agent_arity": "Single",
       "reward_phase": "Outcome",
       "turn_mode": "Multi",
-      "reward_type": "Model (ORM)",
-      "tool_usage": "Yes (Web browsing)",
+      "reward_type": "Rule",
+      "tool_usage": "Yes",
       "focus": null,
-      "takeaway": "Self-evolving online curriculum RL generates new tasks from failed attempts, paired with an outcome-supervised reward model and adaptive RL to train open-source web agents."
+      "takeaway": "Self-questioning (task generation), self-navigating (experience-reuse exploration), and self-attributing (per-action differentiated rewards) make agent RL self-sufficient and sample-efficient."
     },
     {
       "category": "self_evolution",
@@ -5994,6 +6844,31 @@
       "tool_usage": "Yes (experience retrieval)",
       "focus": null,
       "takeaway": "Closed-loop self-improvement: offline self-distillation builds a repository of reusable strategic principles, then online retrieval of those principles drives RL policy updates."
+    },
+    {
+      "category": "self_evolution",
+      "name": "SEAgent",
+      "github_url": "https://github.com/SunzeY/SEAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2508.04700"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.8",
+      "org": "Shanghai AI Lab / CUHK",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Computer Use (OSWorld)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model",
+      "tool_usage": "Yes (Screenshot-based)",
+      "focus": null,
+      "takeaway": "Self-evolving computer-use agent: a World State Model scores trajectories and a curriculum generates tasks, with GRPO on successes plus adversarial imitation of failure actions."
     },
     {
       "category": "self_evolution",
@@ -6044,9 +6919,84 @@
       "tool_usage": "Yes (Python exec)",
       "focus": null,
       "takeaway": "Single model proposes its own tasks and learns from code-execution-verified rewards via TRR++, a self-play loop needing zero external datasets."
+    },
+    {
+      "category": "self_evolution",
+      "name": "RAGEN",
+      "github_url": "https://github.com/RAGEN-AI/RAGEN",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2504.20073"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "RAGEN-AI",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "TextGame",
+      "rl_algorithm": "PPO/GRPO (StarPO)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "All",
+      "tool_usage": "Yes",
+      "focus": null,
+      "takeaway": "StarPO does trajectory-level agent RL; StarPO-S adds trajectory filtering, critic, and gradient stabilization to escape the 'Echo Trap' reward-variance/gradient-spike failure mode."
+    },
+    {
+      "category": "self_evolution",
+      "name": "WebRL",
+      "github_url": "https://github.com/THUDM/WebRL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2411.02337"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.11",
+      "org": "Tsinghua/Zhipu AI",
+      "rl_framework": "Custom",
+      "domain": null,
+      "task": "Web Navigation (WebArena)",
+      "rl_algorithm": "Actor-Critic RL + ORM",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Model (ORM)",
+      "tool_usage": "Yes (Web browsing)",
+      "focus": null,
+      "takeaway": "Self-evolving online curriculum RL generates new tasks from failed attempts, paired with an outcome-supervised reward model and adaptive RL to train open-source web agents."
     }
   ],
   "environment": [
+    {
+      "category": "environment",
+      "name": "MobileGym",
+      "github_url": "https://github.com/Purewhiter/mobilegym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2605.26114"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.5",
+      "org": "Academic",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Mobile GUI (Android sim, verifiable, parallel)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Browser-hosted, fully controllable Android simulator with deterministic verifiable judging and 256-instance parallel rollouts for online mobile-GUI RL."
+    },
     {
       "category": "environment",
       "name": "AEnvironment",
@@ -6066,6 +7016,31 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "'Everything as Environment' abstraction extending MCP into one Environment API so tools, benchmarks, and multi-agent systems plug into RL training uniformly."
+    },
+    {
+      "category": "environment",
+      "name": "Gym-Anything",
+      "github_url": "https://github.com/cmu-l3/gym-anything",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2604.06126"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.4",
+      "org": "CMU L3 Lab",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Computer Use (200+ apps)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Turns any software into a computer-use agent environment with realistic data, tasks, and automatic verifiers (CUA-World ships 200+ real apps in sandboxed VMs)."
     },
     {
       "category": "environment",
@@ -6109,26 +7084,6 @@
     },
     {
       "category": "environment",
-      "name": "NeMo-Gym",
-      "github_url": "https://github.com/NVIDIA-NeMo/Gym",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2026.1",
-      "org": "NVIDIA",
-      "rl_framework": null,
-      "domain": null,
-      "task": "Multi-step/Multi-turn",
-      "rl_algorithm": null,
-      "agent_arity": null,
-      "reward_phase": null,
-      "turn_mode": null,
-      "reward_type": null,
-      "tool_usage": null,
-      "focus": null,
-      "takeaway": "Manages the full stateful agent system (data, harness, verifier, exec context) so evaluation, optimization, and RL share one reproducible pipeline at scale."
-    },
-    {
-      "category": "environment",
       "name": "open-trajectory-gym",
       "github_url": "https://github.com/westonbrown/open-trajectory-gym",
       "papers": [],
@@ -6149,15 +7104,20 @@
     },
     {
       "category": "environment",
-      "name": "R2E-Gym",
-      "github_url": "https://github.com/R2E-Gym/R2E-Gym",
-      "papers": [],
+      "name": "Agent-World-Model",
+      "github_url": "https://github.com/Snowflake-Labs/agent-world-model",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.10090"
+        }
+      ],
       "blog_urls": [],
-      "date": "2025.4",
-      "org": "UC Berkeley/ANU",
+      "date": "2026.2",
+      "org": "Snowflake AI Research",
       "rl_framework": null,
       "domain": null,
-      "task": "SWE",
+      "task": "Tool-use (1,000 MCP synthetic envs)",
       "rl_algorithm": null,
       "agent_arity": null,
       "reward_phase": null,
@@ -6165,7 +7125,102 @@
       "reward_type": null,
       "tool_usage": null,
       "focus": null,
-      "takeaway": "SWE-GEN builds executable training envs from commits (not human PRs) plus hybrid exec/exec-free verifiers for scalable real-world SWE-agent RL."
+      "takeaway": "1,000 executable, SQL-database-backed synthetic tool-use environments (avg 35 tools each) exposed through a unified MCP interface for large-scale agentic RL."
+    },
+    {
+      "category": "environment",
+      "name": "TermiGen",
+      "github_url": "https://github.com/ucsb-mlsec/terminal-bench-env",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2602.07274"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.2",
+      "org": "UCSB",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Terminal/Tool-use (3,500+ envs)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "3,500+ verified executable Docker terminal environments with error-correction trajectory synthesis for training robust terminal/tool-use agents."
+    },
+    {
+      "category": "environment",
+      "name": "VisGym",
+      "github_url": "https://github.com/visgym/VisGym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.16973"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "UC Berkeley",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Multimodal/VLM (17 envs)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "A gymnasium of 17 multimodal environments with controllable difficulty, input representation, horizon, and feedback for training and evaluating VLM agents."
+    },
+    {
+      "category": "environment",
+      "name": "NeMo-Gym",
+      "github_url": "https://github.com/NVIDIA-NeMo/Gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "NVIDIA",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Multi-step/Multi-turn",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Manages the full stateful agent system (data, harness, verifier, exec context) so evaluation, optimization, and RL share one reproducible pipeline at scale."
+    },
+    {
+      "category": "environment",
+      "name": "VISTA-Gym",
+      "github_url": "https://github.com/Lucanyc/VISTA-Gym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2511.19773"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2025.11",
+      "org": "Texas A&M / Emory / KAUST",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Tool-integrated visual reasoning (VLM)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "A tool-integrated visual-reasoning environment (detection, segmentation, OCR, crop) across 13 datasets, used to scale agentic RL for VLMs."
     },
     {
       "category": "environment",
@@ -6374,71 +7429,6 @@
     },
     {
       "category": "environment",
-      "name": "MCP-Universe",
-      "github_url": "https://github.com/SalesforceAIResearch/MCP-Universe",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2025.5",
-      "org": "Salesforce AI Research",
-      "rl_framework": null,
-      "domain": null,
-      "task": "MCP Tool-use",
-      "rl_algorithm": null,
-      "agent_arity": null,
-      "reward_phase": null,
-      "turn_mode": null,
-      "reward_type": null,
-      "tool_usage": null,
-      "focus": null,
-      "takeaway": "Benchmarks agents against real live MCP servers and unfamiliar tool spaces over multi-step tasks rather than simplified synthetic tool calls."
-    },
-    {
-      "category": "environment",
-      "name": "SWE-smith",
-      "github_url": "https://github.com/SWE-bench/SWE-smith",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2025.4",
-      "org": "Princeton/Stanford/SWE-bench",
-      "rl_framework": null,
-      "domain": null,
-      "task": "SWE",
-      "rl_algorithm": null,
-      "agent_arity": null,
-      "reward_phase": null,
-      "turn_mode": null,
-      "reward_type": null,
-      "tool_usage": null,
-      "focus": null,
-      "takeaway": "Toolkit that turns any GitHub repo into a SWE-gym, generating unlimited synthetic training tasks for SWE agents."
-    },
-    {
-      "category": "environment",
-      "name": "SWE-Gym",
-      "github_url": "https://github.com/SWE-Gym/SWE-Gym",
-      "papers": [
-        {
-          "text": "Paper",
-          "url": "https://arxiv.org/abs/2412.21139"
-        }
-      ],
-      "blog_urls": [],
-      "date": "2024.12",
-      "org": "UC Berkeley/UIUC/CMU/Apple",
-      "rl_framework": null,
-      "domain": null,
-      "task": "SWE",
-      "rl_algorithm": null,
-      "agent_arity": null,
-      "reward_phase": null,
-      "turn_mode": null,
-      "reward_type": null,
-      "tool_usage": null,
-      "focus": null,
-      "takeaway": "First training environment of 2,438 executable real-world Python tasks for SWE agents via SFT plus inference-time verifier scaling."
-    },
-    {
-      "category": "environment",
       "name": "Mind2Web-2",
       "github_url": "https://github.com/OSU-NLP-Group/Mind2Web-2",
       "papers": [],
@@ -6456,6 +7446,26 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "Evaluates long-horizon agentic search with an Agent-as-a-Judge rubric scoring citation-backed synthesis of real-time information."
+    },
+    {
+      "category": "environment",
+      "name": "MCP-Universe",
+      "github_url": "https://github.com/SalesforceAIResearch/MCP-Universe",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.5",
+      "org": "Salesforce AI Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "MCP Tool-use",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Benchmarks agents against real live MCP servers and unfamiliar tool spaces over multi-step tasks rather than simplified synthetic tool calls."
     },
     {
       "category": "environment",
@@ -6496,6 +7506,46 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "Gym-style sandbox over 200+ Kaggle ML-engineering tasks giving both final-outcome and intermediate-step rewards via a FeedbackManager for SFT/RL."
+    },
+    {
+      "category": "environment",
+      "name": "R2E-Gym",
+      "github_url": "https://github.com/R2E-Gym/R2E-Gym",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "UC Berkeley/ANU",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "SWE-GEN builds executable training envs from commits (not human PRs) plus hybrid exec/exec-free verifiers for scalable real-world SWE-agent RL."
+    },
+    {
+      "category": "environment",
+      "name": "SWE-smith",
+      "github_url": "https://github.com/SWE-bench/SWE-smith",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.4",
+      "org": "Princeton/Stanford/SWE-bench",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Toolkit that turns any GitHub repo into a SWE-gym, generating unlimited synthetic training tasks for SWE agents."
     },
     {
       "category": "environment",
@@ -6616,6 +7666,31 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "Gymnasium-style unified reset/step interface bundling diverse LLM-app environments (QA, customer service, terminal) with built-in feedback for RL/SFT benchmarking."
+    },
+    {
+      "category": "environment",
+      "name": "SWE-Gym",
+      "github_url": "https://github.com/SWE-Gym/SWE-Gym",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2412.21139"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2024.12",
+      "org": "UC Berkeley/UIUC/CMU/Apple",
+      "rl_framework": null,
+      "domain": null,
+      "task": "SWE",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "First training environment of 2,438 executable real-world Python tasks for SWE agents via SFT plus inference-time verifier scaling."
     },
     {
       "category": "environment",
@@ -6919,26 +7994,6 @@
     },
     {
       "category": "environment",
-      "name": "alfworld",
-      "github_url": "https://github.com/alfworld/alfworld",
-      "papers": [],
-      "blog_urls": [],
-      "date": "2020.10",
-      "org": "Microsoft, CMU, UW",
-      "rl_framework": null,
-      "domain": null,
-      "task": "Embodied",
-      "rl_algorithm": null,
-      "agent_arity": null,
-      "reward_phase": null,
-      "turn_mode": null,
-      "reward_type": null,
-      "tool_usage": null,
-      "focus": null,
-      "takeaway": "Aligns parallel TextWorld and embodied ALFRED/THOR tasks so agents learn abstract high-level policies in text before transferring to 3D actuation."
-    },
-    {
-      "category": "environment",
       "name": "factorio-learning-environment",
       "github_url": "https://github.com/JackHopkins/factorio-learning-environment",
       "papers": [],
@@ -6956,6 +8011,26 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "Open-ended Factorio benchmark where agents act via a Python-code REPL (observe output, generate program, get state feedback) for non-saturating evals."
+    },
+    {
+      "category": "environment",
+      "name": "alfworld",
+      "github_url": "https://github.com/alfworld/alfworld",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2020.10",
+      "org": "Microsoft, CMU, UW",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Embodied",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Aligns parallel TextWorld and embodied ALFRED/THOR tasks so agents learn abstract high-level policies in text before transferring to 3D actuation."
     },
     {
       "category": "environment",

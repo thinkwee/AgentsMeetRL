@@ -2,11 +2,35 @@
 
 RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack.
 
-_Total: 20 entries._
+_Total: 23 entries._
 
 ## Contents
 
-uni-agent, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, siiRL, slime, agent-lightning, AReaL, ROLL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+AgentJet, HarnessX, Polar, uni-agent, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, agent-lightning, siiRL, slime, ROLL, AReaL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+
+### AgentJet
+- **Idea:** Decoupled swarm server/client design trains heterogeneous, non-shared-parameter multi-agent teams, with a context-merging timeline module for 1.5-10x rollout speedup.
+- `https://github.com/modelscope/AgentJet` · org: ModelScope (Alibaba) · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.04484)
+- Algorithm: GRPO/PPO (swarm, multi-dim reward) · Agent: Both · Turns: Multi · Tools: Yes (tool calls, agent frameworks)
+- Reward phase: Both · Reward type: All (Custom/External/Rule)
+- Task: Swarm agentic RL (heterogeneous multi-agent, multi-task)
+
+### HarnessX
+- **Idea:** Interleaves trace-driven harness evolution with model RL over a shared replay buffer, co-improving the agent scaffold and the policy.
+- `https://github.com/Darwin-Agent/HarnessX` · org: Darwin-Agent · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.14249)
+- Algorithm: GRPO/PPO (slime/verl recipes) · Agent: Single · Turns: Multi · Tools: Yes (harness orchestrates tools/memory)
+- Reward phase: Outcome · Reward type: External + Custom
+- Task: Composable agent-harness foundry (ALFWorld/GAIA/WebShop/SWE-bench)
+
+### Polar
+- **Idea:** Treats any real agent harness (Codex, Claude Code, shell) as the RL environment with token-faithful rollouts, so GRPO improves the exact agent that ships.
+- `https://github.com/NVIDIA-NeMo/ProRL-Agent-Server` · org: NVIDIA (NeMo) · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.24220)
+- Algorithm: GRPO · Agent: Both · Turns: Multi · Tools: Yes (real agent harnesses: shell/Codex/Claude Code)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Agentic RL on any harness (SWE-Bench/SWE-Gym)
 
 ### uni-agent
 - **Idea:** Unifies the inference and training interaction stack (model-tool-env) so the same execution path serves rollout and RL, with fully-async partial rollout at 1000+ concurrency.
@@ -56,6 +80,14 @@ uni-agent, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, siiRL, slime, age
 - Reward phase: Both · Reward type: All (Rule/Model/External)
 - Task: Robotics/Math/Code/QA/VQA
 
+### agent-lightning
+- **Idea:** Fully decouples agent execution from RL training and uses a credit-assignment module to turn arbitrary agent trajectories into trainable MDP transitions.
+- `https://github.com/microsoft/agent-lightning` · org: Microsoft Research · date: 2025.8
+- Paper(s): [Paper](https://arxiv.org/abs/2508.03680)
+- Algorithm: PPO/Custom/Automatic Prompt Optimization · Agent: Multi · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Model/External/Rule
+- Task: Calculator/SQL
+
 ### siiRL
 - **Idea:** Fully distributed multi-controller architecture (DistFlow) removes the central-controller bottleneck for near-linear RL scaling up to 1024 GPUs.
 - `https://github.com/sii-research/siiRL` · org: Shanghai Innovation Institute · date: 2025.7
@@ -72,13 +104,13 @@ uni-agent, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, siiRL, slime, age
 - Reward phase: Both · Reward type: External Verifier
 - Task: Math/Code
 
-### agent-lightning
-- **Idea:** Fully decouples agent execution from RL training and uses a credit-assignment module to turn arbitrary agent trajectories into trainable MDP transitions.
-- `https://github.com/microsoft/agent-lightning` · org: Microsoft Research · date: 2025.8
-- Paper(s): [Paper](https://arxiv.org/abs/2508.03680)
-- Algorithm: PPO/Custom/Automatic Prompt Optimization · Agent: Multi · Turns: Multi · Tools: Yes
-- Reward phase: Outcome · Reward type: Model/External/Rule
-- Task: Calculator/SQL
+### ROLL
+- **Idea:** Single-controller RL framework with a rollout scheduler for fine-grained sample lifecycle control and AutoDeviceMapping for flexible resource allocation.
+- `https://github.com/alibaba/ROLL` · org: Alibaba · date: 2025.6
+- Paper(s): [Paper](https://arxiv.org/abs/2506.06122)
+- Algorithm: PPO/GRPO/Reinforce++/TOPR/RAFT++ · Agent: Multi · Turns: Multi · Tools: Yes
+- Reward phase: Both · Reward type: All
+- Task: Math/QA/Code/Alignment
 
 ### AReaL
 - **Idea:** Fully decoupled async RL: rollout workers generate continuously without waiting while trainers update per batch, removing the slowest-sample sync bottleneck.
@@ -87,14 +119,6 @@ uni-agent, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, siiRL, slime, age
 - Algorithm: PPO · Agent: Both · Turns: Both · Tools: Yes
 - Reward phase: Outcome · Reward type: External
 - Task: Math/Code
-
-### ROLL
-- **Idea:** Single-controller RL framework with a rollout scheduler for fine-grained sample lifecycle control and AutoDeviceMapping for flexible resource allocation.
-- `https://github.com/alibaba/ROLL` · org: Alibaba · date: 2025.6
-- Paper(s): [Paper](https://arxiv.org/abs/2506.06122)
-- Algorithm: PPO/GRPO/Reinforce++/TOPR/RAFT++ · Agent: Multi · Turns: Multi · Tools: Yes
-- Reward phase: Both · Reward type: All
-- Task: Math/QA/Code/Alignment
 
 ### MARTI
 - **Idea:** Centralized multi-agent interaction with distributed per-agent policy training, enabling collaborative reasoning while scaling RL across heterogeneous models.

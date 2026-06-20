@@ -1,6 +1,6 @@
 {
   "name": "agents-meet-rl",
-  "description": "Troubleshooter + machine-readable corpus for reinforcement-learning training, evaluation, and experiment design on LLM agents (single/multi-agent, multi-turn, tool-augmented). Distilled from the AgentsMeetRL awesome list (312 projects).",
+  "description": "Troubleshooter + machine-readable corpus for reinforcement-learning training, evaluation, and experiment design on LLM agents (single/multi-agent, multi-turn, tool-augmented). Distilled from the AgentsMeetRL awesome list (355 projects).",
   "version": "0.1.0",
   "author": {
     "name": "thinkwee"
