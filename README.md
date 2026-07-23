@@ -984,7 +984,13 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=thinkwee/agentsMeetRL&type=Date)](https://www.star-history.com/#thinkwee/agentsMeetRL&Date)
+<a href="https://www.star-history.com/?type=date&repos=thinkwee%2FagentsMeetRL">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=thinkwee/agentsMeetRL&type=date&theme=dark&legend=top-left&sealed_token=6N2z388jKmFlW8Sbzg6fyaD5ayuEdrwBcQsb5W_anEKroRmLoL929545s5Mi0hNiD7wuyF327RWZDAPU-H4cixtfckufnBNRE2O5Zp8Yqmj5YC00f_gVNBHYgqoKWUTwSZV5HaBg1vqZhms1H5ix3rrvBME1a6L-pxliPWWtQjYOpizzT2MtFMmPuIL-" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=thinkwee/agentsMeetRL&type=date&legend=top-left&sealed_token=6N2z388jKmFlW8Sbzg6fyaD5ayuEdrwBcQsb5W_anEKroRmLoL929545s5Mi0hNiD7wuyF327RWZDAPU-H4cixtfckufnBNRE2O5Zp8Yqmj5YC00f_gVNBHYgqoKWUTwSZV5HaBg1vqZhms1H5ix3rrvBME1a6L-pxliPWWtQjYOpizzT2MtFMmPuIL-" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=thinkwee/agentsMeetRL&type=date&legend=top-left&sealed_token=6N2z388jKmFlW8Sbzg6fyaD5ayuEdrwBcQsb5W_anEKroRmLoL929545s5Mi0hNiD7wuyF327RWZDAPU-H4cixtfckufnBNRE2O5Zp8Yqmj5YC00f_gVNBHYgqoKWUTwSZV5HaBg1vqZhms1H5ix3rrvBME1a6L-pxliPWWtQjYOpizzT2MtFMmPuIL-" />
+ </picture>
+</a>
 
 ---
 
