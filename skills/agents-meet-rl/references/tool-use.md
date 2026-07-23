@@ -2,11 +2,19 @@
 
 Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity.
 
-_Total: 23 entries._
+_Total: 25 entries._
 
 ## Contents
 
-SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATPO, ToolBrain, CodeGym, UserRL, Tool-R1, MiroRL, AWorld, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, ReCall.
+Tool-RL-Box, SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATPO, AWorld-RL, ToolBrain, CodeGym, UserRL, Tool-R1, MiroRL, AWorld, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, ReCall.
+
+### Tool-RL-Box
+- **Idea:** Diagnoses why multi-step tool-use RL collapses into degenerate formats and fixes it with LLM-judge error classification that regenerates supervisory data mid-training.
+- `https://github.com/hypasd-art/Tool-RL-Box` · org: Harbin Institute of Technology · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.26027)
+- Algorithm: GRPO + supervisory signals (anti format-collapse) · Framework: veRL (w/ verl-tool) · Agent: Single · Turns: Multi · Tools: Yes (function-calling tools)
+- Reward phase: Process · Reward type: Model (LLM-judge error taxonomy) + Rule
+- Task: Multi-step function calling (FCL / ToolACE, pluggable tool servers)
 
 ### SPADER
 - **Idea:** Step-wise Peer Advantage gives critic-free step-level credit, plus a diversity-aware exploration reward for comprehensive multi-answer QA.
@@ -71,6 +79,14 @@ SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATP
 - Algorithm: GRPO (multi-agent) · Framework: Custom · Agent: Multi · Turns: Multi · Tools: Yes (MCP: Serper, Web scraping)
 - Reward phase: Outcome · Reward type: Rule
 - Task: Tool-use/Search
+
+### AWorld-RL
+- **Idea:** Umbrella repo shipping the AWorld team’s agentic-RL recipes (RODS reward-driven online data synthesis, FunReason-MT, Environment Tuning, RAG-R1) with code, data and checkpoints.
+- `https://github.com/inclusionAI/AWorld-RL` · org: Ant Group (inclusionAI) · date: 2025.10
+- Paper(s): —
+- Algorithm: Collection: RODS / HardGen / FunReason-MT / Environment Tuning / V2P / RAG-R1 · Framework: AWorld + veRL · Agent: Both · Turns: Multi · Tools: Yes (function calls, GUI, search)
+- Reward phase: Both · Reward type: Rule + Model (progress reward)
+- Task: Multi-turn function calling + GUI grounding + deep search (BFCL etc.)
 
 ### ToolBrain
 - **Idea:** Unified tool-use RL framework with LLM-as-a-judge automated reward generation plus GRPO/DPO, distillation, and efficient fine-tuning to avoid manual reward engineering.

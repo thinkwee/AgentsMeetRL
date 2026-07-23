@@ -2,7 +2,15 @@
 
 Agents that learn to manage persistent memory beyond a fixed context window.
 
-_Total: 6 entries._
+_Total: 7 entries._
+
+### Supersede
+- **Idea:** Isolates the memory-update gap - agents citing superseded facts - as a verifiable RL task, rewarding current answers and penalizing stale ones across multi-session notes.
+- `https://github.com/Vrin-cloud/supersede` · org: Vrin · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.27472)
+- Algorithm: GRPO (+ LoRA) · Framework: verifiers + prime-rl · Agent: Single · Turns: Multi · Tools: Yes (capped notes memory as action space)
+- Reward phase: Outcome · Reward type: Rule-Based (answered_current / stale_penalty)
+- Task: Memory-update gap: keeping notes current across sessions (LongMemEval knowledge-update)
 
 ### AgeMem
 - **Idea:** Exposes store/retrieve/update/summarize/discard as tool actions in the agent's policy, trained with step-wise GRPO to handle sparse memory-op rewards.

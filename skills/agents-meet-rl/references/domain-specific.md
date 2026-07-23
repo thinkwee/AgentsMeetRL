@@ -2,7 +2,16 @@
 
 Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge.
 
-_Total: 11 entries._
+_Total: 12 entries._
+
+### FaithMed
+- **Idea:** Rewards not just the right medical answer but whether each reasoning step is grounded in retrieved evidence, using step-level process rewards over search trajectories.
+- `https://github.com/cxcscmu/FaithMed` · org: CMU · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.01440)
+- Algorithm: SFT (LLaMA-Factory) + agentic RL w/ process reward · Framework: veRL + verl-agent · Agent: Single · Turns: Multi · Tools: Yes (medcorp evidence search)
+- Reward phase: Both · Reward type: Rule + Model (step-level faithfulness)
+- Task: Faithful evidence-based medical QA (MedQA/MedMCQA/MedXpertQA/...)
+- Domain: Medical
 
 ### Gene-Disease-Curation
 - **Idea:** Process-supervised hierarchical multi-agent RL improves clinical gene-disease validity curation, with process+outcome rewards lifting process F1 0.39->0.52 on ClinGen.

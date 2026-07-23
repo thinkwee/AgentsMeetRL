@@ -2,7 +2,31 @@
 
 Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training).
 
-_Total: 13 entries._
+_Total: 16 entries._
+
+### SEED
+- **Idea:** Converts an agent’s own completed trajectories into hindsight skills and distills them back on-policy during RL, densifying outcome-only supervision without a teacher model.
+- `https://github.com/jinyangwu/SEED` · org: Academic (jinyangwu) · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.14777)
+- Algorithm: GRPO + self-evolving on-policy distillation (hindsight-skill SFT -> OPD during RL) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (interactive env actions, search)
+- Reward phase: Outcome · Reward type: Rule + External
+- Task: ALFWorld / WebShop / Search-QA / EZPoints / Sokoban
+
+### OPID
+- **Idea:** Extracts hierarchical episode- and step-level skills from finished rollouts and turns them into token-level dense supervision for long-horizon agents.
+- `https://github.com/jinyangwu/OPID` · org: Academic (jinyangwu) · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.26790)
+- Algorithm: On-policy skill distillation (hierarchical hindsight skills -> token-level dense supervision) · Framework: veRL + verl-agent · Agent: Single · Turns: Multi · Tools: Yes (interactive env actions, search)
+- Reward phase: Both · Reward type: Rule + External
+- Task: ALFWorld / WebShop / Search-QA
+
+### UCOB
+- **Idea:** Compares skill-conditioned against skill-free rollouts to credit which skills actually help, then distills bidirectionally so the agent both uses and evolves its skill set.
+- `https://github.com/TU2021/UCOB` · org: Academic (TU2021) · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.29502)
+- Algorithm: Credit-aware on-policy bidirectional self-distillation (skill-conditioned vs skill-free branches) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (interactive env actions, search)
+- Reward phase: Both · Reward type: Rule (return-based)
+- Task: ALFWorld / WebShop / Search-QA
 
 ### SIRI
 - **Idea:** Self-internalizing RL discovers, validates (paired skill-augmented vs skill-free rollouts), and distills the agent's own skills without any external skill bank.

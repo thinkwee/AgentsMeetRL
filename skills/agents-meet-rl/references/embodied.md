@@ -2,7 +2,15 @@
 
 Agents in physical/simulated robotic environments.
 
-_Total: 6 entries._
+_Total: 7 entries._
+
+### REAL
+- **Idea:** Exposes embodied skills as MCP tools (including asking the user) so a language agent can be RL-trained on open-world mobile manipulation and deployed on real robots.
+- `https://github.com/InternRobotics/REAL` · org: InternRobotics · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.13653)
+- Algorithm: GRPO/GSPO (online RL over an MCP tool interface) · Framework: Custom (GSPO/GRPO over MCP) · Agent: Single · Turns: Multi · Tools: Yes (8 MCP tools: navigate_to/pick/place/ask/...)
+- Reward phase: Outcome · Reward type: External Verifier (target world-state check)
+- Task: Open-world mobile manipulation in Isaac Sim (REAL-Bench, 241 tasks)
 
 ### Embodied-R1.5
 - **Idea:** A single 8B embodied foundation model plays Planner-Grounder-Corrector in a closed loop, RFT-tuned with a multi-task balanced recipe to self-correct long-horizon real-robot tasks.

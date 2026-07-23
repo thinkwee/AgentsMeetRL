@@ -2177,6 +2177,31 @@
   "web_gui": [
     {
       "category": "web_gui",
+      "name": "SCALE-CUA",
+      "github_url": "https://github.com/THUDM/SCALE-CUA",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.11185"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "Tsinghua (THUDM)",
+      "rl_framework": "Custom (Ray + vLLM + Megatron-LM)",
+      "domain": null,
+      "task": "Computer Use (OSWorld, ScienceBoard; 24K+ synthesized verifiable tasks)",
+      "rl_algorithm": "GRPO (fully async, Frontier Sampling + visual context segmentation)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External Verifier (executable judge functions)",
+      "tool_usage": "Yes (GUI actions in Docker desktop)",
+      "focus": null,
+      "takeaway": "Scales computer-use RL by synthesizing 24K verifiable tasks with a proposer/judger/checker loop and cutting rollout cost 2.8x via visual context segmentation."
+    },
+    {
+      "category": "web_gui",
       "name": "OpenWebRL",
       "github_url": "https://github.com/OpenWebRL/OpenWebRL",
       "papers": [
@@ -2962,6 +2987,31 @@
   "tool_use": [
     {
       "category": "tool_use",
+      "name": "Tool-RL-Box",
+      "github_url": "https://github.com/hypasd-art/Tool-RL-Box",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.26027"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Harbin Institute of Technology",
+      "rl_framework": "veRL (w/ verl-tool)",
+      "domain": null,
+      "task": "Multi-step function calling (FCL / ToolACE, pluggable tool servers)",
+      "rl_algorithm": "GRPO + supervisory signals (anti format-collapse)",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM-judge error taxonomy) + Rule",
+      "tool_usage": "Yes (function-calling tools)",
+      "focus": null,
+      "takeaway": "Diagnoses why multi-step tool-use RL collapses into degenerate formats and fixes it with LLM-judge error classification that regenerates supervisory data mid-training."
+    },
+    {
+      "category": "tool_use",
       "name": "SPADER",
       "github_url": "https://github.com/KhanCold/spader",
       "papers": [
@@ -3159,6 +3209,26 @@
       "tool_usage": "Yes (MCP: Serper, Web scraping)",
       "focus": null,
       "takeaway": "Trains planner and worker roles within a single LLM via role-specific prompts and principled cross-role credit assignment, avoiding separate models."
+    },
+    {
+      "category": "tool_use",
+      "name": "AWorld-RL",
+      "github_url": "https://github.com/inclusionAI/AWorld-RL",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2025.10",
+      "org": "Ant Group (inclusionAI)",
+      "rl_framework": "AWorld + veRL",
+      "domain": null,
+      "task": "Multi-turn function calling + GUI grounding + deep search (BFCL etc.)",
+      "rl_algorithm": "Collection: RODS / HardGen / FunReason-MT / Environment Tuning / V2P / RAG-R1",
+      "agent_arity": "Both",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (progress reward)",
+      "tool_usage": "Yes (function calls, GUI, search)",
+      "focus": null,
+      "takeaway": "Umbrella repo shipping the AWorld team’s agentic-RL recipes (RODS reward-driven online data synthesis, FunReason-MT, Environment Tuning, RAG-R1) with code, data and checkpoints."
     },
     {
       "category": "tool_use",
@@ -4910,6 +4980,31 @@
   "memory": [
     {
       "category": "memory",
+      "name": "Supersede",
+      "github_url": "https://github.com/Vrin-cloud/supersede",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.27472"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Vrin",
+      "rl_framework": "verifiers + prime-rl",
+      "domain": null,
+      "task": "Memory-update gap: keeping notes current across sessions (LongMemEval knowledge-update)",
+      "rl_algorithm": "GRPO (+ LoRA)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (answered_current / stale_penalty)",
+      "tool_usage": "Yes (capped notes memory as action space)",
+      "focus": null,
+      "takeaway": "Isolates the memory-update gap - agents citing superseded facts - as a verifiable RL task, rewarding current answers and penalizing stale ones across multi-session notes."
+    },
+    {
+      "category": "memory",
       "name": "AgeMem",
       "github_url": "https://github.com/y1y5/AgeMem",
       "papers": [
@@ -5062,6 +5157,31 @@
   "embodied": [
     {
       "category": "embodied",
+      "name": "REAL",
+      "github_url": "https://github.com/InternRobotics/REAL",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.13653"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "InternRobotics",
+      "rl_framework": "Custom (GSPO/GRPO over MCP)",
+      "domain": null,
+      "task": "Open-world mobile manipulation in Isaac Sim (REAL-Bench, 241 tasks)",
+      "rl_algorithm": "GRPO/GSPO (online RL over an MCP tool interface)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "External Verifier (target world-state check)",
+      "tool_usage": "Yes (8 MCP tools: navigate_to/pick/place/ask/...)",
+      "focus": null,
+      "takeaway": "Exposes embodied skills as MCP tools (including asking the user) so a language agent can be RL-trained on open-world mobile manipulation and deployed on real robots."
+    },
+    {
+      "category": "embodied",
       "name": "Embodied-R1.5",
       "github_url": "https://github.com/pickxiguapi/Embodied-R1.5",
       "papers": [
@@ -5212,6 +5332,31 @@
     }
   ],
   "domain_specific": [
+    {
+      "category": "domain_specific",
+      "name": "FaithMed",
+      "github_url": "https://github.com/cxcscmu/FaithMed",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.01440"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "CMU",
+      "rl_framework": "veRL + verl-agent",
+      "domain": "Medical",
+      "task": "Faithful evidence-based medical QA (MedQA/MedMCQA/MedXpertQA/...)",
+      "rl_algorithm": "SFT (LLaMA-Factory) + agentic RL w/ process reward",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + Model (step-level faithfulness)",
+      "tool_usage": "Yes (medcorp evidence search)",
+      "focus": null,
+      "takeaway": "Rewards not just the right medical answer but whether each reasoning step is grounded in retrieved evidence, using step-level process rewards over search trajectories."
+    },
     {
       "category": "domain_specific",
       "name": "Gene-Disease-Curation",
@@ -5970,6 +6115,56 @@
   "vlm_agent": [
     {
       "category": "vlm_agent",
+      "name": "VTS",
+      "github_url": "https://github.com/CeeZh/VTS",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.16189"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "UNC Chapel Hill / Sony",
+      "rl_framework": "ms-swift",
+      "domain": null,
+      "task": "Grounded long-video QA (search video as an adaptive temporal tree)",
+      "rl_algorithm": "GRPO (multi-turn tree rollout w/ backtracking)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (answer + format + evidence IoU)",
+      "tool_usage": "Yes (zoom_in/zoom_out/shift/answer)",
+      "focus": null,
+      "takeaway": "Treats long-video QA as iterative search over an adaptive temporal tree, training the agent to zoom/shift and to recover from wrong branches instead of one-shot frame sampling."
+    },
+    {
+      "category": "vlm_agent",
+      "name": "VSeek",
+      "github_url": "https://github.com/UTAustin-SwarmLab/VSeek",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.02959"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "UT Austin (SwarmLab)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "Long-video QA as multi-turn evidence retrieval (LongVideoBench/LVBench/Video-MME/MLVU)",
+      "rl_algorithm": "GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule-Based (neuro-symbolic temporal-logic grounding)",
+      "tool_usage": "Yes (ViCLIP+FAISS retrieval server)",
+      "focus": null,
+      "takeaway": "Turns passive single-pass video QA into a think-search-observe loop, with dense rewards from temporal-logic decomposition of the query into retrievable visual primitives."
+    },
+    {
+      "category": "vlm_agent",
       "name": "HyperEyes",
       "github_url": "https://github.com/DeepExperience/HyperEyes",
       "papers": [
@@ -6647,6 +6842,81 @@
   "self_evolution": [
     {
       "category": "self_evolution",
+      "name": "SEED",
+      "github_url": "https://github.com/jinyangwu/SEED",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.14777"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "Academic (jinyangwu)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "ALFWorld / WebShop / Search-QA / EZPoints / Sokoban",
+      "rl_algorithm": "GRPO + self-evolving on-policy distillation (hindsight-skill SFT -> OPD during RL)",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + External",
+      "tool_usage": "Yes (interactive env actions, search)",
+      "focus": null,
+      "takeaway": "Converts an agent’s own completed trajectories into hindsight skills and distills them back on-policy during RL, densifying outcome-only supervision without a teacher model."
+    },
+    {
+      "category": "self_evolution",
+      "name": "OPID",
+      "github_url": "https://github.com/jinyangwu/OPID",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.26790"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Academic (jinyangwu)",
+      "rl_framework": "veRL + verl-agent",
+      "domain": null,
+      "task": "ALFWorld / WebShop / Search-QA",
+      "rl_algorithm": "On-policy skill distillation (hierarchical hindsight skills -> token-level dense supervision)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule + External",
+      "tool_usage": "Yes (interactive env actions, search)",
+      "focus": null,
+      "takeaway": "Extracts hierarchical episode- and step-level skills from finished rollouts and turns them into token-level dense supervision for long-horizon agents."
+    },
+    {
+      "category": "self_evolution",
+      "name": "UCOB",
+      "github_url": "https://github.com/TU2021/UCOB",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.29502"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "Academic (TU2021)",
+      "rl_framework": "veRL",
+      "domain": null,
+      "task": "ALFWorld / WebShop / Search-QA",
+      "rl_algorithm": "Credit-aware on-policy bidirectional self-distillation (skill-conditioned vs skill-free branches)",
+      "agent_arity": "Single",
+      "reward_phase": "Both",
+      "turn_mode": "Multi",
+      "reward_type": "Rule (return-based)",
+      "tool_usage": "Yes (interactive env actions, search)",
+      "focus": null,
+      "takeaway": "Compares skill-conditioned against skill-free rollouts to credit which skills actually help, then distills bidirectionally so the agent both uses and evolves its skill set."
+    },
+    {
+      "category": "self_evolution",
       "name": "SIRI",
       "github_url": "https://github.com/kirito618/SIRI",
       "papers": [
@@ -6972,6 +7242,56 @@
     }
   ],
   "environment": [
+    {
+      "category": "environment",
+      "name": "SETA",
+      "github_url": "https://github.com/camel-ai/seta",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.10891"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "CAMEL-AI.org",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Terminal agents (4,500+ verifiable Docker envs, Terminal-Bench format)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Auto-synthesizes and evolves 4,500+ verifiable terminal RL environments (task.yaml + Dockerfile + tests) in Terminal-Bench format, the largest open terminal RL set to date."
+    },
+    {
+      "category": "environment",
+      "name": "OpenAgent",
+      "github_url": "https://github.com/LAMDA-NeSy/OpenAgent",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2607.01084"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.7",
+      "org": "Nanjing University (LAMDA-NeSy)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Tool-use generalization sandbox (query/schema/observation/domain shifts)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Controlled sandbox that perturbs queries, tool schemas, observations and domains at inference to expose how brittle statically trained tool-use agents really are."
+    },
     {
       "category": "environment",
       "name": "MobileGym",

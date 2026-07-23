@@ -16,19 +16,19 @@ Claude can cite specific work when giving recommendations — plus an
 | Base Frameworks | [base-frameworks.md](base-frameworks.md) | 23 | RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack. |
 | General / MultiTask Agents | [general-multitask.md](general-multitask.md) | 21 | Agents trained across many tasks/environments. Useful when you want one model that handles search + tool + code etc. |
 | Search & RAG Agents | [search-rag.md](search-rag.md) | 45 | Agents that interleave reasoning and retrieval. Most use rule-based EM/F1 outcome rewards or info-gain process rewards. |
-| Web & GUI Agents | [web-gui.md](web-gui.md) | 31 | Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate. |
-| Tool-Use Agents | [tool-use.md](tool-use.md) | 23 | Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity. |
+| Web & GUI Agents | [web-gui.md](web-gui.md) | 32 | Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate. |
+| Tool-Use Agents | [tool-use.md](tool-use.md) | 25 | Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity. |
 | Code & SWE Agents | [code-swe.md](code-swe.md) | 24 | Software-engineering agents that locate, repair, and test. Most use SWE-bench-style verifiable rewards. |
 | Reasoning Agents | [reasoning.md](reasoning.md) | 18 | Tool-integrated reasoning (TIR) agents — math/QA + search/code. Common starting point for new agentic-RL projects. |
 | Multi-Agent RL | [multi-agent.md](multi-agent.md) | 14 | Multi-agent collaboration, negotiation, or self-play. Watch for credit assignment and role-conditioned advantage. |
-| Memory Agents | [memory.md](memory.md) | 6 | Agents that learn to manage persistent memory beyond a fixed context window. |
-| Embodied Agents | [embodied.md](embodied.md) | 6 | Agents in physical/simulated robotic environments. |
-| Domain-Specific Agents | [domain-specific.md](domain-specific.md) | 11 | Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge. |
+| Memory Agents | [memory.md](memory.md) | 7 | Agents that learn to manage persistent memory beyond a fixed context window. |
+| Embodied Agents | [embodied.md](embodied.md) | 7 | Agents in physical/simulated robotic environments. |
+| Domain-Specific Agents | [domain-specific.md](domain-specific.md) | 12 | Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge. |
 | Reward Models & Training Methodology | [reward-training.md](reward-training.md) | 10 | Process/outcome reward models, PRM benchmarks, training recipes. |
 | Safety / Red-Teaming | [safety.md](safety.md) | 9 | RL for jailbreak attack/defense, tool-call safety, agent guardrails. |
-| VLM Agents | [vlm-agent.md](vlm-agent.md) | 27 | Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search). |
-| Self-Evolution Agents | [self-evolution.md](self-evolution.md) | 13 | Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training). |
-| Environments / Benchmarks / Gyms | [environments.md](environments.md) | 53 | Sandbox environments and benchmarks. Pick one matching your task before designing rewards. |
+| VLM Agents | [vlm-agent.md](vlm-agent.md) | 29 | Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search). |
+| Self-Evolution Agents | [self-evolution.md](self-evolution.md) | 16 | Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training). |
+| Environments / Benchmarks / Gyms | [environments.md](environments.md) | 55 | Sandbox environments and benchmarks. Pick one matching your task before designing rewards. |
 | Under Review (Open-source pending) | [under-review.md](under-review.md) | 21 | Notable papers whose code is not yet open-source. Track these for future reference. |
 
 ## Citation conventions

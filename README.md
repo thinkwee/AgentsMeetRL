@@ -9,22 +9,22 @@
 ![Base Framework](https://img.shields.io/badge/Base_Framework-23-BFA2DB?style=for-the-badge)
 ![General](https://img.shields.io/badge/General-21-4E6813?style=for-the-badge)
 ![Search & RAG](https://img.shields.io/badge/Search_&_RAG-45-845C40?style=for-the-badge)
-![Web & GUI](https://img.shields.io/badge/Web_&_GUI-31-A259FF?style=for-the-badge)
+![Web & GUI](https://img.shields.io/badge/Web_&_GUI-32-A259FF?style=for-the-badge)
 <br>
-![Tool](https://img.shields.io/badge/Tool-23-D89F7B?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-25-D89F7B?style=for-the-badge)
 ![Code & SWE](https://img.shields.io/badge/Code_&_SWE-25-A47B67?style=for-the-badge)
 ![Reasoning](https://img.shields.io/badge/Reasoning-18-FF69B4?style=for-the-badge)
 ![Multi-Agent](https://img.shields.io/badge/Multi--Agent-14-1F4CAD?style=for-the-badge)
 <br>
-![Memory](https://img.shields.io/badge/Memory-6-007a88?style=for-the-badge)
-![Embodied](https://img.shields.io/badge/Embodied-6-C0C5CE?style=for-the-badge)
-![Domain-Specific](https://img.shields.io/badge/Domain--Specific-11-ffc884?style=for-the-badge)
+![Memory](https://img.shields.io/badge/Memory-7-007a88?style=for-the-badge)
+![Embodied](https://img.shields.io/badge/Embodied-7-C0C5CE?style=for-the-badge)
+![Domain-Specific](https://img.shields.io/badge/Domain--Specific-12-ffc884?style=for-the-badge)
 ![Reward & Training](https://img.shields.io/badge/Reward_&_Training-10-9B59B6?style=for-the-badge)
 <br>
 ![Safety](https://img.shields.io/badge/Safety-9-E74C3C?style=for-the-badge)
-![VLM Agent](https://img.shields.io/badge/VLM_Agent-27-2ECC71?style=for-the-badge)
-![Self-Evolution](https://img.shields.io/badge/Self--Evolution-13-F39C12?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-53-FA5A4C?style=for-the-badge)
+![VLM Agent](https://img.shields.io/badge/VLM_Agent-29-2ECC71?style=for-the-badge)
+![Self-Evolution](https://img.shields.io/badge/Self--Evolution-16-F39C12?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-55-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -40,7 +40,7 @@
  - 🤖 The criteria for identifying an agent project are that it must have at least one of the following: multi-turn interactions or tool use (so TIR projects, Tool-Integrated Reasoning, are considered in this repo).
  - ⚠️ This project is based on code analysis from open-source repositories using LLM coding agents, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
- - 📅 Last updated: 2026-06-20
+ - 📅 Last updated: 2026-07-23
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
  - 📚 If you find this repository helpful for your research, please cite it via the **"Cite this repository"** button on the right sidebar.
 
@@ -72,6 +72,7 @@ Some Enumeration:
 ---
 
 ## Updates
+- 📢 **2026-07 Update**: Added 13 new repositories from late-Jun–Jul 2026 across 8 categories (Self-Evolution +3 [SEED/OPID/UCOB, the on-policy-distillation-for-agentic-RL line], VLM Agent +2 [VTS/VSeek, long-video search agents], Tool-Use +2 [Tool-RL-Box; plus catch-up of AWorld-RL], Environment +2 [SETA terminal envs, OpenAgent tool-generalization sandbox], Web & GUI +1 [SCALE-CUA], Embodied +1 [REAL], Memory +1 [Supersede], Domain-Specific +1 [FaithMed]). Every entry was verified by opening the repo and confirming real RL-training (or environment) code — papers whose code is not yet released (EvoCUA-1.5, DeepSearch-World, CompactionRL, GUICrafter, VideoSearcher, Xiaomi-GUI-0) were deliberately left out.
 - 📢 **2026-06 Update**: Added 43 new repositories across 11 categories (VLM Agent +8, Search & RAG +7, Environment +6, Reward & Training +4, Base Framework/Tool-Use/Self-Evolution/Embodied +3 each, Web & GUI/Code & SWE/Domain-Specific +2 each). New since the last update: Harness-1, FastContext, OpenWebRL, Polar, AgentJet, HarnessX, APPO, SPADER, DeepRubric, Embodied-R1.5, SIRI; plus catch-up of earlier-2026 misses (Vision-DeepResearch, ARM-Thinker, PyVision-RL, Gen-Searcher, DataMind, Tool-R0, Agent World Model, VisGym, Gym-Anything, ChemCraft, OpAgent, etc.).
 - 📢 **2026-05 Update**: Added 17 new repositories from Apr–May 2026 across 11 categories (notably General/MultiTask +4 [SkillZero/T²PO/SDAR/StraTA, mostly ZJU-REAL & related agentic RL methods], VLM Agent +3 [MTA-Agent/ParaVT/OpenSearch-VL, multimodal deep search & video tool use], Web & GUI +2 [ClawGUI/ToolCUA]). Moved CoEvolve to "Under Review" (code not yet released).
 - 📢 **2026-04 Update**: Added 67 new repositories covering Apr 2025 – Apr 2026 across nearly every category (notably VLM Agent +9, Search & RAG +10, Web & GUI +7, Tool-Use +7). Also reclassified SkyRL (→ General) and SPIRAL (→ Multi-Agent), and updated the VAGEN entry to its NeurIPS'25 upstream repo.
@@ -83,7 +84,7 @@ Some Enumeration:
   <img src="AgentsMeetRL_Skill_landscape.png" alt="Logo" width="600">
 </div>
 
-This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **355 projects** (snapshot **2026-06-20**). Once installed, Claude Code auto-invokes it whenever your question matches.
+This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **368 projects** (snapshot **2026-07-23**). Once installed, Claude Code auto-invokes it whenever your question matches.
 
 **Install as a plugin (recommended):**
 
@@ -325,6 +326,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [SCALE-CUA](https://github.com/THUDM/SCALE-CUA) | <img src="https://img.shields.io/github/stars/THUDM/SCALE-CUA?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | Tsinghua (THUDM) | [Paper](https://arxiv.org/abs/2607.11185) | Custom (Ray + vLLM + Megatron-LM) |
 | [OpenWebRL](https://github.com/OpenWebRL/OpenWebRL) | <img src="https://img.shields.io/github/stars/OpenWebRL/OpenWebRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | UIUC / Microsoft Research | [Paper](https://arxiv.org/abs/2606.02031) | slime |
 | [ToolCUA](https://github.com/X-PLUG/ToolCUA) | <img src="https://img.shields.io/github/stars/X-PLUG/ToolCUA?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Alibaba Tongyi Lab (X-PLUG) | [Paper](https://arxiv.org/abs/2605.12481) | Custom |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | <img src="https://img.shields.io/github/stars/ZJU-REAL/ClawGUI?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Zhejiang University (ZJU-REAL) | [Paper](https://arxiv.org/abs/2604.11784) | Custom (veRL-based) |
@@ -362,6 +364,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [SCALE-CUA](https://github.com/THUDM/SCALE-CUA) | GRPO (fully async, Frontier Sampling + visual context segmentation) | Single | Outcome | Multi | Computer Use (OSWorld, ScienceBoard; 24K+ synthesized verifiable tasks) | External Verifier (executable judge functions) | Yes (GUI actions in Docker desktop) |
 | [OpenWebRL](https://github.com/OpenWebRL/OpenWebRL) | GRPO (online multi-turn) | Single | Both | Multi | Visual web browsing on live sites (WebVoyager/Online-Mind2Web) | Rule + Model (format + LLM-judge) | Yes (Playwright browser) |
 | [ToolCUA](https://github.com/X-PLUG/ToolCUA) | Tool-Bootstrapped GUI RFT + Online Agentic RL (Tool-Efficient Path Reward) | Single | Both | Multi | Computer Use (OSWorld-MCP, hybrid GUI+tool) | Rule (path-efficiency) | Yes (GUI actions + structured tool calls) |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | GiGPO + Process Reward Model | Single | Both | Multi | Mobile GUI (Android/HarmonyOS/iOS, MobileWorld) | Rule + Model (PRM) | Yes (GUI + hybrid CLI-GUI + persistent memory) |
@@ -401,6 +404,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [Tool-RL-Box](https://github.com/hypasd-art/Tool-RL-Box) | <img src="https://img.shields.io/github/stars/hypasd-art/Tool-RL-Box?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Harbin Institute of Technology | [Paper](https://arxiv.org/abs/2606.26027) | veRL (w/ verl-tool) |
 | [SPADER](https://github.com/KhanCold/spader) | <img src="https://img.shields.io/github/stars/KhanCold/spader?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Zhejiang University | [Paper](https://arxiv.org/abs/2606.00593) | veRL |
 | [APPO](https://github.com/AMAP-ML/APPO) | <img src="https://img.shields.io/github/stars/AMAP-ML/APPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Alibaba AMAP (AMAP-ML) | [Paper](https://arxiv.org/abs/2606.12384) | veRL |
 | [AgenticQwen](https://github.com/haruhi-sudo/data_synth_and_rl) | <img src="https://img.shields.io/github/stars/haruhi-sudo/data_synth_and_rl?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Alibaba PAI | [Paper](https://arxiv.org/abs/2604.21590) | veRL (w/ EasyDistill) |
@@ -408,6 +412,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | [ToolOrchestra](https://github.com/NVlabs/ToolOrchestra) | <img src="https://img.shields.io/github/stars/NVlabs/ToolOrchestra?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | NVIDIA / HKU | [Paper](https://arxiv.org/abs/2511.21689) | Custom (veRL-based) |
 | [ToolMaster](https://github.com/NEUIR/ToolMaster) | <img src="https://img.shields.io/github/stars/NEUIR/ToolMaster?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Northeastern University (NEUIR) | [Paper](https://arxiv.org/abs/2601.12762) | Custom |
 | [MATPO](https://github.com/mzf666/MATPO) | <img src="https://img.shields.io/github/stars/mzf666/MATPO?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | MiroMind AI | [Paper](https://arxiv.org/abs/2510.04678) | Custom |
+| [AWorld-RL](https://github.com/inclusionAI/AWorld-RL) | <img src="https://img.shields.io/github/stars/inclusionAI/AWorld-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | Ant Group (inclusionAI) | -- | AWorld + veRL |
 | [CodeGym](https://github.com/StigLidu/CodeGym) | <img src="https://img.shields.io/github/stars/StigLidu/CodeGym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | Academic | [Paper](https://arxiv.org/abs/2509.17325) | Custom |
 | [UserRL](https://github.com/SalesforceAIResearch/UserRL) | <img src="https://img.shields.io/github/stars/SalesforceAIResearch/UserRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | Salesforce AI Research | [Paper](https://arxiv.org/abs/2509.19736) | veRL |
 | [ToolBrain](https://github.com/ToolBrain/ToolBrain) | <img src="https://img.shields.io/github/stars/ToolBrain/ToolBrain?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | ToolBrain (AAMAS 2026) | [Paper](https://arxiv.org/abs/2510.00023) | Custom |
@@ -430,6 +435,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [Tool-RL-Box](https://github.com/hypasd-art/Tool-RL-Box) | GRPO + supervisory signals (anti format-collapse) | Single | Process | Multi | Multi-step function calling (FCL / ToolACE, pluggable tool servers) | Model (LLM-judge error taxonomy) + Rule | Yes (function-calling tools) |
 | [SPADER](https://github.com/KhanCold/spader) | GRPO + Step-wise Peer Advantage (SPA) | Single | Both | Multi | Long-horizon tool-augmented multi-answer QA (QAMPARI) | Rule-Based (entity-match + diversity) | Yes (search) |
 | [APPO](https://github.com/AMAP-ML/APPO) | APPO (procedure-aware branching; extends ARPO/GRPO) | Single | Process | Multi | Multi-turn TIR (reasoning+search+code, 13 benchmarks) | Rule-Based | Yes (search + code) |
 | [AgenticQwen](https://github.com/haruhi-sudo/data_synth_and_rl) | Multi-round RL (Reasoning RL + Agentic RL w/ dual data flywheels) | Single | Outcome | Multi | Industrial Tool Use (search, data analysis, tau-bench airline/retail/telecom) | Rule + Model (rubric) | Yes (Python interpreter, web search, mock tools) |
@@ -437,6 +443,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | [ToolOrchestra](https://github.com/NVlabs/ToolOrchestra) | End-to-end RL (outcome+efficiency+preference) | Single | Both | Multi | Tool orchestration / agentic workflows | All | Yes (Search/Code/LLMs) |
 | [ToolMaster](https://github.com/NEUIR/ToolMaster) | SFT + GRPO (trial-then-execute) | Single | Outcome | Multi | Tool trialing + execution (ToolHop/TMDB/StableToolBench) | Rule/External | Yes (Simulated tools) |
 | [MATPO](https://github.com/mzf666/MATPO) | GRPO (multi-agent) | Multi | Outcome | Multi | Tool-use/Search | Rule | Yes (MCP: Serper, Web scraping) |
+| [AWorld-RL](https://github.com/inclusionAI/AWorld-RL) | Collection: RODS / HardGen / FunReason-MT / Environment Tuning / V2P / RAG-R1 | Both | Both | Multi | Multi-turn function calling + GUI grounding + deep search (BFCL etc.) | Rule + Model (progress reward) | Yes (function calls, GUI, search) |
 | [CodeGym](https://github.com/StigLidu/CodeGym) | GRPO-family | Single | Outcome | Multi | Synthetic Multi-turn Tool-Use | Rule (verifiable) | Yes (Synthesized tools) |
 | [UserRL](https://github.com/SalesforceAIResearch/UserRL) | GRPO (multi-turn credit) | Single | Both | Multi | User-centric (Function/Persuade/Search/Tau Gyms) | Model/External | Yes |
 | [ToolBrain](https://github.com/ToolBrain/ToolBrain) | GRPO/DPO | Single | Outcome | Multi | Agentic tool training | Rule/Model | Yes (User-defined tools) |
@@ -617,6 +624,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [Supersede](https://github.com/Vrin-cloud/supersede) | <img src="https://img.shields.io/github/stars/Vrin-cloud/supersede?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Vrin | [Paper](https://arxiv.org/abs/2606.27472) | verifiers + prime-rl |
 | [AgeMem](https://github.com/y1y5/AgeMem) | <img src="https://img.shields.io/github/stars/y1y5/AgeMem?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Multi-institution (incl. Alibaba DAMO) | [Paper](https://arxiv.org/abs/2601.01885) | Trinity-RFT |
 | [Mem-alpha](https://github.com/wangyu-ustc/Mem-alpha) | <img src="https://img.shields.io/github/stars/wangyu-ustc/Mem-alpha?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.9 | UCSD / USTC | [Paper](https://arxiv.org/abs/2509.25911) | veRL |
 | [MEM1](https://github.com/MIT-MI/MEM1) | <img src="https://img.shields.io/github/stars/MIT-MI/MEM1?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.7 | MIT | [Paper](https://arxiv.org/abs/2506.15841) | veRL (based on Search-R1) |
@@ -629,6 +637,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [Supersede](https://github.com/Vrin-cloud/supersede) | GRPO (+ LoRA) | Single | Outcome | Multi | Memory-update gap: keeping notes current across sessions (LongMemEval knowledge-update) | Rule-Based (answered_current / stale_penalty) | Yes (capped notes memory as action space) |
 | [AgeMem](https://github.com/y1y5/AgeMem) | Step-wise GRPO (3-stage progressive RL) | Single | Process | Multi | Unified LTM/STM management (memory ops as tools) | Rule (task accuracy + memory quality) | Yes (store/retrieve/update/summarize/discard memory tools) |
 | [Mem-alpha](https://github.com/wangyu-ustc/Mem-alpha) | GRPO | Single | Outcome | Multi | Long-context QA + Memory Construction | Rule (downstream QA) | Yes (memory tools) |
 | [MEM1](https://github.com/MIT-MI/MEM1) | PPO/GRPO | Single | Outcome | Multi | WebShop/GSM8K/QA | Rule/Model | Yes |
@@ -643,6 +652,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [REAL](https://github.com/InternRobotics/REAL) | <img src="https://img.shields.io/github/stars/InternRobotics/REAL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | InternRobotics | [Paper](https://arxiv.org/abs/2607.13653) | Custom (GSPO/GRPO over MCP) |
 | [Embodied-R1.5](https://github.com/pickxiguapi/Embodied-R1.5) | <img src="https://img.shields.io/github/stars/pickxiguapi/Embodied-R1.5?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Tianjin University | [Paper](https://arxiv.org/abs/2606.11324) | EasyR1 / veRL |
 | [AVA-VLA](https://github.com/LeiDQ/AVA-VLA) | <img src="https://img.shields.io/github/stars/LeiDQ/AVA-VLA?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | UCAS | [Paper](https://arxiv.org/abs/2606.15099) | Custom (PPO) |
 | [WorldVLN](https://github.com/EmbodiedCity/WorldVLN.code) | <img src="https://img.shields.io/github/stars/EmbodiedCity/WorldVLN.code?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Tsinghua (EmbodiedCity) | [Paper](https://arxiv.org/abs/2605.15964) | Custom |
@@ -655,6 +665,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [REAL](https://github.com/InternRobotics/REAL) | GRPO/GSPO (online RL over an MCP tool interface) | Single | Outcome | Multi | Open-world mobile manipulation in Isaac Sim (REAL-Bench, 241 tasks) | External Verifier (target world-state check) | Yes (8 MCP tools: navigate_to/pick/place/ask/...) |
 | [Embodied-R1.5](https://github.com/pickxiguapi/Embodied-R1.5) | RFT (GRPO-family multimodal) | Single | Outcome | Multi | Embodied foundation model w/ Planner-Grounder-Corrector closed-loop | Rule-Based | No (closed-loop PGC) |
 | [AVA-VLA](https://github.com/LeiDQ/AVA-VLA) | PPO (latent reasoning as sequential decision) | Single | Both | Multi | VLA manipulation (LIBERO/ALOHA), latent CoT w/ early-exit | External (task success) + Custom | No (closed-loop manipulation) |
 | [WorldVLN](https://github.com/EmbodiedCity/WorldVLN.code) | Action-aware GRPO | Single | Both | Multi | Aerial (UAV) vision-language navigation (closed-loop) | Rule + Model | No (closed-loop UAV control) |
@@ -669,6 +680,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework | Domain |
 | :----: | :----: | :----: |  :----: | :----: | :----: | :----: |
+| [FaithMed](https://github.com/cxcscmu/FaithMed) | <img src="https://img.shields.io/github/stars/cxcscmu/FaithMed?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | CMU | [Paper](https://arxiv.org/abs/2607.01440) | veRL + verl-agent | Medical |
 | [Gene-Disease-Curation](https://github.com/chaeeunlee-io/GeneDiseaseCurationAgents) | <img src="https://img.shields.io/github/stars/chaeeunlee-io/GeneDiseaseCurationAgents?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | Academic | [Paper](https://arxiv.org/abs/2602.14160) | Custom | Medical |
 | [MedSAM-Agent](https://github.com/CUHK-AIM-Group/MedSAM-Agent) | <img src="https://img.shields.io/github/stars/CUHK-AIM-Group/MedSAM-Agent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | CUHK/Tencent | [Paper](https://arxiv.org/abs/2602.03320) | Custom | Medical |
 | [ChemCraft](https://github.com/HowardLi1984/ChemCraft) | <img src="https://img.shields.io/github/stars/HowardLi1984/ChemCraft?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | Peking University / IDEA | [Paper](https://arxiv.org/abs/2601.17687) | veRL | Chemistry |
@@ -686,6 +698,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [FaithMed](https://github.com/cxcscmu/FaithMed) | SFT (LLaMA-Factory) + agentic RL w/ process reward | Single | Both | Multi | Faithful evidence-based medical QA (MedQA/MedMCQA/MedXpertQA/...) | Rule + Model (step-level faithfulness) | Yes (medcorp evidence search) |
 | [Gene-Disease-Curation](https://github.com/chaeeunlee-io/GeneDiseaseCurationAgents) | Process-supervised Multi-Agent RL | Multi | Both | Multi | Clinical gene-disease validity curation (ClinGen) | Model (process) + Rule (outcome) | Yes (agent-as-tool, evidence synthesis) |
 | [MedSAM-Agent](https://github.com/CUHK-AIM-Group/MedSAM-Agent) | GRPO (via veRL) | Single | Both | Multi | Medical Image Segmentation | Model (clinical fidelity) | Yes (SAM/MedSAM2) |
 | [ChemCraft](https://github.com/HowardLi1984/ChemCraft) | SMILES-GRPO | Single | Both | Multi | Chemical LM orchestrating chemistry tools (molecular design/synthesis) | External (dense chemical) + Rule | Yes (chemical agent sandbox) |
@@ -771,6 +784,8 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [VTS](https://github.com/CeeZh/VTS) | <img src="https://img.shields.io/github/stars/CeeZh/VTS?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | UNC Chapel Hill / Sony | [Paper](https://arxiv.org/abs/2607.16189) | ms-swift |
+| [VSeek](https://github.com/UTAustin-SwarmLab/VSeek) | <img src="https://img.shields.io/github/stars/UTAustin-SwarmLab/VSeek?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | UT Austin (SwarmLab) | [Paper](https://arxiv.org/abs/2607.02959) | veRL |
 | [HyperEyes](https://github.com/DeepExperience/HyperEyes) | <img src="https://img.shields.io/github/stars/DeepExperience/HyperEyes?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | DeepExperience | [Paper](https://arxiv.org/abs/2605.07177) | Custom |
 | [ODE](https://github.com/JoeYing1019/ODE) | <img src="https://img.shields.io/github/stars/JoeYing1019/ODE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | HKUST / CUHK / PKU | [Paper](https://arxiv.org/abs/2605.10832) | verl + rllm |
 | [ParaVT](https://github.com/EvolvingLMMs-Lab/ParaVT) | <img src="https://img.shields.io/github/stars/EvolvingLMMs-Lab/ParaVT?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | NTU / HKU / Tsinghua / MiroMind (LMMs-Lab) | [Paper](https://arxiv.org/abs/2605.20342) | AReaL |
@@ -804,6 +819,8 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [VTS](https://github.com/CeeZh/VTS) | GRPO (multi-turn tree rollout w/ backtracking) | Single | Both | Multi | Grounded long-video QA (search video as an adaptive temporal tree) | Rule-Based (answer + format + evidence IoU) | Yes (zoom_in/zoom_out/shift/answer) |
+| [VSeek](https://github.com/UTAustin-SwarmLab/VSeek) | GRPO | Single | Both | Multi | Long-video QA as multi-turn evidence retrieval (LongVideoBench/LVBench/Video-MME/MLVU) | Rule-Based (neuro-symbolic temporal-logic grounding) | Yes (ViCLIP+FAISS retrieval server) |
 | [HyperEyes](https://github.com/DeepExperience/HyperEyes) | Dual-grained efficiency-aware RL | Single | Both | Multi | Parallel multimodal search (unified grounded search) | Custom + Rule | Yes (visual grounding + retrieval) |
 | [ODE](https://github.com/JoeYing1019/ODE) | GRPO (async) + SFT cold-start | Single | Both | Multi | Visual-native multimodal deep search (9-tool harness) | External + Rule | Yes (web/image/visual search, code) |
 | [ParaVT](https://github.com/EvolvingLMMs-Lab/ParaVT) | PARA-GRPO (Parseability-Anchored, Ratio-gAted) | Multi (main + parallel sub-agents w/ shared weights) | Both (outcome + targeted format) | Single-turn parallel | Long-video understanding (VideoMME/LongVideoBench/LVBench/MLVU/MMVU/Charades-STA) | Rule + Model | Yes (parallel video-window crop tools) |
@@ -841,6 +858,9 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [SEED](https://github.com/jinyangwu/SEED) | <img src="https://img.shields.io/github/stars/jinyangwu/SEED?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | Academic (jinyangwu) | [Paper](https://arxiv.org/abs/2607.14777) | veRL |
+| [OPID](https://github.com/jinyangwu/OPID) | <img src="https://img.shields.io/github/stars/jinyangwu/OPID?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Academic (jinyangwu) | [Paper](https://arxiv.org/abs/2606.26790) | veRL + verl-agent |
+| [UCOB](https://github.com/TU2021/UCOB) | <img src="https://img.shields.io/github/stars/TU2021/UCOB?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Academic (TU2021) | [Paper](https://arxiv.org/abs/2606.29502) | veRL |
 | [SIRI](https://github.com/kirito618/SIRI) | <img src="https://img.shields.io/github/stars/kirito618/SIRI?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | Academic | [Paper](https://arxiv.org/abs/2606.02355) | Custom (GiGPO) |
 | [world-knowledge](https://github.com/Bklight999/world-knowledge) | <img src="https://img.shields.io/github/stars/Bklight999/world-knowledge?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | HKUST / Tencent | [Paper](https://arxiv.org/abs/2604.18131) | Custom |
 | [ARISE](https://github.com/Skylanding/ARISE) | <img src="https://img.shields.io/github/stars/Skylanding/ARISE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.3 | George Washington University | [Paper](https://arxiv.org/abs/2603.16060) | veRL |
@@ -860,6 +880,9 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [SEED](https://github.com/jinyangwu/SEED) | GRPO + self-evolving on-policy distillation (hindsight-skill SFT → OPD during RL) | Single | Outcome | Multi | ALFWorld / WebShop / Search-QA / EZPoints / Sokoban | Rule + External | Yes (interactive env actions, search) |
+| [OPID](https://github.com/jinyangwu/OPID) | On-policy skill distillation (hierarchical hindsight skills → token-level dense supervision) | Single | Both | Multi | ALFWorld / WebShop / Search-QA | Rule + External | Yes (interactive env actions, search) |
+| [UCOB](https://github.com/TU2021/UCOB) | Credit-aware on-policy bidirectional self-distillation (skill-conditioned vs skill-free branches) | Single | Both | Multi | ALFWorld / WebShop / Search-QA | Rule (return-based) | Yes (interactive env actions, search) |
 | [SIRI](https://github.com/kirito618/SIRI) | GiGPO + self-skill mining/distillation | Single | Both | Multi | Self-internalizing intrinsic skills (ALFWorld/WebShop) | External + Custom | Yes (interactive actions) |
 | [world-knowledge](https://github.com/Bklight999/world-knowledge) | Outcome-based RL (reward-free self-evolution) | Single | Outcome | Multi | Web Agents (WebVoyager/WebWalker; +20% on Qwen3-30B & Seed-OSS-36B) | Model (intrinsic; world-knowledge gain) | Yes (web pipeline for env-specific knowledge construction) |
 | [ARISE](https://github.com/Skylanding/ARISE) | Hierarchical RL (options + intra-option) w/ skill evolution | Single | Both | Multi | Reasoning w/ intrinsic skill library (7 Olympiad benchmarks) | External + Custom (skill-quality) | No (skill reuse over multi-step reasoning) |
@@ -880,6 +903,8 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Task |
 | :----: | :----: | :----: |  :----: | :----: |
+| [SETA](https://github.com/camel-ai/seta) | <img src="https://img.shields.io/github/stars/camel-ai/seta?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | CAMEL-AI.org | Terminal agents (4,500+ verifiable Docker envs, Terminal-Bench format; [Paper](https://arxiv.org/abs/2607.10891)) |
+| [OpenAgent](https://github.com/LAMDA-NeSy/OpenAgent) | <img src="https://img.shields.io/github/stars/LAMDA-NeSy/OpenAgent?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | Nanjing University (LAMDA-NeSy) | Tool-use generalization sandbox (query/schema/observation/domain shifts; [Paper](https://arxiv.org/abs/2607.01084)) |
 | [MobileGym](https://github.com/Purewhiter/mobilegym) | <img src="https://img.shields.io/github/stars/Purewhiter/mobilegym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Academic | Mobile GUI (Android sim, verifiable, parallel) |
 | [AEnvironment](https://github.com/inclusionAI/AEnvironment) | <img src="https://img.shields.io/github/stars/inclusionAI/AEnvironment?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Ant Group (inclusionAI) | Agentic RL Env Platform (MCP, AReaL-integrated, TAU2/SWE/Terminal-Bench) |
 | [Gym-Anything](https://github.com/cmu-l3/gym-anything) | <img src="https://img.shields.io/github/stars/cmu-l3/gym-anything?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | CMU L3 Lab | Computer Use (200+ apps) |

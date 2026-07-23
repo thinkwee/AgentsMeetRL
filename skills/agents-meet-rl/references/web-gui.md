@@ -2,11 +2,19 @@
 
 Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate.
 
-_Total: 31 entries._
+_Total: 32 entries._
 
 ## Contents
 
-OpenWebRL, ToolCUA, ClawGUI, OpAgent, GUI-Libra, MobileAgent, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, MagicGUI, UI-AGILE, GUI-G2, GTA1, Grounding-R1, AgentCPM-GUI, TTI, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent, UI-TARS.
+SCALE-CUA, OpenWebRL, ToolCUA, ClawGUI, OpAgent, GUI-Libra, MobileAgent, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, MagicGUI, UI-AGILE, GUI-G2, GTA1, Grounding-R1, AgentCPM-GUI, TTI, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent, UI-TARS.
+
+### SCALE-CUA
+- **Idea:** Scales computer-use RL by synthesizing 24K verifiable tasks with a proposer/judger/checker loop and cutting rollout cost 2.8x via visual context segmentation.
+- `https://github.com/THUDM/SCALE-CUA` · org: Tsinghua (THUDM) · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.11185)
+- Algorithm: GRPO (fully async, Frontier Sampling + visual context segmentation) · Framework: Custom (Ray + vLLM + Megatron-LM) · Agent: Single · Turns: Multi · Tools: Yes (GUI actions in Docker desktop)
+- Reward phase: Outcome · Reward type: External Verifier (executable judge functions)
+- Task: Computer Use (OSWorld, ScienceBoard; 24K+ synthesized verifiable tasks)
 
 ### OpenWebRL
 - **Idea:** Demystifies online multi-turn RL for visual web agents on live websites with a format + LLM-judge reward over a Playwright sandbox.

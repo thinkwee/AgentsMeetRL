@@ -2,11 +2,27 @@
 
 Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search).
 
-_Total: 27 entries._
+_Total: 29 entries._
 
 ## Contents
 
-HyperEyes, ODE, ParaVT, OpenSearch-VL, MTA-Agent, Gen-Searcher, MM-DeepResearch, PyVision-RL, Vision-DeepResearch, ARM-Thinker, CodeDance, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+VTS, VSeek, HyperEyes, ODE, ParaVT, OpenSearch-VL, MTA-Agent, Gen-Searcher, MM-DeepResearch, PyVision-RL, Vision-DeepResearch, ARM-Thinker, CodeDance, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+
+### VTS
+- **Idea:** Treats long-video QA as iterative search over an adaptive temporal tree, training the agent to zoom/shift and to recover from wrong branches instead of one-shot frame sampling.
+- `https://github.com/CeeZh/VTS` · org: UNC Chapel Hill / Sony · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.16189)
+- Algorithm: GRPO (multi-turn tree rollout w/ backtracking) · Framework: ms-swift · Agent: Single · Turns: Multi · Tools: Yes (zoom_in/zoom_out/shift/answer)
+- Reward phase: Both · Reward type: Rule-Based (answer + format + evidence IoU)
+- Task: Grounded long-video QA (search video as an adaptive temporal tree)
+
+### VSeek
+- **Idea:** Turns passive single-pass video QA into a think-search-observe loop, with dense rewards from temporal-logic decomposition of the query into retrievable visual primitives.
+- `https://github.com/UTAustin-SwarmLab/VSeek` · org: UT Austin (SwarmLab) · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.02959)
+- Algorithm: GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (ViCLIP+FAISS retrieval server)
+- Reward phase: Both · Reward type: Rule-Based (neuro-symbolic temporal-logic grounding)
+- Task: Long-video QA as multi-turn evidence retrieval (LongVideoBench/LVBench/Video-MME/MLVU)
 
 ### HyperEyes
 - **Idea:** Fuses visual grounding and retrieval into one Unified Grounded Search action and searches multiple entities concurrently, training inference efficiency as an objective.

@@ -2,11 +2,23 @@
 
 Sandbox environments and benchmarks. Pick one matching your task before designing rewards.
 
-_Total: 53 entries._
+_Total: 55 entries._
 
 ## Contents
 
-MobileGym, AEnvironment, Gym-Anything, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+SETA, OpenAgent, MobileGym, AEnvironment, Gym-Anything, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+
+### SETA
+- **Idea:** Auto-synthesizes and evolves 4,500+ verifiable terminal RL environments (task.yaml + Dockerfile + tests) in Terminal-Bench format, the largest open terminal RL set to date.
+- `https://github.com/camel-ai/seta` · org: CAMEL-AI.org · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.10891)
+- Task: Terminal agents (4,500+ verifiable Docker envs, Terminal-Bench format)
+
+### OpenAgent
+- **Idea:** Controlled sandbox that perturbs queries, tool schemas, observations and domains at inference to expose how brittle statically trained tool-use agents really are.
+- `https://github.com/LAMDA-NeSy/OpenAgent` · org: Nanjing University (LAMDA-NeSy) · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.01084)
+- Task: Tool-use generalization sandbox (query/schema/observation/domain shifts)
 
 ### MobileGym
 - **Idea:** Browser-hosted, fully controllable Android simulator with deterministic verifiable judging and 256-instance parallel rollouts for online mobile-GUI RL.
