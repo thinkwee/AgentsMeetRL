@@ -4,8 +4,6 @@
 
 <div align="center">
 
-[![oosmetrics](https://api.oosmetrics.com/api/v1/badge/achievement/f41dd250-c9f7-47ba-87c4-6626aa3595c3.svg)](https://oosmetrics.com/repo/thinkwee/AgentsMeetRL)
-
 ![Base Framework](https://img.shields.io/badge/Base_Framework-23-BFA2DB?style=for-the-badge)
 ![General](https://img.shields.io/badge/General-21-4E6813?style=for-the-badge)
 ![Search & RAG](https://img.shields.io/badge/Search_&_RAG-45-845C40?style=for-the-badge)
