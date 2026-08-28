@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Base Framework](https://img.shields.io/badge/Base_Framework-28-BFA2DB?style=for-the-badge)
+![Base Framework](https://img.shields.io/badge/Base_Framework-29-BFA2DB?style=for-the-badge)
 ![General](https://img.shields.io/badge/General-21-4E6813?style=for-the-badge)
 ![Search & RAG](https://img.shields.io/badge/Search_&_RAG-50-845C40?style=for-the-badge)
 ![Web & GUI](https://img.shields.io/badge/Web_&_GUI-32-A259FF?style=for-the-badge)
@@ -106,6 +106,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link |
 | :----: | :----: | :----: |  :----: | :----: |
+| [Libra](https://github.com/NetX-lab/Libra) | <img src="https://img.shields.io/github/stars/NetX-lab/Libra?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | NetX Lab | [Paper](https://arxiv.org/abs/2606.03077) |
 | [Molt](https://github.com/NVIDIA-NeMo/labs-molt) | <img src="https://img.shields.io/github/stars/NVIDIA-NeMo/labs-molt?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | NVIDIA (NeMo Labs) | [Paper](https://arxiv.org/abs/2607.21653) |
 | [Orchard](https://github.com/microsoft/Orchard) | <img src="https://img.shields.io/github/stars/microsoft/Orchard?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | Microsoft | [Paper](https://arxiv.org/abs/2607.21557) |
 | [AgentJet](https://github.com/modelscope/AgentJet) | <img src="https://img.shields.io/github/stars/modelscope/AgentJet?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | ModelScope (Alibaba) | [Paper](https://arxiv.org/abs/2606.04484) |
@@ -140,6 +141,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [Libra](https://github.com/NetX-lab/Libra) | Async GRPO | Single | Outcome | Multi | Agentic RL post-training with resource-aware training and rollout | All (Custom/External/Rule) | Yes (search, code execution, validation tools) |
 | [Orchard](https://github.com/microsoft/Orchard) | Online RL (vendored slime) | Single | Both | Multi | Harness-native RL (browser/computer-use/SWE) | Model/Rule | Yes (live browser, containers, agent harnesses) |
 | [AReno](https://github.com/inclusionAI/AReno) | GSPO/GRPO (+SFT/DPO) | Single | Outcome | Multi | Single-node RL post-training (Math/SWE-style/Games) | Custom | Yes (inspect_tree/read_file/rg/apply_patch/run_command) |
 | [Molt](https://github.com/NVIDIA-NeMo/labs-molt) | REINFORCE/RLOO/GRPO/Dr.GRPO/GAE + On-policy Distillation | Single | Outcome | Multi | Domain-agnostic agentic RL (Math/Geometry/Chat) | Custom | Yes (Python exec, HTTP, VLM tools) |
