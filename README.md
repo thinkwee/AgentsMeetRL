@@ -745,6 +745,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | Focus |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
+| [DRACO](https://github.com/IBM/draco) | <img src="https://img.shields.io/github/stars/IBM/draco?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.9 | CMU / IBM Research | [Paper](https://arxiv.org/abs/2609.04094) | Outcome-blind rubric rewards with step-level credit assignment |
 | [Agent-G²](https://github.com/ZJU-REAL/Agent-G2) | <img src="https://img.shields.io/github/stars/ZJU-REAL/Agent-G2?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | Zhejiang University / Baidu (EMNLP'26) | [Paper](https://arxiv.org/abs/2608.23318) | Exploration guidance under sparse reward |
 | [AgentV-RL](https://github.com/JiazhengZhang/AgentV-RL) | <img src="https://img.shields.io/github/stars/JiazhengZhang/AgentV-RL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Academic | [Paper](https://arxiv.org/abs/2604.16004) | Agentic Verifier Reward Model |
 | [DataMind](https://github.com/zjunlp/DataMind) | <img src="https://img.shields.io/github/stars/zjunlp/DataMind?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | Zhejiang University (ZJUNLP) | [Paper](https://arxiv.org/abs/2604.24198) | Process Reward Model (DataPRM) |
@@ -762,6 +763,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [DRACO](https://github.com/IBM/draco) | GRPO w/ rubric-attributed step-level advantages | Single | Process | Multi | AppWorld / τ-Bench (tool use) | Model (LLM judge on dynamic rubrics) | Yes |
 | [Agent-G²](https://github.com/ZJU-REAL/Agent-G2) | GRPO + Gaussian-guided adaptive-depth exploration | Single | Outcome | Multi | ALFWorld / WebShop | Rule-Based/External | Yes (interactive env actions) |
 | [AgentV-RL](https://github.com/JiazhengZhang/AgentV-RL) | RL (verl) training an agentic verifier | Single | Process | Multi | Tool-augmented deliberative verifier (reward model) | Model-Based | Yes (verifier invokes tools, e.g. code) |
 | [DataMind](https://github.com/zjunlp/DataMind) | RL w/ generative PRM (DataPRM) | Single | Process | Multi | Agentic data analysis (Python/SQL; ScienceAgentBench/DABench) | Model (PRM) + External (execution) | Yes (code-based multi-turn) |
