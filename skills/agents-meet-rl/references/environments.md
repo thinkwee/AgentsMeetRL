@@ -2,11 +2,17 @@
 
 Sandbox environments and benchmarks. Pick one matching your task before designing rewards.
 
-_Total: 64 entries._
+_Total: 66 entries._
 
 ## Contents
 
-PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, Echoverse, DocOps, PatientAgentBench, LegalWorld, MobileGym, AEnvironment, Gym-Anything, ClawBench, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+MIMESIS, PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, Echoverse, DocOps, PatientAgentBench, LegalWorld, MobileGym, AEnvironment, Gym-Anything, ClawBench, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, Endless Terminals, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+
+### MIMESIS
+- **Idea:** Replaces over-cooperative assistant LLMs with a purpose-trained user simulator (13 real-user behavioral patterns) as the frozen RL partner; agents trained against it generalize better to unseen user models, and coach-written notes add dense token-level supervision on top of sparse task reward.
+- `https://github.com/VietHoang1512/mimesis` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.09484)
+- Task: Trained user simulator as RL environment for interactive agents (8 UserRL gyms, multi-turn GRPO + coached self-distillation on verl)
 
 ### PAST-Bench
 - **Idea:** Isolates recursive self-improvement into attributable primitives — memory reuse, procedural skill transfer, active info-gathering — scored across sessions in a live Docker sandbox with deterministic graders.
@@ -121,6 +127,12 @@ PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, Echoverse,
 - `https://github.com/ucsb-mlsec/terminal-bench-env` · org: UCSB · date: 2026.2
 - Paper(s): [Paper](https://arxiv.org/abs/2602.07274)
 - Task: Terminal/Tool-use (3,500+ envs)
+
+### Endless Terminals
+- **Idea:** A fully autonomous pipeline that procedurally generates terminal tasks — each with an Apptainer container and initial/final-state pytest verifiers — so terminal agents can be trained with PPO without any human-written tasks.
+- `https://github.com/kanishkg/endless-terminals` · org: Stanford University · date: 2026.1
+- Paper(s): [Paper](https://arxiv.org/abs/2601.16443)
+- Task: Terminal agents (procedurally generated containerized tasks w/ test-based verifiers, PPO on SkyRL)
 
 ### VisGym
 - **Idea:** A gymnasium of 17 multimodal environments with controllable difficulty, input representation, horizon, and feedback for training and evaluating VLM agents.

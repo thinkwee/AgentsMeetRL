@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Base Framework](https://img.shields.io/badge/Base_Framework-29-BFA2DB?style=for-the-badge)
+![Base Framework](https://img.shields.io/badge/Base_Framework-30-BFA2DB?style=for-the-badge)
 ![General](https://img.shields.io/badge/General-21-4E6813?style=for-the-badge)
 ![Search & RAG](https://img.shields.io/badge/Search_&_RAG-50-845C40?style=for-the-badge)
 ![Web & GUI](https://img.shields.io/badge/Web_&_GUI-32-A259FF?style=for-the-badge)
@@ -17,12 +17,12 @@
 ![Memory](https://img.shields.io/badge/Memory-8-007a88?style=for-the-badge)
 ![Embodied](https://img.shields.io/badge/Embodied-7-C0C5CE?style=for-the-badge)
 ![Domain-Specific](https://img.shields.io/badge/Domain--Specific-12-ffc884?style=for-the-badge)
-![Reward & Training](https://img.shields.io/badge/Reward_&_Training-11-9B59B6?style=for-the-badge)
+![Reward & Training](https://img.shields.io/badge/Reward_&_Training-12-9B59B6?style=for-the-badge)
 <br>
 ![Safety](https://img.shields.io/badge/Safety-9-E74C3C?style=for-the-badge)
 ![VLM Agent](https://img.shields.io/badge/VLM_Agent-30-2ECC71?style=for-the-badge)
 ![Self-Evolution](https://img.shields.io/badge/Self--Evolution-18-F39C12?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-64-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-66-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -38,7 +38,7 @@
  - 🤖 The criteria for identifying an agent project are that it must have at least one of the following: multi-turn interactions or tool use (so TIR projects, Tool-Integrated Reasoning, are considered in this repo).
  - ⚠️ This project is based on code analysis from open-source repositories using LLM coding agents, which may contain unfaithful cases. Although manually reviewed, there may still be omissions. If you find any errors, please don't hesitate to let us know immediately through issues or PRs - we warmly welcome them!
  - 🚀 We particularly focus on the reinforcement learning frameworks, RL algorithms, rewards, and environments that projects depend on, for everyone's reference on how these excellent open-source projects make their technical choices. See [Click to view technical details] under each table.
- - 📅 Last updated: 2026-08-26
+ - 📅 Last updated: 2026-10-10
  - 🤗 Feel free to submit your own projects anytime - we welcome contributions!
  - 📚 If you find this repository helpful for your research, please cite it via the **"Cite this repository"** button on the right sidebar.
 
@@ -70,6 +70,7 @@ Some Enumeration:
 ---
 
 ## Updates
+- 📢 **2026-10 Update**: Added 3 new repositories (Base Framework +1 [LoongSage, Baidu's production-scale async agentic-RL framework on Megatron-Core + SGLang], Environment +2 [MIMESIS, a trained user simulator used as a multi-turn RL environment; plus catch-up of Endless Terminals, procedurally generated terminal-agent RL environments]), on top of the community-contributed DRACO (Reward & Training) merged in September. Each repo was opened and confirmed to contain real RL-training code. SAPO was added to Under Review (repo is README-only so far); many Sep–Oct papers (e.g. RLVR for Small Search Agents, HazardAuditor, T1, Qwen-Planner-Agent, ARISE-RL, TRCA) were left out because their code is not yet public. None of the previous Under Review items have released RL training code yet.
 - 📢 **2026-08 Update**: Added 23 new repositories across 9 categories (Environment +8 [Echoverse/PAST-Bench/PatientAgentBench/LegalWorld/Evo-Bench/DocOps/ScrambleToolBench/DigiWorld], Search & RAG +5 [EviSD/GTA-RAG/LAPO, plus catch-up of GrepSeek/PyRAG], Base Framework +3 [Molt, AReno, and catch-up of Microsoft Orchard], Self-Evolution +2 [AgentOPSD/BaT], Code & SWE +1 [Lego-RL, harness-native RL inside Claude Code/OpenHands/OpenCode], Reward & Training +1 [Agent-G²], VLM Agent +1 [InSight-doc], Memory +1 [MemPrism], Tool-Use +1 [MUA-RL, promoted from Under Review — its code had in fact been public since 2025.8]). Every repo was opened and confirmed to contain real RL-training (or executable-environment) code. Papers whose code is still unreleased were left out (Qwen-UI-Agent, Qwen-CUA, UI-Mate, SearchMaster, RoMeRL, Agon, SINKFLEX-RL, GRASP, MAVEN, EviBack, ChemWorld) — see Under Review. Notably **no** qualifying new Safety, Embodied, or Multi-Agent RL repos appeared this window: that crop was uniformly SFT-only, inference-only, or code-withheld.
 - 📢 **2026-07 Update**: Added 13 new repositories from late-Jun–Jul 2026 across 8 categories (Self-Evolution +3 [SEED/OPID/UCOB, the on-policy-distillation-for-agentic-RL line], VLM Agent +2 [VTS/VSeek, long-video search agents], Tool-Use +2 [Tool-RL-Box; plus catch-up of AWorld-RL], Environment +2 [SETA terminal envs, OpenAgent tool-generalization sandbox], Web & GUI +1 [SCALE-CUA], Embodied +1 [REAL], Memory +1 [Supersede], Domain-Specific +1 [FaithMed]). Every entry was verified by opening the repo and confirming real RL-training (or environment) code — papers whose code is not yet released (EvoCUA-1.5, DeepSearch-World, CompactionRL, GUICrafter, VideoSearcher, Xiaomi-GUI-0) were deliberately left out.
 - 📢 **2026-06 Update**: Added 43 new repositories across 11 categories (VLM Agent +8, Search & RAG +7, Environment +6, Reward & Training +4, Base Framework/Tool-Use/Self-Evolution/Embodied +3 each, Web & GUI/Code & SWE/Domain-Specific +2 each). New since the last update: Harness-1, FastContext, OpenWebRL, Polar, AgentJet, HarnessX, APPO, SPADER, DeepRubric, Embodied-R1.5, SIRI; plus catch-up of earlier-2026 misses (Vision-DeepResearch, ARM-Thinker, PyVision-RL, Gen-Searcher, DataMind, Tool-R0, Agent World Model, VisGym, Gym-Anything, ChemCraft, OpAgent, etc.).
@@ -83,7 +84,7 @@ Some Enumeration:
   <img src="AgentsMeetRL_Skill_landscape.png" alt="Logo" width="600">
 </div>
 
-This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **405 projects** (snapshot **2026-08-26**). Once installed, Claude Code auto-invokes it whenever your question matches.
+This list is also packaged as a **[Claude Code](https://claude.com/claude-code) Skill** — [`agents-meet-rl`](skills/agents-meet-rl) — that turns the corpus into an on-demand assistant for **agentic-RL training, evaluation, and experiment design**: reward not moving, KL / entropy / length blow-ups, GRPO / PPO / DAPO knobs, retokenization drift, tool-call parse failures, long-horizon credit assignment, LLM-judge inconsistency, benchmark contamination, and framework / benchmark / algorithm selection — each answer anchored to specific papers and repos from this list. Backed by a machine-readable corpus of **411 projects** (snapshot **2026-08-26**). Once installed, Claude Code auto-invokes it whenever your question matches.
 
 **Install as a plugin (recommended):**
 
@@ -106,6 +107,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Paper Link |
 | :----: | :----: | :----: |  :----: | :----: |
+| [LoongSage](https://github.com/baidu-baige/LoongSage) | <img src="https://img.shields.io/github/stars/baidu-baige/LoongSage?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | Baidu (BAIGE) | -- |
 | [Libra](https://github.com/NetX-lab/Libra) | <img src="https://img.shields.io/github/stars/NetX-lab/Libra?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | NetX Lab | [Paper](https://arxiv.org/abs/2606.03077) |
 | [Molt](https://github.com/NVIDIA-NeMo/labs-molt) | <img src="https://img.shields.io/github/stars/NVIDIA-NeMo/labs-molt?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | NVIDIA (NeMo Labs) | [Paper](https://arxiv.org/abs/2607.21653) |
 | [Orchard](https://github.com/microsoft/Orchard) | <img src="https://img.shields.io/github/stars/microsoft/Orchard?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.7 | Microsoft | [Paper](https://arxiv.org/abs/2607.21557) |
@@ -141,6 +143,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [LoongSage](https://github.com/baidu-baige/LoongSage) | Critic-free PG (GRPO-family) + online distillation (PG/GKD-style), fully async | Single | Outcome | Multi | Production-scale agentic RL on MoE models (Megatron-Core + SGLang; math, agentic code repair) | Rule/External | Yes (AgentFlow: tool output recognition, sandbox lifecycle) |
 | [Libra](https://github.com/NetX-lab/Libra) | Async GRPO | Single | Outcome | Multi | Agentic RL post-training with resource-aware training and rollout | All (Custom/External/Rule) | Yes (search, code execution, validation tools) |
 | [Orchard](https://github.com/microsoft/Orchard) | Online RL (vendored slime) | Single | Both | Multi | Harness-native RL (browser/computer-use/SWE) | Model/Rule | Yes (live browser, containers, agent harnesses) |
 | [AReno](https://github.com/inclusionAI/AReno) | GSPO/GRPO (+SFT/DPO) | Single | Outcome | Multi | Single-node RL post-training (Math/SWE-style/Games) | Custom | Yes (inspect_tree/read_file/rg/apply_patch/run_command) |
@@ -940,6 +943,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 
 | Github Repo | 🌟 Stars | Date | Org | Task |
 | :----: | :----: | :----: |  :----: | :----: |
+| [MIMESIS](https://github.com/VietHoang1512/mimesis) | <img src="https://img.shields.io/github/stars/VietHoang1512/mimesis?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.10 | Academic | Trained user simulator as RL environment for interactive agents (8 UserRL gyms, multi-turn GRPO + coached self-distillation on verl; [Paper](https://arxiv.org/abs/2610.09484)) |
 | [PAST-Bench](https://github.com/Gen-Verse/PAST-Bench) | <img src="https://img.shields.io/github/stars/Gen-Verse/PAST-Bench?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | Gen-Verse (NUS/Stanford/Oxford/Princeton) | Cross-session personal agents (26 task families, 204 episodes, Docker sandbox; [Paper](https://arxiv.org/abs/2608.04003)) |
 | [DigiWorld](https://github.com/facebookresearch/digiworld) | <img src="https://img.shields.io/github/stars/facebookresearch/digiworld?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | Meta (FAIR) | Mobile GUI (15 sandboxed Android apps, 3.2M+ configs, real ADB/emulator) |
 | [Evo-Bench](https://github.com/RUCAIBox/Evo-Bench) | <img src="https://img.shields.io/github/stars/RUCAIBox/Evo-Bench?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.8 | Renmin University (RUCAIBox) | Agent-harness self-improvement (608 tasks, E2B sandbox, up to 1,000 steps; [Paper](https://arxiv.org/abs/2608.09096)) |
@@ -959,6 +963,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | [open-trajectory-gym](https://github.com/westonbrown/open-trajectory-gym) | <img src="https://img.shields.io/github/stars/westonbrown/open-trajectory-gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.3 | Individual | CTF/Security |
 | [Agent-World-Model](https://github.com/Snowflake-Labs/agent-world-model) | <img src="https://img.shields.io/github/stars/Snowflake-Labs/agent-world-model?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | Snowflake AI Research | Tool-use (1,000 MCP synthetic envs) |
 | [TermiGen](https://github.com/ucsb-mlsec/terminal-bench-env) | <img src="https://img.shields.io/github/stars/ucsb-mlsec/terminal-bench-env?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | UCSB | Terminal/Tool-use (3,500+ envs) |
+| [Endless Terminals](https://github.com/kanishkg/endless-terminals) | <img src="https://img.shields.io/github/stars/kanishkg/endless-terminals?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | Stanford University | Terminal agents (procedurally generated containerized tasks w/ test-based verifiers, PPO on SkyRL; [Paper](https://arxiv.org/abs/2601.16443)) |
 | [VisGym](https://github.com/visgym/VisGym) | <img src="https://img.shields.io/github/stars/visgym/VisGym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | UC Berkeley | Multimodal/VLM (17 envs) |
 | [NeMo-Gym](https://github.com/NVIDIA-NeMo/Gym) | <img src="https://img.shields.io/github/stars/NVIDIA-NeMo/Gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.1 | NVIDIA | Multi-step/Multi-turn |
 | [VISTA-Gym](https://github.com/Lucanyc/VISTA-Gym) | <img src="https://img.shields.io/github/stars/Lucanyc/VISTA-Gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Texas A&M / Emory / KAUST | Tool-integrated visual reasoning (VLM) |
@@ -1006,6 +1011,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | [TextWorld](https://github.com/microsoft/TextWorld) | <img src="https://img.shields.io/github/stars/microsoft/TextWorld?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2018.6 | Microsoft Research | TextGame |
 
 ## Under Review/Waiting for Open Source
+- [SAPO: Single-Rollout Autoregressive Policy Optimization](https://arxiv.org/abs/2608.19842) (repo [dy-liang/SAPO](https://github.com/dy-liang/SAPO) is README-only; code "will be released in the next few days")
 - [Qwen-UI-Agent: Towards Next-Generation Real-World Centric Foundation GUI Agent](https://arxiv.org/abs/2607.28227) (Tongyi-MAI — repo released, but no RL training code)
 - [Qwen-CUA](https://arxiv.org/abs/2608.02352) (xlang-ai — technical report + demo only, weights hosted separately)
 - [UI-Mate](https://arxiv.org/abs/2608.15930) (Tencent — inference/eval code only)

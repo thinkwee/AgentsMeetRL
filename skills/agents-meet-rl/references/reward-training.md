@@ -2,7 +2,16 @@
 
 Process/outcome reward models, PRM benchmarks, training recipes.
 
-_Total: 11 entries._
+_Total: 12 entries._
+
+### DRACO
+- **Idea:** In the outcome-blind setting, dynamically generated rubrics are scored once per trajectory and the judge's per-rubric citations redistribute the GRPO advantage across responsible steps in closed form — beating sparse ground-truth-reward GRPO on AppWorld without any verifier.
+- `https://github.com/IBM/draco` · org: CMU / IBM Research · date: 2026.9
+- Paper(s): [Paper](https://arxiv.org/abs/2609.04094)
+- Algorithm: GRPO w/ rubric-attributed step-level advantages · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Process · Reward type: Model (LLM judge on dynamic rubrics)
+- Task: AppWorld / τ-Bench (tool use)
+- Focus: Outcome-blind rubric rewards with step-level credit assignment
 
 ### Agent-G²
 - **Idea:** Schedules how much of an expert trajectory to retain before each GRPO rollout via an online-estimated Gaussian, annealing guidance away as competence grows to beat sparse-reward exploration failure.

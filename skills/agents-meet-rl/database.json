@@ -2,6 +2,51 @@
   "base_framework": [
     {
       "category": "base_framework",
+      "name": "LoongSage",
+      "github_url": "https://github.com/baidu-baige/LoongSage",
+      "papers": [],
+      "blog_urls": [],
+      "date": "2026.8",
+      "org": "Baidu (BAIGE)",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Production-scale agentic RL on MoE models (Megatron-Core + SGLang; math, agentic code repair)",
+      "rl_algorithm": "Critic-free PG (GRPO-family) + online distillation (PG/GKD-style), fully async",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "Rule/External",
+      "tool_usage": "Yes (AgentFlow: tool output recognition, sandbox lifecycle)",
+      "focus": null,
+      "takeaway": "Agents plug in through a plain chat-completions endpoint while the framework handles multi-turn concatenation, loss masking and sandbox lifecycle; ships production-hardened recipes with MoE training-inference consistency fixes (router replay, IS correction, M2PO/OPSM) and fully async partial rollout."
+    },
+    {
+      "category": "base_framework",
+      "name": "Libra",
+      "github_url": "https://github.com/NetX-lab/Libra",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2606.03077"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.6",
+      "org": "NetX Lab",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Agentic RL post-training with resource-aware training and rollout",
+      "rl_algorithm": "Async GRPO",
+      "agent_arity": "Single",
+      "reward_phase": "Outcome",
+      "turn_mode": "Multi",
+      "reward_type": "All (Custom/External/Rule)",
+      "tool_usage": "Yes (search, code execution, validation tools)",
+      "focus": null,
+      "takeaway": "A systems framework for disaggregated, asynchronous agentic-RL post-training that manages GPU resources between rollout and training to cut the idle time caused by long-tail multi-turn tool trajectories."
+    },
+    {
+      "category": "base_framework",
       "name": "Molt",
       "github_url": "https://github.com/NVIDIA-NeMo/labs-molt",
       "papers": [
@@ -5946,6 +5991,31 @@
   "reward_training": [
     {
       "category": "reward_training",
+      "name": "DRACO",
+      "github_url": "https://github.com/IBM/draco",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2609.04094"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.9",
+      "org": "CMU / IBM Research",
+      "rl_framework": null,
+      "domain": null,
+      "task": "AppWorld / τ-Bench (tool use)",
+      "rl_algorithm": "GRPO w/ rubric-attributed step-level advantages",
+      "agent_arity": "Single",
+      "reward_phase": "Process",
+      "turn_mode": "Multi",
+      "reward_type": "Model (LLM judge on dynamic rubrics)",
+      "tool_usage": "Yes",
+      "focus": "Outcome-blind rubric rewards with step-level credit assignment",
+      "takeaway": "In the outcome-blind setting, dynamically generated rubrics are scored once per trajectory and the judge's per-rubric citations redistribute the GRPO advantage across responsible steps in closed form — beating sparse ground-truth-reward GRPO on AppWorld without any verifier."
+    },
+    {
+      "category": "reward_training",
       "name": "Agent-G²",
       "github_url": "https://github.com/ZJU-REAL/Agent-G2",
       "papers": [
@@ -7654,6 +7724,31 @@
   "environment": [
     {
       "category": "environment",
+      "name": "MIMESIS",
+      "github_url": "https://github.com/VietHoang1512/mimesis",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2610.09484"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.10",
+      "org": "Academic",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Trained user simulator as RL environment for interactive agents (8 UserRL gyms, multi-turn GRPO + coached self-distillation on verl)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "Replaces over-cooperative assistant LLMs with a purpose-trained user simulator (13 real-user behavioral patterns) as the frozen RL partner; agents trained against it generalize better to unseen user models, and coach-written notes add dense token-level supervision on top of sparse task reward."
+    },
+    {
+      "category": "environment",
       "name": "PAST-Bench",
       "github_url": "https://github.com/Gen-Verse/PAST-Bench",
       "papers": [
@@ -8106,6 +8201,31 @@
       "tool_usage": null,
       "focus": null,
       "takeaway": "3,500+ verified executable Docker terminal environments with error-correction trajectory synthesis for training robust terminal/tool-use agents."
+    },
+    {
+      "category": "environment",
+      "name": "Endless Terminals",
+      "github_url": "https://github.com/kanishkg/endless-terminals",
+      "papers": [
+        {
+          "text": "Paper",
+          "url": "https://arxiv.org/abs/2601.16443"
+        }
+      ],
+      "blog_urls": [],
+      "date": "2026.1",
+      "org": "Stanford University",
+      "rl_framework": null,
+      "domain": null,
+      "task": "Terminal agents (procedurally generated containerized tasks w/ test-based verifiers, PPO on SkyRL)",
+      "rl_algorithm": null,
+      "agent_arity": null,
+      "reward_phase": null,
+      "turn_mode": null,
+      "reward_type": null,
+      "tool_usage": null,
+      "focus": null,
+      "takeaway": "A fully autonomous pipeline that procedurally generates terminal tasks — each with an Apptainer container and initial/final-state pytest verifiers — so terminal agents can be trained with PPO without any human-written tasks."
     },
     {
       "category": "environment",
@@ -9029,6 +9149,11 @@
     }
   ],
   "under_review": [
+    {
+      "title": "SAPO: Single-Rollout Autoregressive Policy Optimization",
+      "url": "https://arxiv.org/abs/2608.19842",
+      "takeaway": "PPO-style agentic RL on ALFWorld/WebShop built on verl-agent; repo dy-liang/SAPO is README-only so far (code \"will be released in the next few days\")."
+    },
     {
       "title": "Test-Time Self-Evolving GUI Visual Grounding",
       "url": "https://arxiv.org/abs/2608.11191",

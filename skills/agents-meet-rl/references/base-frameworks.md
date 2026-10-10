@@ -2,11 +2,26 @@
 
 RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack.
 
-_Total: 28 entries._
+_Total: 30 entries._
 
 ## Contents
 
-Molt, Orchard, AgentJet, HarnessX, Dressage, AReno, Polar, uni-agent, VeRL-Omni, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, agent-lightning, siiRL, slime, ROLL, AReaL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+LoongSage, Libra, Molt, Orchard, AgentJet, HarnessX, Dressage, AReno, Polar, uni-agent, VeRL-Omni, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, agent-lightning, siiRL, slime, ROLL, AReaL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+
+### LoongSage
+- **Idea:** Agents plug in through a plain chat-completions endpoint while the framework handles multi-turn concatenation, loss masking and sandbox lifecycle; ships production-hardened recipes with MoE training-inference consistency fixes (router replay, IS correction, M2PO/OPSM) and fully async partial rollout.
+- `https://github.com/baidu-baige/LoongSage` · org: Baidu (BAIGE) · date: 2026.8
+- Algorithm: Critic-free PG (GRPO-family) + online distillation (PG/GKD-style), fully async · Agent: Single · Turns: Multi · Tools: Yes (AgentFlow: tool output recognition, sandbox lifecycle)
+- Reward phase: Outcome · Reward type: Rule/External
+- Task: Production-scale agentic RL on MoE models (Megatron-Core + SGLang; math, agentic code repair)
+
+### Libra
+- **Idea:** A systems framework for disaggregated, asynchronous agentic-RL post-training that manages GPU resources between rollout and training to cut the idle time caused by long-tail multi-turn tool trajectories.
+- `https://github.com/NetX-lab/Libra` · org: NetX Lab · date: 2026.6
+- Paper(s): [Paper](https://arxiv.org/abs/2606.03077)
+- Algorithm: Async GRPO · Agent: Single · Turns: Multi · Tools: Yes (search, code execution, validation tools)
+- Reward phase: Outcome · Reward type: All (Custom/External/Rule)
+- Task: Agentic RL post-training with resource-aware training and rollout
 
 ### Molt
 - **Idea:** A ~9k-line PyTorch-native agentic-RL stack (Ray + vLLM + AutoModel) exposing five policy-gradient estimators behind one Gymnasium-aligned Env/ChatAgent interface, with async rollout importance-sampling correction and context compaction for multi-turn tool loops.
