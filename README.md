@@ -22,7 +22,7 @@
 ![Safety](https://img.shields.io/badge/Safety-9-E74C3C?style=for-the-badge)
 ![VLM Agent](https://img.shields.io/badge/VLM_Agent-30-2ECC71?style=for-the-badge)
 ![Self-Evolution](https://img.shields.io/badge/Self--Evolution-18-F39C12?style=for-the-badge)
-![Environment](https://img.shields.io/badge/Environment-66-FA5A4C?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-67-FA5A4C?style=for-the-badge)
 
 </div>
 
@@ -956,6 +956,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | [LegalWorld](https://github.com/sii-research/Legal-world) | <img src="https://img.shields.io/github/stars/sii-research/Legal-world?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.6 | SII / Fudan DISC | Legal agents (full civil-litigation lifecycle, multi-role, live backend; [Paper](https://arxiv.org/abs/2606.18728)) |
 | [MobileGym](https://github.com/Purewhiter/mobilegym) | <img src="https://img.shields.io/github/stars/Purewhiter/mobilegym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Academic | Mobile GUI (Android sim, verifiable, parallel) |
 | [AEnvironment](https://github.com/inclusionAI/AEnvironment) | <img src="https://img.shields.io/github/stars/inclusionAI/AEnvironment?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Ant Group (inclusionAI) | Agentic RL Env Platform (MCP, AReaL-integrated, TAU2/SWE/Terminal-Bench) |
+| [Spatial-Gym](https://github.com/lkaesberg/Spatial-Gym) | <img src="https://img.shields.io/github/stars/lkaesberg/Spatial-Gym?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | University of Göttingen | Spatial pathfinding (Gymnasium env on 2D grid puzzles from SPaRC, step-by-step with optional backtracking; [Paper](https://arxiv.org/abs/2604.09338)) |
 | [Gym-Anything](https://github.com/cmu-l3/gym-anything) | <img src="https://img.shields.io/github/stars/cmu-l3/gym-anything?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | CMU L3 Lab | Computer Use (200+ apps) |
 | [ClawBench](https://github.com/reacher-z/ClawBench) | <img src="https://img.shields.io/github/stars/TIGER-AI-Lab/ClawBench?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.4 | TIGER-AI Lab / NAIL Group | Web/GUI agents (283 live-site tasks, isolated containers, 5-layer traces; [Project](https://claw-bench.com/); [Paper](https://arxiv.org/abs/2604.08523)) |
 | [OpenSandbox](https://github.com/alibaba/OpenSandbox) | <img src="https://img.shields.io/github/stars/alibaba/OpenSandbox?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.3 | Alibaba | Code/GUI/Agent Eval |
