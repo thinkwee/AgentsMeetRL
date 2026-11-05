@@ -613,6 +613,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | Github Repo | 🌟 Stars | Date | Org | Paper Link | RL Framework |
 | :----: | :----: | :----: |  :----: | :----: | :----: |
 | [Maestro](https://github.com/jinyangwu/Maestro) | <img src="https://img.shields.io/github/stars/jinyangwu/Maestro?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | Tsinghua / Multi-institution | [Paper](https://arxiv.org/abs/2605.22177) | veRL + verl-tool |
+| [NeuroMAS](https://github.com/haoranlustat/NeuroMAS) | <img src="https://img.shields.io/github/stars/haoranlustat/NeuroMAS?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.5 | University of Georgia | [Paper](https://openreview.net/pdf?id=psCz7NClif) | Custom |
 | [DrMAS](https://github.com/langfengQ/DrMAS) | <img src="https://img.shields.io/github/stars/langfengQ/DrMAS?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.2 | NTU | [Paper](https://arxiv.org/abs/2602.08847) | Custom |
 | [MarsRL](https://github.com/liushulinle/MarsRL) | <img src="https://img.shields.io/github/stars/liushulinle/MarsRL?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.11 | Academic | [Paper](https://arxiv.org/abs/2511.11373) | veRL |
 | [PettingLLMs](https://github.com/pettingllms-ai/PettingLLMs) | <img src="https://img.shields.io/github/stars/pettingllms-ai/PettingLLMs?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2025.10 | Intel / UCSD | [Paper](https://arxiv.org/abs/2510.11062) | Custom |
@@ -633,6 +634,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 | Github Repo | RL Algorithm | Single/Multi Agent | Outcome/Process Reward | Single/Multi Turn | Task | Reward Type | Tool usage |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Maestro](https://github.com/jinyangwu/Maestro) | Outcome RL (lightweight orchestrator over frozen expert ensembles) | Multi (orchestrator + frozen experts) | Outcome | Multi | 10 multimodal benchmarks (math/chart/HR/domain — 70.1% avg, beats GPT-5 & Gemini-2.5-Pro) | External | Yes (expert models + 2-tier skill library: OCR/detection/visual) |
+| [NeuroMAS](https://github.com/haoranlustat/NeuroMAS) | REINFORCE (per-node EMA baseline, per-node LoRA adapters, progressive growth) | Multi | Outcome | Multi (layered sequential calls) | Reasoning / QA / Code (ARC-Challenge, BBH-Navigate, MMLU subsets, HumanEval) | Rule (exact match; unit tests for code) | No |
 | [DrMAS](https://github.com/langfengQ/DrMAS) | GRPO (agent-wise) | Multi | Outcome | Multi | Multi-agent LLM Systems | Rule | No |
 | [MarsRL](https://github.com/liushulinle/MarsRL) | RLVR (agent-specific rewards) | Multi | Both | Multi | Math Reasoning (AIME/BeyondAIME) | Rule (verifiable) | No |
 | [PettingLLMs](https://github.com/pettingllms-ai/PettingLLMs) | AT-GRPO | Multi | Both | Multi | Game/Code/Math/Planning | Rule (verifiable) | No |
