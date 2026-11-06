@@ -167,3 +167,7 @@ compute per-step advantages cleanly.
 
 - `AgentEvolver` — ADCA-GRPO with self-evolving curriculum aimed at credit assignment.
   github: `https://github.com/modelscope/AgentEvolver`, paper: `https://arxiv.org/abs/2511.10395`, Alibaba/Tongyi Lab, date: 2025.11
+
+## Engineering detail
+
+[Multi-turn objective and reduction semantics](../../mechanisms/multi-turn-objectives.md).

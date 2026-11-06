@@ -281,3 +281,7 @@ error-prone.
 - `memory-context-overflow.md` — context strategies more broadly.
 - `credit-assignment-long-horizon.md` — credit when history was
   pruned.
+
+## Engineering detail
+
+[Compaction, replay, and restart contracts](../../mechanisms/long-horizon-evaluation.md).

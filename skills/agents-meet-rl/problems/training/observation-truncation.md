@@ -90,3 +90,7 @@ turns intact via memory while bounding only the current observation.
 ## Paper / repo references
 
 (All cited above.)
+
+## Engineering detail
+
+[Trajectory termination and sample boundaries](../../mechanisms/trajectory-contract.md).
