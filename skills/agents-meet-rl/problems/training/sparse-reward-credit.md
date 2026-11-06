@@ -33,8 +33,9 @@ Most rollouts get 0?
 
 ### Fix 1: stronger SFT cold-start
 
-Long-horizon agentic-RL almost never works from a non-instruct base
-without SFT. Most papers in the corpus do **multi-stage** SFT:
+Check whether the starting policy can produce valid actions and reach successful
+states. SFT is one cold-start strategy, not a universal requirement; use the
+base model and task evidence to decide. Examples of staged training include:
 
 > **Tool-Star** — github: `https://github.com/dongguanting/Tool-Star`,
 > paper: `https://arxiv.org/abs/2505.16410`, RUC, date: 2025.5.
@@ -135,7 +136,13 @@ but applicable.
 ## Paper / repo references
 
 - All papers above. Most relevant ranking by sparsity severity:
-  1. `IGPO` — pure outcome → info-gain; no extra label.
+  1. `IGPO` — outcome → info-gain; audit required answer/scoring information and teacher-only boundaries.
   2. `AgentPRM` / `AgentRM` — train a PRM (needs labelled states).
   3. SFT-first multi-stage — Tool-Star, MobileRL, MedResearcher-R1.
   4. Curriculum / R-Zero / AZR — when even SFT can't get you off zero.
+
+## Engineering detail
+
+See [reward and selection](../../mechanisms/reward-and-selection.md) for
+filtering bias and [multi-turn objectives](../../mechanisms/multi-turn-objectives.md)
+for advantage and transition-unit semantics.

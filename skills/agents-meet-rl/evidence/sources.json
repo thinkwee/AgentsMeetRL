@@ -1,0 +1,96 @@
+{
+  "corpus_snapshot": "2026-10-10",
+  "engineering_reviewed_at": "2026-11-06",
+  "sources": [
+    {
+      "id": "slime",
+      "repository": "https://github.com/THUDM/slime",
+      "commit": "58b0878679de339ec7844b45d884a87955a134be",
+      "status": "source-inspected",
+      "runtime_validation": "not-run",
+      "reviewed_at": "2026-11-06",
+      "claims": [
+        {
+          "path": "slime/utils/types.py",
+          "claim": "Sample: tokens, response_length, loss_mask, rollout_log_probs, rollout_id, teacher_log_probs",
+          "url": "https://github.com/THUDM/slime/blob/58b0878679de339ec7844b45d884a87955a134be/slime/utils/types.py"
+        },
+        {
+          "path": "slime/backends/megatron_utils/loss.py",
+          "claim": "vanilla_tis_function and policy_loss_function: separate behavior correction and policy update",
+          "url": "https://github.com/THUDM/slime/blob/58b0878679de339ec7844b45d884a87955a134be/slime/backends/megatron_utils/loss.py"
+        },
+        {
+          "path": "slime/utils/ppo_utils.py",
+          "claim": "importance_weights: clamp for tis, interval rejection for mis",
+          "url": "https://github.com/THUDM/slime/blob/58b0878679de339ec7844b45d884a87955a134be/slime/utils/ppo_utils.py"
+        },
+        {
+          "path": "slime/rollout/sglang_rollout.py",
+          "claim": "custom generation dispatch and reward hook",
+          "url": "https://github.com/THUDM/slime/blob/58b0878679de339ec7844b45d884a87955a134be/slime/rollout/sglang_rollout.py"
+        }
+      ]
+    },
+    {
+      "id": "verl",
+      "repository": "https://github.com/verl-project/verl",
+      "commit": "00cd5b44ec59b46a5d3ece5f9da41fdb01b890a8",
+      "status": "source-inspected",
+      "runtime_validation": "not-run",
+      "reviewed_at": "2026-11-06",
+      "claims": [
+        {
+          "path": "verl/experimental/agent_loop/agent_loop.py",
+          "claim": "AgentLoopOutput: prompt/response IDs, response mask, logprobs, tensor conversion",
+          "url": "https://github.com/verl-project/verl/blob/00cd5b44ec59b46a5d3ece5f9da41fdb01b890a8/verl/experimental/agent_loop/agent_loop.py"
+        },
+        {
+          "path": "verl/experimental/agent_loop/tool_agent_loop.py",
+          "claim": "ToolAgentLoop: assistant and tool-context merges, turn/length termination",
+          "url": "https://github.com/verl-project/verl/blob/00cd5b44ec59b46a5d3ece5f9da41fdb01b890a8/verl/experimental/agent_loop/tool_agent_loop.py"
+        },
+        {
+          "path": "verl/trainer/ppo/core_algos.py",
+          "claim": "compute_grpo_outcome_advantage and agg_loss: grouping and reduction",
+          "url": "https://github.com/verl-project/verl/blob/00cd5b44ec59b46a5d3ece5f9da41fdb01b890a8/verl/trainer/ppo/core_algos.py"
+        },
+        {
+          "path": "verl/trainer/ppo/rollout_corr_helper.py",
+          "claim": "correction weights, rejection and bypass mode",
+          "url": "https://github.com/verl-project/verl/blob/00cd5b44ec59b46a5d3ece5f9da41fdb01b890a8/verl/trainer/ppo/rollout_corr_helper.py"
+        }
+      ]
+    },
+    {
+      "id": "areal",
+      "repository": "https://github.com/inclusionAI/AReaL",
+      "commit": "d38268e1bb57cfddf10e5491c9df19b05432dd89",
+      "status": "source-inspected",
+      "runtime_validation": "not-run",
+      "reviewed_at": "2026-11-06",
+      "claims": [
+        {
+          "path": "areal/api/workflow_api.py",
+          "claim": "RolloutWorkflow.arun_episode and SDK-compatible run protocol",
+          "url": "https://github.com/inclusionAI/AReaL/blob/d38268e1bb57cfddf10e5491c9df19b05432dd89/areal/api/workflow_api.py"
+        },
+        {
+          "path": "areal/experimental/openai/types.py",
+          "claim": "InteractionWithTokenLogpReward.to_tensor_dict: concat, masks, versions",
+          "url": "https://github.com/inclusionAI/AReaL/blob/d38268e1bb57cfddf10e5491c9df19b05432dd89/areal/experimental/openai/types.py"
+        },
+        {
+          "path": "areal/trainer/ppo/actor.py",
+          "claim": "reward scaling, proximal/behavior logprob branch, mask shift and GAE",
+          "url": "https://github.com/inclusionAI/AReaL/blob/d38268e1bb57cfddf10e5491c9df19b05432dd89/areal/trainer/ppo/actor.py"
+        },
+        {
+          "path": "areal/infra/staleness_manager.py",
+          "claim": "StalenessManager: version-aware admission capacity",
+          "url": "https://github.com/inclusionAI/AReaL/blob/d38268e1bb57cfddf10e5491c9df19b05432dd89/areal/infra/staleness_manager.py"
+        }
+      ]
+    }
+  ]
+}

@@ -141,3 +141,7 @@ periodically.
 
 - `GRIT` — GRPO-GR with bbox reward for grounded visual reasoning.
   github: `https://github.com/eric-ai-lab/GRIT`, paper: `https://arxiv.org/abs/2505.15879`, UC Santa Cruz (eric-ai-lab), date: 2025.5
+
+## Engineering detail
+
+[Reward components and selection bias](../../mechanisms/reward-and-selection.md).

@@ -1,14 +1,30 @@
 ---
 name: agents-meet-rl
-description: "Troubleshooter for agentic-RL training, evaluation, and experiment design on LLM agents (single or multi-agent, multi-turn, tool-augmented). Routes a user's symptom to fixes anchored in the corpus. TRIGGER when: user is training, evaluating, or designing experiments for an RL-trained LLM agent; symptoms like reward not moving, eval flat, KL/entropy/length blow-ups, retokenization drift, tool-call parse failures, credit assignment, async-rollout staleness, judge inconsistency, benchmark contamination, pass@k vs pass@1; choices about ablation, baseline, framework, algorithm, reward, or data curation; user names GRPO, PPO, DAPO, veRL, OpenRLHF, slime, AReaL, RAGEN, or similar. SKIP: generic supervised LLM fine-tuning with no RL component; classical RL theory or tabular RL; non-LLM agents. Distilled from the AgentsMeetRL awesome list, snapshot 2026-10-10."
+description: "Engineering handbook for LLM Agent RL: explain trajectory/token/mask contracts, multi-turn objectives, async correction and distillation; compare source-versioned frameworks; integrate tool tasks; diagnose training and evaluation failures. Use for agentic RL implementation, framework selection, GRPO/PPO tuning, rollout/logprob mismatch, reward design, and experiment design. Excludes generic supervised fine-tuning and classical non-LLM RL. Corpus snapshot 2026-10-10."
 ---
 
 ## What this is
 
-A corpus-anchored handbook for diagnosis and selection. It supplies
-knowledge — it does **not** read or run your training: it can't inspect
-your logs, wandb, or live metrics. You bring the symptom; it returns
-likely causes, checks, and cited fixes for you to apply.
+A corpus-anchored handbook for mechanism explanation, implementation selection,
+integration, and diagnosis. Read only the resources relevant to the user's task.
+When tools and authorization are available, inspect actual code, configurations,
+logs, or exported trajectories. Never claim live inspection or a successful run
+without evidence; otherwise give concrete checks and identify missing inputs.
+
+## Route by task
+
+- **Explain a mechanism:** [mechanisms/_INDEX.md](mechanisms/_INDEX.md).
+- **Compare actual framework implementations:** [implementations/_INDEX.md](implementations/_INDEX.md).
+- **Integrate a tool task:** [recipes/tool-agent-integration.md](recipes/tool-agent-integration.md).
+- **Inspect exported trajectories:** [recipes/offline-inspection.md](recipes/offline-inspection.md).
+- **Diagnose a symptom:** [problems/_INDEX.md](problems/_INDEX.md), then follow its mechanism links.
+- **Discover projects:** [references/_INDEX.md](references/_INDEX.md).
+
+Distinguish derived mechanisms, paper claims, source-inspected behavior,
+configuration validation, runtime validation, and measured quality. State the
+version and scope of evidence. Do not infer capability from a project name or
+recommend an empirical threshold as a universal rule. For implementation changes,
+identify native interfaces, data boundaries, and validation before prescribing flags.
 
 ## Where things are
 
@@ -51,9 +67,11 @@ Examples:
 > Run rollouts in atropos —
 > [code](https://github.com/NousResearch/atropos) · Nous Research · 2025.4.
 
-**Cite at the idea level**, not paper sections or file paths inside
-repos — they rot. If an entry isn't in the corpus, say so; don't
-fabricate.
+For ideas, cite canonical paper/project URLs. For implementation claims, also
+cite a fixed-commit code permalink and the relevant symbol; do not cite a moving
+branch as immutable evidence. [evidence/sources.json](evidence/sources.json) records
+reviewed source snapshots. If a project is outside the corpus or a feature was not
+verified, say so; do not fabricate support.
 
 If two corpus entries share a name (e.g. `ARPO` appears as both a
 reasoning RL method and a GUI-agent training method), disambiguate by
@@ -61,6 +79,15 @@ including the org and paper URL — they are different works.
 
 ## Staleness
 
-Snapshot date: **2026-07-23**. If the user mentions a project or paper
+Snapshot date: **2026-10-10**. If the user mentions a project or paper
 released after that, flag explicitly that this skill's corpus may not
 cover it.
+
+## Maintenance and verification
+
+Corpus snapshot and engineering review dates are separate in
+[evidence/sources.json](evidence/sources.json). Compute catalogue totals from
+`database.json`; do not silently advance the corpus date when editing explanations.
+Run `python scripts/lint_skill.py` and `python scripts/check_trajectory.py --demo`
+from this skill directory. Use [behavior regression cases](evidence/regression-cases.md)
+for answer review; static lint does not validate model behavior or training quality.

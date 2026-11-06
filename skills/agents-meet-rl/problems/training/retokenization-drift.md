@@ -20,7 +20,7 @@ The corpus's diagnosis (Agent-R1 calls this out by name):
 > collected as text and later tokenized again for training, the
 > `Token → Text → Token` conversion is not reversible."
 > — `https://github.com/0russwest0/Agent-R1`, paper:
-> `https://arxiv.org/abs/2511.14460`, org: USTC, date: 2025.3.
+> `https://arxiv.org/abs/2511.14460`, org: USTC, date: 2025.11.
 
 Specifically:
 
@@ -47,7 +47,10 @@ recomputed_ids = tokenizer(text, add_special_tokens=False).input_ids
 assert recomputed_ids == sampled_token_ids, "drift detected"
 ```
 
-If this fails on >1% of rollouts, you have drift.
+A failure reveals round-trip differences. Compare the actual rollout IDs with
+learner IDs to establish whether training is affected; the round-trip test alone
+does not prove that. Any mismatch on trained tokens needs an explanation, without
+a universal 1% threshold. See [alignment](../../mechanisms/token-mask-alignment.md).
 
 ### Inspect first divergent token
 
@@ -61,9 +64,10 @@ offenders:
 
 ### Compare KL across implementation paths
 
-Start a run with text-based rollout collection, log KL. Switch to
-token-ID rollout collection, log KL. If KL drops dramatically (e.g.
-from 5.0 to 0.2), drift was the culprit.
+At fixed weights and identical token inputs, compare engine/trainer logprobs
+on trained positions. Report quantiles and the first divergent span. Only run a
+controlled alternative rollout path if experiments are authorized; a KL change
+alone does not isolate retokenization from other changed conditions.
 
 ## Fixes
 
@@ -99,22 +103,18 @@ If you can't avoid re-tokenization (legacy code), at least:
   (`add_generation_prompt`, `add_special_tokens`, etc.).
 - Test: re-tokenize a sample of rollouts and assert ID equality.
 
-### Fix 3: same inference engine + tokenizer
+### Fix 3: align inputs and scoring conventions across engines
 
-Mixing engines is risky. If your trainer uses HF and rollout uses vLLM:
+Training and rollout need not use the same engine. Verify tokenizer/template
+revisions, actual input and response IDs, sampling/logprob convention, precision,
+and routing. Engine version alone does not guarantee alignment.
 
-- Use vLLM ≥ 0.6.x with `prompt_token_ids=...` so vLLM doesn't
-  re-tokenize on its side.
-- Or keep one engine end-to-end (slime / NeMo-RL favor this).
+### Fix 4: preserve the actual tool-context construction
 
-### Fix 4: avoid concatenating tool output at the string level
-
-If you concatenate raw tool output into the prompt as a string, the
-chat template at training time may slice differently. Instead:
-
-- Tokenize tool output once, append IDs.
-- Or use the framework's `multi_turn` rollout interface (verl's
-  `examples/sglang_multiturn/`).
+Separately tokenizing and appending tool IDs is correct only when generation used
+that same construction. Reapplying the full chat template may change the prefix.
+Inspect the framework's native multi-turn path and compare actual next-turn
+inputs; see [veRL's card](../../implementations/verl.md).
 
 ## Paper / repo references
 

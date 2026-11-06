@@ -103,3 +103,7 @@ returns the same result. If the bug persists, env wasn't the cause.
   paper: `https://arxiv.org/abs/2602.03419`, RUC, date: 2026.2.
 - `IGPO` — github: `https://github.com/GuoqingWang1/IGPO`,
   paper: `https://arxiv.org/abs/2510.14967`.
+
+## Engineering detail
+
+[Environment lifecycle and failure semantics](../../mechanisms/environment-runtime.md).

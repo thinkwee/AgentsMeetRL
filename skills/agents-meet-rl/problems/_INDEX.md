@@ -11,6 +11,14 @@ selection), the routing tables in this index will still take you to the
 problem file that matches your symptom — which is what most "selection"
 questions actually reduce to.
 
+## Engineering questions
+
+For data contracts, masks, objectives, async policies, environment lifecycle,
+reward selection, distillation, and long-horizon state, start at
+[mechanisms/_INDEX.md](../mechanisms/_INDEX.md). Compare source-inspected versions
+in [implementations/_INDEX.md](../implementations/_INDEX.md); use the
+[integration recipe](../recipes/tool-agent-integration.md) for a new task.
+
 ## Starting from scratch (no symptom yet)
 
 If you don't have a symptom yet — you're spinning up a new agentic-RL
@@ -25,8 +33,9 @@ symptom:
 3. **Environment / benchmark** → `../references/environments.md`. Pick
    a benchmark in the family you ultimately want to be evaluated on;
    train on its **training split**, not its eval split.
-4. **Reward design** → start with **rule-based outcome reward** (EM /
-   F1 / test-pass) + tiny format reward (≤ 5% of total). Tune later
+4. **Reward design** → prefer verifiable task outcome when available (EM /
+   F1 / test-pass). Calibrate any format/shaping terms against task success;
+   no universal percentage is safe. Tune with component logs
    per [training/reward-mixing.md](training/reward-mixing.md).
 
 Forkable starter recipes (each cited in `../references/<cat>.md`):
@@ -219,10 +228,8 @@ with one paper URL + one repo URL.
 See `SKILL.md` for the three citation templates (project with both
 repo and paper, paper-only algorithm, repo-only tool/environment).
 
-**Reference at the idea level, not at the file/line or section level.**
-Repos restructure, papers get revised; the algorithm name and its top-
-level URL are stable. The corpus has 312 entries in `database.json`
-(291 open-source repos + 21 under-review papers) plus 3 paper-only
-algorithms whitelisted in `scripts/lint_skill.py`, for 315 citable
-items total. Pick the canonical one; don't pin to its current
-internals.
+Reference ideas with canonical URLs; reference implementation claims with
+fixed-commit code permalinks and symbols. The corpus contains 411 entries
+(378 catalogue repositories + 33 under-review entries), plus the 3 paper-only
+algorithms whitelisted in `scripts/lint_skill.py`. Counts are checked against
+`database.json`. Source inspection does not establish runtime compatibility.

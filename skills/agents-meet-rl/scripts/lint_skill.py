@@ -12,6 +12,8 @@ import os
 import re
 import sys
 from collections import defaultdict
+from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(ROOT, ".."))
@@ -287,6 +289,55 @@ def lint():
                         errors.append(
                             f"PROBLEM_ORG_MISMATCH\t{rel}\t"
                             f"{name}: file={actual} db={expected}")
+
+    # 7. Engineering evidence uses immutable source revisions, not moving branches.
+    evidence = json.loads(read("evidence/sources.json"))
+    for source in evidence["sources"]:
+        sha = source.get("commit", "")
+        if not re.fullmatch(r"[0-9a-f]{40}", sha):
+            errors.append(f"SOURCE_COMMIT\t{source.get('id')}")
+        if source.get("status") not in {
+            "paper-described", "source-inspected", "configuration-validated", "runtime-validated"
+        }:
+            errors.append(f"SOURCE_STATUS\t{source.get('id')}")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", source.get("reviewed_at", "")):
+            errors.append(f"SOURCE_REVIEW_DATE\t{source.get('id')}")
+        if not source.get("claims"):
+            errors.append(f"SOURCE_NO_CLAIMS\t{source.get('id')}")
+        for claim in source.get("claims", []):
+            expected = f"{source['repository']}/blob/{sha}/{claim['path']}"
+            if claim.get("url") != expected or not claim.get("claim"):
+                errors.append(f"SOURCE_LINK\t{source.get('id')}\t{claim.get('path')}")
+
+    # 8. Local Markdown resources must resolve, including new routing layers.
+    skill_root = Path(ROOT)
+    for path in skill_root.rglob("*.md"):
+        # Ignore fenced examples, which can intentionally contain sample links.
+        content = re.sub(r"```.*?```", "", path.read_text(), flags=re.S)
+        for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
+            if re.match(r"[a-zA-Z][a-zA-Z0-9+.-]*:", target) or target.startswith("#"):
+                continue
+            local = unquote(target.split("#", 1)[0])
+            if local and not (path.parent / local).exists():
+                errors.append(f"BROKEN_LOCAL_LINK\t{path.relative_to(skill_root)}\t{target}")
+
+    # 9. Catalogue totals/dates in entry points must agree with their source.
+    total = sum(len(items) for items in db.values())
+    for name, pattern in [
+        ("SKILL.md", r"machine-readable, (\d+) entries"),
+        ("problems/_INDEX.md", r"corpus contains (\d+) entries"),
+    ]:
+        match = re.search(pattern, read(name))
+        if not match or int(match.group(1)) != total:
+            errors.append(f"CORPUS_TOTAL\t{name}\texpected={total}")
+    skill_dates = re.findall(r"(?:snapshot |Snapshot date: \*\*)(\d{4}-\d{2}-\d{2})", read("SKILL.md"))
+    if not skill_dates or any(d != evidence["corpus_snapshot"] for d in skill_dates):
+        errors.append("CORPUS_SNAPSHOT\tSKILL.md")
+    readme_path = skill_root.parent.parent / "README.md"
+    if readme_path.exists():
+        summary = re.search(r"\*\*(\d+) projects\*\* \(snapshot \*\*(\d{4}-\d{2}-\d{2})\*\*\)", readme_path.read_text())
+        if not summary or int(summary.group(1)) != total or summary.group(2) != evidence["corpus_snapshot"]:
+            errors.append("CORPUS_SUMMARY\tREADME.md")
 
     return errors
 
