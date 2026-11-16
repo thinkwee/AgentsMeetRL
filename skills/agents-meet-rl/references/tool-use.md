@@ -2,11 +2,51 @@
 
 Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity.
 
-_Total: 26 entries._
+_Total: 31 entries._
 
 ## Contents
 
-Tool-RL-Box, SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATPO, AWorld-RL, ToolBrain, CodeGym, UserRL, Tool-R1, MiroRL, AWorld, MUA-RL, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, ReCall.
+StateAlign, Agent-R2, ToolOPD, ECHO, qqr (RTI), Tool-RL-Box, SPADER, APPO, AgenticQwen, Agent-STAR, ToolMaster, Agent-R1, ToolOrchestra, MATPO, AWorld-RL, ToolBrain, CodeGym, UserRL, Tool-R1, MiroRL, AWorld, MUA-RL, verl-tool, Multi-Turn-RL-Agent, Tool-N1, Tool-Star, RL-Factory, calculator_agent_rl, ReTool, ToolRL, ReCall.
+
+### StateAlign
+- **Idea:** Multi-step GRPO rollouts started from intermediate task states plus a state-contrast term teach multi-turn function-calling agents to condition actions on the actual environment state.
+- `https://github.com/ZhexiLu/StateAlign` · org: RPI / IBM Research · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.16304)
+- Algorithm: GRPO + state-contrast objective · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (function calls)
+- Reward phase: Both · Reward type: Rule/Custom
+- Task: State-aware multi-turn function calling (BFCL multi-turn)
+
+### Agent-R2
+- **Idea:** Synthesizes realistic productivity tasks from real-source documents with rubrics, then runs SFT and rubric-based multi-turn GRPO for office/GDPval-style agent work.
+- `https://github.com/ZJU-REAL/Agent-R2` · org: Zhejiang University / Baidu · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.08219)
+- Algorithm: GRPO (rubric-based, after SFT) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (sandbox tools)
+- Reward phase: Outcome · Reward type: Model/Rule
+- Task: Realistic productivity/office agents (GDPval, OfficeQA) from real-source task synthesis
+
+### ToolOPD
+- **Idea:** Weights on-policy distillation tokens by hindsight-skill action credit so the teacher signal concentrates on the steps that matter, combined with RL for long-horizon tool use.
+- `https://github.com/MagicAgent-Search/ToolOPD` · org: MagicAgent-Search · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.25693)
+- Algorithm: RL + credit-aware on-policy distillation · Framework: veRL (verl-agent) · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Both · Reward type: Rule + teacher credit
+- Task: Long-horizon tool use (ALFWorld/WebShop/Search QA)
+
+### ECHO
+- **Idea:** Assigns per-turn responsibility credit for tool-use errors with a calibrated judge, so only the turns that caused a failure are penalized.
+- `https://github.com/xid32/ECHO` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.16027)
+- Algorithm: PPO/GRPO with responsibility-aware turn credit · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (function calls)
+- Reward phase: Process · Reward type: Model/Rule
+- Task: Multi-turn tool use (τ²-bench/BFCL/ACEBench)
+
+### qqr (RTI)
+- **Idea:** Rollout-Time Intervention uses reward-side evidence to correct failing rollouts mid-trajectory, letting agentic RL learn beyond the exploration limits of the current policy on open-ended MCP tasks.
+- `https://github.com/Alibaba-NLP/qqr` · org: Alibaba (Tongyi) · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.13438)
+- Algorithm: GRPO / ArenaRL / Rollout-Time Intervention · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (MCP tools)
+- Reward phase: Outcome · Reward type: Model/Rule
+- Task: Open-ended MCP agents (deep research, travel, VitaBench)
 
 ### Tool-RL-Box
 - **Idea:** Diagnoses why multi-step tool-use RL collapses into degenerate formats and fixes it with LLM-judge error classification that regenerates supervisory data mid-training.

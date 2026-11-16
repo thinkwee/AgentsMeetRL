@@ -2,11 +2,19 @@
 
 Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate.
 
-_Total: 32 entries._
+_Total: 33 entries._
 
 ## Contents
 
-SCALE-CUA, OpenWebRL, ToolCUA, ClawGUI, OpAgent, GUI-Libra, MobileAgent, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, MagicGUI, UI-AGILE, GUI-G2, GTA1, Grounding-R1, AgentCPM-GUI, TTI, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent, UI-TARS.
+CUA-Lite, SCALE-CUA, OpenWebRL, ToolCUA, ClawGUI, OpAgent, GUI-Libra, MobileAgent, MobileRL, DART-GUI, Mano-P, InfiGUI-G1, gui-rcpo, MagicGUI, UI-AGILE, GUI-G2, GTA1, Grounding-R1, AgentCPM-GUI, TTI, SE-GUI, ARPO, GUI-G1, WebAgent-R1, ZeroGUI, GUI-R1, InfiGUI-R1, UI-R1, CollabUIAgents, DigiQ, GUI-Agent-RL, WebAgent, UI-TARS.
+
+### CUA-Lite
+- **Idea:** Open, lightweight computer-use platform spanning browser/desktop/mobile with 30k+ verifiable tasks and slime-based RL recipes for Qwen3.5 agents.
+- `https://github.com/cua-lite/cua-lite` · org: CUA-Lite team · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.26071)
+- Algorithm: GRPO · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (GUI actions)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Open computer-use platform: browser/desktop/mobile, 30k+ verifiable tasks
 
 ### SCALE-CUA
 - **Idea:** Scales computer-use RL by synthesizing 24K verifiable tasks with a proposer/judger/checker loop and cutting rollout cost 2.8x via visual context segmentation.

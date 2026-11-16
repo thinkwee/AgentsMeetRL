@@ -2,7 +2,7 @@
 
 RL for jailbreak attack/defense, tool-call safety, agent guardrails.
 
-_Total: 9 entries._
+_Total: 11 entries._
 
 ### ToolSafe
 - **Idea:** TS-Guard, a multi-task RL guardrail that judges tool-call safety from interaction history at each step, cutting harmful invocations ~65% under prompt injection.
@@ -19,6 +19,22 @@ _Total: 9 entries._
 - Algorithm: Multi-turn GRPO variant · Framework: RAGEN + vLLM · Agent: Single · Turns: Multi · Tools: Yes (target LLM)
 - Reward phase: Both · Reward type: Model (harmfulness judge) + Rule
 - Task: Multi-turn Jailbreak Attack
+
+### PROBE
+- **Idea:** An RL-trained auditor learns to elicit hidden policy violations from tool-using agents, rewarded when its probes surface verifiable compliance failures.
+- `https://github.com/Mishrakshitij/PROBE` · org: MBZUAI · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.22124)
+- Algorithm: GRPO (also DPO/GFlowNet baselines) · Framework: Custom (vLLM + QLoRA) · Agent: Single · Turns: Multi · Tools: Yes
+- Reward phase: Outcome · Reward type: Rule/Model
+- Task: RL-trained auditor eliciting policy violations of tool-using agents
+
+### SEMA
+- **Idea:** Prefill self-tuning followed by GRPO with an intent-drift-aware reward trains multi-turn jailbreak attackers that keep the harmful goal intact across turns.
+- `https://github.com/microsoft/SEMA` · org: Microsoft · date: 2026.2
+- Paper(s): [Paper](https://arxiv.org/abs/2602.06854)
+- Algorithm: Prefill self-tuning + GRPO · Framework: Custom · Agent: Single · Turns: Multi · Tools: No
+- Reward phase: Outcome · Reward type: Model (intent-drift-aware) + Rule
+- Task: Multi-turn jailbreak attacker training (red-teaming), ICLR 2026
 
 ### SafeSearch
 - **Idea:** Multi-objective RL adding a query-level shaping term that penalizes unsafe search queries, cutting harmfulness >90% while keeping QA utility for search agents.

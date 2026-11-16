@@ -2,7 +2,51 @@
 
 Process/outcome reward models, PRM benchmarks, training recipes.
 
-_Total: 12 entries._
+_Total: 17 entries._
+
+### Mosaic
+- **Idea:** When rollouts are split across compaction/sub-agent sessions, assigns session-level advantages instead of broadcasting one trajectory advantage to every session.
+- `https://github.com/LARK-AI-Lab/Mosaic` · org: LARK-AI-Lab · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.22174)
+- Algorithm: GRPO with per-session advantages · Agent: Both · Turns: Multi · Tools: Yes (search, compaction, sub-agent)
+- Reward phase: Both · Reward type: Rule-Based
+- Task: Search agents with context compaction & sub-agent forking
+- Focus: Multi-session credit assignment
+
+### ConCal
+- **Idea:** Shares continuation evidence across repeated visits to the same task state and propagates calibrated action values backward for finer step-level advantages than GiGPO.
+- `https://github.com/Yingjian-Chen/ConCal` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.37195)
+- Algorithm: GiGPO extension (continuation sharing) · Agent: Single · Turns: Multi · Tools: Yes (env actions)
+- Reward phase: Both · Reward type: Rule-Based
+- Task: ALFWorld/WebShop/Sokoban/AppWorld
+- Focus: Step-level action-value calibration
+
+### FocalRL
+- **Idea:** Locates the consequential error in a long trajectory, branches from the pre-error state, and rewards short rubric-checked repairs instead of re-running the whole episode.
+- `https://github.com/microsoft/FocalRL` · org: Microsoft · date: 2026.10
+- Algorithm: GRPO (Miles) with branching from pre-error states · Agent: Single · Turns: Multi · Tools: Yes (web search/browse, SWE sandbox)
+- Reward phase: Both · Reward type: Model + External Verifier
+- Task: Ultra-long-horizon deep research (BrowseComp) & SWE
+- Focus: Focal credit assignment / local repair rewards
+
+### DARS
+- **Idea:** Tracks verified/broken/repaired task requirements in a dependency graph and converts changes in graph potential into step rewards.
+- `https://github.com/JianhuiWei7/DARS` · org: Zhejiang University · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.01207)
+- Algorithm: GRPO/GiGPO/RLOO + potential-based shaping · Agent: Single · Turns: Multi · Tools: Yes (env actions)
+- Reward phase: Process · Reward type: Custom
+- Task: ALFWorld/WebShop step-level credit
+- Focus: Dependency-aware reward shaping
+
+### SAPO
+- **Idea:** Single-rollout PPO-style agentic RL with a shared policy/value model, avoiding both GRPO group sampling and a separate critic.
+- `https://github.com/dy-liang/SAPO` · org: NTU · date: 2026.8
+- Paper(s): [Paper](https://arxiv.org/abs/2608.19842)
+- Algorithm: SAPO (single-rollout, shared policy/value) · Agent: Single · Turns: Multi · Tools: No (env actions)
+- Reward phase: Outcome · Reward type: Rule-Based
+- Task: Long-horizon agent RL (ALFWorld/WebShop)
+- Focus: Single-rollout policy optimization
 
 ### DRACO
 - **Idea:** In the outcome-blind setting, dynamically generated rubrics are scored once per trajectory and the judge's per-rubric citations redistribute the GRPO advantage across responsible steps in closed form — beating sparse ground-truth-reward GRPO on AppWorld without any verifier.

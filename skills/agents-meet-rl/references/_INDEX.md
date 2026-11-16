@@ -13,23 +13,23 @@ Claude can cite specific work when giving recommendations — plus an
 
 | Category | File | Count | Use When |
 |---|---|---|---|
-| Base Frameworks | [base-frameworks.md](base-frameworks.md) | 30 | RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack. |
+| Base Frameworks | [base-frameworks.md](base-frameworks.md) | 34 | RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack. |
 | General / MultiTask Agents | [general-multitask.md](general-multitask.md) | 21 | Agents trained across many tasks/environments. Useful when you want one model that handles search + tool + code etc. |
-| Search & RAG Agents | [search-rag.md](search-rag.md) | 50 | Agents that interleave reasoning and retrieval. Most use rule-based EM/F1 outcome rewards or info-gain process rewards. |
-| Web & GUI Agents | [web-gui.md](web-gui.md) | 32 | Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate. |
-| Tool-Use Agents | [tool-use.md](tool-use.md) | 26 | Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity. |
-| Code & SWE Agents | [code-swe.md](code-swe.md) | 25 | Software-engineering agents that locate, repair, and test. Most use SWE-bench-style verifiable rewards. |
+| Search & RAG Agents | [search-rag.md](search-rag.md) | 53 | Agents that interleave reasoning and retrieval. Most use rule-based EM/F1 outcome rewards or info-gain process rewards. |
+| Web & GUI Agents | [web-gui.md](web-gui.md) | 33 | Agents that drive browsers, mobile UIs, or desktop OSes. Grounding accuracy and long-horizon planning dominate. |
+| Tool-Use Agents | [tool-use.md](tool-use.md) | 31 | Agents that call external APIs/MCP/code interpreters. Reward usually mixes correctness + format + tool-call validity. |
+| Code & SWE Agents | [code-swe.md](code-swe.md) | 30 | Software-engineering agents that locate, repair, and test. Most use SWE-bench-style verifiable rewards. |
 | Reasoning Agents | [reasoning.md](reasoning.md) | 18 | Tool-integrated reasoning (TIR) agents — math/QA + search/code. Common starting point for new agentic-RL projects. |
-| Multi-Agent RL | [multi-agent.md](multi-agent.md) | 14 | Multi-agent collaboration, negotiation, or self-play. Watch for credit assignment and role-conditioned advantage. |
-| Memory Agents | [memory.md](memory.md) | 8 | Agents that learn to manage persistent memory beyond a fixed context window. |
-| Embodied Agents | [embodied.md](embodied.md) | 7 | Agents in physical/simulated robotic environments. |
-| Domain-Specific Agents | [domain-specific.md](domain-specific.md) | 12 | Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge. |
-| Reward Models & Training Methodology | [reward-training.md](reward-training.md) | 12 | Process/outcome reward models, PRM benchmarks, training recipes. |
-| Safety / Red-Teaming | [safety.md](safety.md) | 9 | RL for jailbreak attack/defense, tool-call safety, agent guardrails. |
-| VLM Agents | [vlm-agent.md](vlm-agent.md) | 30 | Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search). |
-| Self-Evolution Agents | [self-evolution.md](self-evolution.md) | 18 | Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training). |
-| Environments / Benchmarks / Gyms | [environments.md](environments.md) | 66 | Sandbox environments and benchmarks. Pick one matching your task before designing rewards. |
-| Under Review (Open-source pending) | [under-review.md](under-review.md) | 33 | Notable papers whose code is not yet open-source. Track these for future reference. |
+| Multi-Agent RL | [multi-agent.md](multi-agent.md) | 16 | Multi-agent collaboration, negotiation, or self-play. Watch for credit assignment and role-conditioned advantage. |
+| Memory Agents | [memory.md](memory.md) | 10 | Agents that learn to manage persistent memory beyond a fixed context window. |
+| Embodied Agents | [embodied.md](embodied.md) | 9 | Agents in physical/simulated robotic environments. |
+| Domain-Specific Agents | [domain-specific.md](domain-specific.md) | 16 | Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge. |
+| Reward Models & Training Methodology | [reward-training.md](reward-training.md) | 17 | Process/outcome reward models, PRM benchmarks, training recipes. |
+| Safety / Red-Teaming | [safety.md](safety.md) | 11 | RL for jailbreak attack/defense, tool-call safety, agent guardrails. |
+| VLM Agents | [vlm-agent.md](vlm-agent.md) | 34 | Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search). |
+| Self-Evolution Agents | [self-evolution.md](self-evolution.md) | 22 | Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training). |
+| Environments / Benchmarks / Gyms | [environments.md](environments.md) | 71 | Sandbox environments and benchmarks. Pick one matching your task before designing rewards. |
+| Under Review (Open-source pending) | [under-review.md](under-review.md) | 41 | Notable papers whose code is not yet open-source. Track these for future reference. |
 
 ## Citation conventions
 

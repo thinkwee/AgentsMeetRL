@@ -1,6 +1,6 @@
 ---
 name: agents-meet-rl
-description: "Engineering handbook for LLM Agent RL: explain trajectory/token/mask contracts, multi-turn objectives, async correction and distillation; compare source-versioned frameworks; integrate tool tasks; diagnose training and evaluation failures. Use for agentic RL implementation, framework selection, GRPO/PPO tuning, rollout/logprob mismatch, reward design, and experiment design. Excludes generic supervised fine-tuning and classical non-LLM RL. Corpus snapshot 2026-10-10."
+description: "Engineering handbook for LLM Agent RL: explain trajectory/token/mask contracts, multi-turn objectives, async correction and distillation; compare source-versioned frameworks; integrate tool tasks; diagnose training and evaluation failures. Use for agentic RL implementation, framework selection, GRPO/PPO tuning, rollout/logprob mismatch, reward design, and experiment design. Excludes generic supervised fine-tuning and classical non-LLM RL. Corpus snapshot 2026-11-16."
 ---
 
 ## What this is
@@ -40,7 +40,7 @@ identify native interfaces, data boundaries, and validation before prescribing f
   paper/repo. Use for "which framework / benchmark" selection, to look
   up project names not routed via `problems/_INDEX.md`, and to answer
   "what's the idea behind X" by quoting its `Idea:` line.
-- **`database.json`** — machine-readable, 411 entries (each with a
+- **`database.json`** — machine-readable, 467 entries (each with a
   `takeaway` field mirroring the `Idea:` line) plus 3 paper-only
   algorithms (DAPO, Dr.GRPO, VAPO) whitelisted in
   `scripts/lint_skill.py`.
@@ -79,7 +79,7 @@ including the org and paper URL — they are different works.
 
 ## Staleness
 
-Snapshot date: **2026-10-10**. If the user mentions a project or paper
+Snapshot date: **2026-11-16**. If the user mentions a project or paper
 released after that, flag explicitly that this skill's corpus may not
 cover it.
 

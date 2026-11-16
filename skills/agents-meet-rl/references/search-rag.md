@@ -2,11 +2,34 @@
 
 Agents that interleave reasoning and retrieval. Most use rule-based EM/F1 outcome rewards or info-gain process rewards.
 
-_Total: 50 entries._
+_Total: 53 entries._
 
 ## Contents
 
-EviSD, GTA-RAG, LAPO, Harness-1, SlimSearcher, DeepRubric, SAAS, CuSearch, GrepSeek, PyRAG, ORBIT, LiteResearcher, DR-Venus, MR-Search, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR Tulu, IGPO, ReSeek, AutoGraph-R1, DeepResearch, WebSeer, HiPRAG, Tree-GRPO, DeepDive, ASearcher, SSRL, Research-Venus, Graph-R1, Kimi-Researcher, R-Search, R1-Searcher-plus, StepSearch, AutoRefine, ZeroSearch, ReasonRAG, VRAG, MaskSearch, R3-RAG, O2-Searcher, s3, knowledge-r1, WebThinker, DeepResearcher, Search-R1, R1-Searcher, DeepRetrieval, C-3PO.
+Axion 1.0, PatternBloom, EviBack, EviSD, GTA-RAG, LAPO, Harness-1, SlimSearcher, DeepRubric, SAAS, CuSearch, GrepSeek, PyRAG, ORBIT, LiteResearcher, DR-Venus, MR-Search, ProRAG, O-Researcher, Agentic-RAG-R1, MemSearcher, DR Tulu, IGPO, ReSeek, AutoGraph-R1, DeepResearch, WebSeer, HiPRAG, Tree-GRPO, DeepDive, ASearcher, SSRL, Research-Venus, Graph-R1, Kimi-Researcher, R-Search, R1-Searcher-plus, StepSearch, AutoRefine, ZeroSearch, ReasonRAG, VRAG, MaskSearch, R3-RAG, O2-Searcher, s3, knowledge-r1, WebThinker, DeepResearcher, Search-R1, R1-Searcher, DeepRetrieval, C-3PO.
+
+### Axion 1.0
+- **Idea:** Open recipe for a frontier-level agent foundation model: two SFT stages followed by RL with a deep-research agent loop over web search/browse tools.
+- `https://github.com/bytedance/axion1_0` · org: ByteDance / Duke · date: 2026.11
+- Algorithm: GRPO-style (2×SFT then RL) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (web search/browse)
+- Reward phase: Outcome · Reward type: Rule/Model
+- Task: Open deep-research agent foundation model
+
+### PatternBloom
+- **Idea:** Two-stage RL for agentic graph RAG: an information-density reward trains evidence-hypergraph construction, then a pattern-augmented reward reuses RL-distilled graph patterns for traversal.
+- `https://github.com/EllenYiGe/PatternBloom` · org: Academic · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.10477)
+- Algorithm: PPO-family (two-stage) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (hypergraph retrieval API)
+- Reward phase: Both · Reward type: Custom (information-density + pattern-augmented)
+- Task: Agentic graph RAG: hypergraph construction + pattern-memory traversal
+
+### EviBack
+- **Idea:** When a GRPO group gets all-zero reward, an evidence-constrained teacher backs off with partial guidance and group post-normalization rescues the learning signal for small search agents.
+- `https://github.com/chery-nextai/eviback` · org: Chery (NEXTAI Research Institute) · date: 2026.7
+- Paper(s): [Paper](https://arxiv.org/abs/2607.23955)
+- Algorithm: GRPO + group post-normalization + teacher backoff · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (retriever)
+- Reward phase: Outcome · Reward type: Rule/Model (teacher)
+- Task: Search-agent RL for small models (Qwen3 0.6B–4B)
 
 ### EviSD
 - **Idea:** Gives a teacher privileged access to gold evidence and uses the bounded teacher-student gap to correct GRPO advantages per instance, densifying an otherwise outcome-only search reward.

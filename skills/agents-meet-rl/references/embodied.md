@@ -2,7 +2,23 @@
 
 Agents in physical/simulated robotic environments.
 
-_Total: 7 entries._
+_Total: 9 entries._
+
+### PEAR
+- **Idea:** Trains reasoning models in simulation to call robot tool APIs natively, using fully async veRL GRPO with dynamic sampling, then transfers to real robots.
+- `https://github.com/mit-han-lab/pear` · org: MIT Han Lab · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.18562)
+- Algorithm: GRPO + dynamic sampling · Framework: veRL (fully async) · Agent: Single · Turns: Multi · Tools: Yes (robot tool APIs)
+- Reward phase: Outcome · Reward type: External Verifier (sim success)
+- Task: Train reasoning models in simulation to natively call real robots (LIBERO/RoboDojo)
+
+### AgenticRoboRL
+- **Idea:** Brings coding-agent post-training to robotics: the policy writes robot code against APIs and is trained with dual-clip PPO on simulated task success.
+- `https://github.com/xinxinliu-ai/AgenticRoboRL` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.28589)
+- Algorithm: PPO (dual-clip) · Framework: Custom · Agent: Single · Turns: Multi · Tools: Yes (robot code APIs)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Coding-agent post-training for agentic robotics (LIBERO-PRO)
 
 ### REAL
 - **Idea:** Exposes embodied skills as MCP tools (including asking the user) so a language agent can be RL-trained on open-world mobile manipulation and deployed on real robots.

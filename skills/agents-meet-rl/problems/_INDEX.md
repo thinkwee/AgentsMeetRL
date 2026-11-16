@@ -229,7 +229,7 @@ See `SKILL.md` for the three citation templates (project with both
 repo and paper, paper-only algorithm, repo-only tool/environment).
 
 Reference ideas with canonical URLs; reference implementation claims with
-fixed-commit code permalinks and symbols. The corpus contains 411 entries
+fixed-commit code permalinks and symbols. The corpus contains 467 entries
 (378 catalogue repositories + 33 under-review entries), plus the 3 paper-only
 algorithms whitelisted in `scripts/lint_skill.py`. Counts are checked against
 `database.json`. Source inspection does not establish runtime compatibility.

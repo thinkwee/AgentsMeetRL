@@ -2,11 +2,34 @@
 
 Sandbox environments and benchmarks. Pick one matching your task before designing rewards.
 
-_Total: 66 entries._
+_Total: 71 entries._
 
 ## Contents
 
-MIMESIS, PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, Echoverse, DocOps, PatientAgentBench, LegalWorld, MobileGym, AEnvironment, Gym-Anything, ClawBench, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, Endless Terminals, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+CAMG-II, miroir, WebHarbor, WildAWM, MIMESIS, PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, Echoverse, DocOps, PatientAgentBench, LegalWorld, MobileGym, AEnvironment, Spatial-Gym, Gym-Anything, ClawBench, OpenSandbox, OpenEnv, open-trajectory-gym, Agent-World-Model, TermiGen, Endless Terminals, VisGym, NeMo-Gym, VISTA-Gym, LoCoBench-Agent, Simia-Agent-Training, PaperArena, enterprise-deep-research, meta-agents-research-environments, BrowseComp-Plus, MCP-Bench, MCPVerse, CompassVerifier, tau2-bench, Mind2Web-2, MCP-Universe, gem, MLE-Dojo, R2E-Gym, SWE-smith, atropos, InternBootcamp, loong, DataSciBench, reasoning-gym, llmgym, SWE-Gym, debug-gym, gym-llm, AgentGym, tau-bench, appworld, android_world, TheAgentCompany, LlamaGym, visualwebarena, LMRL-Gym, OSWorld, webarena, AgentBench, WebShop, ScienceWorld, factorio-learning-environment, alfworld, jericho, TextWorld.
+
+### CAMG-II
+- **Idea:** Executable long-horizon environment suite where agents use files as memory, with verl PPO (action/token GAE) and on-policy distillation recipes.
+- `https://github.com/jd-opensource/CodingAgentMemoryGym` · org: JD · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.14009)
+- Task: Long-horizon file-as-memory env suite (Shop/Coding/AutoResearch/Visual) with verl PPO + OPD recipes
+
+### miroir
+- **Idea:** Turns any Dockerised product plus a manifest into a resettable agentic RL environment graded by state diffs (DB rows, emails, HTTP), with TRL/verifiers adapters.
+- `https://github.com/raphaelDkhn/miroir` · org: Independent · date: 2026.11
+- Task: Turns Dockerised products (Gitea, CRM, …) into resettable, state-diff-graded agentic RL envs via OpenEnv/MCP; TRL GRPO example
+
+### WebHarbor
+- **Idea:** Docks 153 real websites as Docker images with 2,288 training tasks, giving GUI/web agents realistic yet resettable RL environments.
+- `https://github.com/aiming-lab/WebHarbor` · org: UNC (AIMING Lab) · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.03634)
+- Task: 153 real websites docked as Docker images, 2,288 RL training tasks for GUI/web agents
+
+### WildAWM
+- **Idea:** Synthesizes executable computer-use environments, tasks and verifiers using open LLMs only, scaling agent-world-model style environment generation.
+- `https://github.com/MSR-Orchard/WildAWM` · org: Microsoft Research · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.26828)
+- Task: Executable computer-use environment synthesis with tasks + verifiers, using open LLMs only
 
 ### MIMESIS
 - **Idea:** Replaces over-cooperative assistant LLMs with a purpose-trained user simulator (13 real-user behavioral patterns) as the frozen RL partner; agents trained against it generalize better to unseen user models, and coach-written notes add dense token-level supervision on top of sparse task reward.
@@ -85,6 +108,12 @@ MIMESIS, PAST-Bench, DigiWorld, Evo-Bench, ScrambleToolBench, SETA, OpenAgent, E
 - `https://github.com/inclusionAI/AEnvironment` · org: Ant Group (inclusionAI) · date: 2026.5
 - Paper(s): —
 - Task: Agentic RL Env Platform (MCP, AReaL-integrated, TAU2/SWE/Terminal-Bench)
+
+### Spatial-Gym
+- **Idea:** Gymnasium environment over SPaRC 2D grid puzzles where models solve spatial pathfinding step by step with optional backtracking.
+- `https://github.com/lkaesberg/Spatial-Gym` · org: University of Göttingen · date: 2026.4
+- Paper(s): [Paper](https://arxiv.org/abs/2604.09338)
+- Task: Spatial pathfinding (Gymnasium env on 2D grid puzzles from SPaRC, step-by-step with optional backtracking)
 
 ### Gym-Anything
 - **Idea:** Turns any software into a computer-use agent environment with realistic data, tasks, and automatic verifiers (CUA-World ships 200+ real apps in sandboxed VMs).

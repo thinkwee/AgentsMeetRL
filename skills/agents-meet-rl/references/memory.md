@@ -2,7 +2,23 @@
 
 Agents that learn to manage persistent memory beyond a fixed context window.
 
-_Total: 8 entries._
+_Total: 10 entries._
+
+### MemPilot
+- **Idea:** An RL-trained orchestrator decides which multimodal memory actions to take, with a resource-aware reward over answer quality, cost and latency.
+- `https://github.com/ViktorAxelsen/MemPilot` · org: NTU / THU / UIUC · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.06830)
+- Algorithm: GDPO/GRPO (resource-aware) · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (memory-access tools)
+- Reward phase: Outcome · Reward type: Model/Rule (quality, cost, latency)
+- Task: On-demand multimodal memory curation/orchestration
+
+### AMBER
+- **Idea:** Keeps an append-only memory of browser evidence across steps and compares it against overwrite (MEM1-style) and reasoning-only memory under identical RL on WebArena.
+- `https://github.com/agentic-foundation-modeling-research/amber` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.07118)
+- Algorithm: GRPO (after SFT) · Framework: Miles · Agent: Single · Turns: Multi · Tools: Yes (browser)
+- Reward phase: Outcome · Reward type: External Verifier (WebArena)
+- Task: Long-horizon WebArena agents with append-only browser-evidence memory
 
 ### MemPrism
 - **Idea:** Makes memory composition itself the action space — a policy picks relation/window/granularity to build a task-conditioned view — so memory is trained by RL rather than fixed retrieval heuristics.

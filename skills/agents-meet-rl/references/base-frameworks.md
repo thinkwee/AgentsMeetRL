@@ -2,11 +2,33 @@
 
 RL training frameworks for LLM agents (e.g. veRL, OpenRLHF, slime). Pick one as the base of your training stack.
 
-_Total: 30 entries._
+_Total: 34 entries._
 
 ## Contents
 
-LoongSage, Libra, Molt, Orchard, AgentJet, HarnessX, Dressage, AReno, Polar, uni-agent, VeRL-Omni, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, agent-lightning, siiRL, slime, ROLL, AReaL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+HarborRL, ForkRL, Canopy, LoongSage, Roger Federated, Libra, Molt, Orchard, AgentJet, HarnessX, Dressage, AReno, Polar, uni-agent, VeRL-Omni, OpenClaw-RL, Claw-R1, Open-AgentRL, NeMo-RL, RLinf, agent-lightning, siiRL, slime, ROLL, AReaL, MARTI, Tunix, RL2, verifiers, prime-rl, oat, veRL, OpenRLHF, trl.
+
+### HarborRL
+- **Idea:** One lightweight stack wires serving, rollout, sandboxed Harbor tasks, 40+ real agent harnesses (Claude Code/Codex/SWE-agent) and verifier rewards into GRPO/DAPO/OPD updates, either on slime or a native trainer.
+- `https://github.com/datamllab/HarborRL` · org: Rice University (DATA Lab) · date: 2026.10
+- Algorithm: GRPO/DAPO/REINFORCE + OPD (slime or native trainer) · Agent: Single · Turns: Multi · Tools: Yes (sandbox shell/code, agent harnesses)
+- Reward phase: Both · Reward type: External Verifier
+- Task: Lightweight agentic RL over Harbor-format sandboxed tasks (Terminal-Bench/SWE) with 40+ harnesses
+
+### ForkRL
+- **Idea:** Forks the whole agent workspace (memory + sandbox state) across GRPO rollouts so siblings share setup cost, and caches repeated tool-call prefixes to speed up computer-use RL rollouts.
+- `https://github.com/WukLab/ForkRL` · org: UCSD (WukLab) · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.10453)
+- Algorithm: GRPO · Agent: Single · Turns: Multi · Tools: Yes (computer-use / tool-call prefix caching)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Faster agentic-RL rollouts via whole-workspace forking (OSWorld/web)
+
+### Canopy
+- **Idea:** Schedules multi-turn agent rollouts by prefix-sharing groups (tree-aware) to cut redundant prefill, which in stock verl runs 2.5–7.9× above the minimum.
+- `https://github.com/FarrenZhang/canopy-rl` · org: HKUST / Tencent · date: 2026.10
+- Algorithm: PPO/GRPO (system-level, tree-aware rollout scheduling on verl) · Agent: Single · Turns: Multi · Tools: Yes (tool-calling rollouts)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Prefix-sharing-aware scheduling of multi-turn agent rollouts
 
 ### LoongSage
 - **Idea:** Agents plug in through a plain chat-completions endpoint while the framework handles multi-turn concatenation, loss masking and sandbox lifecycle; ships production-hardened recipes with MoE training-inference consistency fixes (router replay, IS correction, M2PO/OPSM) and fully async partial rollout.
@@ -14,6 +36,13 @@ LoongSage, Libra, Molt, Orchard, AgentJet, HarnessX, Dressage, AReno, Polar, uni
 - Algorithm: Critic-free PG (GRPO-family) + online distillation (PG/GKD-style), fully async · Agent: Single · Turns: Multi · Tools: Yes (AgentFlow: tool output recognition, sandbox lifecycle)
 - Reward phase: Outcome · Reward type: Rule/External
 - Task: Production-scale agentic RL on MoE models (Megatron-Core + SGLang; math, agentic code repair)
+
+### Roger Federated
+- **Idea:** Runs QLoRA REINFORCE++ on the agent conversations a user's own llama.cpp/vLLM server already handles, aggregating updates federatedly with secure aggregation.
+- `https://github.com/roger-federated/roger-federated` · org: Roger Federated · date: 2026.6
+- Algorithm: QLoRA REINFORCE++ (federated, secure aggregation) · Agent: Single · Turns: Multi · Tools: Yes (whatever tools the user's client calls)
+- Reward phase: Both · Reward type: Model/External (self-evaluation, user reactions, tool results)
+- Task: On-device RL on the agent chats the user's own llama.cpp/vLLM server already handles
 
 ### Libra
 - **Idea:** A systems framework for disaggregated, asynchronous agentic-RL post-training that manages GPU resources between rollout and training to cut the idle time caused by long-tail multi-turn tool trajectories.

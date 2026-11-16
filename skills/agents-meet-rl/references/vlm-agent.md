@@ -2,11 +2,43 @@
 
 Vision-language model agents (visual tool-use, chart QA, autonomous driving, image-based search).
 
-_Total: 30 entries._
+_Total: 34 entries._
 
 ## Contents
 
-InSight-doc, VTS, VSeek, HyperEyes, ODE, ParaVT, OpenSearch-VL, MTA-Agent, Gen-Searcher, MM-DeepResearch, PyVision-RL, Vision-DeepResearch, ARM-Thinker, CodeDance, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+ModalSearcher, Neos, OneSearch-VL, VideoResearchAgent, InSight-doc, VTS, VSeek, HyperEyes, ODE, ParaVT, OpenSearch-VL, MTA-Agent, Gen-Searcher, MM-DeepResearch, PyVision-RL, Vision-DeepResearch, ARM-Thinker, CodeDance, DeepEyesV2, Mini-o3, VisionThink, multimodal-search-r1, AutoVLA, VDeepEyes, CoSo, Pixel-Reasoner, Visual-ARFT, VTool-R1, OpenThinkIMG, Chain-of-Focus, GRIT, AlphaDrive, VSC-RL, RL4VLM.
+
+### ModalSearcher
+- **Idea:** Synthesizes modality-diverse multi-hop questions and trains a deep-search agent (SFT then RLOO) to weave visual evidence into its search trajectory.
+- `https://github.com/Hans-M-Yin/ModalSearcher` · org: Academic · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.06131)
+- Algorithm: RLOO · Framework: veRL + rLLM · Agent: Single · Turns: Multi · Tools: Yes (web search, read_url, image search)
+- Reward phase: Outcome · Reward type: Model-Based
+- Task: Cross-modal deep search weaving visual evidence (Qwen3-VL-8B)
+
+### Neos
+- **Idea:** Agent–environment co-evolution: policy RL alternates with SFT of a trainable multimodal evidence interface inside the tools, interleaving search and visual reasoning.
+- `https://github.com/Accio-Lab/Neos` · org: Accio-Lab · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.17043)
+- Algorithm: GRPO-style RL alternating with evidence-interface SFT · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (web search, image tools)
+- Reward phase: Outcome · Reward type: Model-Based
+- Task: Interleaving web search and visual reasoning (agent–tool co-evolution)
+
+### OneSearch-VL
+- **Idea:** An evidence-aware, visually grounded rubric reward (EVGR) drives RL of a unified image/video deep-research agent.
+- `https://github.com/appletea233/OneSearch-VL` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.12419)
+- Algorithm: GRPO-style · Framework: veRL + rLLM (async) · Agent: Single · Turns: Multi · Tools: Yes (web search, image/video tools)
+- Reward phase: Both · Reward type: Model (rubric) + Rule
+- Task: Unified image/video multimodal deep research
+
+### VideoResearchAgent
+- **Idea:** Grounded task synthesis plus sim-to-real RL (RDR-GRPO) trains an agent that searches and inspects open-web videos with YouTube search and frame-extraction tools.
+- `https://github.com/Ralph-Zhou/VideoResearchAgent` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.04911)
+- Algorithm: RDR-GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (YouTube search, frame extraction)
+- Reward phase: Outcome · Reward type: Model/Rule
+- Task: Open-web video research with grounded task synthesis & sim-to-real RL
 
 ### InSight-doc
 - **Idea:** Trains a coarse-to-fine reading loop where the VLM zooms into candidate regions to gather high-resolution evidence before answering, rewarding both the answer and the evidence it cited.

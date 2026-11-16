@@ -2,7 +2,39 @@
 
 Agents that improve themselves through closed-loop feedback (challenger/solver, MCTS-driven self-training).
 
-_Total: 18 entries._
+_Total: 22 entries._
+
+### RSIPO
+- **Idea:** Skills and policy co-evolve during agentic RL: the agent distills its own skills and mixes RLVR with on-policy self-distillation conditioned on them.
+- `https://github.com/zfkarl/RSIPO` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.15772)
+- Algorithm: GRPO + on-policy self-distillation · Framework: veRL (verl-agent) · Agent: Single · Turns: Multi · Tools: Yes (search, env actions)
+- Reward phase: Both · Reward type: Rule-Based
+- Task: Skill–policy co-evolution (ALFWorld, multi-hop search QA)
+
+### Self-Distillation-AgentRL
+- **Idea:** A controlled reality check of ten self-distillation variants against plain GRPO on ALFWorld/ScienceWorld/WebShop across three model sizes.
+- `https://github.com/aim-uofa/Self-Distillation-AgentRL` · org: Zhejiang University (AIM) · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.19789)
+- Algorithm: GRPO vs. ten self-distillation variants · Framework: veRL (verl-agent) · Agent: Single · Turns: Multi · Tools: Yes (env actions)
+- Reward phase: Both · Reward type: Rule-Based
+- Task: Reality check of self-distillation in agentic RL (ALFWorld/ScienceWorld/WebShop)
+
+### SkillScaffold
+- **Idea:** Estimates how useful each textual skill is for the current policy, injects skills only when they help, and gradually internalizes them into weights.
+- `https://github.com/Vaidurya00/SkillScaffold` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.18807)
+- Algorithm: GRPO + skill credit assignment & selective injection · Framework: slime / AReaL-style · Agent: Single · Turns: Multi · Tools: Yes (env/tool APIs)
+- Reward phase: Both · Reward type: Rule-Based
+- Task: ALFWorld/ScienceWorld/WebShop/τ-bench
+
+### EvoHarness-RL
+- **Idea:** Exposes belief/progress/experience workspaces as policy actions so the agent and its runtime harness are optimized jointly by RL.
+- `https://github.com/EvoHarnessRL/EvoHarness-RL` · org: EvoHarnessRL · date: 2026.8
+- Paper(s): [Paper](https://arxiv.org/abs/2608.05446)
+- Algorithm: GRPO/PPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (belief/progress/experience harness actions)
+- Reward phase: Outcome · Reward type: Rule-Based
+- Task: Jointly optimizing agent and runtime harness (ALFWorld/WebShop/WebArena)
 
 ### AgentOPSD
 - **Idea:** Converts a sparse trajectory outcome into dense per-turn credit through recursive Bayesian belief updates over teacher-student log-prob gaps, needing no critic network.

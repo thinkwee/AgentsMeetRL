@@ -2,11 +2,51 @@
 
 Software-engineering agents that locate, repair, and test. Most use SWE-bench-style verifiable rewards.
 
-_Total: 25 entries._
+_Total: 30 entries._
 
 ## Contents
 
-Lego-RL, FastContext, SWE-Edit, CodeScout, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch, CUDA-L1, digitalhuman, SWE-Swiss, MedAgentGym, CURE, Time-R1, ML-Agent, R1-Code-Interpreter, Skywork-OR1, sweet_rl, swe-rl, CTRL, AceCoder, rllm, open-r1.
+Video-Coder, SWE-Ladder, Self-HPO, SPROUT, AutoEnvScaling, Lego-RL, FastContext, SWE-Edit, CodeScout, CUDA-Agent, SWE-World, CUDA-L2, PPP-Agent, DeepAnalyze, RepoDeepSearch, CUDA-L1, digitalhuman, SWE-Swiss, MedAgentGym, CURE, Time-R1, ML-Agent, R1-Code-Interpreter, Skywork-OR1, sweet_rl, swe-rl, CTRL, AceCoder, rllm, open-r1.
+
+### Video-Coder
+- **Idea:** Harness-native agentic RL trains a coder that writes Blender-Python programs for draft videos, rewarded by the quality of the rendered result.
+- `https://github.com/CYWang735/Video-Coder` · org: Academic · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.09894)
+- Algorithm: GRPO · Framework: uni-agent (veRL) · Agent: Single · Turns: Multi · Tools: Yes (code execution, Blender)
+- Reward phase: Outcome · Reward type: Model/Rule
+- Task: Agentic Blender-Python coding for draft-video generation
+
+### SWE-Ladder
+- **Idea:** Stage-specific privileged teacher views (localize/reproduce/patch) are progressively self-distilled while GRPO optimizes the whole SWE trajectory.
+- `https://github.com/sekongger/SWE-Ladder` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.33667)
+- Algorithm: GRPO + progressive privileged self-distillation · Framework: veRL + rLLM · Agent: Single · Turns: Multi · Tools: Yes (bash/edit sandbox)
+- Reward phase: Both · Reward type: External Verifier (tests) + Rule
+- Task: Repo-level issue resolving (localize→reproduce→patch)
+
+### Self-HPO
+- **Idea:** Alternates harness revision (H-step) and RL policy update (P-step) so the coding agent and its scaffold co-evolve on SWE-bench.
+- `https://github.com/MSR-Orchard/Self-HPO` · org: Microsoft Research · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.22791)
+- Algorithm: GRPO (alternating harness/policy steps) · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (mini-swe-agent bash)
+- Reward phase: Outcome · Reward type: External Verifier (tests)
+- Task: Co-evolving coding-agent harness and policy on SWE-bench
+
+### SPROUT
+- **Idea:** Snapshots the sandbox at every turn so RL rollouts can branch from checkpoints just before a mistake, improving exploration for long-horizon SWE agents.
+- `https://github.com/RISE-X-Lab/SPROUT` · org: RISE-X-Lab · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.14405)
+- Algorithm: GRPO-family with checkpoint-branching exploration · Framework: Miles · Agent: Single · Turns: Multi · Tools: Yes (sandboxed shell)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: Long-horizon SWE with per-turn sandbox snapshots & branching
+
+### AutoEnvScaling
+- **Idea:** A terminal agent proposes and validates its own Harbor RL environments; a self-play loop then trains the solver on the admitted environments.
+- `https://github.com/MSR-Orchard/AutoEnvScaling` · org: Microsoft Research · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.14163)
+- Algorithm: GRPO-style self-play · Framework: Miles · Agent: Single · Turns: Multi · Tools: Yes (terminal)
+- Reward phase: Outcome · Reward type: External Verifier + Rule
+- Task: Terminal agents author their own Harbor environments and train on them
 
 ### Lego-RL
 - **Idea:** Runs online RL natively inside production coding harnesses (Claude Code, OpenHands, OpenCode) rather than a reimplemented loop, so the training distribution matches deployment; +5.8-9.4 pts on SWE-bench Verified.

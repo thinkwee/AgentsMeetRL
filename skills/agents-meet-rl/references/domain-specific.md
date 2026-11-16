@@ -2,7 +2,43 @@
 
 Specialized verticals: medical, legal, finance, OS tuning. Reward usually mixes domain rules + LLM-judge.
 
-_Total: 12 entries._
+_Total: 16 entries._
+
+### AlphaBet
+- **Idea:** Dated forecasts of the same event supervise many information states; finds that std-normalized GRPO distorts proper scoring rules and uses mean-centered advantages with Brier reward.
+- `https://github.com/AlphaBet-Agent/AlphaBet` · org: Georgia Tech / Amazon · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.22684)
+- Algorithm: GRPO (mean-centered) · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (search, Python, MCP)
+- Reward phase: Outcome · Reward type: Rule-Based (Brier score)
+- Task: Event-forecasting agent with news search + code
+- Domain: Forecasting
+
+### BIRD-RL
+- **Idea:** A four-stage curriculum from reasoning imitation to interactive agentic RL over stateful databases, scored by executing SQL against the real DB.
+- `https://github.com/bird-bench/BIRD-RL` · org: BIRD team · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.29426)
+- Algorithm: GRPO (4-stage curriculum) · Framework: veRL · Agent: Single · Turns: Both · Tools: Yes (SQL executor)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: SQL issue solving over stateful databases (BIRD-CRITIC)
+- Domain: Text-to-SQL
+
+### HarnessSQL
+- **Idea:** Harness-native SFT then execution-reward RL under exactly the tool contract used at inference, closing the train/inference harness gap for SQL/dbt agents.
+- `https://github.com/YangHaolin0526/HarnessSQL` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.12274)
+- Algorithm: GRPO (execution reward, after harness-native SFT) · Framework: slime · Agent: Single · Turns: Multi · Tools: Yes (dsh-sql harness)
+- Reward phase: Outcome · Reward type: External Verifier
+- Task: SQL/dbt agents in realistic DB environments (Spider 2.0)
+- Domain: Text-to-SQL
+
+### Legal-R1
+- **Idea:** Post-trains a lawyer agent for multi-turn, authority-aware evidence seeking over a legal retriever, rewarded by evidence-grounded answer quality.
+- `https://github.com/killerqueen-wonder/Legal-R1` · org: Academic · date: 2026.10
+- Paper(s): [Paper](https://arxiv.org/abs/2610.18611)
+- Algorithm: PPO/GRPO · Framework: veRL · Agent: Single · Turns: Multi · Tools: Yes (legal retriever)
+- Reward phase: Outcome · Reward type: Model-Based
+- Task: Evidence-based legal QA via multi-turn authority-aware retrieval
+- Domain: Legal
 
 ### FaithMed
 - **Idea:** Rewards not just the right medical answer but whether each reasoning step is grounded in retrieved evidence, using step-level process rewards over search trajectories.

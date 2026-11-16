@@ -2,7 +2,23 @@
 
 Multi-agent collaboration, negotiation, or self-play. Watch for credit assignment and role-conditioned advantage.
 
-_Total: 14 entries._
+_Total: 16 entries._
+
+### OPSD4MAS
+- **Idea:** Turns later inter-agent messages into token-level credit for earlier turns via fact-conditioned on-policy self-distillation, combined with agent-wise GRPO in a Solver–Verifier system.
+- `https://github.com/Camel-Prince/OPSD4MAS` · org: Academic · date: 2026.11
+- Paper(s): [Paper](https://arxiv.org/abs/2611.16206)
+- Algorithm: Agent-wise GRPO + on-policy self-distillation · Framework: veRL · Agent: Multi · Turns: Multi · Tools: No
+- Reward phase: Both · Reward type: Rule/Model
+- Task: Solver–Verifier multi-agent reasoning; inter-agent messages → token-level credit
+
+### NeuroMAS
+- **Idea:** Treats a layered multi-agent system as a neural network: per-node LoRA adapters trained with REINFORCE and per-node baselines, with progressive growth of the agent graph.
+- `https://github.com/haoranlustat/NeuroMAS` · org: University of Georgia · date: 2026.5
+- Paper(s): [Paper](https://arxiv.org/abs/2605.16757)
+- Algorithm: REINFORCE (per-node EMA baseline, per-node LoRA adapters, progressive growth) · Framework: Custom · Agent: Multi · Turns: Multi (layered sequential calls) · Tools: No
+- Reward phase: Outcome · Reward type: Rule (exact match; unit tests for code)
+- Task: Reasoning / QA / Code (ARC-Challenge, BBH-Navigate, MMLU subsets, HumanEval)
 
 ### Maestro
 - **Idea:** Outcome-only RL trains a lightweight orchestrator over a frozen expert ensemble to decide which model-skill to invoke and when to stop, generalizing to unseen experts.
