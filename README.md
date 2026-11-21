@@ -1121,6 +1121,7 @@ Then just ask, e.g. *"my GRPO search agent's reward is flat but eval keeps dropp
 - [WorkRover](https://arxiv.org/abs/2610.18067) (README-only)
 - [OpenMobile-2](https://arxiv.org/abs/2610.14157) (eval + MobileGym++ env only, no RL trainer)
 - [LEAD-RL: From Delegation to Coordination](https://arxiv.org/abs/2611.17041) (multi-agent deep-research RL; no repo yet)
+- [MultiAgent-OPD](https://arxiv.org/abs/2610.23234) (hierarchical multi-agent search RL with Searcher OPD; paper and project page available)
 - [Qwen-UI-Agent: Towards Next-Generation Real-World Centric Foundation GUI Agent](https://arxiv.org/abs/2607.28227) (Tongyi-MAI — repo released, but no RL training code)
 - [Qwen-CUA](https://arxiv.org/abs/2608.02352) (xlang-ai — technical report + demo only, weights hosted separately)
 - [UI-Mate](https://arxiv.org/abs/2608.15930) (Tencent — inference/eval code only)
